@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#g)"/>
+  <!-- path scaled to 70% and centered to match nav logo proportions -->
+  <g transform="translate(15,15) scale(0.7)">
+    <path d="M 15 22 L 15 57 Q 15 85 50 85 Q 85 85 85 57 L 85 26 L 92 26 L 77 5 L 62 26 L 70 26 L 70 57 Q 70 74 50 74 Q 30 74 30 57 L 30 22 Z" fill="#0A0F1E"/>
+  </g>
+</svg>

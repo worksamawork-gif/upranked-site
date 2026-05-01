@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://upranked.io/sitemap.xml
