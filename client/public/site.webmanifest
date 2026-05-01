@@ -1,0 +1,21 @@
+{
+  "name": "upranked.io — GCC SEO Agency",
+  "short_name": "upranked.io",
+  "description": "Premium GCC SEO Agency — Technical SEO, Content Architecture & Bilingual SEO for Dubai, Riyadh, Kuwait & Bahrain by Sam Hamouda.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0F1E",
+  "theme_color": "#C9A84C",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

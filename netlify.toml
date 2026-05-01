@@ -1,0 +1,11 @@
+[build]
+  command   = "npx pnpm install && npx pnpm run build"
+  publish   = "dist/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

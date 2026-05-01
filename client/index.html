@@ -1,0 +1,135 @@
+﻿<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>upranked.io — Premium SEO Agency Dubai | GCC Growth Intelligence</title>
+    <meta name="description" content="Premium SEO agency in Dubai & the GCC. Medical, Industrial & Business SEO built on the APEX Framework™ by Sam Hamouda. Serving UAE, Saudi Arabia, Kuwait & Qatar." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://upranked.io/" id="canonical-tag" />
+
+    <!-- Performance: preconnect to third-party origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <!-- Fonts: inline link tag instead of @import avoids a render-blocking CSS chain -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" />
+
+    <!-- LCP preload: hero image discovered immediately, not after JS executes -->
+    <link rel="preload" as="image" href="/images/sam-hamouda-seo-consultant-dubai.webp" type="image/webp" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=4" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4" />
+    <link rel="shortcut icon" href="/favicon.ico?v=4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#C9A84C" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://upranked.io/" id="og-url" />
+    <meta property="og:title" content="upranked.io — Premium SEO Agency Dubai | GCC Growth Intelligence" id="og-title" />
+    <meta property="og:description" content="Premium SEO agency in Dubai & the GCC. Medical, Industrial & Business SEO built on the APEX Framework™ by Sam Hamouda." id="og-description" />
+    <meta property="og:image" content="https://upranked.io/android-chrome-512x512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="upranked.io — Premium SEO Agency Dubai" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_AE" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="upranked.io — Premium SEO Agency Dubai | GCC Growth Intelligence" id="twitter-title" />
+    <meta name="twitter:description" content="Premium SEO agency in Dubai & the GCC. Medical, Industrial & Business SEO built on the APEX Framework™ by Sam Hamouda." id="twitter-description" />
+    <meta name="twitter:image" content="https://upranked.io/android-chrome-512x512.png" />
+    <meta name="twitter:image:alt" content="upranked.io — Premium SEO Agency Dubai" />
+
+    <!-- JSON-LD: Organization + LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://upranked.io/#organization",
+          "name": "upranked.io",
+          "url": "https://upranked.io",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://upranked.io/android-chrome-512x512.png",
+            "width": 512,
+            "height": 512
+          },
+          "description": "Premium SEO agency in Dubai & the GCC. Medical, Industrial & Business SEO built on the APEX Framework™ by Sam Hamouda.",
+          "founder": {
+            "@type": "Person",
+            "name": "Sam Hamouda",
+            "jobTitle": "Founder & Chief Growth Strategist",
+            "url": "https://upranked.io/about"
+          },
+          "areaServed": ["AE", "SA", "KW", "QA"],
+          "knowsLanguage": ["en", "ar"],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "Sam@upranked.io",
+            "availableLanguage": ["English", "Arabic"]
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://upranked.io/#localbusiness",
+          "name": "upranked.io",
+          "url": "https://upranked.io",
+          "priceRange": "$$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+          },
+          "areaServed": [
+            { "@type": "Country", "name": "United Arab Emirates" },
+            { "@type": "Country", "name": "Saudi Arabia" },
+            { "@type": "Country", "name": "Kuwait" },
+            { "@type": "Country", "name": "Qatar" }
+          ],
+          "serviceType": ["SEO Services", "Business Consulting", "Web Design", "Growth Strategy"]
+        }
+      ]
+    }
+    </script>
+    <!-- Twemoji: defer so it doesn't block HTML parsing (non-critical) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Parse emojis after React mounts — guard for defer-loaded twemoji
+      function parseEmoji() {
+        if (typeof twemoji !== 'undefined') {
+          twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+        }
+      }
+      window.addEventListener('load', parseEmoji);
+      document.addEventListener('DOMContentLoaded', function() {
+        var root = document.getElementById('root');
+        if (!root) return;
+        var observer = new MutationObserver(parseEmoji);
+        observer.observe(root, { childList: true, subtree: true });
+      });
+    </script>
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+  </body>
+
+</html>

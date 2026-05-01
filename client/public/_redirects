@@ -1,0 +1,10 @@
+# Hub slug rename (301 permanent)
+/industries                 /seo-industries                 301
+
+# Old industry slugs → new -seo slugs (301 permanent)
+/industries/medical         /industries/medical-seo         301
+/industries/industrial      /industries/industrial-seo      301
+/industries/business        /industries/business-seo        301
+
+# SPA catch-all — must be last
+/*    /index.html   200
