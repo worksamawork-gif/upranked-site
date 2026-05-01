@@ -1,0 +1,11 @@
+[build]
+  command   = "npx playwright install chromium && npx pnpm run build:seo"
+  publish   = "dist/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

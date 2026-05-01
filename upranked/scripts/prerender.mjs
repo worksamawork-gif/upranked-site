@@ -1,0 +1,145 @@
+/**
+ * prerender.mjs — Static HTML snapshot generator
+ *
+ * Runs after `vite build`. Spins up a local static server, visits every
+ * public route with headless Chromium, and writes the fully-rendered HTML
+ * to the correct path inside dist/public/.
+ *
+ * Result: AI crawlers, Googlebot, and social-card fetchers receive complete
+ * HTML (headings, body copy, FAQ, JSON-LD) instead of an empty SPA shell.
+ */
+
+import { chromium } from 'playwright';
+import express from 'express';
+import path from 'node:path';
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const DIST_DIR = path.resolve(__dirname, '../dist/public');
+const PORT = 4173;
+const BASE = `http://localhost:${PORT}`;
+
+// All public routes to pre-render
+const ROUTES = [
+  '/',
+  '/about',
+  '/methodology',
+  '/contact',
+  '/faq',
+  '/blog',
+
+  // SEO hub + types
+  '/seo',
+  '/seo/on-page',
+  '/seo/off-page',
+  '/seo/technical',
+  '/seo/local',
+  '/seo/bilingual',
+  '/seo/schema',
+  '/seo/analytics',
+  '/seo/content-architecture',
+  '/seo/geo',
+
+  // Industry SEO
+  '/seo-industries',
+  '/industries/medical-seo',
+  '/industries/industrial-seo',
+  '/industries/business-seo',
+
+  // Growth Intelligence
+  '/growth-intelligence',
+  '/growth-intelligence/consultation',
+  '/growth-intelligence/tools',
+  '/growth-intelligence/websites',
+  '/growth-intelligence/strategy',
+
+  // Markets
+  '/markets/gcc',
+  '/markets/gcc/uae/dubai',
+  '/markets/gcc/ksa/riyadh',
+  '/markets/gcc/kuwait',
+  '/markets/gcc/bahrain',
+  '/markets/uk/london',
+  '/markets/usa/new-york',
+  '/markets/eu/germany',
+  '/markets/eu/france',
+];
+
+function startServer() {
+  return new Promise((resolve, reject) => {
+    const app = express();
+    app.use(express.static(DIST_DIR));
+    // SPA fallback for client-side routes (suppress URIError from unresolved env placeholders)
+    app.use((err, _req, res, next) => {
+      if (err instanceof URIError) return res.sendFile(path.join(DIST_DIR, 'index.html'));
+      next(err);
+    });
+    app.get('*', (_req, res) => res.sendFile(path.join(DIST_DIR, 'index.html')));
+    const server = app.listen(PORT, () => resolve(server));
+    server.on('error', reject);
+  });
+}
+
+function routeToFilePath(route) {
+  if (route === '/') return path.join(DIST_DIR, 'index.html');
+  return path.join(DIST_DIR, route.slice(1).replace(/\/$/, ''), 'index.html');
+}
+
+async function prerender() {
+  if (!fs.existsSync(DIST_DIR)) {
+    console.error(`✗ dist/public not found. Run "vite build" first.`);
+    process.exit(1);
+  }
+
+  console.log('\n🔍 Pre-rendering pages for AI crawlers...\n');
+
+  const server = await startServer();
+  const browser = await chromium.launch();
+  const context = await browser.newContext({
+    // Block analytics and font downloads to speed up rendering
+    extraHTTPHeaders: { 'Accept-Language': 'en-US,en;q=0.9' },
+  });
+
+  // Block non-essential third-party requests during prerender
+  await context.route(/fonts\.googleapis|fonts\.gstatic|googletagmanager|google-analytics|twemoji|cdn\.jsdelivr/, route => route.abort());
+
+  let passed = 0;
+  let failed = 0;
+
+  for (const route of ROUTES) {
+    const page = await context.newPage();
+    try {
+      await page.goto(`${BASE}${route}`, { waitUntil: 'networkidle', timeout: 30000 });
+
+      // Wait until React has rendered at least an h1
+      await page.waitForSelector('h1', { timeout: 10000 }).catch(() => {});
+
+      const html = await page.content();
+      const dest = routeToFilePath(route);
+
+      fs.mkdirSync(path.dirname(dest), { recursive: true });
+      fs.writeFileSync(dest, html, 'utf-8');
+
+      console.log(`  ✓ ${route}`);
+      passed++;
+    } catch (err) {
+      console.error(`  ✗ ${route} — ${err.message}`);
+      failed++;
+    } finally {
+      await page.close();
+    }
+  }
+
+  await browser.close();
+  server.close();
+
+  console.log(`\n${passed} pages pre-rendered${failed ? `, ${failed} failed` : ''} — done.\n`);
+
+  if (failed > 0) process.exit(1);
+}
+
+prerender().catch(err => {
+  console.error('\nPrerender crashed:', err);
+  process.exit(1);
+});
