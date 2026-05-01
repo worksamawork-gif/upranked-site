@@ -1,5 +1,5 @@
 [build]
-  command   = "npx playwright install chromium && npx pnpm run build:seo"
+  command   = "npx pnpm install && npx pnpm run build"
   publish   = "dist/public"
 
 [build.environment]
