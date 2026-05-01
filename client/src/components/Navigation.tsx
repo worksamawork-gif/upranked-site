@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Menu, X, Globe, ChevronDown, Search, TrendingUp, MapPin, Stethoscope } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown, Search, TrendingUp, MapPin, Stethoscope, Layers } from 'lucide-react';
 import { Link, useLocation } from 'wouter';
 
 const seoIndustryLinks = [
@@ -43,14 +43,10 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [language, setLanguage] = useState<'en' | 'ar'>('en');
   const [isScrolled, setIsScrolled] = useState(false);
-  const [seoTypesOpen, setSeoTypesOpen] = useState(false);
-  const [seoIndustriesOpen, setSeoIndustriesOpen] = useState(false);
-  const [growthOpen, setGrowthOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const [marketsOpen, setMarketsOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
-  const seoTypesRef = useRef<HTMLDivElement>(null);
-  const seoIndustriesRef = useRef<HTMLDivElement>(null);
-  const growthRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
   const marketsRef = useRef<HTMLDivElement>(null);
   const [location] = useLocation();
 
@@ -64,19 +60,20 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (seoTypesRef.current && !seoTypesRef.current.contains(e.target as Node)) setSeoTypesOpen(false);
-      if (seoIndustriesRef.current && !seoIndustriesRef.current.contains(e.target as Node)) setSeoIndustriesOpen(false);
-      if (growthRef.current && !growthRef.current.contains(e.target as Node)) setGrowthOpen(false);
+      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) setServicesOpen(false);
       if (marketsRef.current && !marketsRef.current.contains(e.target as Node)) setMarketsOpen(false);
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const closeAll = () => { setSeoTypesOpen(false); setSeoIndustriesOpen(false); setGrowthOpen(false); setMarketsOpen(false); };
+  const closeAll = () => { setServicesOpen(false); setMarketsOpen(false); };
 
   const isActive = (href: string) =>
     href === '/' ? location === '/' : location === href || location.startsWith(href + '/');
+
+  const isServicesActive =
+    isActive('/seo') || isActive('/seo-industries') || isActive('/industries') || isActive('/growth-intelligence');
 
   const toggleLanguage = () => {
     const newLang = language === 'en' ? 'ar' : 'en';
@@ -124,7 +121,6 @@ export default function Navigation() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-4">
 
-          {/* Primary links first: Home → About → Methodology → Blog → FAQ → Contact */}
           {topNavLinks.map((item) => (
             <Link key={item.href} href={item.href}>
               <a
@@ -136,98 +132,95 @@ export default function Navigation() {
 
           <span className="w-px h-4 bg-border mx-1" />
 
-          {/* SEO Types Dropdown */}
-          <div ref={seoTypesRef} className="relative">
+          {/* Services Dropdown (SEO Types + SEO Industries + Growth) */}
+          <div ref={servicesRef} className="relative">
             <button
-              onClick={() => { setSeoTypesOpen(!seoTypesOpen); setSeoIndustriesOpen(false); setGrowthOpen(false); setMarketsOpen(false); }}
+              onClick={() => { setServicesOpen(!servicesOpen); setMarketsOpen(false); }}
               className={`flex items-center gap-1.5 transition-colors duration-300 font-medium text-sm ${
-                isActive('/seo') ? 'text-accent' : 'text-text-secondary hover:text-accent'
+                isServicesActive ? 'text-accent' : 'text-text-secondary hover:text-accent'
               }`}
             >
-              <Search className="w-4 h-4" />
-              {language === 'en' ? 'SEO Types' : 'أنواع SEO'}
-              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${seoTypesOpen ? 'rotate-180' : ''}`} />
+              <Layers className="w-4 h-4" />
+              {language === 'en' ? 'Services' : 'الخدمات'}
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
             </button>
-            {seoTypesOpen && (
-              <div className="absolute top-full left-0 mt-2 w-64 bg-dark-gray border border-border rounded-xl shadow-2xl shadow-black/50 overflow-hidden z-50 max-h-[80vh] overflow-y-auto">
-                <Link href="/seo">
-                  <a className="flex flex-col px-4 py-3 bg-navy/50 border-b border-border hover:bg-navy transition-colors" onClick={closeAll}>
-                    <span className="font-bold text-accent text-sm">All SEO Types →</span>
-                    <span className="text-xs text-text-secondary mt-0.5">On-page, technical, local & more</span>
-                  </a>
-                </Link>
-                {seoTypeLinks.map((link) => (
-                  <Link key={link.href} href={link.href}>
-                    <a className="flex flex-col px-4 py-2.5 hover:bg-navy border-l-2 border-transparent hover:border-accent transition-all duration-200 group" onClick={closeAll}>
-                      <span className="font-semibold text-white group-hover:text-accent transition-colors text-sm">{language === 'ar' ? link.labelAr : link.label}</span>
-                      <span className="text-xs text-text-secondary mt-0.5">{link.desc}</span>
-                    </a>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
 
-          {/* SEO Industries Dropdown */}
-          <div ref={seoIndustriesRef} className="relative">
-            <button
-              onClick={() => { setSeoIndustriesOpen(!seoIndustriesOpen); setSeoTypesOpen(false); setGrowthOpen(false); setMarketsOpen(false); }}
-              className={`flex items-center gap-1.5 transition-colors duration-300 font-medium text-sm ${
-                isActive('/seo-industries') || isActive('/industries') ? 'text-accent' : 'text-text-secondary hover:text-accent'
-              }`}
-            >
-              <Stethoscope className="w-4 h-4" />
-              {language === 'en' ? 'SEO Industries' : 'قطاعات SEO'}
-              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${seoIndustriesOpen ? 'rotate-180' : ''}`} />
-            </button>
-            {seoIndustriesOpen && (
-              <div className="absolute top-full left-0 mt-2 w-64 bg-dark-gray border border-border rounded-xl shadow-2xl shadow-black/50 overflow-hidden z-50">
-                <Link href="/seo-industries">
-                  <a className="flex flex-col px-4 py-3 bg-navy/50 border-b border-border hover:bg-navy transition-colors" onClick={closeAll}>
-                    <span className="font-bold text-accent text-sm">All SEO Industries →</span>
-                    <span className="text-xs text-text-secondary mt-0.5">Medical, Industrial & Business SEO</span>
-                  </a>
-                </Link>
-                {seoIndustryLinks.map((link) => (
-                  <Link key={link.href} href={link.href}>
-                    <a className="flex flex-col px-4 py-3 hover:bg-navy border-l-2 border-transparent hover:border-accent transition-all duration-200 group" onClick={closeAll}>
-                      <span className="font-semibold text-white group-hover:text-accent transition-colors text-sm">{language === 'ar' ? link.labelAr : link.label}</span>
-                      <span className="text-xs text-text-secondary mt-0.5">{link.desc}</span>
-                    </a>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+            {servicesOpen && (
+              <div className="absolute top-full left-0 mt-2 w-[680px] bg-dark-gray border border-border rounded-xl shadow-2xl shadow-black/50 overflow-hidden z-50">
+                <div className="grid grid-cols-3 divide-x divide-border">
 
-          {/* Growth Intelligence Dropdown */}
-          <div ref={growthRef} className="relative">
-            <button
-              onClick={() => { setGrowthOpen(!growthOpen); setSeoTypesOpen(false); setSeoIndustriesOpen(false); setMarketsOpen(false); }}
-              className={`flex items-center gap-1.5 transition-colors duration-300 font-medium text-sm ${
-                isActive('/growth-intelligence') ? 'text-accent' : 'text-text-secondary hover:text-accent'
-              }`}
-            >
-              <TrendingUp className="w-4 h-4" />
-              {language === 'en' ? 'Growth' : 'ذكاء النمو'}
-              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${growthOpen ? 'rotate-180' : ''}`} />
-            </button>
-            {growthOpen && (
-              <div className="absolute top-full left-0 mt-2 w-64 bg-dark-gray border border-border rounded-xl shadow-2xl shadow-black/50 overflow-hidden z-50">
-                <Link href="/growth-intelligence">
-                  <a className="flex flex-col px-4 py-3 bg-navy/50 border-b border-border hover:bg-navy transition-colors" onClick={closeAll}>
-                    <span className="font-bold text-accent text-sm">All Growth Services →</span>
-                    <span className="text-xs text-text-secondary mt-0.5">Full Growth Intelligence overview</span>
-                  </a>
-                </Link>
-                {growthLinks.map((link) => (
-                  <Link key={link.href} href={link.href}>
-                    <a className="flex flex-col px-4 py-3 hover:bg-navy border-l-2 border-transparent hover:border-accent transition-all duration-200 group" onClick={closeAll}>
-                      <span className="font-semibold text-white group-hover:text-accent transition-colors text-sm">{language === 'ar' ? link.labelAr : link.label}</span>
-                      <span className="text-xs text-text-secondary mt-0.5">{link.desc}</span>
-                    </a>
-                  </Link>
-                ))}
+                  {/* SEO Types column */}
+                  <div className="flex flex-col">
+                    <div className="flex items-center gap-2 px-4 py-2.5 bg-navy/60 border-b border-border">
+                      <Search className="w-3.5 h-3.5 text-accent" />
+                      <span className="text-xs font-bold text-accent uppercase tracking-wider">
+                        {language === 'en' ? 'SEO Types' : 'أنواع SEO'}
+                      </span>
+                    </div>
+                    <Link href="/seo">
+                      <a className="flex flex-col px-4 py-2 hover:bg-navy border-b border-border/50 transition-colors" onClick={closeAll}>
+                        <span className="font-bold text-accent text-xs">All SEO Types →</span>
+                      </a>
+                    </Link>
+                    <div className="max-h-[320px] overflow-y-auto">
+                      {seoTypeLinks.map((link) => (
+                        <Link key={link.href} href={link.href}>
+                          <a className="flex flex-col px-4 py-2 hover:bg-navy border-l-2 border-transparent hover:border-accent transition-all duration-200 group" onClick={closeAll}>
+                            <span className="font-semibold text-white group-hover:text-accent transition-colors text-xs">{language === 'ar' ? link.labelAr : link.label}</span>
+                            <span className="text-xs text-text-secondary mt-0.5 leading-tight">{link.desc}</span>
+                          </a>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* SEO Industries column */}
+                  <div className="flex flex-col">
+                    <div className="flex items-center gap-2 px-4 py-2.5 bg-navy/60 border-b border-border">
+                      <Stethoscope className="w-3.5 h-3.5 text-accent" />
+                      <span className="text-xs font-bold text-accent uppercase tracking-wider">
+                        {language === 'en' ? 'SEO Industries' : 'قطاعات SEO'}
+                      </span>
+                    </div>
+                    <Link href="/seo-industries">
+                      <a className="flex flex-col px-4 py-2 hover:bg-navy border-b border-border/50 transition-colors" onClick={closeAll}>
+                        <span className="font-bold text-accent text-xs">All Industries →</span>
+                      </a>
+                    </Link>
+                    {seoIndustryLinks.map((link) => (
+                      <Link key={link.href} href={link.href}>
+                        <a className="flex flex-col px-4 py-2 hover:bg-navy border-l-2 border-transparent hover:border-accent transition-all duration-200 group" onClick={closeAll}>
+                          <span className="font-semibold text-white group-hover:text-accent transition-colors text-xs">{language === 'ar' ? link.labelAr : link.label}</span>
+                          <span className="text-xs text-text-secondary mt-0.5 leading-tight">{link.desc}</span>
+                        </a>
+                      </Link>
+                    ))}
+                  </div>
+
+                  {/* Growth Intelligence column */}
+                  <div className="flex flex-col">
+                    <div className="flex items-center gap-2 px-4 py-2.5 bg-navy/60 border-b border-border">
+                      <TrendingUp className="w-3.5 h-3.5 text-accent" />
+                      <span className="text-xs font-bold text-accent uppercase tracking-wider">
+                        {language === 'en' ? 'Growth' : 'ذكاء النمو'}
+                      </span>
+                    </div>
+                    <Link href="/growth-intelligence">
+                      <a className="flex flex-col px-4 py-2 hover:bg-navy border-b border-border/50 transition-colors" onClick={closeAll}>
+                        <span className="font-bold text-accent text-xs">All Growth Services →</span>
+                      </a>
+                    </Link>
+                    {growthLinks.map((link) => (
+                      <Link key={link.href} href={link.href}>
+                        <a className="flex flex-col px-4 py-2 hover:bg-navy border-l-2 border-transparent hover:border-accent transition-all duration-200 group" onClick={closeAll}>
+                          <span className="font-semibold text-white group-hover:text-accent transition-colors text-xs">{language === 'ar' ? link.labelAr : link.label}</span>
+                          <span className="text-xs text-text-secondary mt-0.5 leading-tight">{link.desc}</span>
+                        </a>
+                      </Link>
+                    ))}
+                  </div>
+
+                </div>
               </div>
             )}
           </div>
@@ -235,7 +228,7 @@ export default function Navigation() {
           {/* Markets Dropdown */}
           <div ref={marketsRef} className="relative">
             <button
-              onClick={() => { setMarketsOpen(!marketsOpen); setSeoTypesOpen(false); setSeoIndustriesOpen(false); setGrowthOpen(false); }}
+              onClick={() => { setMarketsOpen(!marketsOpen); setServicesOpen(false); }}
               className={`flex items-center gap-1.5 transition-colors duration-300 font-medium text-sm ${
                 isActive('/markets') ? 'text-accent' : 'text-text-secondary hover:text-accent'
               }`}
@@ -282,69 +275,75 @@ export default function Navigation() {
         <div className="md:hidden bg-dark-gray border-t border-border animate-fade-in-down">
           <div className="container-premium py-4 space-y-1">
 
-            {/* SEO Types accordion */}
+            {/* Services accordion */}
             <button
-              onClick={() => setMobileExpanded(mobileExpanded === 'seoTypes' ? null : 'seoTypes')}
+              onClick={() => setMobileExpanded(mobileExpanded === 'services' ? null : 'services')}
               className="w-full flex items-center justify-between py-3 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg transition-colors font-medium"
             >
-              <span className="flex items-center gap-2"><Search className="w-4 h-4" />{language === 'en' ? 'SEO Types' : 'أنواع SEO'}</span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpanded === 'seoTypes' ? 'rotate-180' : ''}`} />
+              <span className="flex items-center gap-2"><Layers className="w-4 h-4" />{language === 'en' ? 'Services' : 'الخدمات'}</span>
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpanded === 'services' ? 'rotate-180' : ''}`} />
             </button>
-            {mobileExpanded === 'seoTypes' && (
-              <div className="pl-4 space-y-1 pb-1">
-                <Link href="/seo">
-                  <a className="block py-2 px-3 text-accent font-semibold hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>All SEO Types →</a>
-                </Link>
-                {seoTypeLinks.map(link => (
-                  <Link key={link.href} href={link.href}>
-                    <a className="block py-2 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>
-                      {language === 'ar' ? link.labelAr : link.label}
-                    </a>
-                  </Link>
-                ))}
-              </div>
-            )}
+            {mobileExpanded === 'services' && (
+              <div className="pl-3 space-y-2 pb-2">
 
-            {/* SEO Industries accordion */}
-            <button
-              onClick={() => setMobileExpanded(mobileExpanded === 'seoIndustries' ? null : 'seoIndustries')}
-              className="w-full flex items-center justify-between py-3 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg transition-colors font-medium"
-            >
-              <span className="flex items-center gap-2"><Stethoscope className="w-4 h-4" />{language === 'en' ? 'SEO Industries' : 'قطاعات SEO'}</span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpanded === 'seoIndustries' ? 'rotate-180' : ''}`} />
-            </button>
-            {mobileExpanded === 'seoIndustries' && (
-              <div className="pl-4 space-y-1 pb-1">
-                <Link href="/seo-industries">
-                  <a className="block py-2 px-3 text-accent font-semibold hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>All SEO Industries →</a>
-                </Link>
-                {seoIndustryLinks.map(link => (
-                  <Link key={link.href} href={link.href}>
-                    <a className="block py-2 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>
-                      {language === 'ar' ? link.labelAr : link.label}
-                    </a>
+                {/* SEO Types section */}
+                <div>
+                  <div className="flex items-center gap-1.5 px-3 py-1.5">
+                    <Search className="w-3.5 h-3.5 text-accent" />
+                    <span className="text-xs font-bold text-accent uppercase tracking-wider">{language === 'en' ? 'SEO Types' : 'أنواع SEO'}</span>
+                  </div>
+                  <Link href="/seo">
+                    <a className="block py-1.5 px-3 text-accent font-semibold hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>All SEO Types →</a>
                   </Link>
-                ))}
-              </div>
-            )}
+                  {seoTypeLinks.map(link => (
+                    <Link key={link.href} href={link.href}>
+                      <a className="block py-1.5 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>
+                        {language === 'ar' ? link.labelAr : link.label}
+                      </a>
+                    </Link>
+                  ))}
+                </div>
 
-            {/* Growth Intelligence accordion */}
-            <button
-              onClick={() => setMobileExpanded(mobileExpanded === 'growth' ? null : 'growth')}
-              className="w-full flex items-center justify-between py-3 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg transition-colors font-medium"
-            >
-              <span className="flex items-center gap-2"><TrendingUp className="w-4 h-4" />{language === 'en' ? 'Growth Intelligence' : 'ذكاء النمو'}</span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpanded === 'growth' ? 'rotate-180' : ''}`} />
-            </button>
-            {mobileExpanded === 'growth' && (
-              <div className="pl-6 space-y-1 pb-1">
-                {growthLinks.map(link => (
-                  <Link key={link.href} href={link.href}>
-                    <a className="block py-2 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>
-                      {language === 'ar' ? link.labelAr : link.label}
-                    </a>
+                <div className="border-t border-border/50 mx-3" />
+
+                {/* SEO Industries section */}
+                <div>
+                  <div className="flex items-center gap-1.5 px-3 py-1.5">
+                    <Stethoscope className="w-3.5 h-3.5 text-accent" />
+                    <span className="text-xs font-bold text-accent uppercase tracking-wider">{language === 'en' ? 'SEO Industries' : 'قطاعات SEO'}</span>
+                  </div>
+                  <Link href="/seo-industries">
+                    <a className="block py-1.5 px-3 text-accent font-semibold hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>All Industries →</a>
                   </Link>
-                ))}
+                  {seoIndustryLinks.map(link => (
+                    <Link key={link.href} href={link.href}>
+                      <a className="block py-1.5 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>
+                        {language === 'ar' ? link.labelAr : link.label}
+                      </a>
+                    </Link>
+                  ))}
+                </div>
+
+                <div className="border-t border-border/50 mx-3" />
+
+                {/* Growth section */}
+                <div>
+                  <div className="flex items-center gap-1.5 px-3 py-1.5">
+                    <TrendingUp className="w-3.5 h-3.5 text-accent" />
+                    <span className="text-xs font-bold text-accent uppercase tracking-wider">{language === 'en' ? 'Growth Intelligence' : 'ذكاء النمو'}</span>
+                  </div>
+                  <Link href="/growth-intelligence">
+                    <a className="block py-1.5 px-3 text-accent font-semibold hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>All Growth Services →</a>
+                  </Link>
+                  {growthLinks.map(link => (
+                    <Link key={link.href} href={link.href}>
+                      <a className="block py-1.5 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>
+                        {language === 'ar' ? link.labelAr : link.label}
+                      </a>
+                    </Link>
+                  ))}
+                </div>
+
               </div>
             )}
 
@@ -357,7 +356,7 @@ export default function Navigation() {
               <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpanded === 'markets' ? 'rotate-180' : ''}`} />
             </button>
             {mobileExpanded === 'markets' && (
-              <div className="pl-6 space-y-1 pb-1">
+              <div className="pl-4 space-y-1 pb-1">
                 {marketsLinks.map(link => (
                   <Link key={link.href} href={link.href}>
                     <a className="block py-2 px-3 text-text-secondary hover:text-accent hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>
