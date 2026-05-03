@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 
-const WHATSAPP_NUMBER = '201121664778';
+const WHATSAPP_NUMBER = '201039173978';
 const MESSAGE = encodeURIComponent("Hi Sam, I'd like to book a free APEX Diagnostic for my business.");
 
 export default function WhatsAppButton() {

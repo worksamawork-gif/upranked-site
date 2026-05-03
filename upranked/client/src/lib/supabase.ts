@@ -5,6 +5,18 @@ const SUPABASE_KEY = 'sb_publishable_dtOltW0Hz6plqrVz2e3tjQ_UculjCKG';
 
 export const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
+/** Transform a Supabase Storage URL to use on-the-fly image compression.
+ *  Converts /storage/v1/object/public/ → /storage/v1/render/image/public/
+ *  Non-Supabase URLs are returned unchanged.
+ */
+export function optimizeImageUrl(url: string | undefined | null, width = 800, quality = 80): string {
+  if (!url) return '';
+  if (!url.includes('supabase.co/storage/v1/object/public/')) return url;
+  return url
+    .replace('/storage/v1/object/public/', '/storage/v1/render/image/public/')
+    + `?width=${width}&quality=${quality}&format=webp`;
+}
+
 export type SupabasePost = {
   id: string;
   slug: string;

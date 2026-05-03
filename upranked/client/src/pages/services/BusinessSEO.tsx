@@ -193,7 +193,7 @@ const schema = {
         { '@type': 'Country', name: 'Qatar' },
         { '@type': 'Country', name: 'Bahrain' },
       ],
-      availableLanguage: ['English', 'Arabic'],
+      availableLanguage: [{ '@type': 'Language', name: 'English' }, { '@type': 'Language', name: 'Arabic' }],
       url: 'https://upranked.io/industries/business',
       offers: {
         '@type': 'Offer',
@@ -218,7 +218,7 @@ const schema = {
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
       url: 'https://upranked.io/about',
-      sameAs: ['https://linkedin.com/in/sam-h-6a979311b'],
+      sameAs: ['https://www.linkedin.com/company/115836359/'],
       knowsAbout: ['Business SEO', 'GCC SEO Strategy', 'Commercial Intent SEO', 'Bilingual SEO', 'B2B Lead Generation'],
     },
     {
@@ -648,7 +648,7 @@ export default function BusinessSEO() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a href="https://linkedin.com/in/sam-h-6a979311b" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
+                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                     LinkedIn Profile →
                   </a>
                   <Link href="/about">

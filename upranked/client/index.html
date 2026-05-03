@@ -79,8 +79,13 @@
             "@type": "ContactPoint",
             "contactType": "customer service",
             "email": "Sam@upranked.io",
-            "availableLanguage": ["English", "Arabic"]
-          }
+            "telephone": "+20103917 3978",
+            "availableLanguage": [
+              {"@type": "Language", "name": "English"},
+              {"@type": "Language", "name": "Arabic"}
+            ]
+          },
+          "sameAs": ["https://www.linkedin.com/company/115836359/"]
         },
         {
           "@type": "LocalBusiness",
@@ -99,7 +104,7 @@
             { "@type": "Country", "name": "Kuwait" },
             { "@type": "Country", "name": "Qatar" }
           ],
-          "serviceType": ["SEO Services", "Business Consulting", "Web Design", "Growth Strategy"]
+          "knowsAbout": ["SEO Services", "Business Consulting", "Web Design", "Growth Strategy"]
         }
       ]
     }
@@ -126,10 +131,6 @@
         observer.observe(root, { childList: true, subtree: true });
       });
     </script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
   </body>
 
 </html>

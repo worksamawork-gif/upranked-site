@@ -178,7 +178,7 @@ export default function MedicalSEO() {
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
           url: 'https://upranked.io/about',
-          sameAs: ['https://linkedin.com/in/sam-h-6a979311b'],
+          sameAs: ['https://www.linkedin.com/company/115836359/'],
         },
         {
           '@type': 'BreadcrumbList',
@@ -524,7 +524,7 @@ export default function MedicalSEO() {
                     <CheckCircle className="w-4 h-4 text-accent" />
                     <span>APEX Framework™ Creator</span>
                   </div>
-                  <a href="https://linkedin.com/in/sam-h-6a979311b" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">
+                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">
                     LinkedIn Profile →
                   </a>
                 </div>

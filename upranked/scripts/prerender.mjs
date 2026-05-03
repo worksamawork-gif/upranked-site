@@ -64,6 +64,18 @@ const ROUTES = [
   '/markets/usa/new-york',
   '/markets/eu/germany',
   '/markets/eu/france',
+
+  // Legal
+  '/privacy',
+  '/terms',
+
+  // Blog posts
+  '/blog/seo-uae-2026-what-works',
+  '/blog/medical-seo-dubai-clinics',
+  '/blog/industrial-b2b-seo-gcc-procurement',
+  '/blog/why-gcc-businesses-invisible-google',
+  '/blog/bilingual-seo-arabic-english',
+  '/blog/apex-framework-explained',
 ];
 
 function startServer() {

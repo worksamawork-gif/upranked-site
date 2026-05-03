@@ -70,7 +70,7 @@ const schema = {
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
-      sameAs: ['https://linkedin.com/in/sam-h-6a979311b'],
+      sameAs: ['https://www.linkedin.com/company/115836359/'],
     },
     {
       '@type': 'BreadcrumbList',

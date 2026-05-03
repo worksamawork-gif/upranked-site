@@ -57,6 +57,10 @@ import FranceMarket from "./pages/markets/eu/FranceMarket";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 
+// Legal
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+
 // WhatsApp floating button
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -112,6 +116,10 @@ function PublicRouter() {
       {/* Blog */}
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
+
+      {/* Legal */}
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
 
       {/* Fallback */}
       <Route path="/404" component={NotFound} />

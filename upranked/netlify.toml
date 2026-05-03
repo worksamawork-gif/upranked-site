@@ -1,5 +1,5 @@
 [build]
-  command   = "npx pnpm install && npx pnpm run build"
+  command   = "echo 'serving pre-built dist'"
   publish   = "dist/public"
 
 [build.environment]
@@ -9,3 +9,12 @@
   from   = "/*"
   to     = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

@@ -476,12 +476,12 @@ export default function FAQ() {
                 {/* Quick service links */}
                 <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
-                    { label: 'Medical SEO', href: '/services/medical-seo' },
-                    { label: 'Industrial SEO', href: '/services/industrial-seo' },
-                    { label: 'Business SEO', href: '/services/business-seo' },
-                    { label: 'Business Consultation', href: '/services/business-consultation' },
-                    { label: 'Custom Website', href: '/services/tailored-website' },
-                    { label: 'Business Strategy', href: '/services/business-strategy' },
+                    { label: 'Medical SEO', href: '/industries/medical-seo' },
+                    { label: 'Industrial SEO', href: '/industries/industrial-seo' },
+                    { label: 'Business SEO', href: '/industries/business-seo' },
+                    { label: 'Business Consultation', href: '/growth-intelligence/consultation' },
+                    { label: 'Custom Website', href: '/growth-intelligence/websites' },
+                    { label: 'Business Strategy', href: '/growth-intelligence/strategy' },
                   ].map(link => (
                     <Link key={link.href} href={link.href}>
                       <a className="flex items-center justify-between p-4 bg-dark-gray border border-border hover:border-accent/40 rounded-xl transition-colors group">

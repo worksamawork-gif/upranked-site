@@ -103,8 +103,8 @@ const schema = {
         { '@type': 'City', name: 'London' },
         { '@type': 'City', name: 'New York' },
       ],
-      availableLanguage: ['English', 'Arabic'],
-      sameAs: ['https://linkedin.com/in/sam-h-6a979311b'],
+      availableLanguage: [{ '@type': 'Language', name: 'English' }, { '@type': 'Language', name: 'Arabic' }],
+      sameAs: ['https://www.linkedin.com/company/115836359/'],
     },
     {
       '@type': 'FAQPage',
@@ -122,7 +122,7 @@ const schema = {
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', '@id': 'https://upranked.io/#organization' },
       url: 'https://upranked.io/about',
-      sameAs: ['https://linkedin.com/in/sam-h-6a979311b'],
+      sameAs: ['https://www.linkedin.com/company/115836359/'],
     },
     {
       '@type': 'BreadcrumbList',
@@ -552,7 +552,7 @@ export default function Home() {
                     </a>
                   </Link>
                   <span className="text-border">|</span>
-                  <a href="https://linkedin.com/in/sam-h-6a979311b" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
+                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                     LinkedIn →
                   </a>
                   <span className="text-border">|</span>

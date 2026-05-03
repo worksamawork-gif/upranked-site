@@ -147,7 +147,7 @@ const schema = {
         url: 'https://upranked.io',
       },
       url: 'https://upranked.io/about',
-      sameAs: ['https://linkedin.com/in/sam-h-6a979311b'],
+      sameAs: ['https://www.linkedin.com/company/115836359/'],
       knowsAbout: [
         'Medical SEO', 'Industrial B2B SEO', 'Business SEO', 'GCC SEO Strategy',
         'Bilingual EN/AR SEO', 'APEX Framework', 'GCC Market Positioning', 'Commercial Intent SEO',
@@ -171,7 +171,7 @@ const schema = {
         { '@type': 'Country', name: 'Qatar' },
         { '@type': 'Country', name: 'Bahrain' },
       ],
-      availableLanguage: ['English', 'Arabic'],
+      availableLanguage: [{ '@type': 'Language', name: 'English' }, { '@type': 'Language', name: 'Arabic' }],
     },
     {
       '@type': 'FAQPage',
@@ -413,7 +413,7 @@ export default function About() {
 
               <div className="flex items-center gap-4">
                 <a
-                  href="https://linkedin.com/in/sam-h-6a979311b"
+                  href="https://www.linkedin.com/company/115836359/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-accent text-sm hover:underline"
