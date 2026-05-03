@@ -255,7 +255,7 @@ export default function SEOHub() {
         </div>
       </section>
 
-      {/* Sam bio */}
+      {/* Sama bio */}
       <section className="py-20 px-4 md:px-6 lg:px-8">
         <div className="container-premium">
           <div className="bg-dark-gray border border-border rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">

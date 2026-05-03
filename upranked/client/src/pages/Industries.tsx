@@ -538,7 +538,7 @@ export default function Industries() {
                       <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
                       <p className="text-accent text-sm font-medium mb-4">Founder, upranked.io — GCC SEO Strategist &amp; Creator of the APEX Framework™</p>
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                        Sama Alaa built upranked.io around a specific hypothesis: sector knowledge is the biggest SEO advantage a GCC business can have. After working across healthcare, industrial B2B, and professional services in Dubai, Riyadh, Kuwait City, Manama, London, and New York, Sam developed deep playbooks for each vertical — keyword landscapes, content architectures, and trust-building frameworks specific to each industry. Every industry SEO engagement is led personally by Sam, ensuring that sector depth is applied at every stage.
+                        Sama Alaa built upranked.io around a specific hypothesis: sector knowledge is the biggest SEO advantage a GCC business can have. After working across healthcare, industrial B2B, and professional services in Dubai, Riyadh, Kuwait City, Manama, London, and New York, Sama developed deep playbooks for each vertical — keyword landscapes, content architectures, and trust-building frameworks specific to each industry. Every industry SEO engagement is led personally by Sama, ensuring that sector depth is applied at every stage.
                       </p>
                       <Link href="/about"><a className="text-accent text-sm font-semibold hover:underline">Full credentials →</a></Link>
                     </div>

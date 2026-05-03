@@ -155,7 +155,7 @@ export default function IndustrialSEO() {
         },
         {
           '@type': 'Person',
-          '@id': 'https://upranked.io/about#sam',
+          '@id': 'https://upranked.io/about#Sama',
           name: 'Sama Alaa',
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
@@ -405,7 +405,7 @@ export default function IndustrialSEO() {
                 <p className="text-accent font-semibold text-sm mb-1">Founder, upranked.io · Creator of the APEX Framework™</p>
                 <p className="text-text-secondary text-sm mb-4">GCC Growth Intelligence Specialist · Industrial B2B SEO Expert · Bilingual EN/AR Strategy</p>
                 <p className="text-text-secondary leading-relaxed mb-4">
-                  Every industrial SEO strategy at upranked.io is personally designed and reviewed by Sama Alaa. Sam has built the APEX Framework™ specifically for the complex, long-cycle authority requirements of B2B industrial SEO in the GCC — where a single organic lead can represent a contract worth hundreds of thousands of dirhams. His founder-led approach means your industrial SEO strategy is never delegated to an account manager who doesn't understand procurement search behaviour in Dubai or the technical nuances of your product category.
+                  Every industrial SEO strategy at upranked.io is personally designed and reviewed by Sama Alaa. Sama has built the APEX Framework™ specifically for the complex, long-cycle authority requirements of B2B industrial SEO in the GCC — where a single organic lead can represent a contract worth hundreds of thousands of dirhams. His founder-led approach means your industrial SEO strategy is never delegated to an account manager who doesn't understand procurement search behaviour in Dubai or the technical nuances of your product category.
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm">
                   <div className="flex items-center gap-2 text-text-secondary"><BarChart2 className="w-4 h-4 text-accent" /><span>20+ GCC clients across 7 industrial sectors</span></div>

@@ -280,7 +280,7 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* ── Right: Sam's portrait ── */}
+            {/* ── Right: Sama's portrait ── */}
             <motion.div
               initial={{ opacity: 0, x: 24 }}
               animate={{ opacity: 1, x: 0 }}
@@ -543,7 +543,7 @@ export default function Home() {
                 <h2 className="text-2xl font-bold text-white mb-1">Sama Alaa</h2>
                 <p className="text-accent text-sm mb-4">Founder &amp; Chief Growth Strategist, upranked.io · Dubai, UAE</p>
                 <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                  Sama Alaa founded upranked.io on one conviction: the GCC's most valuable businesses deserve a growth partner who speaks their market, their language, and delivers results tied to revenue — not just traffic. With 20+ GCC client engagements across Medical, Industrial, and Business sectors, Sam personally leads every upranked.io engagement. No junior handoffs. No Western playbooks. Just sector-specific, bilingual, revenue-first SEO strategy built for Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
+                  Sama Alaa founded upranked.io on one conviction: the GCC's most valuable businesses deserve a growth partner who speaks their market, their language, and delivers results tied to revenue — not just traffic. With 20+ GCC client engagements across Medical, Industrial, and Business sectors, Sama personally leads every upranked.io engagement. No junior handoffs. No Western playbooks. Just sector-specific, bilingual, revenue-first SEO strategy built for Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link href="/about">

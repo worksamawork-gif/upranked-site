@@ -173,7 +173,7 @@ export default function MedicalSEO() {
         },
         {
           '@type': 'Person',
-          '@id': 'https://upranked.io/about#sam',
+          '@id': 'https://upranked.io/about#Sama',
           name: 'Sama Alaa',
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
@@ -513,7 +513,7 @@ export default function MedicalSEO() {
                 <p className="text-accent font-semibold text-sm mb-1">Founder, upranked.io · Creator of the APEX Framework™</p>
                 <p className="text-text-secondary text-sm mb-4">GCC Growth Intelligence Specialist · Medical SEO Expert · Bilingual EN/AR Strategy</p>
                 <p className="text-text-secondary leading-relaxed mb-4">
-                  All medical SEO strategies on this page have been designed and personally reviewed by Sama Alaa. Every engagement at upranked.io is founder-led — meaning the strategy, content architecture, and execution direction for your clinic or practice comes directly from Sam, not delegated to a junior account manager. Sam has worked with medical practices across Dubai, Abu Dhabi, and the wider GCC, building the APEX Framework™ specifically for the complex authority requirements of healthcare SEO in the UAE.
+                  All medical SEO strategies on this page have been designed and personally reviewed by Sama Alaa. Every engagement at upranked.io is founder-led — meaning the strategy, content architecture, and execution direction for your clinic or practice comes directly from Sama, not delegated to a junior account manager. Sama has worked with medical practices across Dubai, Abu Dhabi, and the wider GCC, building the APEX Framework™ specifically for the complex authority requirements of healthcare SEO in the UAE.
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm">
                   <div className="flex items-center gap-2 text-text-secondary">

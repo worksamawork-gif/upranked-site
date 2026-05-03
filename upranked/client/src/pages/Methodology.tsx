@@ -71,7 +71,7 @@ const schema = {
           name: 'What makes Sama Alaa\'s SEO methodology different from other agencies?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Three differences: (1) GCC-first market intelligence built into every phase, (2) positioning-before-execution sequencing that most agencies skip, and (3) founder-executed delivery — Sam applies APEX personally on every engagement, not delegated to junior staff.',
+            text: 'Three differences: (1) GCC-first market intelligence built into every phase, (2) positioning-before-execution sequencing that most agencies skip, and (3) founder-executed delivery — Sama applies APEX personally on every engagement, not delegated to junior staff.',
           },
         },
       ],
@@ -211,7 +211,7 @@ const faqs = [
   },
   {
     q: "What makes Sama Alaa's SEO methodology different from other agencies?",
-    a: 'Three differences: (1) GCC-first market intelligence built into every phase, (2) positioning-before-execution sequencing that most agencies skip, and (3) founder-executed delivery — Sam applies APEX personally on every engagement, not delegated to junior staff.',
+    a: 'Three differences: (1) GCC-first market intelligence built into every phase, (2) positioning-before-execution sequencing that most agencies skip, and (3) founder-executed delivery — Sama applies APEX personally on every engagement, not delegated to junior staff.',
   },
 ];
 
@@ -534,7 +534,7 @@ export default function Methodology() {
                         Founder, upranked.io — GCC SEO Strategist &amp; Creator of the APEX Framework™
                       </p>
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                        Sama Alaa developed the APEX Framework™ after observing a critical gap in the GCC market: agencies applied generic Western SEO templates to complex, trust-sensitive industries — and delivered predictably mediocre results. APEX was engineered from first principles for the GCC's unique search landscape: bilingual Arabic–English search behavior, relationship-first business culture, and competitive sectors where trust is the deciding factor. Sam personally applies the framework on every engagement across Dubai, Riyadh, Kuwait City, Manama, and global markets including London and New York.
+                        Sama Alaa developed the APEX Framework™ after observing a critical gap in the GCC market: agencies applied generic Western SEO templates to complex, trust-sensitive industries — and delivered predictably mediocre results. APEX was engineered from first principles for the GCC's unique search landscape: bilingual Arabic–English search behavior, relationship-first business culture, and competitive sectors where trust is the deciding factor. Sama personally applies the framework on every engagement across Dubai, Riyadh, Kuwait City, Manama, and global markets including London and New York.
                       </p>
                       <Link href="/about">
                         <a className="text-accent text-sm font-semibold hover:underline">Full profile &amp; credentials →</a>

@@ -149,7 +149,7 @@ const tocItems = [
   { id: 'benefits', label: 'What You Get' },
   { id: 'apex', label: 'The APEX Process' },
   { id: 'results', label: 'Results & Stats' },
-  { id: 'about-sam', label: 'About Sama Alaa' },
+  { id: 'about-Sama', label: 'About Sama Alaa' },
   { id: 'why-upranked', label: 'Why upranked.io' },
   { id: 'service-areas', label: 'Service Areas' },
   { id: 'faq', label: 'FAQ' },
@@ -616,7 +616,7 @@ export default function BusinessSEO() {
       </section>
 
       {/* ── E-E-A-T BIO BOX ── */}
-      <section id="about-sam" className="section-padding bg-navy">
+      <section id="about-Sama" className="section-padding bg-navy">
         <div className="container-premium max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -640,7 +640,7 @@ export default function BusinessSEO() {
                 <h2 className="text-2xl font-bold text-white mb-1">Sama Alaa</h2>
                 <p className="text-accent text-sm mb-4">Founder &amp; Chief Growth Strategist, upranked.io · Dubai, UAE</p>
                 <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                  Sama Alaa is a specialist business SEO strategist with 20+ GCC client engagements across professional services, B2B technology, financial services, and e-commerce in Dubai, Abu Dhabi, Riyadh, Doha, and Kuwait City. As the creator of the APEX Framework™ — upranked.io's proprietary Audit → Position → Execute → Expand methodology — Sam brings sector-specific GCC market knowledge that generic agencies built on Western playbooks cannot replicate.
+                  Sama Alaa is a specialist business SEO strategist with 20+ GCC client engagements across professional services, B2B technology, financial services, and e-commerce in Dubai, Abu Dhabi, Riyadh, Doha, and Kuwait City. As the creator of the APEX Framework™ — upranked.io's proprietary Audit → Position → Execute → Expand methodology — Sama brings sector-specific GCC market knowledge that generic agencies built on Western playbooks cannot replicate.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {['Business SEO', 'Commercial Intent Strategy', 'GCC Market Positioning', 'Bilingual EN/AR SEO', 'B2B Lead Generation', 'Revenue Attribution'].map(tag => (
@@ -679,7 +679,7 @@ export default function BusinessSEO() {
               { icon: BarChart3, title: 'Revenue Reporting, Not Vanity Metrics', body: 'Every monthly report links organic activity to leads, proposals, and revenue. You can compare your SEO ROI against paid search or any other channel with full attribution transparency.' },
               { icon: Globe, title: 'True Bilingual SEO', body: 'Native Arabic keyword research, independent Arabic content strategy, and technical RTL configuration. Arabic SEO as a fully parallel channel — not translated English content repackaged.' },
               { icon: Shield, title: 'APEX Framework™ Methodology', body: 'A proprietary 4-phase framework built from 20+ GCC client engagements. Not a generic agency checklist — a structured, commercially focused system that adapts to GCC market conditions.' },
-              { icon: Users, title: 'Direct Access to Sama Alaa', body: 'You work directly with the founder, not handed to a junior account manager. Sam owns every strategy, every review, every recommendation — full accountability from kickoff to results.' },
+              { icon: Users, title: 'Direct Access to Sama Alaa', body: 'You work directly with the founder, not handed to a junior account manager. Sama owns every strategy, every review, every recommendation — full accountability from kickoff to results.' },
               { icon: Award, title: 'Sector-Specific Knowledge', body: 'Business SEO for Dubai and GCC is not one-size-fits-all. We bring deep knowledge of how buyers search in professional services, B2B tech, financial services, real estate, and logistics across the region.' },
             ].map((item, i) => (
               <motion.div

@@ -525,7 +525,7 @@ export default function GrowthIntelligence() {
                       <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
                       <p className="text-accent text-sm font-medium mb-4">Founder, upranked.io — GCC Growth Strategist &amp; Creator of the APEX Framework™</p>
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                        Sama Alaa leads every Growth Intelligence engagement personally. The four services — Business Consultation, Custom Tools, Tailored Website, and Business Strategy — are not isolated products sold by different teams. They are integrated levers in a single growth system, applied by Sam directly across Dubai, Riyadh, Kuwait City, Manama, London, and New York. There are no account managers, no handoffs, and no junior consultants involved in your strategy.
+                        Sama Alaa leads every Growth Intelligence engagement personally. The four services — Business Consultation, Custom Tools, Tailored Website, and Business Strategy — are not isolated products sold by different teams. They are integrated levers in a single growth system, applied by Sama directly across Dubai, Riyadh, Kuwait City, Manama, London, and New York. There are no account managers, no handoffs, and no junior consultants involved in your strategy.
                       </p>
                       <Link href="/about"><a className="text-accent text-sm font-semibold hover:underline">Full credentials &amp; profile →</a></Link>
                     </div>

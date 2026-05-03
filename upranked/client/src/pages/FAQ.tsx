@@ -19,7 +19,7 @@ const faqCategories = [
       },
       {
         q: 'Who is Sama Alaa?',
-        a: 'Sama Alaa is the founder of upranked.io and creator of the APEX Framework™. He personally leads all client strategy engagements with deep expertise in GCC market SEO, business positioning, and digital growth intelligence. Sam works directly with clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.',
+        a: 'Sama Alaa is the founder of upranked.io and creator of the APEX Framework™. He personally leads all client strategy engagements with deep expertise in GCC market SEO, business positioning, and digital growth intelligence. Sama works directly with clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.',
       },
       {
         q: 'What is the APEX Framework™?',
@@ -71,7 +71,7 @@ const faqCategories = [
     faqs: [
       {
         q: 'What is a business consultation with Sama Alaa?',
-        a: 'A 1-on-1 strategic session where Sam applies the APEX Framework™ to your specific situation. You receive a full audit of your digital presence, competitor analysis, and a prioritized 90-day growth roadmap — delivered directly by the founder. Available for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.',
+        a: 'A 1-on-1 strategic session where Sama applies the APEX Framework™ to your specific situation. You receive a full audit of your digital presence, competitor analysis, and a prioritized 90-day growth roadmap — delivered directly by the founder. Available for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.',
       },
       {
         q: 'What are custom growth tools?',
@@ -131,14 +131,14 @@ const faqCategories = [
     faqs: [
       {
         q: 'How do I get started with upranked.io?',
-        a: 'Book a free 30-minute strategy call via the contact page, WhatsApp (Contact Us), or email (Sam@upranked.io). No commitment required. Sam will review your current position and give you an honest assessment of the opportunity — and whether upranked.io is the right fit for your business.',
+        a: 'Book a free 30-minute strategy call via the contact page, WhatsApp (Contact Us), or email (Sam@upranked.io). No commitment required. Sama will review your current position and give you an honest assessment of the opportunity — and whether upranked.io is the right fit for your business.',
       },
       {
         q: 'What is the minimum engagement with upranked.io?',
         a: 'A single strategy consultation is available as a starting point with zero obligation. For ongoing SEO and growth engagements, we structure retainers around your specific goals — typically starting with a 90-day APEX Audit and Position phase. We don\'t have a fixed minimum spend, but we only take on engagements where we\'re confident we can deliver meaningful ROI.',
       },
       {
-        q: 'Will I work directly with Sam or with a team?',
+        q: 'Will I work directly with Sama or with a team?',
         a: 'Sama Alaa leads every engagement — strategy, direction, and client communication always flows directly through the founder. For execution work (content, technical SEO, development), we have a specialist team. You will never be handed off to an account manager who wasn\'t in the original strategy conversation.',
       },
       {
@@ -147,11 +147,11 @@ const faqCategories = [
       },
       {
         q: 'How do you report on SEO performance?',
-        a: 'Monthly reporting tied to leads, revenue, and ROI — not just rankings and traffic. We track what matters: qualified leads generated, keyword position movement on commercial-intent queries, and measurable business outcomes. Reports are delivered directly by Sam with a clear interpretation of what the data means for your growth strategy.',
+        a: 'Monthly reporting tied to leads, revenue, and ROI — not just rankings and traffic. We track what matters: qualified leads generated, keyword position movement on commercial-intent queries, and measurable business outcomes. Reports are delivered directly by Sama with a clear interpretation of what the data means for your growth strategy.',
       },
       {
         q: 'What happens if I\'m not seeing results?',
-        a: 'Transparency is a core principle at upranked.io. If results are not meeting projections, Sam will tell you directly — including what is causing the lag and what adjustments are needed. We do not hide behind vanity metrics or ambiguous reports. Every engagement comes with clear success criteria agreed upfront.',
+        a: 'Transparency is a core principle at upranked.io. If results are not meeting projections, Sama will tell you directly — including what is causing the lag and what adjustments are needed. We do not hide behind vanity metrics or ambiguous reports. Every engagement comes with clear success criteria agreed upfront.',
       },
     ],
   },
@@ -421,7 +421,7 @@ export default function FAQ() {
                       <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
                       <p className="text-accent text-sm font-medium mb-4">Founder, upranked.io — GCC SEO Strategist &amp; Creator of the APEX Framework™</p>
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                        Sama Alaa founded upranked.io to bring founder-level SEO strategy to high-value businesses in the GCC and beyond. Every answer in this FAQ reflects Sam's direct experience working with healthcare, industrial, and B2B clients across Dubai, Riyadh, Kuwait City, Manama, London, and New York. When you book a strategy call, you speak directly with Sam — not an intake team.
+                        Sama Alaa founded upranked.io to bring founder-level SEO strategy to high-value businesses in the GCC and beyond. Every answer in this FAQ reflects Sama's direct experience working with healthcare, industrial, and B2B clients across Dubai, Riyadh, Kuwait City, Manama, London, and New York. When you book a strategy call, you speak directly with Sama — not an intake team.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {['GCC SEO', 'APEX Framework™', 'Medical SEO', 'Industrial SEO', 'Bilingual EN/AR', 'Business Strategy'].map(tag => (

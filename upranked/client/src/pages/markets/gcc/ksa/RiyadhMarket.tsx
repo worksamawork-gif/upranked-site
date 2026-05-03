@@ -110,7 +110,7 @@ export default function RiyadhMarket() {
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Your KSA SEO Strategist</p>
               <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across KSA, UAE, Kuwait, and Bahrain markets. All KSA engagements are managed directly by Sam with Arabic-native SEO specialists — combining strategic oversight with native Arabic market knowledge for Riyadh, Jeddah, and across Saudi Arabia.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across KSA, UAE, Kuwait, and Bahrain markets. All KSA engagements are managed directly by Sama with Arabic-native SEO specialists — combining strategic oversight with native Arabic market knowledge for Riyadh, Jeddah, and across Saudi Arabia.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

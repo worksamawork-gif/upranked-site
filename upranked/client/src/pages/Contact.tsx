@@ -25,7 +25,7 @@ const schema = {
           name: 'How do I book a strategy call with Sama Alaa?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sam reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
+            text: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
           },
         },
         {
@@ -41,7 +41,7 @@ const schema = {
           name: 'How long does the strategy call take?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'The initial call is 30 minutes. If there is strong alignment and a clear opportunity, Sam may invite you to an extended 60-minute APEX Diagnostic session at no cost. All scheduling happens over WhatsApp or email — no booking software required.',
+            text: 'The initial call is 30 minutes. If there is strong alignment and a clear opportunity, Sama may invite you to an extended 60-minute APEX Diagnostic session at no cost. All scheduling happens over WhatsApp or email — no booking software required.',
           },
         },
         {
@@ -57,15 +57,15 @@ const schema = {
           name: 'What should I prepare before my SEO strategy call?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Nothing formal is required. It helps to have a rough sense of your current website performance, your top 3 competitors, and the growth outcome you are chasing. Sam will guide the conversation — you do not need to prepare a brief or presentation.',
+            text: 'Nothing formal is required. It helps to have a rough sense of your current website performance, your top 3 competitors, and the growth outcome you are chasing. Sama will guide the conversation — you do not need to prepare a brief or presentation.',
           },
         },
         {
           '@type': 'Question',
-          name: 'How quickly will Sam respond to my inquiry near me in the GCC?',
+          name: 'How quickly will Sama respond to my inquiry near me in the GCC?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'All inquiries are reviewed personally by Sam within 24 hours. Businesses in Dubai, Riyadh, Kuwait, and Bahrain receive priority responses given the time zone alignment. London and New York inquiries are also responded to within the same 24-hour window.',
+            text: 'All inquiries are reviewed personally by Sama within 24 hours. Businesses in Dubai, Riyadh, Kuwait, and Bahrain receive priority responses given the time zone alignment. London and New York inquiries are also responded to within the same 24-hour window.',
           },
         },
       ],
@@ -106,7 +106,7 @@ const serviceAreas = [
 ];
 
 const expectItems = [
-  'A real conversation with Sam — not an intake form review with a junior team',
+  'A real conversation with Sama — not an intake form review with a junior team',
   'Honest assessment of your current digital position in the GCC or global market',
   'Specific opportunities identified based on your industry and target market',
   'Clear next steps whether you engage with us or not — no high-pressure close',
@@ -115,7 +115,7 @@ const expectItems = [
 const faqs = [
   {
     q: 'How do I book a strategy call with Sama Alaa?',
-    a: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sam reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
+    a: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
   },
   {
     q: 'Is the initial strategy consultation really free?',
@@ -123,7 +123,7 @@ const faqs = [
   },
   {
     q: 'How long does the strategy call take?',
-    a: 'The initial call is 30 minutes. If there is strong alignment and a clear opportunity, Sam may invite you to an extended 60-minute APEX Diagnostic session at no cost. All scheduling happens over WhatsApp or email — no booking software required.',
+    a: 'The initial call is 30 minutes. If there is strong alignment and a clear opportunity, Sama may invite you to an extended 60-minute APEX Diagnostic session at no cost. All scheduling happens over WhatsApp or email — no booking software required.',
   },
   {
     q: 'Can I book a strategy call if I am not based in Dubai?',
@@ -131,11 +131,11 @@ const faqs = [
   },
   {
     q: 'What should I prepare before my SEO strategy call?',
-    a: 'Nothing formal is required. It helps to have a rough sense of your current website performance, your top 3 competitors, and the growth outcome you are chasing. Sam will guide the conversation — you do not need to prepare a brief or presentation.',
+    a: 'Nothing formal is required. It helps to have a rough sense of your current website performance, your top 3 competitors, and the growth outcome you are chasing. Sama will guide the conversation — you do not need to prepare a brief or presentation.',
   },
   {
-    q: 'How quickly will Sam respond to my inquiry near me in the GCC?',
-    a: 'All inquiries are reviewed personally by Sam within 24 hours. Businesses in Dubai, Riyadh, Kuwait, and Bahrain receive priority responses given the time zone alignment. London and New York inquiries are also responded to within the same 24-hour window.',
+    q: 'How quickly will Sama respond to my inquiry near me in the GCC?',
+    a: 'All inquiries are reviewed personally by Sama within 24 hours. Businesses in Dubai, Riyadh, Kuwait, and Bahrain receive priority responses given the time zone alignment. London and New York inquiries are also responded to within the same 24-hour window.',
   },
 ];
 
@@ -300,7 +300,7 @@ export default function Contact() {
 
               <div className="mt-4 p-4 bg-navy border border-accent/30 rounded-xl text-xs">
                 <p className="text-accent font-semibold mb-1">Response Time</p>
-                <p className="text-text-secondary">All inquiries reviewed personally by Sam within 24 hours. Priority for GCC-based businesses.</p>
+                <p className="text-text-secondary">All inquiries reviewed personally by Sama within 24 hours. Priority for GCC-based businesses.</p>
               </div>
             </div>
           </aside>
@@ -318,7 +318,7 @@ export default function Contact() {
               >
                 <h2 className="text-3xl font-bold text-white mb-4">What to Expect</h2>
                 <p className="text-text-secondary mb-8 leading-relaxed">
-                  The free APEX Diagnostic is not a sales call disguised as a consultation. It is a structured 30-minute session where Sam reviews your actual situation — your market, your competitors, your current digital position — and gives you a frank, expert perspective on what is possible. The goal is to leave you with clarity, not a quote.
+                  The free APEX Diagnostic is not a sales call disguised as a consultation. It is a structured 30-minute session where Sama reviews your actual situation — your market, your competitors, your current digital position — and gives you a frank, expert perspective on what is possible. The goal is to leave you with clarity, not a quote.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
@@ -386,7 +386,7 @@ export default function Contact() {
               >
                 <h2 className="text-3xl font-bold text-white mb-4">Book Your Free Strategy Call</h2>
                 <p className="text-text-secondary mb-8 leading-relaxed">
-                  Fill in the form below or contact Sam directly via WhatsApp or email. All messages are read and responded to personally within 24 hours — whether you are in Dubai, London, New York, or anywhere across the GCC.
+                  Fill in the form below or contact Sama directly via WhatsApp or email. All messages are read and responded to personally within 24 hours — whether you are in Dubai, London, New York, or anywhere across the GCC.
                 </p>
 
                 {/* Direct contact options */}
@@ -411,7 +411,7 @@ export default function Contact() {
                       <Mail className="w-4 h-4 text-accent" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold text-sm group-hover:text-accent transition-colors">Email Sam</p>
+                      <p className="text-white font-semibold text-sm group-hover:text-accent transition-colors">Email Sama</p>
                       <p className="text-text-secondary text-xs">Sam@upranked.io</p>
                     </div>
                   </a>
@@ -429,14 +429,14 @@ export default function Contact() {
                     </div>
                     <h3 className="text-3xl font-bold text-white mb-4">Message Received</h3>
                     <p className="text-text-secondary leading-relaxed max-w-md mx-auto">
-                      Thank you for reaching out. Sam will review your details personally and be in touch within 24 hours to schedule your strategy call.
+                      Thank you for reaching out. Sama will review your details personally and be in touch within 24 hours to schedule your strategy call.
                     </p>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="card-premium space-y-6">
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-2">Send a Message</h3>
-                      <p className="text-text-secondary text-sm">Fill in the form and Sam will follow up within 24 hours.</p>
+                      <p className="text-text-secondary text-sm">Fill in the form and Sama will follow up within 24 hours.</p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -643,7 +643,7 @@ export default function Contact() {
                 href="mailto:Sam@upranked.io"
                 className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2"
               >
-                Email Sam
+                Email Sama
               </a>
             </div>
             {/* NAP #3 */}

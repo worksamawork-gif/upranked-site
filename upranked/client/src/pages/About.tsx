@@ -65,11 +65,11 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 const faqs = [
   {
     q: 'Who is Sama Alaa and what makes him a GCC SEO expert?',
-    a: 'Sama Alaa is the founder and Chief Growth Strategist at upranked.io — a premium Growth Intelligence Lab serving high-value businesses across the GCC. Sam specialises exclusively in the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain markets, bringing deep understanding of GCC search behaviour, Arabic SEO dynamics, and the commercial requirements of trust-sensitive industries like healthcare and industrial B2B. He created the APEX Framework™ — upranked.io\'s proprietary 4-phase SEO methodology — from 20+ direct GCC client engagements.',
+    a: 'Sama Alaa is the founder and Chief Growth Strategist at upranked.io — a premium Growth Intelligence Lab serving high-value businesses across the GCC. Sama specialises exclusively in the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain markets, bringing deep understanding of GCC search behaviour, Arabic SEO dynamics, and the commercial requirements of trust-sensitive industries like healthcare and industrial B2B. He created the APEX Framework™ — upranked.io\'s proprietary 4-phase SEO methodology — from 20+ direct GCC client engagements.',
   },
   {
     q: 'What industries does Sama Alaa specialise in?',
-    a: 'Sam\'s three core specialisations are Medical SEO (clinics, hospitals, specialist practices across Dubai, Abu Dhabi, and Riyadh), Industrial B2B SEO (manufacturers, suppliers, and trading companies across UAE free zones and Saudi industrial cities), and Business SEO (professional services, financial firms, and B2B companies across the GCC). These sectors require depth of expertise — not just traffic tactics — because buyers are sophisticated, purchase decisions are high-value, and Google\'s E-E-A-T signals heavily influence rankings.',
+    a: 'Sama\'s three core specialisations are Medical SEO (clinics, hospitals, specialist practices across Dubai, Abu Dhabi, and Riyadh), Industrial B2B SEO (manufacturers, suppliers, and trading companies across UAE free zones and Saudi industrial cities), and Business SEO (professional services, financial firms, and B2B companies across the GCC). These sectors require depth of expertise — not just traffic tactics — because buyers are sophisticated, purchase decisions are high-value, and Google\'s E-E-A-T signals heavily influence rankings.',
   },
   {
     q: 'What is the APEX Framework™ created by Sama Alaa?',
@@ -77,20 +77,20 @@ const faqs = [
   },
   {
     q: 'Does Sama Alaa offer bilingual English and Arabic SEO?',
-    a: 'Yes. Bilingual SEO is a core pillar of every upranked.io engagement. Sam conducts independent Arabic keyword research — not translated English keywords — produces or reviews native-quality Arabic content, implements hreflang tagging, and configures RTL technical requirements. Arabic search in the UAE and Saudi Arabia represents a distinct and often underserved channel. Businesses that skip Arabic SEO leave 35–50% of GCC search volume and a large Arabic-speaking buyer segment untouched.',
+    a: 'Yes. Bilingual SEO is a core pillar of every upranked.io engagement. Sama conducts independent Arabic keyword research — not translated English keywords — produces or reviews native-quality Arabic content, implements hreflang tagging, and configures RTL technical requirements. Arabic search in the UAE and Saudi Arabia represents a distinct and often underserved channel. Businesses that skip Arabic SEO leave 35–50% of GCC search volume and a large Arabic-speaking buyer segment untouched.',
   },
   {
     q: 'Can I find an SEO expert near me in Dubai — is Sama Alaa based in Dubai?',
-    a: 'Yes. upranked.io is based in Dubai, UAE, and serves clients across the GCC — Dubai, Abu Dhabi, Sharjah, Ajman, Riyadh, Jeddah, NEOM, Doha, Kuwait City, and Manama. If you\'re searching for an SEO expert near me in Dubai, an SEO consultant near me in the UAE, or a GCC growth strategist, you can reach Sam directly via our contact page or email Sam@upranked.io. All strategy calls are available remotely and in person across the region.',
+    a: 'Yes. upranked.io is based in Dubai, UAE, and serves clients across the GCC — Dubai, Abu Dhabi, Sharjah, Ajman, Riyadh, Jeddah, NEOM, Doha, Kuwait City, and Manama. If you\'re searching for an SEO expert near me in Dubai, an SEO consultant near me in the UAE, or a GCC growth strategist, you can reach Sama directly via our contact page or email Sam@upranked.io. All strategy calls are available remotely and in person across the region.',
   },
   {
     q: 'How does Sama Alaa differ from a typical SEO agency in Dubai?',
-    a: 'Three distinctions: (1) Founder-led delivery — Sam is personally involved in every engagement, not handed off to a junior account manager after the sales call. (2) GCC-first, globally capable — upranked.io is built on deep GCC market intelligence (UAE, KSA, Kuwait, Qatar, Bahrain) and also serves expansion markets in London and New York, applying the same rigorous methodology wherever your clients search. (3) Revenue-first reporting — every engagement is measured in leads, pipeline, and revenue attributed to organic search, not just rankings and sessions.',
+    a: 'Three distinctions: (1) Founder-led delivery — Sama is personally involved in every engagement, not handed off to a junior account manager after the sales call. (2) GCC-first, globally capable — upranked.io is built on deep GCC market intelligence (UAE, KSA, Kuwait, Qatar, Bahrain) and also serves expansion markets in London and New York, applying the same rigorous methodology wherever your clients search. (3) Revenue-first reporting — every engagement is measured in leads, pipeline, and revenue attributed to organic search, not just rankings and sessions.',
   },
 ];
 
 const tocItems = [
-  { id: 'about-sam', label: 'About Sama Alaa' },
+  { id: 'about-Sama', label: 'About Sama Alaa' },
   { id: 'expertise', label: 'Areas of Expertise' },
   { id: 'apex', label: 'The APEX Framework™' },
   { id: 'philosophy', label: 'GCC Philosophy' },
@@ -298,8 +298,8 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── ABOUT SAM — E-E-A-T Hub ── */}
-      <section id="about-sam" className="section-padding bg-navy">
+      {/* ── ABOUT Sama — E-E-A-T Hub ── */}
+      <section id="about-Sama" className="section-padding bg-navy">
         <div className="container-premium">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
 
@@ -350,16 +350,16 @@ export default function About() {
 
               <div className="space-y-4 text-text-secondary leading-relaxed text-sm mb-6">
                 <p>
-                  Sama Alaa is the founder and Chief Growth Strategist at upranked.io — the GCC's premium Growth Intelligence Lab, built exclusively for high-value businesses in Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Kuwait City, and Manama. With 20+ direct client engagements across the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain, Sam brings sector-specific GCC market knowledge that no generic global agency can replicate.
+                  Sama Alaa is the founder and Chief Growth Strategist at upranked.io — the GCC's premium Growth Intelligence Lab, built exclusively for high-value businesses in Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Kuwait City, and Manama. With 20+ direct client engagements across the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain, Sama brings sector-specific GCC market knowledge that no generic global agency can replicate.
                 </p>
                 <p>
-                  Sam's three core specialisations — Medical SEO, Industrial B2B SEO, and Business SEO — share one common characteristic: they are high-trust, high-stakes sectors where buyers conduct rigorous online research before committing. This is where Sam's expertise in E-E-A-T (Experience, Expertise, Authority, Trust) content strategy, bilingual EN/AR SEO, and commercial intent optimisation creates the most measurable business impact.
+                  Sama's three core specialisations — Medical SEO, Industrial B2B SEO, and Business SEO — share one common characteristic: they are high-trust, high-stakes sectors where buyers conduct rigorous online research before committing. This is where Sama's expertise in E-E-A-T (Experience, Expertise, Authority, Trust) content strategy, bilingual EN/AR SEO, and commercial intent optimisation creates the most measurable business impact.
                 </p>
                 <p>
-                  As the creator of the APEX Framework™ — upranked.io's proprietary Audit → Position → Execute → Expand methodology — Sam designed a system that treats search engine optimisation as a revenue function, not a marketing cost. Every engagement is measured in leads generated, pipeline created, and contracts closed — tracked against organic search with full attribution.
+                  As the creator of the APEX Framework™ — upranked.io's proprietary Audit → Position → Execute → Expand methodology — Sama designed a system that treats search engine optimisation as a revenue function, not a marketing cost. Every engagement is measured in leads generated, pipeline created, and contracts closed — tracked against organic search with full attribution.
                 </p>
                 <p>
-                  Sam maintains direct involvement in every client engagement. When you work with upranked.io, you work with the founder — not handed to a junior team after the first call. This model is deliberate: GCC markets are complex, Arabic-speaking buyers have distinct search patterns, and sector expertise matters enormously in healthcare, industrial, and professional services SEO.
+                  Sama maintains direct involvement in every client engagement. When you work with upranked.io, you work with the founder — not handed to a junior team after the first call. This model is deliberate: GCC markets are complex, Arabic-speaking buyers have distinct search patterns, and sector expertise matters enormously in healthcare, industrial, and professional services SEO.
                 </p>
               </div>
 
@@ -484,7 +484,7 @@ export default function About() {
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              The <span className="text-accent">APEX Framework™</span> — Sam's Proprietary Methodology
+              The <span className="text-accent">APEX Framework™</span> — Sama's Proprietary Methodology
             </h2>
             <p className="text-text-secondary max-w-2xl mx-auto">
               Created by Sama Alaa from 20+ GCC client engagements. A structured, commercially-driven 4-phase system built for the UAE, Saudi Arabia, and GCC markets — not adapted from a Western template.
@@ -570,7 +570,7 @@ export default function About() {
         <div className="container-premium max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Sam's <span className="text-accent">GCC SEO Philosophy</span>
+              Sama's <span className="text-accent">GCC SEO Philosophy</span>
             </h2>
 
             <div className="space-y-6">
@@ -581,11 +581,11 @@ export default function About() {
                 },
                 {
                   title: 'Revenue Is the Only Metric That Matters',
-                  body: 'Sam measures every engagement against one output: business revenue attributed to organic search. Not domain authority scores, not session counts, not ranking position screenshots. If the organic channel isn\'t generating qualified leads and closing pipeline, the strategy is wrong — regardless of what the rankings show.',
+                  body: 'Sama measures every engagement against one output: business revenue attributed to organic search. Not domain authority scores, not session counts, not ranking position screenshots. If the organic channel isn\'t generating qualified leads and closing pipeline, the strategy is wrong — regardless of what the rankings show.',
                 },
                 {
                   title: 'Sector Depth Over Portfolio Width',
-                  body: 'upranked.io serves three verticals — Medical, Industrial, and Business — because deep sector knowledge creates better SEO outcomes. Healthcare buyers and procurement managers search differently, use different terminology, and have different trust signals than consumer buyers. Generalist agencies miss these nuances. Sam does not.',
+                  body: 'upranked.io serves three verticals — Medical, Industrial, and Business — because deep sector knowledge creates better SEO outcomes. Healthcare buyers and procurement managers search differently, use different terminology, and have different trust signals than consumer buyers. Generalist agencies miss these nuances. Sama does not.',
                 },
                 {
                   title: 'Arabic SEO Is Not Translated English SEO',
@@ -739,7 +739,7 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               About Sama Alaa — <span className="text-accent">FAQ</span>
             </h2>
-            <p className="text-text-secondary">Common questions about Sam's background, expertise, and the APEX Framework™.</p>
+            <p className="text-text-secondary">Common questions about Sama's background, expertise, and the APEX Framework™.</p>
           </motion.div>
           <div className="space-y-3">
             {faqs.map((f, i) => <FAQItem key={f.q} q={f.q} a={f.a} index={i} />)}

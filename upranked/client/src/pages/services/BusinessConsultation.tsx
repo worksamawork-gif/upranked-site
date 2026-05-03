@@ -38,11 +38,11 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 const faqs = [
   { q: 'What is business consultation with Sama Alaa and who is it for?', a: 'Business consultation with Sama Alaa is a direct, founder-led strategic advisory service for business owners, marketing leaders, and founders across Dubai, the GCC, London, and New York. It is designed for companies that need senior-level strategic thinking applied to their specific growth challenge — not a generic agency package. Each engagement uses the APEX Framework™ to diagnose, position, and build an actionable 90-day growth roadmap.' },
-  { q: 'What topics does a business consultation session cover?', a: 'Sessions are tailored to your priority challenge. Common topics include: organic search strategy and SEO investment planning, GCC market entry positioning, competitive displacement strategy, digital channel mix optimisation, bilingual EN/AR content and SEO strategy, Google Business Profile and local SEO, and building a revenue attribution framework to measure marketing ROI. You come with the challenge — Sam applies the APEX Framework™ to build your roadmap.' },
+  { q: 'What topics does a business consultation session cover?', a: 'Sessions are tailored to your priority challenge. Common topics include: organic search strategy and SEO investment planning, GCC market entry positioning, competitive displacement strategy, digital channel mix optimisation, bilingual EN/AR content and SEO strategy, Google Business Profile and local SEO, and building a revenue attribution framework to measure marketing ROI. You come with the challenge — Sama applies the APEX Framework™ to build your roadmap.' },
   { q: 'How is this different from hiring a digital marketing agency in Dubai?', a: 'Three key differences: (1) Founder-led — you work directly with Sama Alaa, not a junior account manager who inherited your account after the sales call. (2) Strategy-first — sessions focus on the strategic layer, not execution deliverables. (3) GCC-specific — every recommendation is informed by real market intelligence from Dubai, Riyadh, Kuwait, and Bahrain, not global templates applied to the region.' },
-  { q: 'Can I book a one-time consultation or do I need an ongoing retainer?', a: 'Both options are available. A one-time APEX Diagnostic session gives you clarity on your current position, a competitor gap analysis, and a 90-day roadmap. An ongoing retainer provides continuous strategic guidance, monthly accountability reviews, and priority WhatsApp access to Sam as you execute. The best fit depends on how much strategic support your team needs beyond the initial roadmap.' },
+  { q: 'Can I book a one-time consultation or do I need an ongoing retainer?', a: 'Both options are available. A one-time APEX Diagnostic session gives you clarity on your current position, a competitor gap analysis, and a 90-day roadmap. An ongoing retainer provides continuous strategic guidance, monthly accountability reviews, and priority WhatsApp access to Sama as you execute. The best fit depends on how much strategic support your team needs beyond the initial roadmap.' },
   { q: 'Do you offer business consultation for companies expanding into the GCC from London or New York?', a: 'Yes — market entry consultation for international businesses expanding into Dubai, Riyadh, Kuwait, or Bahrain is one of our core specialisations. We cover GCC search behaviour, Arabic SEO requirements, local competitor landscape, free zone positioning, GBP setup for UAE, and the go-to-market channel mix that works in your target GCC city. Engagements are conducted remotely and in person.' },
-  { q: 'How do I get started with a business consultation?', a: 'Book a free 30-minute APEX Diagnostic intro call via the Contact page, our contact page, or email Sam@upranked.io. In the intro call, Sam reviews your current position, identifies your highest-leverage growth opportunity, and outlines the consultation scope that fits your situation. No commitment required for the intro call.' },
+  { q: 'How do I get started with a business consultation?', a: 'Book a free 30-minute APEX Diagnostic intro call via the Contact page, our contact page, or email Sam@upranked.io. In the intro call, Sama reviews your current position, identifies your highest-leverage growth opportunity, and outlines the consultation scope that fits your situation. No commitment required for the intro call.' },
 ];
 
 const schema = {
@@ -90,12 +90,12 @@ const benefits = [
   { icon: BarChart3, title: '90-Day Growth Roadmap', desc: 'A prioritised, actionable roadmap with specific milestones, KPIs, and channel investments delivered after each session.' },
   { icon: TrendingUp, title: 'Competitor Intelligence', desc: 'A full competitor gap analysis for your GCC or global market — where they rank, where they are weak, and how to displace them.' },
   { icon: Zap, title: 'Revenue Attribution Setup', desc: 'Guidance on connecting organic, paid, and referral channels to actual revenue — so you always know your true marketing ROI.' },
-  { icon: Shield, title: 'Priority WhatsApp Access', desc: 'Direct WhatsApp line to Sam between sessions for urgent questions, quick reviews, and strategic sounding-board support.' },
+  { icon: Shield, title: 'Priority WhatsApp Access', desc: 'Direct WhatsApp line to Sama between sessions for urgent questions, quick reviews, and strategic sounding-board support.' },
 ];
 
 const steps = [
-  { n: '01', title: 'Free APEX Diagnostic Call', desc: 'A free 30-minute intro call. Sam reviews your current digital position, identifies your top growth opportunity, and scopes the right consultation format for your situation.' },
-  { n: '02', title: 'Pre-Session Audit', desc: 'Before the main session, Sam conducts a full review of your website, keyword rankings, competitor landscape, and GCC market position. No session starts cold.' },
+  { n: '01', title: 'Free APEX Diagnostic Call', desc: 'A free 30-minute intro call. Sama reviews your current digital position, identifies your top growth opportunity, and scopes the right consultation format for your situation.' },
+  { n: '02', title: 'Pre-Session Audit', desc: 'Before the main session, Sama conducts a full review of your website, keyword rankings, competitor landscape, and GCC market position. No session starts cold.' },
   { n: '03', title: '90-Minute Strategy Session', desc: 'A focused working session applying the APEX Framework™ to your specific challenge. Output: a clear 90-day growth roadmap with prioritised actions, KPIs, and quick wins.' },
   { n: '04', title: 'Ongoing Accountability', desc: 'Optional monthly check-in calls, resource sharing, and priority WhatsApp access as you execute. Strategy is only valuable when it leaves the document.' },
 ];
@@ -242,7 +242,7 @@ export default function BusinessConsultation() {
         </div>
       </section>
 
-      {/* SAM BIO */}
+      {/* Sama BIO */}
       <section className="section-padding bg-dark-gray">
         <div className="container-premium max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }} className="border border-accent/30 rounded-2xl p-8 bg-navy/60">
@@ -252,7 +252,7 @@ export default function BusinessConsultation() {
               <div>
                 <h2 className="text-2xl font-bold text-white mb-1">Sama Alaa</h2>
                 <p className="text-accent text-sm mb-3">Founder &amp; Chief Growth Strategist, upranked.io · Dubai, UAE</p>
-                <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a specialist GCC growth strategist with 20+ client engagements across Medical, Industrial, and Business sectors in Dubai, Riyadh, Kuwait, and Bahrain. As the creator of the APEX Framework™, Sam personally leads every consultation — no handoffs. His direct, founder-led model means you get the same depth of expertise that built upranked.io's reputation across the GCC, London, and New York.</p>
+                <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a specialist GCC growth strategist with 20+ client engagements across Medical, Industrial, and Business sectors in Dubai, Riyadh, Kuwait, and Bahrain. As the creator of the APEX Framework™, Sama personally leads every consultation — no handoffs. His direct, founder-led model means you get the same depth of expertise that built upranked.io's reputation across the GCC, London, and New York.</p>
                 <div className="flex gap-4">
                   <Link href="/about"><a className="text-accent text-sm hover:underline">Full Bio →</a></Link>
                   <a href="/contact" className="text-accent text-sm hover:underline">Contact Us →</a>

@@ -905,7 +905,7 @@ function PostEditor({ post, allPosts, onBack, onSaved }: {
                 <input type="text" value={form.author} onChange={e => set('author', e.target.value)} className={inputCls} />
               </Field>
             </div>
-            <Field label="Author Image URL" hint="Default is Sam's photo — only change if guest post">
+            <Field label="Author Image URL" hint="Default is Sama's photo — only change if guest post">
               <input type="text" value={form.author_image} onChange={e => set('author_image', e.target.value)} className={inputCls} />
             </Field>
             <Field label="Related Posts" hint="Pick posts to recommend at the bottom of this article">
