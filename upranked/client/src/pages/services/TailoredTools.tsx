@@ -38,10 +38,10 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 const faqs = [
   { q: 'What kind of custom growth tools does upranked.io build?', a: 'upranked.io builds purpose-built growth intelligence tools for businesses in Dubai, the GCC, London, and New York. Common tools include: custom SEO rank tracking dashboards tied to your commercial keywords, automated competitor monitoring and alert systems, pipeline intelligence platforms that connect organic traffic to CRM data, bilingual keyword opportunity finders for EN/AR GCC markets, content performance analytics platforms, and GCC market intelligence aggregators. Every tool is built around your specific intelligence gap — not a generic SaaS template.' },
   { q: 'Do I need a technical team to use the tools upranked.io builds?', a: 'No. Tools are designed with your team\'s capability in mind. Clean interfaces, automated workflows, scheduled reports delivered to your inbox, and clear output that non-technical users can act on immediately. Training is included in every tool delivery. The goal is intelligence at your fingertips — not a platform that requires an engineer to operate.' },
-  { q: 'How long does it take to build a custom growth tool?', a: 'Typically 2–8 weeks from scoping to delivery, depending on complexity. Simple dashboards and automated trackers: 2–3 weeks. Integrated intelligence platforms connecting multiple data sources: 5–8 weeks. A scoping call with Sam Hamouda gives you a precise timeline based on your specific requirements before any commitment.' },
+  { q: 'How long does it take to build a custom growth tool?', a: 'Typically 2–8 weeks from scoping to delivery, depending on complexity. Simple dashboards and automated trackers: 2–3 weeks. Integrated intelligence platforms connecting multiple data sources: 5–8 weeks. A scoping call with Sama Alaa gives you a precise timeline based on your specific requirements before any commitment.' },
   { q: 'Can the tools integrate with our existing platforms?', a: 'Yes. Standard integrations include Google Analytics 4, Google Search Console, Google Ads, CRM platforms (HubSpot, Salesforce, Zoho), spreadsheets, databases, and most marketing platforms via APIs. For GCC-specific requirements like Arabic language data processing or local directory integrations, we build custom connectors.' },
   { q: 'Are growth tools suitable for businesses in Dubai and the GCC?', a: 'Tools built by upranked.io are specifically designed for GCC market dynamics — bilingual EN/AR data, UAE and KSA search engine patterns, free zone and emirate-level geographic segmentation, and GCC-specific competitor tracking. Whether you\'re tracking commercial keywords in Dubai, procurement searches in Riyadh, or market entry intelligence for Kuwait and Bahrain, the tools are configured for your exact market.' },
-  { q: 'How do I get started with a custom growth tool?', a: 'Book a free discovery call via the Contact page, our contact page, or email Sam@upranked.io. Describe the intelligence gap you have — the data you wish you had, the process that wastes time, or the insight that would change your decisions. Sam Hamouda will assess your requirements and outline what can be built, in what timeframe, and at what investment level.' },
+  { q: 'How do I get started with a custom growth tool?', a: 'Book a free discovery call via the Contact page, our contact page, or email Sam@upranked.io. Describe the intelligence gap you have — the data you wish you had, the process that wastes time, or the insight that would change your decisions. Sama Alaa will assess your requirements and outline what can be built, in what timeframe, and at what investment level.' },
 ];
 
 const schema = {
@@ -65,7 +65,7 @@ const schema = {
     {
       '@type': 'Person',
       '@id': 'https://upranked.io/about#person',
-      name: 'Sam Hamouda',
+      name: 'Sama Alaa',
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -92,7 +92,7 @@ const toolExamples = [
 ];
 
 const steps = [
-  { n: '01', title: 'Problem Discovery', desc: 'Sam Hamouda maps the intelligence gap — the data you don\'t have, the process that costs time, or the insight that would change your decisions.' },
+  { n: '01', title: 'Problem Discovery', desc: 'Sama Alaa maps the intelligence gap — the data you don\'t have, the process that costs time, or the insight that would change your decisions.' },
   { n: '02', title: 'Tool Architecture', desc: 'Data sources, automation logic, output format, and workflow integration designed before a single line of code is written.' },
   { n: '03', title: 'Build & Integrate', desc: 'The tool is built and integrated with your existing platforms — GA4, GSC, CRM, or custom data sources. No generic SaaS compromise.' },
   { n: '04', title: 'Training & Iteration', desc: 'Full team training on delivery, plus a 30-day iteration cycle to refine the tool based on real usage before handoff is complete.' },
@@ -135,14 +135,14 @@ export default function TailoredTools() {
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Discuss Your Tool Idea <ArrowRight className="w-5 h-5" /></a></Link>
-                  <Link href="/about"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sam Hamouda</a></Link>
+                  <Link href="/about"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sama Alaa</a></Link>
                 </div>
               </motion.div>
             </div>
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
               <img
                 src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sam Hamouda — growth intelligence tool builder in Dubai creating custom SEO dashboards and competitor tracking systems for GCC businesses at upranked.io"
+                alt="Sama Alaa — growth intelligence tool builder in Dubai creating custom SEO dashboards and competitor tracking systems for GCC businesses at upranked.io"
                 width={480}
                 height={640}
                 loading="eager"
@@ -219,7 +219,7 @@ export default function TailoredTools() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Star className="w-12 h-12 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Have a Growth Problem That Needs a <span className="text-accent">Custom Tool</span>?</h2>
-            <p className="text-text-secondary mb-6 leading-relaxed">Book a free discovery call with Sam Hamouda. Describe the intelligence gap you face — we'll tell you exactly what can be built, in what timeframe, at what investment.</p>
+            <p className="text-text-secondary mb-6 leading-relaxed">Book a free discovery call with Sama Alaa. Describe the intelligence gap you face — we'll tell you exactly what can be built, in what timeframe, at what investment.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Discovery Call <ArrowRight className="w-5 h-5" /></a></Link>
               <a href="/contact" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>

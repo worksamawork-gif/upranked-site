@@ -7,15 +7,15 @@ import { usePageMeta } from '../../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency Riyadh KSA — Arabic SEO for Saudi Arabia Businesses', description: 'SEO services for businesses in Riyadh and across Saudi Arabia — Arabic-first SEO, Vision 2030 sectors, Google Maps and local SEO by upranked.io. APEX Framework by Sam Hamouda.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/ksa/riyadh', areaServed: ['Riyadh', 'Jeddah', 'Makkah', 'Saudi Arabia'] },
+    { '@type': 'Service', name: 'SEO Agency Riyadh KSA — Arabic SEO for Saudi Arabia Businesses', description: 'SEO services for businesses in Riyadh and across Saudi Arabia — Arabic-first SEO, Vision 2030 sectors, Google Maps and local SEO by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/ksa/riyadh', areaServed: ['Riyadh', 'Jeddah', 'Makkah', 'Saudi Arabia'] },
     { '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'Why is Arabic SEO more important in Saudi Arabia than in UAE?', acceptedAnswer: { '@type': 'Answer', text: 'Saudi Arabia has a significantly higher proportion of Arabic-first searchers than UAE. KSA nationals make up a larger share of the buyer base, and Arabic is the dominant search language across most commercial sectors. In Riyadh and Jeddah, English-only SEO can miss 50–70% of potential organic traffic depending on the sector. upranked.io\'s KSA SEO strategy is Arabic-first by default.' } },
       { '@type': 'Question', name: 'What are the highest-growth SEO sectors in Riyadh under Vision 2030?', acceptedAnswer: { '@type': 'Answer', text: "Saudi Arabia's Vision 2030 is driving explosive growth in entertainment, tourism, healthcare, technology, and professional services sectors — all of which have rapidly growing search volumes in Riyadh and Jeddah. upranked.io tracks Vision 2030 sector development and adapts content strategies to emerging high-volume KSA search queries as the market evolves." } },
-      { '@type': 'Question', name: 'Do you offer SEO services near me in Riyadh?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io serves businesses in Riyadh, Jeddah, Makkah, and across Saudi Arabia. While upranked.io is headquartered in Dubai, all KSA client engagements are managed directly by Sam Hamouda with deep KSA market knowledge and Arabic-native SEO specialists. Book a free APEX Diagnostic call for Riyadh SEO strategy.' } },
+      { '@type': 'Question', name: 'Do you offer SEO services near me in Riyadh?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io serves businesses in Riyadh, Jeddah, Makkah, and across Saudi Arabia. While upranked.io is headquartered in Dubai, all KSA client engagements are managed directly by Sama Alaa with deep KSA market knowledge and Arabic-native SEO specialists. Book a free APEX Diagnostic call for Riyadh SEO strategy.' } },
       { '@type': 'Question', name: 'How is SEO in Saudi Arabia different from SEO in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'KSA SEO differs from Dubai SEO in three key ways: (1) Arabic is the dominant search language in KSA vs more balanced EN/AR in Dubai; (2) KSA has different sector dynamics — higher focus on retail, hospitality, and government-adjacent B2B; (3) KSA search volumes are higher in absolute terms as the largest GCC economy. Google Business Profile setup also differs slightly for KSA address formatting.' } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'GCC Markets', item: 'https://upranked.io/markets/gcc' }, { '@type': 'ListItem', position: 3, name: 'Riyadh SEO', item: 'https://upranked.io/markets/gcc/ksa/riyadh' }] },
-    { '@type': 'Person', name: 'Sam Hamouda', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -31,7 +31,7 @@ const features = [
 const faqs = [
   { q: 'Why is Arabic SEO more important in Saudi Arabia than in UAE?', a: "Saudi Arabia has a higher proportion of Arabic-first searchers than UAE. KSA nationals make up a larger share of the buyer base, and Arabic is the dominant search language across most commercial sectors. English-only SEO can miss 50–70% of potential organic traffic in Riyadh and Jeddah. upranked.io's KSA SEO strategy is Arabic-first by default." },
   { q: 'What are the highest-growth SEO sectors in Riyadh under Vision 2030?', a: "Vision 2030 is driving growth in entertainment, tourism, healthcare, technology, and professional services — all with rapidly growing search volumes in Riyadh and Jeddah. upranked.io tracks Vision 2030 sector development and adapts content strategies to emerging high-volume KSA search queries." },
-  { q: 'Do you offer SEO services near me in Riyadh?', a: 'Yes. upranked.io serves businesses in Riyadh, Jeddah, Makkah, and across Saudi Arabia. All KSA client engagements are managed directly by Sam Hamouda with Arabic-native SEO specialists. Book a free APEX Diagnostic call for your Riyadh SEO strategy.' },
+  { q: 'Do you offer SEO services near me in Riyadh?', a: 'Yes. upranked.io serves businesses in Riyadh, Jeddah, Makkah, and across Saudi Arabia. All KSA client engagements are managed directly by Sama Alaa with Arabic-native SEO specialists. Book a free APEX Diagnostic call for your Riyadh SEO strategy.' },
   { q: 'How is SEO in Saudi Arabia different from SEO in Dubai?', a: 'KSA SEO differs from Dubai SEO in three key ways: (1) Arabic is the dominant search language in KSA vs more balanced EN/AR in Dubai; (2) KSA has different sector dynamics — higher focus on retail, hospitality, and government-adjacent B2B; (3) KSA has higher absolute search volumes as the largest GCC economy.' },
 ];
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function RiyadhMarket() {
-  usePageMeta({ title: 'SEO Agency Riyadh KSA — Arabic SEO for Saudi Arabia Businesses', description: 'SEO agency for Riyadh and Saudi Arabia. Arabic-first SEO, Vision 2030 sector content, Google Business Profile, local citations — APEX Framework by Sam Hamouda at upranked.io.', schema, schemaId: 'riyadh-market-schema' });
+  usePageMeta({ title: 'SEO Agency Riyadh KSA — Arabic SEO for Saudi Arabia Businesses', description: 'SEO agency for Riyadh and Saudi Arabia. Arabic-first SEO, Vision 2030 sector content, Google Business Profile, local citations — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'riyadh-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -99,7 +99,7 @@ export default function RiyadhMarket() {
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
               src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-              alt="Sam Hamouda — GCC SEO strategist specializing in Saudi Arabia and Riyadh KSA markets"
+              alt="Sama Alaa — GCC SEO strategist specializing in Saudi Arabia and Riyadh KSA markets"
               width={400}
               height={640}
               loading="lazy"
@@ -108,9 +108,9 @@ export default function RiyadhMarket() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Your KSA SEO Strategist</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam Hamouda is a GCC SEO strategist with deep expertise across KSA, UAE, Kuwait, and Bahrain markets. All KSA engagements are managed directly by Sam with Arabic-native SEO specialists — combining strategic oversight with native Arabic market knowledge for Riyadh, Jeddah, and across Saudi Arabia.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across KSA, UAE, Kuwait, and Bahrain markets. All KSA engagements are managed directly by Sam with Arabic-native SEO specialists — combining strategic oversight with native Arabic market knowledge for Riyadh, Jeddah, and across Saudi Arabia.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

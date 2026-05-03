@@ -13,7 +13,7 @@ const schema = {
       '@type': 'ContactPage',
       name: 'Book a Free SEO Strategy Call — upranked.io',
       description:
-        'Book a free 30-minute SEO strategy call with Sam Hamouda, founder of upranked.io. Serving businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York.',
+        'Book a free 30-minute SEO strategy call with Sama Alaa, founder of upranked.io. Serving businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York.',
       url: 'https://upranked.io/contact',
       provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
     },
@@ -22,7 +22,7 @@ const schema = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'How do I book a strategy call with Sam Hamouda?',
+          name: 'How do I book a strategy call with Sama Alaa?',
           acceptedAnswer: {
             '@type': 'Answer',
             text: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sam reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
@@ -72,7 +72,7 @@ const schema = {
     },
     {
       '@type': 'Person',
-      name: 'Sam Hamouda',
+      name: 'Sama Alaa',
       jobTitle: 'Founder & GCC SEO Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -114,7 +114,7 @@ const expectItems = [
 
 const faqs = [
   {
-    q: 'How do I book a strategy call with Sam Hamouda?',
+    q: 'How do I book a strategy call with Sama Alaa?',
     a: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sam reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
   },
   {
@@ -186,7 +186,7 @@ export default function Contact() {
   usePageMeta({
     title: 'Book a Free SEO Strategy Call — Dubai, GCC & Global',
     description:
-      'Book a free 30-minute SEO strategy call with Sam Hamouda at upranked.io. Serving businesses in Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London UK, and New York USA.',
+      'Book a free 30-minute SEO strategy call with Sama Alaa at upranked.io. Serving businesses in Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London UK, and New York USA.',
     schema,
     schemaId: 'contact-schema',
   });
@@ -243,7 +243,7 @@ export default function Contact() {
                 Book a Free SEO Strategy Call — Dubai, GCC, London &amp; New York
               </h1>
               <p className="text-xl text-text-secondary mb-8 max-w-3xl leading-relaxed">
-                A free 30-minute conversation with Sam Hamouda. No pitch, no pressure — just clarity on what's possible for your business across the GCC and global markets. Available for clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.
+                A free 30-minute conversation with Sama Alaa. No pitch, no pressure — just clarity on what's possible for your business across the GCC and global markets. Available for clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.
               </p>
 
               {/* Featured snippet definition box */}
@@ -251,7 +251,7 @@ export default function Contact() {
                 <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">What You Get</p>
                 <p className="text-white font-semibold mb-1">The Free APEX Diagnostic</p>
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  A focused 30-minute strategy session where Sam Hamouda applies the APEX Framework™ to your specific situation — delivering an honest audit of your current digital position, a competitor analysis, and a prioritized growth roadmap. No obligations, no upsells during the call.
+                  A focused 30-minute strategy session where Sama Alaa applies the APEX Framework™ to your specific situation — delivering an honest audit of your current digital position, a competitor analysis, and a prioritized growth roadmap. No obligations, no upsells during the call.
                 </p>
               </div>
 
@@ -363,12 +363,12 @@ export default function Contact() {
                 <div className="mt-10 bg-dark-gray border border-accent/30 rounded-2xl p-6">
                   <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-4">Who You'll Speak With</p>
                   <div className="flex flex-col sm:flex-row gap-5">
-                    <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sam Hamouda — Founder of upranked.io, GCC SEO Strategist Dubai" width={64} height={64} loading="lazy" className="w-16 h-16 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
+                    <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder of upranked.io, GCC SEO Strategist Dubai" width={64} height={64} loading="lazy" className="w-16 h-16 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
                     <div>
-                      <h3 className="text-lg font-bold text-white mb-1">Sam Hamouda</h3>
+                      <h3 className="text-lg font-bold text-white mb-1">Sama Alaa</h3>
                       <p className="text-accent text-sm font-medium mb-3">Founder, upranked.io — GCC SEO Strategist &amp; Creator of the APEX Framework™</p>
                       <p className="text-text-secondary text-sm leading-relaxed">
-                        Sam Hamouda personally handles every initial strategy conversation at upranked.io. There are no junior intake calls, no gatekeeping staff. When you book a call, you speak directly with the founder — the same person who will design and execute your growth strategy if you choose to move forward.
+                        Sama Alaa personally handles every initial strategy conversation at upranked.io. There are no junior intake calls, no gatekeeping staff. When you book a call, you speak directly with the founder — the same person who will design and execute your growth strategy if you choose to move forward.
                       </p>
                     </div>
                   </div>
@@ -561,7 +561,7 @@ export default function Contact() {
                     </button>
 
                     <p className="text-text-secondary text-xs text-center">
-                      By submitting this form you agree to be contacted by Sam Hamouda at upranked.io. No spam — ever.
+                      By submitting this form you agree to be contacted by Sama Alaa at upranked.io. No spam — ever.
                     </p>
                   </form>
                 )}
@@ -609,7 +609,7 @@ export default function Contact() {
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
                 <h2 className="text-3xl font-bold text-white mb-2">Booking FAQs</h2>
                 <p className="text-text-secondary mb-8">
-                  Common questions about booking a strategy call with Sam Hamouda at upranked.io — for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
+                  Common questions about booking a strategy call with Sama Alaa at upranked.io — for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
                 </p>
                 <div className="space-y-3">
                   {faqs.map(faq => (
@@ -630,7 +630,7 @@ export default function Contact() {
               Ready to Talk? <span className="text-accent">Book Your Free Call.</span>
             </h2>
             <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
-              30 minutes with Sam Hamouda. Free, honest, and focused on your actual situation — whether you are in Dubai, Riyadh, Kuwait, Bahrain, London, or New York.
+              30 minutes with Sama Alaa. Free, honest, and focused on your actual situation — whether you are in Dubai, Riyadh, Kuwait, Bahrain, London, or New York.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               <a

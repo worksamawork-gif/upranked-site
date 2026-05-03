@@ -156,7 +156,7 @@ export default function IndustrialSEO() {
         {
           '@type': 'Person',
           '@id': 'https://upranked.io/about#sam',
-          name: 'Sam Hamouda',
+          name: 'Sama Alaa',
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
           url: 'https://upranked.io/about',
@@ -191,7 +191,7 @@ export default function IndustrialSEO() {
                 Specialist B2B SEO agency for manufacturers, construction firms, oil & gas suppliers, and industrial services companies across Dubai, Abu Dhabi, and the GCC. We make your business findable when procurement teams are searching — and invisible to them is invisible to your pipeline.
               </p>
               <div className="flex flex-wrap gap-4 mb-8 text-sm text-text-secondary">
-                {['Technical B2B Content', 'Procurement Keyword Targeting', 'Bilingual EN/AR', 'Industrial Free Zone SEO', 'Founder-Led by Sam Hamouda'].map(t => (
+                {['Technical B2B Content', 'Procurement Keyword Targeting', 'Bilingual EN/AR', 'Industrial Free Zone SEO', 'Founder-Led by Sama Alaa'].map(t => (
                   <div key={t} className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /><span>{t}</span></div>
                 ))}
               </div>
@@ -208,7 +208,7 @@ export default function IndustrialSEO() {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="block">
               <div className="relative rounded-2xl overflow-hidden border border-border bg-dark-gray aspect-[4/3]">
-                <img src="/images/sam-hamouda-best-seo-consultant-gcc.webp" alt="Sam Hamouda — industrial and B2B SEO consultant in Dubai ranking manufacturers and suppliers across the GCC at upranked.io" width={600} height={450} loading="eager" decoding="async" className="w-full h-full object-cover object-top opacity-80" />
+                <img src="/images/sam-hamouda-best-seo-consultant-gcc.webp" alt="Sama Alaa — industrial and B2B SEO consultant in Dubai ranking manufacturers and suppliers across the GCC at upranked.io" width={600} height={450} loading="eager" decoding="async" className="w-full h-full object-cover object-top opacity-80" />
                 <div className="absolute inset-0 flex items-center justify-center bg-dark-gray/50">
                   <div className="text-center p-8">
                     <div className="text-6xl font-black text-accent mb-3">6.2x</div>
@@ -239,7 +239,7 @@ export default function IndustrialSEO() {
           <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} className="p-6 rounded-xl bg-dark-gray border border-border">
             <p className="text-accent text-xs font-semibold uppercase tracking-widest mb-4">On This Page</p>
             <ol className="space-y-2 text-sm">
-              {[['#what-is', 'What is Industrial SEO?'], ['#why-different', 'How Industrial Buyers Search in the GCC'], ['#whats-included', 'What\'s Included'], ['#apex-process', 'The APEX Framework™ for Industrial B2B'], ['#results', 'Results & Statistics'], ['#expert-review', 'Expert Review — Sam Hamouda'], ['#why-upranked', 'Why upranked.io?'], ['#service-areas', 'Industrial SEO Service Areas'], ['#faq', 'FAQ — Industrial SEO UAE']].map(([href, label]) => (
+              {[['#what-is', 'What is Industrial SEO?'], ['#why-different', 'How Industrial Buyers Search in the GCC'], ['#whats-included', 'What\'s Included'], ['#apex-process', 'The APEX Framework™ for Industrial B2B'], ['#results', 'Results & Statistics'], ['#expert-review', 'Expert Review — Sama Alaa'], ['#why-upranked', 'Why upranked.io?'], ['#service-areas', 'Industrial SEO Service Areas'], ['#faq', 'FAQ — Industrial SEO UAE']].map(([href, label]) => (
                 <li key={href}><a href={href} className="text-text-secondary hover:text-accent transition-colors flex items-center gap-2"><ArrowRight className="w-3.5 h-3.5 text-accent flex-shrink-0" />{label}</a></li>
               ))}
             </ol>
@@ -395,17 +395,17 @@ export default function IndustrialSEO() {
             <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-6">Expert Review & Strategy Verification</p>
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="flex-shrink-0">
-                <img src="/images/sam-hamouda-best-seo-consultant-gcc.webp" alt="Sam Hamouda — Founder of upranked.io" width={96} height={96} loading="lazy" className="w-24 h-24 rounded-full object-cover object-top border-2 border-accent/30" decoding="async" />
+                <img src="/images/sam-hamouda-best-seo-consultant-gcc.webp" alt="Sama Alaa — Founder of upranked.io" width={96} height={96} loading="lazy" className="w-24 h-24 rounded-full object-cover object-top border-2 border-accent/30" decoding="async" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-xl font-bold text-white">Sam Hamouda</h3>
+                  <h3 className="text-xl font-bold text-white">Sama Alaa</h3>
                   <span className="text-xs bg-accent/20 text-accent border border-accent/30 px-2 py-0.5 rounded-full font-semibold">Strategy Verified</span>
                 </div>
                 <p className="text-accent font-semibold text-sm mb-1">Founder, upranked.io · Creator of the APEX Framework™</p>
                 <p className="text-text-secondary text-sm mb-4">GCC Growth Intelligence Specialist · Industrial B2B SEO Expert · Bilingual EN/AR Strategy</p>
                 <p className="text-text-secondary leading-relaxed mb-4">
-                  Every industrial SEO strategy at upranked.io is personally designed and reviewed by Sam Hamouda. Sam has built the APEX Framework™ specifically for the complex, long-cycle authority requirements of B2B industrial SEO in the GCC — where a single organic lead can represent a contract worth hundreds of thousands of dirhams. His founder-led approach means your industrial SEO strategy is never delegated to an account manager who doesn't understand procurement search behaviour in Dubai or the technical nuances of your product category.
+                  Every industrial SEO strategy at upranked.io is personally designed and reviewed by Sama Alaa. Sam has built the APEX Framework™ specifically for the complex, long-cycle authority requirements of B2B industrial SEO in the GCC — where a single organic lead can represent a contract worth hundreds of thousands of dirhams. His founder-led approach means your industrial SEO strategy is never delegated to an account manager who doesn't understand procurement search behaviour in Dubai or the technical nuances of your product category.
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm">
                   <div className="flex items-center gap-2 text-text-secondary"><BarChart2 className="w-4 h-4 text-accent" /><span>20+ GCC clients across 7 industrial sectors</span></div>
@@ -430,7 +430,7 @@ export default function IndustrialSEO() {
                 { title: 'Free Zone SEO Specialists', desc: 'We understand Jebel Ali, KIZAD, KEZAD, KAEC, and other major GCC industrial free zones — the geographic structure of industrial search in the UAE that most agencies treat as a single city.' },
                 { title: 'Arabic Procurement SEO', desc: 'Independent Arabic keyword research for industrial procurement queries — capturing Emirati, Saudi, and Kuwaiti procurement teams who search in Arabic across government and semi-government entities.' },
                 { title: 'Pipeline ROI Reporting', desc: 'Monthly RFQ attribution — we connect your organic search investment directly to your sales pipeline, not traffic dashboards.' },
-                { title: 'Founder-Led Every Engagement', desc: 'Sam Hamouda leads every industrial SEO engagement personally. No bait-and-switch from senior pitch to junior delivery.' },
+                { title: 'Founder-Led Every Engagement', desc: 'Sama Alaa leads every industrial SEO engagement personally. No bait-and-switch from senior pitch to junior delivery.' },
               ].map((item, i) => (
                 <motion.div key={item.title} initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: i * 0.08 }} viewport={{ once: true }} className="flex items-start gap-4 p-5 rounded-xl bg-dark-gray border border-border hover:border-accent/50 transition-colors">
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -498,7 +498,7 @@ export default function IndustrialSEO() {
             <div className="p-10 md:p-14 rounded-2xl bg-gradient-to-br from-navy to-dark-gray border border-accent/30 shadow-2xl shadow-accent/10">
               <p className="text-accent font-semibold tracking-widest text-sm uppercase mb-4">Free APEX Diagnostic — No Obligation</p>
               <h2 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">Ready to Outrank Your <span className="text-accent">Industrial Competitors</span> in the GCC?</h2>
-              <p className="text-xl text-text-secondary mb-8 leading-relaxed">Book a free 30-minute strategy call with Sam Hamouda. We'll identify the exact procurement searches your target buyers are running in Dubai, Abu Dhabi, and across the GCC — and show you exactly what it takes to rank for them.</p>
+              <p className="text-xl text-text-secondary mb-8 leading-relaxed">Book a free 30-minute strategy call with Sama Alaa. We'll identify the exact procurement searches your target buyers are running in Dubai, Abu Dhabi, and across the GCC — and show you exactly what it takes to rank for them.</p>
               <Link href="/contact"><a className="btn-primary text-xl px-12 py-6 inline-flex items-center gap-3 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">Book Your Free Strategy Call <ArrowRight className="w-6 h-6" /></a></Link>
               {/* NAP #3 */}
               <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-text-secondary border-t border-border pt-6">

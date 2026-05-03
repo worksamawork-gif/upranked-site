@@ -11,15 +11,15 @@ const faqCategories = [
     faqs: [
       {
         q: 'What is upranked.io?',
-        a: 'upranked.io is a premium Growth Intelligence Lab founded by Sam Hamouda, specializing in SEO, business strategy, and digital growth for high-value businesses across the GCC (Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain) and global markets including London UK and New York USA.',
+        a: 'upranked.io is a premium Growth Intelligence Lab founded by Sama Alaa, specializing in SEO, business strategy, and digital growth for high-value businesses across the GCC (Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain) and global markets including London UK and New York USA.',
       },
       {
         q: 'What makes upranked.io different from other digital marketing agencies?',
         a: 'Three things: GCC-first market intelligence, sector specialization (healthcare, industrial, B2B), and direct founder involvement on every engagement. We don\'t sell templated packages to 50 clients — we build bespoke APEX Framework™ strategies for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York where strategy actually matters.',
       },
       {
-        q: 'Who is Sam Hamouda?',
-        a: 'Sam Hamouda is the founder of upranked.io and creator of the APEX Framework™. He personally leads all client strategy engagements with deep expertise in GCC market SEO, business positioning, and digital growth intelligence. Sam works directly with clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.',
+        q: 'Who is Sama Alaa?',
+        a: 'Sama Alaa is the founder of upranked.io and creator of the APEX Framework™. He personally leads all client strategy engagements with deep expertise in GCC market SEO, business positioning, and digital growth intelligence. Sam works directly with clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.',
       },
       {
         q: 'What is the APEX Framework™?',
@@ -61,7 +61,7 @@ const faqCategories = [
       },
       {
         q: 'Can I find a business SEO expert near me in Dubai?',
-        a: 'Yes. upranked.io is Dubai-based and GCC-focused. Sam Hamouda is available for in-person strategy sessions in Dubai and remote engagements across all GCC markets — Riyadh, Kuwait City, and Manama. London and New York clients are served remotely.',
+        a: 'Yes. upranked.io is Dubai-based and GCC-focused. Sama Alaa is available for in-person strategy sessions in Dubai and remote engagements across all GCC markets — Riyadh, Kuwait City, and Manama. London and New York clients are served remotely.',
       },
     ],
   },
@@ -70,7 +70,7 @@ const faqCategories = [
     category: 'Growth Intelligence Services',
     faqs: [
       {
-        q: 'What is a business consultation with Sam Hamouda?',
+        q: 'What is a business consultation with Sama Alaa?',
         a: 'A 1-on-1 strategic session where Sam applies the APEX Framework™ to your specific situation. You receive a full audit of your digital presence, competitor analysis, and a prioritized 90-day growth roadmap — delivered directly by the founder. Available for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.',
       },
       {
@@ -139,7 +139,7 @@ const faqCategories = [
       },
       {
         q: 'Will I work directly with Sam or with a team?',
-        a: 'Sam Hamouda leads every engagement — strategy, direction, and client communication always flows directly through the founder. For execution work (content, technical SEO, development), we have a specialist team. You will never be handed off to an account manager who wasn\'t in the original strategy conversation.',
+        a: 'Sama Alaa leads every engagement — strategy, direction, and client communication always flows directly through the founder. For execution work (content, technical SEO, development), we have a specialist team. You will never be handed off to an account manager who wasn\'t in the original strategy conversation.',
       },
       {
         q: 'Do you sign NDAs and keep client information confidential?',
@@ -175,7 +175,7 @@ const schema = {
       name: 'upranked.io',
       url: 'https://upranked.io',
       description: 'Premium SEO agency and Growth Intelligence Lab serving Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London UK, and New York USA.',
-      founder: { '@type': 'Person', name: 'Sam Hamouda' },
+      founder: { '@type': 'Person', name: 'Sama Alaa' },
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+201121664778',
@@ -186,7 +186,7 @@ const schema = {
     },
     {
       '@type': 'Person',
-      name: 'Sam Hamouda',
+      name: 'Sama Alaa',
       jobTitle: 'Founder & GCC SEO Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -311,7 +311,7 @@ export default function FAQ() {
                 <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Quick Answer</p>
                 <p className="text-white font-semibold mb-1">What does upranked.io do?</p>
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  upranked.io is a premium SEO agency and Growth Intelligence Lab founded by Sam Hamouda. We apply the proprietary APEX Framework™ — Audit, Position, Execute, Expand — to help high-value businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York achieve compounding organic growth. We specialize in medical SEO, industrial SEO, business SEO, and Growth Intelligence services including business consultation, custom tools, websites, and market positioning.
+                  upranked.io is a premium SEO agency and Growth Intelligence Lab founded by Sama Alaa. We apply the proprietary APEX Framework™ — Audit, Position, Execute, Expand — to help high-value businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York achieve compounding organic growth. We specialize in medical SEO, industrial SEO, business SEO, and Growth Intelligence services including business consultation, custom tools, websites, and market positioning.
                 </p>
               </div>
 
@@ -416,12 +416,12 @@ export default function FAQ() {
                 <div className="bg-dark-gray border border-accent/30 rounded-2xl p-8">
                   <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-5">About the Expert Answering These Questions</p>
                   <div className="flex flex-col sm:flex-row gap-6">
-                    <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sam Hamouda — Founder upranked.io, GCC SEO Expert" width={80} height={80} loading="lazy" className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
+                    <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder upranked.io, GCC SEO Expert" width={80} height={80} loading="lazy" className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+                      <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
                       <p className="text-accent text-sm font-medium mb-4">Founder, upranked.io — GCC SEO Strategist &amp; Creator of the APEX Framework™</p>
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                        Sam Hamouda founded upranked.io to bring founder-level SEO strategy to high-value businesses in the GCC and beyond. Every answer in this FAQ reflects Sam's direct experience working with healthcare, industrial, and B2B clients across Dubai, Riyadh, Kuwait City, Manama, London, and New York. When you book a strategy call, you speak directly with Sam — not an intake team.
+                        Sama Alaa founded upranked.io to bring founder-level SEO strategy to high-value businesses in the GCC and beyond. Every answer in this FAQ reflects Sam's direct experience working with healthcare, industrial, and B2B clients across Dubai, Riyadh, Kuwait City, Manama, London, and New York. When you book a strategy call, you speak directly with Sam — not an intake team.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {['GCC SEO', 'APEX Framework™', 'Medical SEO', 'Industrial SEO', 'Bilingual EN/AR', 'Business Strategy'].map(tag => (
@@ -505,7 +505,7 @@ export default function FAQ() {
               Still Have <span className="text-accent">Questions</span>?
             </h2>
             <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
-              Book a free 30-minute strategy call with Sam Hamouda. Ask anything about your specific situation — no obligations, no pressure. Available for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
+              Book a free 30-minute strategy call with Sama Alaa. Ask anything about your specific situation — no obligations, no pressure. Available for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               <Link href="/contact">

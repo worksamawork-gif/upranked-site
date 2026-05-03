@@ -1,4 +1,4 @@
-/**
+﻿/**
  * HOW TO ADD A NEW BLOG POST
  * ─────────────────────────────────────────────────────────────────
  * 1. Copy everything inside the object below
@@ -67,7 +67,7 @@
   // Call-to-action shown at the bottom of the article
   cta: {
     heading: 'Ready to Apply This to Your Business?',
-    body: 'Book a free 30-minute APEX Diagnostic with Sam Hamouda and get a clear, actionable plan for your GCC market.',
+    body: 'Book a free 30-minute APEX Diagnostic with Sama Alaa and get a clear, actionable plan for your GCC market.',
     href: '/contact',
     label: 'Book Your Free APEX Diagnostic',
   },

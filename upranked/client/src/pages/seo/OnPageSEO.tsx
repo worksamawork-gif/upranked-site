@@ -21,7 +21,7 @@ const schema = {
         { '@type': 'Question', name: 'What is on-page SEO?', acceptedAnswer: { '@type': 'Answer', text: 'On-page SEO is the practice of optimizing individual web pages — including title tags, meta descriptions, H1/H2 headings, content, internal links, and image alt text — to rank higher in search engines. In Dubai and across the GCC, on-page SEO must also account for bilingual EN/AR content and local search intent.' } },
         { '@type': 'Question', name: 'How does on-page SEO work for bilingual Arabic-English websites in the GCC?', acceptedAnswer: { '@type': 'Answer', text: 'Bilingual on-page SEO in the GCC requires separate keyword research for Arabic and English queries, hreflang tags to signal language targeting to Google, RTL-compatible page structures, and Arabic content written by native SEO copywriters — not machine translations. upranked.io handles all of this as standard in every GCC on-page engagement.' } },
         { '@type': 'Question', name: 'How long does on-page SEO take to show results in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'On-page SEO improvements typically produce measurable ranking changes within 4–8 weeks in Dubai and GCC markets. The timeline depends on domain authority, competitor strength, and the number of pages optimized. Commercial-intent pages optimized correctly can see ranking improvements in as few as 2–3 weeks.' } },
-        { '@type': 'Question', name: 'Does upranked.io offer on-page SEO near me in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io is Dubai-based and offers on-page SEO for businesses across the GCC — including Dubai, Abu Dhabi, Riyadh, Kuwait City, and Manama — as well as London and New York. All on-page work is led by Sam Hamouda using the APEX Framework.' } },
+        { '@type': 'Question', name: 'Does upranked.io offer on-page SEO near me in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io is Dubai-based and offers on-page SEO for businesses across the GCC — including Dubai, Abu Dhabi, Riyadh, Kuwait City, and Manama — as well as London and New York. All on-page work is led by Sama Alaa using the APEX Framework.' } },
       ],
     },
     {
@@ -32,7 +32,7 @@ const schema = {
         { '@type': 'ListItem', position: 3, name: 'On-Page SEO', item: 'https://upranked.io/seo/on-page' },
       ],
     },
-    { '@type': 'Person', name: 'Sam Hamouda', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -49,7 +49,7 @@ const faqs = [
   { q: 'What is on-page SEO?', a: 'On-page SEO is the practice of optimizing individual web pages — including title tags, meta descriptions, H1/H2 headings, content, internal links, and image alt text — to rank higher in search engines. In Dubai and across the GCC, on-page SEO must also account for bilingual EN/AR content and local search intent.' },
   { q: 'How does on-page SEO work for bilingual Arabic-English websites in the GCC?', a: 'Bilingual on-page SEO in the GCC requires separate keyword research for Arabic and English queries, hreflang tags to signal language targeting to Google, RTL-compatible page structures, and Arabic content written by native SEO copywriters — not machine translations. upranked.io handles all of this as standard in every GCC on-page engagement.' },
   { q: 'How long does on-page SEO take to show results in Dubai?', a: 'On-page SEO improvements typically produce measurable ranking changes within 4–8 weeks in Dubai and GCC markets. Commercial-intent pages optimized correctly can see ranking improvements in as few as 2–3 weeks depending on domain authority and competition.' },
-  { q: 'Does upranked.io offer on-page SEO near me in Dubai?', a: 'Yes. upranked.io is Dubai-based and offers on-page SEO for businesses across the GCC — including Dubai, Abu Dhabi, Riyadh, Kuwait City, and Manama — as well as London and New York. All on-page work is led by Sam Hamouda using the APEX Framework.' },
+  { q: 'Does upranked.io offer on-page SEO near me in Dubai?', a: 'Yes. upranked.io is Dubai-based and offers on-page SEO for businesses across the GCC — including Dubai, Abu Dhabi, Riyadh, Kuwait City, and Manama — as well as London and New York. All on-page work is led by Sama Alaa using the APEX Framework.' },
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
@@ -74,7 +74,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 export default function OnPageSEO() {
   usePageMeta({
     title: 'On-Page SEO Dubai & GCC — Content, Keywords & Page Optimization',
-    description: 'On-page SEO services for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Bilingual EN/AR optimization, title tags, schema markup — APEX Framework by Sam Hamouda.',
+    description: 'On-page SEO services for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Bilingual EN/AR optimization, title tags, schema markup — APEX Framework by Sama Alaa.',
     schema,
     schemaId: 'on-page-seo-schema',
   });
@@ -115,7 +115,7 @@ export default function OnPageSEO() {
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
               <img
                 src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sam Hamouda — on-page SEO consultant in Dubai optimizing title tags, keywords and content for GCC businesses at upranked.io"
+                alt="Sama Alaa — on-page SEO consultant in Dubai optimizing title tags, keywords and content for GCC businesses at upranked.io"
                 width={480}
                 height={640}
                 loading="eager"
@@ -156,7 +156,7 @@ export default function OnPageSEO() {
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
               src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sam Hamouda — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
+              alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
               width={400}
               height={640}
               loading="lazy"
@@ -165,9 +165,9 @@ export default function OnPageSEO() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Written &amp; Overseen By</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam Hamouda is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

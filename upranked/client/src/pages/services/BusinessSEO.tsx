@@ -149,7 +149,7 @@ const tocItems = [
   { id: 'benefits', label: 'What You Get' },
   { id: 'apex', label: 'The APEX Process' },
   { id: 'results', label: 'Results & Stats' },
-  { id: 'about-sam', label: 'About Sam Hamouda' },
+  { id: 'about-sam', label: 'About Sama Alaa' },
   { id: 'why-upranked', label: 'Why upranked.io' },
   { id: 'service-areas', label: 'Service Areas' },
   { id: 'faq', label: 'FAQ' },
@@ -214,7 +214,7 @@ const schema = {
     {
       '@type': 'Person',
       '@id': 'https://upranked.io/about#person',
-      name: 'Sam Hamouda',
+      name: 'Sama Alaa',
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
       url: 'https://upranked.io/about',
@@ -318,7 +318,7 @@ export default function BusinessSEO() {
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="block">
               <img
                 src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sam Hamouda — business SEO consultant in Dubai delivering revenue-focused organic growth for GCC companies at upranked.io"
+                alt="Sama Alaa — business SEO consultant in Dubai delivering revenue-focused organic growth for GCC companies at upranked.io"
                 width={600} height={460}
                 loading="eager"
                 decoding="async"
@@ -536,7 +536,7 @@ export default function BusinessSEO() {
       <section className="py-12 bg-gradient-to-r from-accent/10 via-navy to-accent/10 border-y border-accent/20">
         <div className="container-premium text-center">
           <p className="text-lg font-semibold text-white mb-2">Ready to turn organic search into your top revenue channel?</p>
-          <p className="text-text-secondary text-sm mb-6">Book a free 30-minute APEX Diagnostic with Sam Hamouda — no commitment, clear opportunity map.</p>
+          <p className="text-text-secondary text-sm mb-6">Book a free 30-minute APEX Diagnostic with Sama Alaa — no commitment, clear opportunity map.</p>
           <Link href="/contact">
             <a className="btn-primary inline-flex items-center gap-2">
               Get Your Free Business SEO Audit <ArrowRight className="w-4 h-4" />
@@ -631,16 +631,16 @@ export default function BusinessSEO() {
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <img
                 src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sam Hamouda — business SEO expert Dubai, founder of upranked.io GCC SEO agency"
+                alt="Sama Alaa — business SEO expert Dubai, founder of upranked.io GCC SEO agency"
                 width={140} height={140}
                 loading="lazy"
                 className="rounded-xl border border-accent/20 flex-shrink-0 w-28 h-28 sm:w-36 sm:h-36 object-cover object-top"
               />
               <div>
-                <h2 className="text-2xl font-bold text-white mb-1">Sam Hamouda</h2>
+                <h2 className="text-2xl font-bold text-white mb-1">Sama Alaa</h2>
                 <p className="text-accent text-sm mb-4">Founder &amp; Chief Growth Strategist, upranked.io · Dubai, UAE</p>
                 <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                  Sam Hamouda is a specialist business SEO strategist with 20+ GCC client engagements across professional services, B2B technology, financial services, and e-commerce in Dubai, Abu Dhabi, Riyadh, Doha, and Kuwait City. As the creator of the APEX Framework™ — upranked.io's proprietary Audit → Position → Execute → Expand methodology — Sam brings sector-specific GCC market knowledge that generic agencies built on Western playbooks cannot replicate.
+                  Sama Alaa is a specialist business SEO strategist with 20+ GCC client engagements across professional services, B2B technology, financial services, and e-commerce in Dubai, Abu Dhabi, Riyadh, Doha, and Kuwait City. As the creator of the APEX Framework™ — upranked.io's proprietary Audit → Position → Execute → Expand methodology — Sam brings sector-specific GCC market knowledge that generic agencies built on Western playbooks cannot replicate.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {['Business SEO', 'Commercial Intent Strategy', 'GCC Market Positioning', 'Bilingual EN/AR SEO', 'B2B Lead Generation', 'Revenue Attribution'].map(tag => (
@@ -679,7 +679,7 @@ export default function BusinessSEO() {
               { icon: BarChart3, title: 'Revenue Reporting, Not Vanity Metrics', body: 'Every monthly report links organic activity to leads, proposals, and revenue. You can compare your SEO ROI against paid search or any other channel with full attribution transparency.' },
               { icon: Globe, title: 'True Bilingual SEO', body: 'Native Arabic keyword research, independent Arabic content strategy, and technical RTL configuration. Arabic SEO as a fully parallel channel — not translated English content repackaged.' },
               { icon: Shield, title: 'APEX Framework™ Methodology', body: 'A proprietary 4-phase framework built from 20+ GCC client engagements. Not a generic agency checklist — a structured, commercially focused system that adapts to GCC market conditions.' },
-              { icon: Users, title: 'Direct Access to Sam Hamouda', body: 'You work directly with the founder, not handed to a junior account manager. Sam owns every strategy, every review, every recommendation — full accountability from kickoff to results.' },
+              { icon: Users, title: 'Direct Access to Sama Alaa', body: 'You work directly with the founder, not handed to a junior account manager. Sam owns every strategy, every review, every recommendation — full accountability from kickoff to results.' },
               { icon: Award, title: 'Sector-Specific Knowledge', body: 'Business SEO for Dubai and GCC is not one-size-fits-all. We bring deep knowledge of how buyers search in professional services, B2B tech, financial services, real estate, and logistics across the region.' },
             ].map((item, i) => (
               <motion.div
@@ -775,7 +775,7 @@ export default function BusinessSEO() {
               Ready to Make Business SEO Your <span className="text-accent">Top Revenue Channel</span>?
             </h2>
             <p className="text-text-secondary mb-6 leading-relaxed">
-              Book a free 30-minute APEX Diagnostic call with Sam Hamouda. Walk away with a clear picture of your Dubai and GCC search opportunity, a competitor gap analysis, and a prioritised roadmap — no commitment required.
+              Book a free 30-minute APEX Diagnostic call with Sama Alaa. Walk away with a clear picture of your Dubai and GCC search opportunity, a competitor gap analysis, and a prioritised roadmap — no commitment required.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

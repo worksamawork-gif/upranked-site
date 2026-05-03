@@ -1,4 +1,4 @@
-import { Search, Home, ArrowRight } from 'lucide-react';
+﻿import { Search, Home, ArrowRight } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -37,7 +37,7 @@ export default function NotFound() {
             <p className="text-text-secondary text-sm mb-6 uppercase tracking-widest font-semibold">Popular Pages</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
               {[
-                { label: 'About Sam Hamouda', href: '/about' },
+                { label: 'About Sama Alaa', href: '/about' },
                 { label: 'APEX Methodology', href: '/methodology' },
                 { label: 'Industries We Serve', href: '/industries' },
                 { label: 'Medical SEO', href: '/industries/medical-seo' },

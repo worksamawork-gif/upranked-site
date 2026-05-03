@@ -15,7 +15,7 @@ const schema = {
       { '@type': 'Question', name: 'Do you offer local SEO for businesses across multiple GCC cities?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io builds multi-location local SEO strategies for businesses operating across Dubai, Abu Dhabi, Sharjah, Riyadh, Jeddah, Kuwait City, and Manama simultaneously — with separate GBP profiles, city-specific landing pages, and localized citation building for each location.' } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'SEO', item: 'https://upranked.io/industries' }, { '@type': 'ListItem', position: 3, name: 'Local SEO', item: 'https://upranked.io/seo/local' }] },
-    { '@type': 'Person', name: 'Sam Hamouda', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function LocalSEO() {
-  usePageMeta({ title: 'Local SEO Dubai & GCC — Near-Me Search & Google Business Profile', description: 'Local SEO for Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London & New York. Google Business Profile, near-me optimization, local citations — APEX Framework by Sam Hamouda.', schema, schemaId: 'local-seo-schema' });
+  usePageMeta({ title: 'Local SEO Dubai & GCC — Near-Me Search & Google Business Profile', description: 'Local SEO for Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London & New York. Google Business Profile, near-me optimization, local citations — APEX Framework by Sama Alaa.', schema, schemaId: 'local-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -78,7 +78,7 @@ export default function LocalSEO() {
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
               <img
                 src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-                alt="Sam Hamouda — local SEO expert in Dubai optimizing Google Business Profiles and near-me searches for GCC businesses at upranked.io"
+                alt="Sama Alaa — local SEO expert in Dubai optimizing Google Business Profiles and near-me searches for GCC businesses at upranked.io"
                 width={480}
                 height={640}
                 loading="eager"
@@ -108,7 +108,7 @@ export default function LocalSEO() {
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
               src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sam Hamouda — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
+              alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
               width={400}
               height={640}
               loading="lazy"
@@ -117,9 +117,9 @@ export default function LocalSEO() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Written &amp; Overseen By</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam Hamouda is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

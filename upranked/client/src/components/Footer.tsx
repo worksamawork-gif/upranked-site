@@ -95,7 +95,7 @@ export default function Footer() {
             <h4 className="font-bold text-sm uppercase tracking-widest text-accent mb-4">Company</h4>
             <ul className="space-y-2">
               {[
-                { label: 'About Sam Hamouda', href: '/about' },
+                { label: 'About Sama Alaa', href: '/about' },
                 { label: 'APEX Methodology', href: '/methodology' },
                 { label: 'Insights / Blog', href: '/blog' },
                 { label: 'FAQ', href: '/faq' },

@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -7,14 +7,14 @@ import { usePageMeta } from '../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency Germany — Frankfurt & Berlin Search Optimization', description: 'SEO services for businesses in Germany — technical SEO, content strategy, and GCC-to-Germany expansion SEO by upranked.io. APEX Framework by Sam Hamouda.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/eu/germany', areaServed: ['Frankfurt', 'Berlin', 'Munich', 'Germany'] },
+    { '@type': 'Service', name: 'SEO Agency Germany — Frankfurt & Berlin Search Optimization', description: 'SEO services for businesses in Germany — technical SEO, content strategy, and GCC-to-Germany expansion SEO by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/eu/germany', areaServed: ['Frankfurt', 'Berlin', 'Munich', 'Germany'] },
     { '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'Does upranked.io offer SEO services in Germany?', acceptedAnswer: { '@type': 'Answer', text: "Yes. upranked.io serves businesses in Germany — including Frankfurt's financial sector, Berlin's tech ecosystem, and Munich's industrial and engineering market. The APEX Framework delivers structured SEO across German market verticals. Book a free APEX Diagnostic to discuss your Germany SEO strategy." } },
       { '@type': 'Question', name: 'How competitive is SEO in Germany compared to Dubai?', acceptedAnswer: { '@type': 'Answer', text: "Germany is one of Europe's most competitive B2B SEO markets. Frankfurt's financial services and Berlin's tech sector have high keyword difficulty and sophisticated buyer search behaviour. German buyers research thoroughly before purchase — making content architecture and technical authority essential for ranking success." } },
       { '@type': 'Question', name: 'Do you serve GCC businesses expanding into Germany?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io specifically serves GCC businesses entering the German market — for example, a Dubai-based investment firm targeting Frankfurt financial institutions, or a GCC industrial supplier targeting German manufacturing procurement. Cross-market GCC-to-Germany SEO from a single specialist agency is a core upranked.io capability.' } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'Germany SEO', item: 'https://upranked.io/markets/eu/germany' }] },
-    { '@type': 'Person', name: 'Sam Hamouda', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -50,7 +50,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function GermanyMarket() {
-  usePageMeta({ title: 'SEO Agency Germany — Frankfurt, Berlin & DACH Search Optimization', description: 'SEO agency for Germany and the DACH region. Technical SEO, content architecture, and GCC-to-Germany expansion SEO — APEX Framework by Sam Hamouda at upranked.io.', schema, schemaId: 'germany-market-schema' });
+  usePageMeta({ title: 'SEO Agency Germany — Frankfurt, Berlin & DACH Search Optimization', description: 'SEO agency for Germany and the DACH region. Technical SEO, content architecture, and GCC-to-Germany expansion SEO — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'germany-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -97,12 +97,12 @@ export default function GermanyMarket() {
       <section className="section-padding bg-dark-gray">
         <div className="container-premium max-w-4xl">
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
-            <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sam Hamouda — SEO strategist at upranked.io serving Germany and GCC businesses" width={112} height={176} loading="lazy" decoding="async" className="w-28 h-44 rounded-xl object-cover object-top flex-shrink-0" />
+            <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — SEO strategist at upranked.io serving Germany and GCC businesses" width={112} height={176} loading="lazy" decoding="async" className="w-28 h-44 rounded-xl object-cover object-top flex-shrink-0" />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Your Germany SEO Strategist</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam Hamouda is a GCC SEO strategist with deep expertise across GCC and global markets. The APEX Framework — upranked.io's structured SEO methodology — delivers the same systematic content architecture and technical foundations that win in Dubai and Riyadh to Germany's highly competitive financial services, industrial, and professional B2B sectors.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across GCC and global markets. The APEX Framework — upranked.io's structured SEO methodology — delivers the same systematic content architecture and technical foundations that win in Dubai and Riyadh to Germany's highly competitive financial services, industrial, and professional B2B sectors.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

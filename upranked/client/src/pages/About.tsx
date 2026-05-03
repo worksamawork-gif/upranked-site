@@ -1,11 +1,11 @@
 ﻿/*
  * PAGE: /about
- * PRIMARY KW: Sam Hamouda SEO expert GCC (Vol: ~200/mo branded | KD: 12)
+ * PRIMARY KW: Sama Alaa SEO expert GCC (Vol: ~200/mo branded | KD: 12)
  * SECONDARY KW: GCC SEO expert Dubai, SEO strategist UAE, upranked.io founder, APEX Framework SEO
  * LSI: E-E-A-T SEO expert, bilingual SEO GCC, GCC growth strategist, SEO consultant Dubai
  * NEAR ME VARIANTS: SEO expert near me Dubai, SEO consultant near me GCC, SEO strategist near me UAE
- * META TITLE (60 chars): Sam Hamouda | GCC SEO Expert & Growth Strategist | upranked.io
- * META DESC (150 chars): Meet Sam Hamouda, GCC SEO expert & founder of upranked.io. Creator of APEX Framework™. 20+ GCC clients across UAE, Saudi Arabia, Kuwait & Qatar.
+ * META TITLE (60 chars): Sama Alaa | GCC SEO Expert & Growth Strategist | upranked.io
+ * META DESC (150 chars): Meet Sama Alaa, GCC SEO expert & founder of upranked.io. Creator of APEX Framework™. 20+ GCC clients across UAE, Saudi Arabia, Kuwait & Qatar.
  * INTERNAL LINKS TO: /contact, /methodology, /industries, /growth-intelligence, /blog
  * INTERNAL LINKS FROM: All service pages (bio box), Home hero, Footer, Blog author
  * SCHEMA: @graph → Person + Organization + FAQPage + BreadcrumbList
@@ -64,33 +64,33 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 /* ─── Data ─── */
 const faqs = [
   {
-    q: 'Who is Sam Hamouda and what makes him a GCC SEO expert?',
-    a: 'Sam Hamouda is the founder and Chief Growth Strategist at upranked.io — a premium Growth Intelligence Lab serving high-value businesses across the GCC. Sam specialises exclusively in the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain markets, bringing deep understanding of GCC search behaviour, Arabic SEO dynamics, and the commercial requirements of trust-sensitive industries like healthcare and industrial B2B. He created the APEX Framework™ — upranked.io\'s proprietary 4-phase SEO methodology — from 20+ direct GCC client engagements.',
+    q: 'Who is Sama Alaa and what makes him a GCC SEO expert?',
+    a: 'Sama Alaa is the founder and Chief Growth Strategist at upranked.io — a premium Growth Intelligence Lab serving high-value businesses across the GCC. Sam specialises exclusively in the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain markets, bringing deep understanding of GCC search behaviour, Arabic SEO dynamics, and the commercial requirements of trust-sensitive industries like healthcare and industrial B2B. He created the APEX Framework™ — upranked.io\'s proprietary 4-phase SEO methodology — from 20+ direct GCC client engagements.',
   },
   {
-    q: 'What industries does Sam Hamouda specialise in?',
+    q: 'What industries does Sama Alaa specialise in?',
     a: 'Sam\'s three core specialisations are Medical SEO (clinics, hospitals, specialist practices across Dubai, Abu Dhabi, and Riyadh), Industrial B2B SEO (manufacturers, suppliers, and trading companies across UAE free zones and Saudi industrial cities), and Business SEO (professional services, financial firms, and B2B companies across the GCC). These sectors require depth of expertise — not just traffic tactics — because buyers are sophisticated, purchase decisions are high-value, and Google\'s E-E-A-T signals heavily influence rankings.',
   },
   {
-    q: 'What is the APEX Framework™ created by Sam Hamouda?',
+    q: 'What is the APEX Framework™ created by Sama Alaa?',
     a: 'The APEX Framework™ is upranked.io\'s proprietary 4-phase SEO and growth methodology: Audit (forensic review of site health, keyword gaps, and competitor landscape), Position (strategic keyword architecture and content positioning for GCC commercial intent), Execute (on-page optimisation, schema markup, bilingual content, and authority building), and Expand (scaling rankings, targeting new GCC cities and markets, and compounding ROI month over month). The framework was developed specifically for high-value GCC businesses — not adapted from a Western playbook.',
   },
   {
-    q: 'Does Sam Hamouda offer bilingual English and Arabic SEO?',
+    q: 'Does Sama Alaa offer bilingual English and Arabic SEO?',
     a: 'Yes. Bilingual SEO is a core pillar of every upranked.io engagement. Sam conducts independent Arabic keyword research — not translated English keywords — produces or reviews native-quality Arabic content, implements hreflang tagging, and configures RTL technical requirements. Arabic search in the UAE and Saudi Arabia represents a distinct and often underserved channel. Businesses that skip Arabic SEO leave 35–50% of GCC search volume and a large Arabic-speaking buyer segment untouched.',
   },
   {
-    q: 'Can I find an SEO expert near me in Dubai — is Sam Hamouda based in Dubai?',
+    q: 'Can I find an SEO expert near me in Dubai — is Sama Alaa based in Dubai?',
     a: 'Yes. upranked.io is based in Dubai, UAE, and serves clients across the GCC — Dubai, Abu Dhabi, Sharjah, Ajman, Riyadh, Jeddah, NEOM, Doha, Kuwait City, and Manama. If you\'re searching for an SEO expert near me in Dubai, an SEO consultant near me in the UAE, or a GCC growth strategist, you can reach Sam directly via our contact page or email Sam@upranked.io. All strategy calls are available remotely and in person across the region.',
   },
   {
-    q: 'How does Sam Hamouda differ from a typical SEO agency in Dubai?',
+    q: 'How does Sama Alaa differ from a typical SEO agency in Dubai?',
     a: 'Three distinctions: (1) Founder-led delivery — Sam is personally involved in every engagement, not handed off to a junior account manager after the sales call. (2) GCC-first, globally capable — upranked.io is built on deep GCC market intelligence (UAE, KSA, Kuwait, Qatar, Bahrain) and also serves expansion markets in London and New York, applying the same rigorous methodology wherever your clients search. (3) Revenue-first reporting — every engagement is measured in leads, pipeline, and revenue attributed to organic search, not just rankings and sessions.',
   },
 ];
 
 const tocItems = [
-  { id: 'about-sam', label: 'About Sam Hamouda' },
+  { id: 'about-sam', label: 'About Sama Alaa' },
   { id: 'expertise', label: 'Areas of Expertise' },
   { id: 'apex', label: 'The APEX Framework™' },
   { id: 'philosophy', label: 'GCC Philosophy' },
@@ -137,9 +137,9 @@ const schema = {
     {
       '@type': 'Person',
       '@id': 'https://upranked.io/about#person',
-      name: 'Sam Hamouda',
+      name: 'Sama Alaa',
       jobTitle: 'Founder & Chief Growth Strategist',
-      description: 'Sam Hamouda is a GCC SEO expert and founder of upranked.io — a premium Growth Intelligence Lab serving high-value businesses across the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain. Creator of the APEX Framework™.',
+      description: 'Sama Alaa is a GCC SEO expert and founder of upranked.io — a premium Growth Intelligence Lab serving high-value businesses across the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain. Creator of the APEX Framework™.',
       worksFor: {
         '@type': 'Organization',
         '@id': 'https://upranked.io/#organization',
@@ -187,7 +187,7 @@ const schema = {
       '@id': 'https://upranked.io/about#breadcrumb',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' },
-        { '@type': 'ListItem', position: 2, name: 'About Sam Hamouda', item: 'https://upranked.io/about' },
+        { '@type': 'ListItem', position: 2, name: 'About Sama Alaa', item: 'https://upranked.io/about' },
       ],
     },
   ],
@@ -198,8 +198,8 @@ export default function About() {
   const [activeSection, setActiveSection] = useState('');
 
   usePageMeta({
-    title: 'upranked.io — SEO Agency Dubai & GCC | Sam Hamouda',
-    description: 'upranked.io is a premium SEO Agency in Dubai specialising in Medical, Industrial & Business SEO across the GCC. Founded by Sam Hamouda. Built on the APEX Framework™.',
+    title: 'upranked.io — SEO Agency Dubai & GCC | Sama Alaa',
+    description: 'upranked.io is a premium SEO Agency in Dubai specialising in Medical, Industrial & Business SEO across the GCC. Founded by Sama Alaa. Built on the APEX Framework™.',
     schemaId: 'about-schema',
     schema,
   });
@@ -244,7 +244,7 @@ export default function About() {
             </p>
 
             <p className="text-sm text-text-secondary mb-8 leading-relaxed max-w-2xl">
-              Founded by <span className="text-white font-semibold">Sam Hamouda</span> — with 20+ GCC client engagements across Dubai, Riyadh, Kuwait City, Manama, London, and New York.
+              Founded by <span className="text-white font-semibold">Sama Alaa</span> — with 20+ GCC client engagements across Dubai, Riyadh, Kuwait City, Manama, London, and New York.
             </p>
 
             {/* NAP #1 */}
@@ -313,7 +313,7 @@ export default function About() {
             >
               <img
                 src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sam Hamouda — Founder of upranked.io Business Growth Agency, Dubai UAE"
+                alt="Sama Alaa — Founder of upranked.io Business Growth Agency, Dubai UAE"
                 width={520} height={560}
                 loading="eager"
                 className="rounded-2xl border border-border w-full max-w-md mx-auto object-cover"
@@ -327,8 +327,8 @@ export default function About() {
               {/* Fallback avatar */}
               <div className="hidden w-full max-w-md mx-auto aspect-[4/4.3] rounded-2xl bg-gradient-to-br from-dark-gray to-navy border border-border items-center justify-center">
                 <div className="text-center p-8">
-                  <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sam Hamouda — Founder of upranked.io" width={128} height={128} className="w-32 h-32 rounded-full object-cover object-top mx-auto mb-6 border-2 border-accent/30" decoding="async" />
-                  <p className="text-white font-bold text-xl">Sam Hamouda</p>
+                  <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder of upranked.io" width={128} height={128} className="w-32 h-32 rounded-full object-cover object-top mx-auto mb-6 border-2 border-accent/30" decoding="async" />
+                  <p className="text-white font-bold text-xl">Sama Alaa</p>
                   <p className="text-accent text-sm mt-1">Founder, upranked.io</p>
                   <p className="text-text-secondary text-xs mt-1">Dubai, UAE</p>
                 </div>
@@ -345,12 +345,12 @@ export default function About() {
             >
               <p className="text-accent text-xs font-semibold uppercase tracking-widest mb-4">The Founder</p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Meet <span className="text-accent">Sam Hamouda</span>, Founder of upranked.io
+                Meet <span className="text-accent">Sama Alaa</span>, Founder of upranked.io
               </h2>
 
               <div className="space-y-4 text-text-secondary leading-relaxed text-sm mb-6">
                 <p>
-                  Sam Hamouda is the founder and Chief Growth Strategist at upranked.io — the GCC's premium Growth Intelligence Lab, built exclusively for high-value businesses in Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Kuwait City, and Manama. With 20+ direct client engagements across the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain, Sam brings sector-specific GCC market knowledge that no generic global agency can replicate.
+                  Sama Alaa is the founder and Chief Growth Strategist at upranked.io — the GCC's premium Growth Intelligence Lab, built exclusively for high-value businesses in Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Kuwait City, and Manama. With 20+ direct client engagements across the UAE, Saudi Arabia, Kuwait, Qatar, and Bahrain, Sam brings sector-specific GCC market knowledge that no generic global agency can replicate.
                 </p>
                 <p>
                   Sam's three core specialisations — Medical SEO, Industrial B2B SEO, and Business SEO — share one common characteristic: they are high-trust, high-stakes sectors where buyers conduct rigorous online research before committing. This is where Sam's expertise in E-E-A-T (Experience, Expertise, Authority, Trust) content strategy, bilingual EN/AR SEO, and commercial intent optimisation creates the most measurable business impact.
@@ -470,7 +470,7 @@ export default function About() {
 
           <img
             src="/images/sam-hamouda-seo-consultant-dubai.webp"
-            alt="Sam Hamouda — founder upranked.io, GCC SEO strategist Dubai"
+            alt="Sama Alaa — founder upranked.io, GCC SEO strategist Dubai"
             width={480} height={480}
             loading="lazy"
             className="w-48 h-48 rounded-full object-cover object-top mx-auto mt-10 border-2 border-accent/30"
@@ -487,7 +487,7 @@ export default function About() {
               The <span className="text-accent">APEX Framework™</span> — Sam's Proprietary Methodology
             </h2>
             <p className="text-text-secondary max-w-2xl mx-auto">
-              Created by Sam Hamouda from 20+ GCC client engagements. A structured, commercially-driven 4-phase system built for the UAE, Saudi Arabia, and GCC markets — not adapted from a Western template.
+              Created by Sama Alaa from 20+ GCC client engagements. A structured, commercially-driven 4-phase system built for the UAE, Saudi Arabia, and GCC markets — not adapted from a Western template.
             </p>
           </motion.div>
 
@@ -495,7 +495,7 @@ export default function About() {
           <div className="border-l-4 border-accent bg-dark-gray/80 rounded-r-xl p-6 mb-10 max-w-3xl mx-auto">
             <p className="text-accent text-xs font-semibold uppercase tracking-wide mb-2">What Is the APEX Framework™?</p>
             <p className="text-text-secondary leading-relaxed text-sm">
-              The APEX Framework™ is a proprietary 4-phase SEO and growth methodology developed by Sam Hamouda at upranked.io. It stands for <strong className="text-white">Audit</strong> (forensic digital health and keyword opportunity review), <strong className="text-white">Position</strong> (revenue-intent keyword architecture and competitive gap analysis), <strong className="text-white">Execute</strong> (on-page, technical, content, and authority implementation), and <strong className="text-white">Expand</strong> (scaling rankings, new markets, and compounding organic ROI). The framework applies to all upranked.io service lines — Medical SEO, Industrial SEO, Business SEO, and Growth Intelligence consulting.
+              The APEX Framework™ is a proprietary 4-phase SEO and growth methodology developed by Sama Alaa at upranked.io. It stands for <strong className="text-white">Audit</strong> (forensic digital health and keyword opportunity review), <strong className="text-white">Position</strong> (revenue-intent keyword architecture and competitive gap analysis), <strong className="text-white">Execute</strong> (on-page, technical, content, and authority implementation), and <strong className="text-white">Expand</strong> (scaling rankings, new markets, and compounding organic ROI). The framework applies to all upranked.io service lines — Medical SEO, Industrial SEO, Business SEO, and Growth Intelligence consulting.
             </p>
           </div>
 
@@ -556,7 +556,7 @@ export default function About() {
 
           <img
             src="/images/business/apex-business-seo-process.webp"
-            alt="APEX Framework methodology — Sam Hamouda's proprietary SEO process for GCC businesses"
+            alt="APEX Framework methodology — Sama Alaa's proprietary SEO process for GCC businesses"
             width={900} height={360}
             loading="lazy"
             className="w-full rounded-xl border border-border mt-10"
@@ -631,7 +631,7 @@ export default function About() {
               {
                 icon: Users,
                 title: 'Founder-Led Delivery',
-                desc: 'Sam Hamouda is personally involved in every engagement from kickoff to monthly review. No junior handoffs, no account management black boxes — direct accountability from the founder.',
+                desc: 'Sama Alaa is personally involved in every engagement from kickoff to monthly review. No junior handoffs, no account management black boxes — direct accountability from the founder.',
               },
               {
                 icon: Award,
@@ -685,7 +685,7 @@ export default function About() {
         <div className="container-premium max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              Where Sam Hamouda Works — <span className="text-accent">GCC, UK &amp; USA</span>
+              Where Sama Alaa Works — <span className="text-accent">GCC, UK &amp; USA</span>
             </h2>
             <p className="text-text-secondary text-center mb-10 max-w-2xl mx-auto">
               Searching for an SEO expert near me in Dubai, London, or New York? upranked.io serves the GCC's priority markets and has global reach in London and New York for businesses targeting international expansion.
@@ -737,7 +737,7 @@ export default function About() {
         <div className="container-premium max-w-3xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }} className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              About Sam Hamouda — <span className="text-accent">FAQ</span>
+              About Sama Alaa — <span className="text-accent">FAQ</span>
             </h2>
             <p className="text-text-secondary">Common questions about Sam's background, expertise, and the APEX Framework™.</p>
           </motion.div>
@@ -754,7 +754,7 @@ export default function About() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Star className="w-12 h-12 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Work Directly with <span className="text-accent">Sam Hamouda</span>?
+              Ready to Work Directly with <span className="text-accent">Sama Alaa</span>?
             </h2>
             <p className="text-text-secondary mb-6 leading-relaxed">
               Book a free 30-minute APEX Diagnostic call. Bring your biggest growth challenge — leave with a GCC-specific strategy, competitor gap analysis, and a prioritised roadmap built for your market and sector.

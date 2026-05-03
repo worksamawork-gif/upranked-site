@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { usePageMeta } from '@/hooks/usePageMeta';
 
 export default function Terms() {
@@ -29,7 +29,7 @@ export default function Terms() {
 
               <section>
                 <h2 className="text-xl font-bold text-white mb-3">3. Intellectual Property</h2>
-                <p>All content on this Website — including text, graphics, logos, and methodology documentation — is the intellectual property of upranked.io and Sam Hamouda unless otherwise stated. You may not reproduce, distribute, or create derivative works without prior written consent.</p>
+                <p>All content on this Website — including text, graphics, logos, and methodology documentation — is the intellectual property of upranked.io and Sama Alaa unless otherwise stated. You may not reproduce, distribute, or create derivative works without prior written consent.</p>
                 <p className="mt-3">Work product created specifically for a client under a signed agreement becomes the client's property upon full payment, unless otherwise specified.</p>
               </section>
 

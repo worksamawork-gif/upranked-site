@@ -39,10 +39,10 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 const faqs = [
   { q: 'What is business strategy and market positioning for GCC companies?', a: 'Business strategy at upranked.io means defining the exact competitive position your company should hold in the Dubai, GCC, or global market — and building the digital and commercial roadmap to achieve it. Market positioning defines how your target buyers perceive you relative to alternatives. In the GCC\'s competitive business environment, clear positioning commands premium pricing, attracts higher-quality clients, and creates sustainable competitive moats. The APEX Framework™ (Audit → Position → Execute → Expand) structures every strategy engagement.' },
   { q: 'How is business strategy different from business consultation?', a: 'Business consultation at upranked.io addresses a specific immediate challenge in a focused session — a keyword strategy question, a competitor displacement problem, or a channel investment decision. Business strategy is a longer engagement focused on the foundational layer: your competitive positioning, market differentiation, go-to-market channel architecture, and the 90-180 day roadmap to execute it. Consultation is tactical; strategy is foundational. Some clients start with consultation and evolve to a full strategy engagement.' },
-  { q: 'Do you work with companies entering the GCC from London or New York?', a: 'Yes — GCC market entry strategy is one of upranked.io\'s core specialisations. Companies expanding from London or New York into Dubai, Riyadh, Kuwait, or Bahrain need to understand: GCC buyer search behaviour and commercial intent patterns, Arabic SEO requirements and the bilingual channel split, UAE free zone and emirate-level positioning, local competitor landscape analysis, and the go-to-market channel mix that works in their specific GCC city. Sam Hamouda leads every market entry engagement personally.' },
+  { q: 'Do you work with companies entering the GCC from London or New York?', a: 'Yes — GCC market entry strategy is one of upranked.io\'s core specialisations. Companies expanding from London or New York into Dubai, Riyadh, Kuwait, or Bahrain need to understand: GCC buyer search behaviour and commercial intent patterns, Arabic SEO requirements and the bilingual channel split, UAE free zone and emirate-level positioning, local competitor landscape analysis, and the go-to-market channel mix that works in their specific GCC city. Sama Alaa leads every market entry engagement personally.' },
   { q: 'What does a 90-day growth roadmap include?', a: 'A 90-day growth roadmap from upranked.io includes: current position audit (keyword rankings, competitor gaps, technical health), market positioning statement and differentiation framework, prioritised channel investment plan (organic SEO, bilingual content, GBP optimisation, paid channel integration), content and authority building schedule, quick-win list for months 1–2, and a 30/60/90 milestone tracker with KPIs. The roadmap is designed to be executed by your team or in partnership with upranked.io\'s SEO retainer.' },
   { q: 'How long does a business strategy engagement last?', a: 'Typically 3–6 months for a full strategy build, implementation guidance, and quarterly review. Some clients engage for a one-time market entry strategy (4–6 weeks) and then continue with an SEO retainer to execute the digital growth components. Others continue as ongoing quarterly strategy partners as their business scales across the GCC, London, or New York. The right format depends on your team\'s execution capacity and how much ongoing strategic guidance you need.' },
-  { q: 'How do I start a business strategy engagement?', a: 'Book a free 30-minute APEX Diagnostic via the Contact page, our contact page, or email Sam@upranked.io. Sam Hamouda reviews your current position, identifies your primary positioning challenge, and outlines the strategy engagement format that fits your situation — with no commitment required for the intro call.' },
+  { q: 'How do I start a business strategy engagement?', a: 'Book a free 30-minute APEX Diagnostic via the Contact page, our contact page, or email Sam@upranked.io. Sama Alaa reviews your current position, identifies your primary positioning challenge, and outlines the strategy engagement format that fits your situation — with no commitment required for the intro call.' },
 ];
 
 const schema = {
@@ -66,7 +66,7 @@ const schema = {
     {
       '@type': 'Person',
       '@id': 'https://upranked.io/about#person',
-      name: 'Sam Hamouda',
+      name: 'Sama Alaa',
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -94,7 +94,7 @@ const deliverables = [
 
 const steps = [
   { n: '01', title: 'Market Intelligence', desc: 'Deep research into your market, competitors, and buyer behaviour in Dubai, Riyadh, Kuwait, Bahrain, London, or New York — before any recommendations are made.' },
-  { n: '02', title: 'Positioning Workshop', desc: 'A focused working session with Sam Hamouda to define your competitive advantage, messaging framework, and the exact market position to own.' },
+  { n: '02', title: 'Positioning Workshop', desc: 'A focused working session with Sama Alaa to define your competitive advantage, messaging framework, and the exact market position to own.' },
   { n: '03', title: 'Strategy Architecture', desc: 'A clear, prioritised growth strategy with channel investments, content roadmap, and 30/60/90-day milestone plan — built for your team to execute.' },
   { n: '04', title: 'Execution Support', desc: 'Ongoing accountability, quarterly reviews, and strategic guidance as you execute across your GCC and global markets.' },
 ];
@@ -136,14 +136,14 @@ export default function BusinessStrategy() {
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Book a Strategy Session <ArrowRight className="w-5 h-5" /></a></Link>
-                  <Link href="/about"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sam Hamouda</a></Link>
+                  <Link href="/about"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sama Alaa</a></Link>
                 </div>
               </motion.div>
             </div>
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
               <img
                 src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sam Hamouda — business strategy and market positioning consultant in Dubai building growth roadmaps for GCC companies at upranked.io"
+                alt="Sama Alaa — business strategy and market positioning consultant in Dubai building growth roadmaps for GCC companies at upranked.io"
                 width={480}
                 height={640}
                 loading="eager"
@@ -258,7 +258,7 @@ export default function BusinessStrategy() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Star className="w-12 h-12 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Build a <span className="text-accent">Winning Position</span> in Dubai &amp; the GCC?</h2>
-            <p className="text-text-secondary mb-6 leading-relaxed">Book a free APEX Diagnostic with Sam Hamouda. We assess your current positioning and identify your highest-leverage growth opportunities in Dubai, Riyadh, London, or New York.</p>
+            <p className="text-text-secondary mb-6 leading-relaxed">Book a free APEX Diagnostic with Sama Alaa. We assess your current positioning and identify your highest-leverage growth opportunities in Dubai, Riyadh, London, or New York.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Strategy Call <ArrowRight className="w-5 h-5" /></a></Link>
               <a href="/contact" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>
