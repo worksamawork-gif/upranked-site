@@ -78,16 +78,17 @@ const ROUTES = [
   '/blog/apex-framework-explained',
 ];
 
-function startServer() {
+function startServer(cleanShell) {
   return new Promise((resolve, reject) => {
     const app = express();
     app.use(express.static(DIST_DIR));
-    // SPA fallback for client-side routes (suppress URIError from unresolved env placeholders)
+    // SPA fallback: always serve the ORIGINAL clean Vite shell (not a pre-rendered
+    // home page) so schema tags from '/' don't bleed into other routes during prerender.
     app.use((err, _req, res, next) => {
-      if (err instanceof URIError) return res.sendFile(path.join(DIST_DIR, 'index.html'));
+      if (err instanceof URIError) return res.send(cleanShell);
       next(err);
     });
-    app.get('*', (_req, res) => res.sendFile(path.join(DIST_DIR, 'index.html')));
+    app.get('*', (_req, res) => res.send(cleanShell));
     const server = app.listen(PORT, () => resolve(server));
     server.on('error', reject);
   });
@@ -106,7 +107,12 @@ async function prerender() {
 
   console.log('\n🔍 Pre-rendering pages for AI crawlers...\n');
 
-  const server = await startServer();
+  // Read the original Vite-built shell BEFORE any route is rendered, so that
+  // pre-rendering '/' (which writes home-schema into dist/public/index.html)
+  // doesn't contaminate the fallback HTML served for subsequent routes.
+  const cleanShell = fs.readFileSync(path.join(DIST_DIR, 'index.html'), 'utf-8');
+
+  const server = await startServer(cleanShell);
   const browser = await chromium.launch();
   const context = await browser.newContext({
     // Block analytics and font downloads to speed up rendering
