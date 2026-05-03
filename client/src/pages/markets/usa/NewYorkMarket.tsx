@@ -7,7 +7,7 @@ import { usePageMeta } from '../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency New York USA — Search Optimization for New York Businesses', description: 'SEO services for businesses in New York City and the USA — technical SEO, content strategy, link building by upranked.io. APEX Framework by Sam Hamouda.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/usa/new-york', areaServed: ['New York City', 'New York', 'United States'] },
+    { '@type': 'Service', name: 'SEO Agency New York USA — Search Optimization for New York Businesses', description: 'SEO services for businesses in New York City and the USA — technical SEO, content strategy, link building by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/usa/new-york', areaServed: ['New York City', 'New York', 'United States'] },
     { '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'Does upranked.io offer SEO services in New York?', acceptedAnswer: { '@type': 'Answer', text: "Yes. upranked.io serves businesses in New York City and across the USA. The APEX Framework's structured SEO methodology delivers results in New York's highly competitive market — and is particularly suited for GCC businesses entering the US market, or US-based businesses expanding into GCC markets. Book a free APEX Diagnostic call to discuss your New York SEO strategy." } },
       { '@type': 'Question', name: 'How competitive is SEO in New York City?', acceptedAnswer: { '@type': 'Answer', text: 'New York City has some of the highest keyword competition and CPC values in the world — particularly in financial services, legal, real estate, healthcare, and professional B2B. Effective NYC SEO requires extremely strong technical foundations, high-authority content, and a systematic link acquisition strategy from US-authority publications. The APEX Framework was designed for exactly this level of competitive density.' } },
@@ -15,7 +15,7 @@ const schema = {
       { '@type': 'Question', name: 'What New York sectors does upranked.io specialize in?', acceptedAnswer: { '@type': 'Answer', text: "upranked.io's core NYC sectors align with GCC expertise: financial services and fintech, professional B2B services, healthcare and medical, legal services, and technology. These are also New York's highest-competition SEO sectors — where the APEX Framework's systematic content architecture and technical foundations deliver the largest competitive advantages." } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'New York SEO', item: 'https://upranked.io/markets/usa/new-york' }] },
-    { '@type': 'Person', name: 'Sam Hamouda', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function NewYorkMarket() {
-  usePageMeta({ title: 'SEO Agency New York USA — Technical SEO & Content Strategy', description: 'SEO agency for New York City and the USA. Technical SEO, content architecture, link building and GCC-to-US expansion SEO — APEX Framework by Sam Hamouda at upranked.io.', schema, schemaId: 'new-york-market-schema' });
+  usePageMeta({ title: 'SEO Agency New York USA — Technical SEO & Content Strategy', description: 'SEO agency for New York City and the USA. Technical SEO, content architecture, link building and GCC-to-US expansion SEO — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'new-york-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -97,7 +97,7 @@ export default function NewYorkMarket() {
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
               src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-              alt="Sam Hamouda — SEO strategist at upranked.io serving New York USA and GCC businesses"
+              alt="Sama Alaa — SEO strategist at upranked.io serving New York USA and GCC businesses"
               width={400}
               height={640}
               loading="lazy"
@@ -106,9 +106,9 @@ export default function NewYorkMarket() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Your New York SEO Strategist</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam Hamouda is a GCC SEO strategist with deep expertise across GCC and global markets. The APEX Framework — upranked.io's structured SEO methodology — delivers the systematic content architecture and technical foundations that NYC's financial services, legal, and professional B2B sectors demand, and bridges GCC businesses entering the US market.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across GCC and global markets. The APEX Framework — upranked.io's structured SEO methodology — delivers the systematic content architecture and technical foundations that NYC's financial services, legal, and professional B2B sectors demand, and bridges GCC businesses entering the US market.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

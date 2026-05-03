@@ -66,7 +66,7 @@ const schema = {
     {
       '@type': 'Person',
       '@id': 'https://upranked.io/about#person',
-      name: 'Sam Hamouda',
+      name: 'Sama Alaa',
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -143,7 +143,7 @@ export default function TailoredWebsite() {
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
               <img
                 src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-                alt="Sam Hamouda — custom website designer and SEO strategist in Dubai building bilingual conversion-optimised sites for GCC businesses at upranked.io"
+                alt="Sama Alaa — custom website designer and SEO strategist in Dubai building bilingual conversion-optimised sites for GCC businesses at upranked.io"
                 width={480}
                 height={640}
                 loading="eager"
@@ -220,7 +220,7 @@ export default function TailoredWebsite() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Star className="w-12 h-12 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready for a Website That <span className="text-accent">Works as Hard as You Do</span>?</h2>
-            <p className="text-text-secondary mb-6 leading-relaxed">Book a free discovery call with Sam Hamouda. Define your ideal website — how it looks, what it converts, and how it ranks in Dubai, Riyadh, London, or your target market.</p>
+            <p className="text-text-secondary mb-6 leading-relaxed">Book a free discovery call with Sama Alaa. Define your ideal website — how it looks, what it converts, and how it ranks in Dubai, Riyadh, London, or your target market.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Discovery Call <ArrowRight className="w-5 h-5" /></a></Link>
               <a href="/contact" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>

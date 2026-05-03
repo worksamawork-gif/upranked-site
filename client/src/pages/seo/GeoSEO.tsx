@@ -15,7 +15,7 @@ const schema = {
       { '@type': 'Question', name: 'Can one website rank in both Dubai and London simultaneously?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. A single-domain website can rank in both Dubai and London using subdirectory structure (/ae/ for UAE, /uk/ for UK), hreflang tags specifying country targeting, separate Google Business Profile listings for each city, and market-specific content in each subdirectory. upranked.io manages multi-market SEO strategies for businesses targeting Dubai, Riyadh, Kuwait, Bahrain, London, and New York from a single domain.' } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'SEO', item: 'https://upranked.io/industries' }, { '@type': 'ListItem', position: 3, name: 'Geo-Targeted SEO', item: 'https://upranked.io/seo/geo' }] },
-    { '@type': 'Person', name: 'Sam Hamouda', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function GeoSEO() {
-  usePageMeta({ title: 'Geo-Targeted SEO Dubai & GCC — International & Multi-Market Search', description: 'Geo-targeted and international SEO for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Hreflang, ccTLD strategy, multi-market content — APEX Framework by Sam Hamouda.', schema, schemaId: 'geo-seo-schema' });
+  usePageMeta({ title: 'Geo-Targeted SEO Dubai & GCC — International & Multi-Market Search', description: 'Geo-targeted and international SEO for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Hreflang, ccTLD strategy, multi-market content — APEX Framework by Sama Alaa.', schema, schemaId: 'geo-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -78,7 +78,7 @@ export default function GeoSEO() {
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
               <img
                 src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sam Hamouda — geo-targeted and international SEO consultant in Dubai creating location-specific strategies for GCC and global businesses at upranked.io"
+                alt="Sama Alaa — geo-targeted and international SEO consultant in Dubai creating location-specific strategies for GCC and global businesses at upranked.io"
                 width={480}
                 height={640}
                 loading="eager"
@@ -108,7 +108,7 @@ export default function GeoSEO() {
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
               src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sam Hamouda — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
+              alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
               width={400}
               height={640}
               loading="lazy"
@@ -117,9 +117,9 @@ export default function GeoSEO() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Written &amp; Overseen By</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam Hamouda is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

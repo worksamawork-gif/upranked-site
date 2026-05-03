@@ -41,7 +41,7 @@ const schema = {
           name: 'What is Growth Intelligence at upranked.io?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Growth Intelligence is upranked.io's suite of four strategic services that go beyond SEO: Business Consultation (1-on-1 strategy with Sam Hamouda), Custom Growth Tools (purpose-built software and dashboards), Tailored Website (SEO-ready bilingual sites), and Business Strategy (market positioning and competitive architecture). Each service is available for businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York.",
+            text: "Growth Intelligence is upranked.io's suite of four strategic services that go beyond SEO: Business Consultation (1-on-1 strategy with Sama Alaa), Custom Growth Tools (purpose-built software and dashboards), Tailored Website (SEO-ready bilingual sites), and Business Strategy (market positioning and competitive architecture). Each service is available for businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York.",
           },
         },
         {
@@ -49,7 +49,7 @@ const schema = {
           name: 'How is Growth Intelligence different from a regular digital marketing agency?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Three differences: (1) Founder-led — Sam Hamouda personally leads every engagement, not account managers; (2) Intelligence-driven — every recommendation is backed by GCC-specific market data and competitive analysis, not generic frameworks; (3) Integrated — Growth Intelligence services work together with SEO through the APEX Framework™, creating compounding growth across all channels.',
+            text: 'Three differences: (1) Founder-led — Sama Alaa personally leads every engagement, not account managers; (2) Intelligence-driven — every recommendation is backed by GCC-specific market data and competitive analysis, not generic frameworks; (3) Integrated — Growth Intelligence services work together with SEO through the APEX Framework™, creating compounding growth across all channels.',
           },
         },
         {
@@ -57,7 +57,7 @@ const schema = {
           name: 'Can I get a business consultation near me in Dubai?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. upranked.io offers in-person business consultation sessions in Dubai and remote sessions for clients in Riyadh, Kuwait City, Manama, London, and New York. All consultations are led directly by Sam Hamouda — the founder — not delegated to a junior consultant.',
+            text: 'Yes. upranked.io offers in-person business consultation sessions in Dubai and remote sessions for clients in Riyadh, Kuwait City, Manama, London, and New York. All consultations are led directly by Sama Alaa — the founder — not delegated to a junior consultant.',
           },
         },
         {
@@ -88,7 +88,7 @@ const schema = {
     },
     {
       '@type': 'Person',
-      name: 'Sam Hamouda',
+      name: 'Sama Alaa',
       jobTitle: 'Founder & GCC SEO Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -123,7 +123,7 @@ const services = [
     href: '/growth-intelligence/consultation',
     headline: 'Strategic Clarity in 90 Minutes — Applied to Your GCC Business',
     description:
-      "Private, founder-led consulting sessions with Sam Hamouda for businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York. Whether you're entering the GCC market, stuck on a growth ceiling, or need to sharpen your positioning — this is where the real strategic work happens.",
+      "Private, founder-led consulting sessions with Sama Alaa for businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York. Whether you're entering the GCC market, stuck on a growth ceiling, or need to sharpen your positioning — this is where the real strategic work happens.",
     bullets: [
       '90-day APEX growth roadmap with clear milestones',
       'Competitor positioning analysis for your GCC or global market',
@@ -192,7 +192,7 @@ const services = [
 const differentiators = [
   {
     title: 'Founder-Led on Every Engagement',
-    description: "Every Growth Intelligence engagement is led personally by Sam Hamouda — not delegated to a junior account manager or subcontracted to a freelancer. You get founder-level intelligence at every stage.",
+    description: "Every Growth Intelligence engagement is led personally by Sama Alaa — not delegated to a junior account manager or subcontracted to a freelancer. You get founder-level intelligence at every stage.",
   },
   {
     title: 'GCC-First, Globally Capable',
@@ -220,15 +220,15 @@ const serviceAreas = [
 const faqs = [
   {
     q: 'What is Growth Intelligence at upranked.io?',
-    a: "Growth Intelligence is upranked.io's suite of four strategic services that go beyond SEO: Business Consultation (1-on-1 strategy with Sam Hamouda), Custom Growth Tools (purpose-built software and dashboards), Tailored Website (SEO-ready bilingual sites), and Business Strategy (market positioning and competitive architecture). Each service is available for businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York.",
+    a: "Growth Intelligence is upranked.io's suite of four strategic services that go beyond SEO: Business Consultation (1-on-1 strategy with Sama Alaa), Custom Growth Tools (purpose-built software and dashboards), Tailored Website (SEO-ready bilingual sites), and Business Strategy (market positioning and competitive architecture). Each service is available for businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York.",
   },
   {
     q: 'How is Growth Intelligence different from a regular digital marketing agency?',
-    a: 'Three differences: (1) Founder-led — Sam Hamouda personally leads every engagement, not account managers; (2) Intelligence-driven — every recommendation is backed by GCC-specific market data and competitive analysis, not generic frameworks; (3) Integrated — Growth Intelligence services work together with SEO through the APEX Framework™, creating compounding growth across all channels.',
+    a: 'Three differences: (1) Founder-led — Sama Alaa personally leads every engagement, not account managers; (2) Intelligence-driven — every recommendation is backed by GCC-specific market data and competitive analysis, not generic frameworks; (3) Integrated — Growth Intelligence services work together with SEO through the APEX Framework™, creating compounding growth across all channels.',
   },
   {
     q: 'Can I get a business consultation near me in Dubai?',
-    a: 'Yes. upranked.io offers in-person business consultation sessions in Dubai and remote sessions for clients in Riyadh, Kuwait City, Manama, London, and New York. All consultations are led directly by Sam Hamouda — the founder — not delegated to a junior consultant.',
+    a: 'Yes. upranked.io offers in-person business consultation sessions in Dubai and remote sessions for clients in Riyadh, Kuwait City, Manama, London, and New York. All consultations are led directly by Sama Alaa — the founder — not delegated to a junior consultant.',
   },
   {
     q: 'What custom tools does upranked.io build for GCC businesses?',
@@ -280,7 +280,7 @@ export default function GrowthIntelligence() {
   usePageMeta({
     title: 'Growth Intelligence — Dubai & GCC Business Growth Services',
     description:
-      "upranked.io's Growth Intelligence services: Business Consultation, Custom Tools, Tailored Website & Business Strategy for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London UK & New York USA. Led by Sam Hamouda.",
+      "upranked.io's Growth Intelligence services: Business Consultation, Custom Tools, Tailored Website & Business Strategy for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London UK & New York USA. Led by Sama Alaa.",
     schema,
     schemaId: 'growth-intelligence-schema',
   });
@@ -319,7 +319,7 @@ export default function GrowthIntelligence() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <span className="text-accent font-semibold tracking-widest text-sm uppercase block mb-4">Growth Intelligence</span>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Growth Intelligence — Dubai &amp; GCC <span className="gradient-text">Business Growth Services</span> by Sam Hamouda
+                Growth Intelligence — Dubai &amp; GCC <span className="gradient-text">Business Growth Services</span> by Sama Alaa
               </h1>
               <p className="text-xl text-text-secondary mb-8 max-w-3xl leading-relaxed">
                 Four strategic services beyond SEO — business consultation, custom growth tools, tailored websites, and market positioning strategy. Built for high-value businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York that want to outthink and outgrow their competition.
@@ -357,7 +357,7 @@ export default function GrowthIntelligence() {
       <section className="bg-dark-gray py-6 border-y border-border">
         <div className="container-premium">
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 text-sm text-text-secondary">
-            {['Founder-Led by Sam Hamouda', 'GCC-First, Globally Capable', 'Dubai · London · New York', 'APEX Framework™', 'Strategy + Execution'].map(t => (
+            {['Founder-Led by Sama Alaa', 'GCC-First, Globally Capable', 'Dubai · London · New York', 'APEX Framework™', 'Strategy + Execution'].map(t => (
               <div key={t} className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 bg-accent rounded-full flex-shrink-0" />
                 <span>{t}</span>
@@ -520,12 +520,12 @@ export default function GrowthIntelligence() {
                 <div className="bg-dark-gray border border-accent/30 rounded-2xl p-8">
                   <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-5">Who Leads Growth Intelligence — E-E-A-T</p>
                   <div className="flex flex-col sm:flex-row gap-6">
-                    <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sam Hamouda — Founder upranked.io, GCC Growth Strategist" width={80} height={80} loading="lazy" className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
+                    <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder upranked.io, GCC Growth Strategist" width={80} height={80} loading="lazy" className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+                      <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
                       <p className="text-accent text-sm font-medium mb-4">Founder, upranked.io — GCC Growth Strategist &amp; Creator of the APEX Framework™</p>
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                        Sam Hamouda leads every Growth Intelligence engagement personally. The four services — Business Consultation, Custom Tools, Tailored Website, and Business Strategy — are not isolated products sold by different teams. They are integrated levers in a single growth system, applied by Sam directly across Dubai, Riyadh, Kuwait City, Manama, London, and New York. There are no account managers, no handoffs, and no junior consultants involved in your strategy.
+                        Sama Alaa leads every Growth Intelligence engagement personally. The four services — Business Consultation, Custom Tools, Tailored Website, and Business Strategy — are not isolated products sold by different teams. They are integrated levers in a single growth system, applied by Sama directly across Dubai, Riyadh, Kuwait City, Manama, London, and New York. There are no account managers, no handoffs, and no junior consultants involved in your strategy.
                       </p>
                       <Link href="/about"><a className="text-accent text-sm font-semibold hover:underline">Full credentials &amp; profile →</a></Link>
                     </div>
@@ -590,7 +590,7 @@ export default function GrowthIntelligence() {
               Ready to Add <span className="text-accent">Intelligence</span> to Your Growth?
             </h2>
             <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
-              Book a free discovery call with Sam Hamouda. We will identify which Growth Intelligence service will have the biggest immediate impact on your business in Dubai, Riyadh, Kuwait, Bahrain, London, or New York.
+              Book a free discovery call with Sama Alaa. We will identify which Growth Intelligence service will have the biggest immediate impact on your business in Dubai, Riyadh, Kuwait, Bahrain, London, or New York.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               <Link href="/contact">

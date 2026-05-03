@@ -6,5 +6,13 @@
 /industries/industrial      /industries/industrial-seo      301
 /industries/business        /industries/business-seo        301
 
+# Old /services/ slugs → current paths (301 permanent)
+/services/medical-seo               /industries/medical-seo             301
+/services/industrial-seo            /industries/industrial-seo          301
+/services/business-seo              /industries/business-seo            301
+/services/business-consultation     /growth-intelligence/consultation   301
+/services/tailored-website          /growth-intelligence/websites       301
+/services/business-strategy         /growth-intelligence/strategy       301
+
 # SPA catch-all — must be last
 /*    /index.html   200

@@ -7,15 +7,15 @@ import { usePageMeta } from '../../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency Dubai UAE — Search Optimization for Dubai Businesses', description: 'SEO services for businesses in Dubai UAE — bilingual Arabic-English SEO, Google Business Profile, local and technical SEO by upranked.io. APEX Framework by Sam Hamouda.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/uae/dubai', areaServed: ['Dubai', 'Abu Dhabi', 'Sharjah', 'UAE'] },
+    { '@type': 'Service', name: 'SEO Agency Dubai UAE — Search Optimization for Dubai Businesses', description: 'SEO services for businesses in Dubai UAE — bilingual Arabic-English SEO, Google Business Profile, local and technical SEO by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/uae/dubai', areaServed: ['Dubai', 'Abu Dhabi', 'Sharjah', 'UAE'] },
     { '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'What makes Dubai SEO different from other markets?', acceptedAnswer: { '@type': 'Answer', text: "Dubai's SEO market is uniquely bilingual — a significant share of buyers search in Arabic while others search in English, and many switch between both depending on the query type. Dubai is also one of the GCC's most competitive SEO markets with high search volumes in real estate, healthcare, finance, and professional services. Effective Dubai SEO requires native Arabic keyword research, bilingual content, RTL technical architecture, and Google Business Profile optimization for the UAE market." } },
       { '@type': 'Question', name: 'How long does SEO take to show results in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'Most Dubai businesses see measurable ranking improvements within 3–4 months of starting a structured SEO program, with significant organic traffic growth in months 4–8. Competitive sectors like real estate, healthcare, and finance may take 6–12 months to reach dominant positions. upranked.io focuses on commercial-intent keywords that drive leads and revenue — not vanity rankings.' } },
-      { '@type': 'Question', name: 'Do you offer SEO services near me in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io is based in Dubai, UAE and serves businesses across Dubai, Abu Dhabi, Sharjah, and the wider UAE. Sam Hamouda personally oversees all Dubai SEO engagements. Book a free APEX Diagnostic call to discuss your Dubai SEO strategy.' } },
+      { '@type': 'Question', name: 'Do you offer SEO services near me in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io is based in Dubai, UAE and serves businesses across Dubai, Abu Dhabi, Sharjah, and the wider UAE. Sama Alaa personally oversees all Dubai SEO engagements. Book a free APEX Diagnostic call to discuss your Dubai SEO strategy.' } },
       { '@type': 'Question', name: 'Which Dubai sectors need SEO most urgently?', acceptedAnswer: { '@type': 'Answer', text: "Dubai's highest-ROI SEO sectors are: real estate (extremely high CPC and commercial intent), healthcare and medical clinics (near-me searches dominate), legal and financial services (high-value B2B queries), and industrial and logistics (B2B decision-maker research). upranked.io has specific APEX Framework adaptations for each sector." } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'GCC Markets', item: 'https://upranked.io/markets/gcc' }, { '@type': 'ListItem', position: 3, name: 'Dubai SEO', item: 'https://upranked.io/markets/gcc/uae/dubai' }] },
-    { '@type': 'Person', name: 'Sam Hamouda', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -31,7 +31,7 @@ const features = [
 const faqs = [
   { q: 'What makes Dubai SEO different from other markets?', a: "Dubai's SEO market is uniquely bilingual — buyers search in Arabic or English depending on query type. Dubai is also one of the GCC's most competitive SEO markets with high search volumes in real estate, healthcare, finance, and professional services. Effective Dubai SEO requires native Arabic keyword research, bilingual content, RTL technical architecture, and GBP optimization for UAE." },
   { q: 'How long does SEO take to show results in Dubai?', a: 'Most Dubai businesses see measurable ranking improvements within 3–4 months, with significant organic traffic growth in months 4–8. Competitive sectors like real estate, healthcare, and finance may take 6–12 months to reach dominant positions. upranked.io focuses on commercial-intent keywords that drive leads and revenue.' },
-  { q: 'Do you offer SEO services near me in Dubai?', a: 'Yes. upranked.io is based in Dubai, UAE and serves businesses across Dubai, Abu Dhabi, Sharjah, and the wider UAE. Sam Hamouda personally oversees all Dubai SEO engagements. Book a free APEX Diagnostic call to discuss your Dubai SEO strategy.' },
+  { q: 'Do you offer SEO services near me in Dubai?', a: 'Yes. upranked.io is based in Dubai, UAE and serves businesses across Dubai, Abu Dhabi, Sharjah, and the wider UAE. Sama Alaa personally oversees all Dubai SEO engagements. Book a free APEX Diagnostic call to discuss your Dubai SEO strategy.' },
   { q: 'Which Dubai sectors need SEO most urgently?', a: "Dubai's highest-ROI SEO sectors are: real estate (extremely high CPC and commercial intent), healthcare and medical clinics (near-me searches), legal and financial services (high-value B2B queries), and industrial and logistics (B2B decision-maker research). upranked.io has specific APEX Framework adaptations for each sector." },
 ];
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function DubaiMarket() {
-  usePageMeta({ title: 'SEO Agency Dubai UAE — Bilingual Arabic-English Search Optimization', description: 'SEO agency in Dubai UAE. Bilingual Arabic-English SEO, Google Business Profile, local and technical SEO for Dubai businesses — APEX Framework by Sam Hamouda at upranked.io.', schema, schemaId: 'dubai-market-schema' });
+  usePageMeta({ title: 'SEO Agency Dubai UAE — Bilingual Arabic-English Search Optimization', description: 'SEO agency in Dubai UAE. Bilingual Arabic-English SEO, Google Business Profile, local and technical SEO for Dubai businesses — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'dubai-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -99,7 +99,7 @@ export default function DubaiMarket() {
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
               src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sam Hamouda — SEO consultant serving Dubai and UAE businesses at upranked.io"
+              alt="Sama Alaa — SEO consultant serving Dubai and UAE businesses at upranked.io"
               width={400}
               height={640}
               loading="lazy"
@@ -108,9 +108,9 @@ export default function DubaiMarket() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Your Dubai SEO Strategist</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io, Dubai UAE</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam Hamouda is a GCC SEO strategist based in Dubai with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive Dubai sectors including real estate, healthcare, financial services, and professional B2B.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist based in Dubai with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive Dubai sectors including real estate, healthcare, financial services, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

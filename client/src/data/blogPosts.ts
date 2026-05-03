@@ -1,4 +1,4 @@
-export interface BlogPost {
+﻿export interface BlogPost {
   slug: string;
   title: string;
   metaTitle: string;
@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
     ],
     cta: {
       heading: 'Want to Know Exactly Where You Stand in UAE Search?',
-      body: 'Book a free 30-minute APEX Diagnostic with Sam Hamouda. We\'ll audit your current SEO position, identify your highest-value keyword opportunities, and tell you exactly what it would take to dominate your market.',
+      body: 'Book a free 30-minute APEX Diagnostic with Sama Alaa. We\'ll audit your current SEO position, identify your highest-value keyword opportunities, and tell you exactly what it would take to dominate your market.',
       href: '/contact',
       label: 'Book Your Free APEX Diagnostic',
     },
@@ -227,7 +227,7 @@ export const blogPosts: BlogPost[] = [
     ],
     cta: {
       heading: 'Find Out Exactly Why You\'re Not Ranking',
-      body: 'Book a free APEX Diagnostic. In 30 minutes, Sam Hamouda will identify your biggest search visibility gap and give you a prioritised list of what to fix first.',
+      body: 'Book a free APEX Diagnostic. In 30 minutes, Sama Alaa will identify your biggest search visibility gap and give you a prioritised list of what to fix first.',
       href: '/contact',
       label: 'Book Your Free Diagnostic',
     },
@@ -288,7 +288,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'apex-framework-explained',
     title: 'The APEX Framework™ Explained: How upranked.io Approaches GCC Growth',
     metaTitle: 'The APEX Framework™ Explained | upranked.io GCC Growth Methodology',
-    metaDescription: 'A deep dive into the APEX Framework™ — the proprietary 4-phase growth methodology developed by Sam Hamouda for high-value businesses in the GCC. Audit, Position, Execute, Expand.',
+    metaDescription: 'A deep dive into the APEX Framework™ — the proprietary 4-phase growth methodology developed by Sama Alaa for high-value businesses in the GCC. Audit, Position, Execute, Expand.',
     publishedAt: '2026-04-24',
     readTime: 7,
     category: 'Methodology',
@@ -330,7 +330,7 @@ export const blogPosts: BlogPost[] = [
     ],
     cta: {
       heading: 'See the APEX Framework™ Applied to Your Business',
-      body: 'Book a free APEX Diagnostic with Sam Hamouda. In 30 minutes, you\'ll see exactly how the framework applies to your specific market position and what the growth opportunity looks like.',
+      body: 'Book a free APEX Diagnostic with Sama Alaa. In 30 minutes, you\'ll see exactly how the framework applies to your specific market position and what the growth opportunity looks like.',
       href: '/contact',
       label: 'Book a Free APEX Diagnostic',
     },

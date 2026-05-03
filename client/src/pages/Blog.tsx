@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { ArrowRight, Clock, Tag } from 'lucide-react';
 import { allPosts as staticPosts } from '@/data/blogPosts';
@@ -162,7 +162,7 @@ export default function Blog() {
               Ready to Apply This to <span className="text-accent">Your Business</span>?
             </h2>
             <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
-              Knowledge is one thing — execution is another. Book a free APEX Diagnostic with Sam Hamouda and get a clear, actionable plan for your specific market position.
+              Knowledge is one thing — execution is another. Book a free APEX Diagnostic with Sama Alaa and get a clear, actionable plan for your specific market position.
             </p>
             <Link href="/contact">
               <a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">

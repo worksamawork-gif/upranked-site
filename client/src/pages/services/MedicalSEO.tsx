@@ -99,7 +99,7 @@ const faqs = [
   },
   {
     q: 'What upranked.io\'s medical SEO differ from other agencies in the UAE?',
-    a: 'Three factors: sector exclusivity (we only work with high-value GCC businesses, not generic SMBs), the APEX Framework™ (a proprietary 4-phase methodology built for trust-sensitive industries), and founder-led delivery (Sam Hamouda leads every medical SEO engagement personally — not a junior account manager). We also provide bilingual EN/AR strategy as standard, not as an add-on.',
+    a: 'Three factors: sector exclusivity (we only work with high-value GCC businesses, not generic SMBs), the APEX Framework™ (a proprietary 4-phase methodology built for trust-sensitive industries), and founder-led delivery (Sama Alaa leads every medical SEO engagement personally — not a junior account manager). We also provide bilingual EN/AR strategy as standard, not as an add-on.',
   },
 ];
 
@@ -173,12 +173,12 @@ export default function MedicalSEO() {
         },
         {
           '@type': 'Person',
-          '@id': 'https://upranked.io/about#sam',
-          name: 'Sam Hamouda',
+          '@id': 'https://upranked.io/about#Sama',
+          name: 'Sama Alaa',
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
           url: 'https://upranked.io/about',
-          sameAs: ['https://linkedin.com/in/sam-h-6a979311b'],
+          sameAs: ['https://www.linkedin.com/company/115836359/'],
         },
         {
           '@type': 'BreadcrumbList',
@@ -215,7 +215,7 @@ export default function MedicalSEO() {
 
               {/* Trust bar */}
               <div className="flex flex-wrap gap-4 mb-8 text-sm text-text-secondary">
-                {['DHA/MOH-Aware Strategy', 'Bilingual EN/AR', 'E-E-A-T Specialists', 'Founder-Led by Sam Hamouda'].map(t => (
+                {['DHA/MOH-Aware Strategy', 'Bilingual EN/AR', 'E-E-A-T Specialists', 'Founder-Led by Sama Alaa'].map(t => (
                   <div key={t} className="flex items-center gap-1.5">
                     <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
                     <span>{t}</span>
@@ -254,7 +254,7 @@ export default function MedicalSEO() {
               <div className="relative rounded-2xl overflow-hidden border border-border bg-dark-gray aspect-[4/3]">
                 <img
                   src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                  alt="Sam Hamouda — medical SEO consultant in Dubai ranking clinics and healthcare providers across the GCC at upranked.io"
+                  alt="Sama Alaa — medical SEO consultant in Dubai ranking clinics and healthcare providers across the GCC at upranked.io"
                   width={600}
                   height={450}
                   loading="eager"
@@ -300,7 +300,7 @@ export default function MedicalSEO() {
                 ['#whats-included', 'What\'s Included in Medical SEO'],
                 ['#apex-process', 'The APEX Framework™ for Healthcare'],
                 ['#results', 'Results & Statistics'],
-                ['#expert-review', 'Expert Review — Sam Hamouda'],
+                ['#expert-review', 'Expert Review — Sama Alaa'],
                 ['#why-upranked', 'Why upranked.io for Medical SEO?'],
                 ['#service-areas', 'Service Areas — Dubai & GCC'],
                 ['#faq', 'Frequently Asked Questions'],
@@ -503,17 +503,17 @@ export default function MedicalSEO() {
             <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-6">Expert Review & E-E-A-T Verification</p>
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="flex-shrink-0">
-                <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sam Hamouda — Founder upranked.io, Medical SEO Expert GCC" width={96} height={96} loading="lazy" className="w-24 h-24 rounded-full object-cover object-top border-2 border-accent/30" decoding="async" />
+                <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder upranked.io, Medical SEO Expert GCC" width={96} height={96} loading="lazy" className="w-24 h-24 rounded-full object-cover object-top border-2 border-accent/30" decoding="async" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-xl font-bold text-white">Sam Hamouda</h3>
+                  <h3 className="text-xl font-bold text-white">Sama Alaa</h3>
                   <span className="text-xs bg-accent/20 text-accent border border-accent/30 px-2 py-0.5 rounded-full font-semibold">Reviewed & Verified</span>
                 </div>
                 <p className="text-accent font-semibold text-sm mb-1">Founder, upranked.io · Creator of the APEX Framework™</p>
                 <p className="text-text-secondary text-sm mb-4">GCC Growth Intelligence Specialist · Medical SEO Expert · Bilingual EN/AR Strategy</p>
                 <p className="text-text-secondary leading-relaxed mb-4">
-                  All medical SEO strategies on this page have been designed and personally reviewed by Sam Hamouda. Every engagement at upranked.io is founder-led — meaning the strategy, content architecture, and execution direction for your clinic or practice comes directly from Sam, not delegated to a junior account manager. Sam has worked with medical practices across Dubai, Abu Dhabi, and the wider GCC, building the APEX Framework™ specifically for the complex authority requirements of healthcare SEO in the UAE.
+                  All medical SEO strategies on this page have been designed and personally reviewed by Sama Alaa. Every engagement at upranked.io is founder-led — meaning the strategy, content architecture, and execution direction for your clinic or practice comes directly from Sama, not delegated to a junior account manager. Sama has worked with medical practices across Dubai, Abu Dhabi, and the wider GCC, building the APEX Framework™ specifically for the complex authority requirements of healthcare SEO in the UAE.
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm">
                   <div className="flex items-center gap-2 text-text-secondary">
@@ -524,7 +524,7 @@ export default function MedicalSEO() {
                     <CheckCircle className="w-4 h-4 text-accent" />
                     <span>APEX Framework™ Creator</span>
                   </div>
-                  <a href="https://linkedin.com/in/sam-h-6a979311b" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">
+                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">
                     LinkedIn Profile →
                   </a>
                 </div>
@@ -546,7 +546,7 @@ export default function MedicalSEO() {
                 { title: 'Medical SEO Specialists — Not Generalists', desc: 'We don\'t serve restaurants, e-commerce, or SaaS alongside your clinic. Our GCC-only focus means every strategy, keyword database, and link contact is relevant to high-value healthcare in Dubai and the UAE.' },
                 { title: 'The APEX Framework™ — Built for E-E-A-T', desc: 'Standard SEO playbooks were not designed for YMYL content. The APEX Framework™ was built specifically for trust-sensitive industries — starting with the authority signals Google requires before rankings can move.' },
                 { title: 'Bilingual Capability — Real Arabic SEO', desc: 'We don\'t machine-translate your English pages. We conduct independent Arabic keyword research, write native-quality Arabic medical content, and implement correct RTL architecture — capturing a patient segment your English-only competitors cannot reach.' },
-                { title: 'Founder-Led on Every Engagement', desc: 'Sam Hamouda personally leads every medical SEO engagement. You\'re not passed to a junior team after signing — strategy, direction, and quality review remain with the founder throughout.' },
+                { title: 'Founder-Led on Every Engagement', desc: 'Sama Alaa personally leads every medical SEO engagement. You\'re not passed to a junior team after signing — strategy, direction, and quality review remain with the founder throughout.' },
                 { title: 'ROI-Tied Reporting', desc: 'We report on patient inquiries, appointment bookings, and cost-per-patient from organic search — not impressions and traffic that don\'t pay your lease.' },
                 { title: 'No Long-Term Lock-in', desc: 'Month-to-month after the initial setup phase. We keep clients through results, not contracts.' },
               ].map((item, i) => (
@@ -640,7 +640,7 @@ export default function MedicalSEO() {
                 Ready to Become the <span className="text-accent">Top-Ranked</span> Medical Practice in Your Speciality?
               </h2>
               <p className="text-xl text-text-secondary mb-8 leading-relaxed">
-                Book a free 30-minute strategy call with Sam Hamouda. We'll audit your clinic's current search visibility in Dubai and across the UAE, identify the highest-intent patient queries you're missing, and give you a clear, honest picture of what it would take to dominate your market.
+                Book a free 30-minute strategy call with Sama Alaa. We'll audit your clinic's current search visibility in Dubai and across the UAE, identify the highest-intent patient queries you're missing, and give you a clear, honest picture of what it would take to dominate your market.
               </p>
               <Link href="/contact">
                 <a className="btn-primary text-xl px-12 py-6 inline-flex items-center gap-3 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">

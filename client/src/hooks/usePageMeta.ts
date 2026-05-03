@@ -16,7 +16,8 @@ function setMeta(selector: string, attr: string, value: string) {
 export function usePageMeta({ title, description, schema, schemaId = 'page-schema', canonical }: PageMeta) {
   useEffect(() => {
     const fullTitle = `${title} | upranked.io`;
-    const canonicalUrl = canonical ?? `https://upranked.io${window.location.pathname}`;
+    const pathname = window.location.pathname.endsWith('/') ? window.location.pathname : `${window.location.pathname}/`;
+    const canonicalUrl = canonical ?? `https://upranked.io${pathname}`;
 
     const prevTitle = document.title;
     const prevDesc = document.querySelector('meta[name="description"]')?.getAttribute('content') ?? '';

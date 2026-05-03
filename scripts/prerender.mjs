@@ -64,6 +64,18 @@ const ROUTES = [
   '/markets/usa/new-york',
   '/markets/eu/germany',
   '/markets/eu/france',
+
+  // Legal
+  '/privacy',
+  '/terms',
+
+  // Blog posts
+  '/blog/seo-uae-2026-what-works',
+  '/blog/medical-seo-dubai-clinics',
+  '/blog/industrial-b2b-seo-gcc-procurement',
+  '/blog/why-gcc-businesses-invisible-google',
+  '/blog/bilingual-seo-arabic-english',
+  '/blog/apex-framework-explained',
 ];
 
 function startServer() {
@@ -118,8 +130,14 @@ async function prerender() {
       const html = await page.content();
       const dest = routeToFilePath(route);
 
+      // Ensure canonical tag always uses trailing slash to match Netlify's served URLs
+      const fixedHtml = html.replace(
+        /(<link rel="canonical" href="https:\/\/upranked\.io)(\/[^"]*[^"\/])(" id="canonical-tag")/g,
+        '$1$2/$3'
+      );
+
       fs.mkdirSync(path.dirname(dest), { recursive: true });
-      fs.writeFileSync(dest, html, 'utf-8');
+      fs.writeFileSync(dest, fixedHtml, 'utf-8');
 
       console.log(`  ✓ ${route}`);
       passed++;

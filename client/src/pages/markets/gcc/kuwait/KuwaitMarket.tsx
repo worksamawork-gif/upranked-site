@@ -7,7 +7,7 @@ import { usePageMeta } from '../../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency Kuwait City — Arabic SEO for Kuwait Businesses', description: 'SEO services for businesses in Kuwait City and Kuwait — Arabic SEO, Google Business Profile, local citations and bilingual content by upranked.io. APEX Framework by Sam Hamouda.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/kuwait', areaServed: ['Kuwait City', 'Kuwait'] },
+    { '@type': 'Service', name: 'SEO Agency Kuwait City — Arabic SEO for Kuwait Businesses', description: 'SEO services for businesses in Kuwait City and Kuwait — Arabic SEO, Google Business Profile, local citations and bilingual content by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/kuwait', areaServed: ['Kuwait City', 'Kuwait'] },
     { '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'What is the search behavior of Kuwait buyers online?', acceptedAnswer: { '@type': 'Answer', text: "Kuwait has one of the GCC's most Arabic-dominant search behaviors for consumer-facing queries. Kuwaiti buyers research extensively before purchasing — especially in high-value categories like real estate, vehicles, electronics, and professional services. This research-heavy behavior makes long-form content and in-depth FAQ pages particularly effective for Kuwait SEO compared to other GCC markets." } },
       { '@type': 'Question', name: 'Do you offer SEO services near me in Kuwait City?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io serves businesses in Kuwait City and across Kuwait. All Kuwait engagements include Kuwait-specific Arabic keyword research, KW-targeted Google Business Profile optimization, and Kuwait business directory citation building. Book a free APEX Diagnostic call to discuss your Kuwait SEO strategy.' } },
@@ -15,7 +15,7 @@ const schema = {
       { '@type': 'Question', name: 'Is Google Business Profile optimization important for Kuwait businesses?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Google Maps and local pack results are heavily used in Kuwait for finding businesses near me — especially for healthcare, food and beverage, automotive services, and professional services. A correctly optimized Arabic-English GBP for Kuwait, with KW phone format and Kuwait City address, is essential for local pack rankings in Kuwait City.' } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'GCC Markets', item: 'https://upranked.io/markets/gcc' }, { '@type': 'ListItem', position: 3, name: 'Kuwait SEO', item: 'https://upranked.io/markets/gcc/kuwait' }] },
-    { '@type': 'Person', name: 'Sam Hamouda', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function KuwaitMarket() {
-  usePageMeta({ title: 'SEO Agency Kuwait City — Arabic SEO for Kuwait Businesses', description: 'SEO agency for Kuwait City and Kuwait. Arabic SEO, Google Business Profile, local citations and bilingual content — APEX Framework by Sam Hamouda at upranked.io.', schema, schemaId: 'kuwait-market-schema' });
+  usePageMeta({ title: 'SEO Agency Kuwait City — Arabic SEO for Kuwait Businesses', description: 'SEO agency for Kuwait City and Kuwait. Arabic SEO, Google Business Profile, local citations and bilingual content — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'kuwait-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -99,7 +99,7 @@ export default function KuwaitMarket() {
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
               src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-              alt="Sam Hamouda — GCC SEO strategist specializing in Kuwait City Arabic SEO at upranked.io"
+              alt="Sama Alaa — GCC SEO strategist specializing in Kuwait City Arabic SEO at upranked.io"
               width={400}
               height={640}
               loading="lazy"
@@ -108,9 +108,9 @@ export default function KuwaitMarket() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Your Kuwait SEO Strategist</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sam Hamouda</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam Hamouda is a GCC SEO strategist with deep expertise across Kuwait, UAE, KSA, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — delivers Arabic-first SEO for Kuwait City businesses, built around the extensive pre-purchase research behavior of Kuwait's high per-capita income buyer base.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across Kuwait, UAE, KSA, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — delivers Arabic-first SEO for Kuwait City businesses, built around the extensive pre-purchase research behavior of Kuwait's high per-capita income buyer base.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

@@ -1,4 +1,4 @@
-﻿import { Mail, MessageCircle, MapPin, Linkedin, Twitter } from 'lucide-react';
+﻿import { Mail, MessageCircle, MapPin, Linkedin, Twitter, Phone } from 'lucide-react';
 import { Link } from 'wouter';
 
 export default function Footer() {
@@ -24,7 +24,7 @@ export default function Footer() {
               Premium SEO and Growth Intelligence services for high-value businesses in the GCC — UAE, Saudi Arabia, Kuwait, and Bahrain.
             </p>
             <div className="flex items-center gap-3 pt-2">
-              <a href="https://linkedin.com/in/sam-h-6a979311b" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-navy rounded-lg transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-navy rounded-lg transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-4 h-4 text-accent" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-navy rounded-lg transition-colors" aria-label="Twitter / X">
@@ -95,7 +95,7 @@ export default function Footer() {
             <h4 className="font-bold text-sm uppercase tracking-widest text-accent mb-4">Company</h4>
             <ul className="space-y-2">
               {[
-                { label: 'About Sam Hamouda', href: '/about' },
+                { label: 'About Sama Alaa', href: '/about' },
                 { label: 'APEX Methodology', href: '/methodology' },
                 { label: 'Insights / Blog', href: '/blog' },
                 { label: 'FAQ', href: '/faq' },
@@ -141,6 +141,12 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
                 <a href="mailto:Sam@upranked.io" className="text-text-secondary hover:text-accent transition-colors text-sm">
                   Sam@upranked.io
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                <a href="tel:+201039173978" className="text-text-secondary hover:text-accent transition-colors text-sm">
+                  +20103 917 3978
                 </a>
               </li>
               <li className="flex items-start gap-3">
