@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core pages -->
@@ -9,57 +9,71 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://upranked.io/about</loc>
+    <loc>https://upranked.io/about/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://upranked.io/methodology</loc>
+    <loc>https://upranked.io/methodology/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://upranked.io/contact</loc>
+    <loc>https://upranked.io/contact/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://upranked.io/faq</loc>
+    <loc>https://upranked.io/faq/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- Legal -->
+  <url>
+    <loc>https://upranked.io/privacy/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://upranked.io/terms/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
   <!-- SEO hubs -->
   <url>
-    <loc>https://upranked.io/seo</loc>
+    <loc>https://upranked.io/seo/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://upranked.io/seo-industries</loc>
+    <loc>https://upranked.io/seo-industries/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://upranked.io/industries/medical-seo</loc>
+    <loc>https://upranked.io/industries/medical-seo/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/industries/industrial-seo</loc>
+    <loc>https://upranked.io/industries/industrial-seo/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/industries/business-seo</loc>
+    <loc>https://upranked.io/industries/business-seo/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -67,55 +81,55 @@
 
   <!-- SEO service cluster pages -->
   <url>
-    <loc>https://upranked.io/seo/on-page</loc>
+    <loc>https://upranked.io/seo/on-page/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/seo/off-page</loc>
+    <loc>https://upranked.io/seo/off-page/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/seo/technical</loc>
+    <loc>https://upranked.io/seo/technical/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/seo/schema</loc>
+    <loc>https://upranked.io/seo/schema/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/seo/local</loc>
+    <loc>https://upranked.io/seo/local/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/seo/bilingual</loc>
+    <loc>https://upranked.io/seo/bilingual/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/seo/analytics</loc>
+    <loc>https://upranked.io/seo/analytics/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/seo/content-architecture</loc>
+    <loc>https://upranked.io/seo/content-architecture/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/seo/geo</loc>
+    <loc>https://upranked.io/seo/geo/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -123,31 +137,31 @@
 
   <!-- Growth Intelligence -->
   <url>
-    <loc>https://upranked.io/growth-intelligence</loc>
+    <loc>https://upranked.io/growth-intelligence/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/growth-intelligence/consultation</loc>
+    <loc>https://upranked.io/growth-intelligence/consultation/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://upranked.io/growth-intelligence/tools</loc>
+    <loc>https://upranked.io/growth-intelligence/tools/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://upranked.io/growth-intelligence/websites</loc>
+    <loc>https://upranked.io/growth-intelligence/websites/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://upranked.io/growth-intelligence/strategy</loc>
+    <loc>https://upranked.io/growth-intelligence/strategy/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -155,31 +169,31 @@
 
   <!-- GCC Markets -->
   <url>
-    <loc>https://upranked.io/markets/gcc</loc>
+    <loc>https://upranked.io/markets/gcc/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://upranked.io/markets/gcc/uae/dubai</loc>
+    <loc>https://upranked.io/markets/gcc/uae/dubai/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://upranked.io/markets/gcc/ksa/riyadh</loc>
+    <loc>https://upranked.io/markets/gcc/ksa/riyadh/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/markets/gcc/kuwait</loc>
+    <loc>https://upranked.io/markets/gcc/kuwait/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/markets/gcc/bahrain</loc>
+    <loc>https://upranked.io/markets/gcc/bahrain/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -187,25 +201,25 @@
 
   <!-- Global Markets -->
   <url>
-    <loc>https://upranked.io/markets/uk/london</loc>
+    <loc>https://upranked.io/markets/uk/london/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/markets/usa/new-york</loc>
+    <loc>https://upranked.io/markets/usa/new-york/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/markets/eu/germany</loc>
+    <loc>https://upranked.io/markets/eu/germany/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/markets/eu/france</loc>
+    <loc>https://upranked.io/markets/eu/france/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -213,43 +227,43 @@
 
   <!-- Blog -->
   <url>
-    <loc>https://upranked.io/blog</loc>
+    <loc>https://upranked.io/blog/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://upranked.io/blog/seo-uae-2026-what-works</loc>
+    <loc>https://upranked.io/blog/seo-uae-2026-what-works/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://upranked.io/blog/medical-seo-dubai-clinics</loc>
+    <loc>https://upranked.io/blog/medical-seo-dubai-clinics/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://upranked.io/blog/industrial-b2b-seo-gcc-procurement</loc>
+    <loc>https://upranked.io/blog/industrial-b2b-seo-gcc-procurement/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://upranked.io/blog/why-gcc-businesses-invisible-google</loc>
+    <loc>https://upranked.io/blog/why-gcc-businesses-invisible-google/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://upranked.io/blog/bilingual-seo-arabic-english</loc>
+    <loc>https://upranked.io/blog/bilingual-seo-arabic-english/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://upranked.io/blog/apex-framework-explained</loc>
+    <loc>https://upranked.io/blog/apex-framework-explained/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
