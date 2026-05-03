@@ -130,8 +130,14 @@ async function prerender() {
       const html = await page.content();
       const dest = routeToFilePath(route);
 
+      // Ensure canonical tag always uses trailing slash to match Netlify's served URLs
+      const fixedHtml = html.replace(
+        /(<link rel="canonical" href="https:\/\/upranked\.io)(\/[^"]*[^"\/])(" id="canonical-tag")/g,
+        '$1$2/$3'
+      );
+
       fs.mkdirSync(path.dirname(dest), { recursive: true });
-      fs.writeFileSync(dest, html, 'utf-8');
+      fs.writeFileSync(dest, fixedHtml, 'utf-8');
 
       console.log(`  ✓ ${route}`);
       passed++;
