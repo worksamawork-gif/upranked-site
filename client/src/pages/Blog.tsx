@@ -81,7 +81,7 @@ export default function Blog() {
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <p className="text-accent font-semibold tracking-widest text-xs uppercase mb-6">Latest Article</p>
-            <Link href={`/blog/${featured.slug}`}>
+            <Link href={`/blog/${featured.slug}/`}>
               <a className="block group">
                 <div className="card-premium p-8 md:p-10 hover:border-accent/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-accent/10">
                   <div className="flex flex-wrap items-center gap-4 mb-6">
@@ -129,7 +129,7 @@ export default function Blog() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <Link href={`/blog/${post.slug}`}>
+                <Link href={`/blog/${post.slug}/`}>
                   <a className="card-premium h-full flex flex-col gap-4 hover:border-accent/50 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-accent/10">
                     <div className="flex items-center justify-between gap-3">
                       <CategoryBadge category={post.category} />

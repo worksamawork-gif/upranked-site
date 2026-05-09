@@ -73,7 +73,7 @@ export const blogPosts: BlogPost[] = [
     cta: {
       heading: 'Want to Know Exactly Where You Stand in UAE Search?',
       body: 'Book a free 30-minute APEX Diagnostic with Sama Alaa. We\'ll audit your current SEO position, identify your highest-value keyword opportunities, and tell you exactly what it would take to dominate your market.',
-      href: '/contact',
+      href: '/contact/',
       label: 'Book Your Free APEX Diagnostic',
     },
     relatedSlugs: ['medical-seo-dubai-clinics', 'bilingual-seo-arabic-english', 'apex-framework-explained'],
@@ -130,7 +130,7 @@ export const blogPosts: BlogPost[] = [
     cta: {
       heading: 'Want More Patients From Google — Without Paying for Every Click?',
       body: 'Book a free APEX Diagnostic. We\'ll audit your clinic\'s current search visibility, identify the highest-volume patient searches you\'re missing, and show you a clear path to page 1.',
-      href: '/contact',
+      href: '/contact/',
       label: 'Book a Free Strategy Call',
     },
     relatedSlugs: ['seo-uae-2026-what-works', 'bilingual-seo-arabic-english', 'why-gcc-businesses-invisible-google'],
@@ -181,7 +181,7 @@ export const blogPosts: BlogPost[] = [
     cta: {
       heading: 'Ready to Win More GCC Procurement Tenders Through Search?',
       body: 'Book a free strategy call. We\'ll identify the exact procurement queries your target buyers are using and build a content strategy to capture them before your competitors do.',
-      href: '/contact',
+      href: '/contact/',
       label: 'Book a Free Strategy Call',
     },
     relatedSlugs: ['seo-uae-2026-what-works', 'why-gcc-businesses-invisible-google', 'apex-framework-explained'],
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
     cta: {
       heading: 'Find Out Exactly Why You\'re Not Ranking',
       body: 'Book a free APEX Diagnostic. In 30 minutes, Sama Alaa will identify your biggest search visibility gap and give you a prioritised list of what to fix first.',
-      href: '/contact',
+      href: '/contact/',
       label: 'Book Your Free Diagnostic',
     },
     relatedSlugs: ['seo-uae-2026-what-works', 'bilingual-seo-arabic-english', 'apex-framework-explained'],
@@ -278,7 +278,7 @@ export const blogPosts: BlogPost[] = [
     cta: {
       heading: 'Want to Capture the Full GCC Market in Arabic and English?',
       body: 'Our bilingual SEO engagements are built from the ground up for both languages — not retrofitted. Book a free diagnostic to see your current Arabic search visibility and what you\'re missing.',
-      href: '/contact',
+      href: '/contact/',
       label: 'Book a Free APEX Diagnostic',
     },
     relatedSlugs: ['seo-uae-2026-what-works', 'medical-seo-dubai-clinics', 'why-gcc-businesses-invisible-google'],
@@ -331,7 +331,7 @@ export const blogPosts: BlogPost[] = [
     cta: {
       heading: 'See the APEX Framework™ Applied to Your Business',
       body: 'Book a free APEX Diagnostic with Sama Alaa. In 30 minutes, you\'ll see exactly how the framework applies to your specific market position and what the growth opportunity looks like.',
-      href: '/contact',
+      href: '/contact/',
       label: 'Book a Free APEX Diagnostic',
     },
     relatedSlugs: ['seo-uae-2026-what-works', 'why-gcc-businesses-invisible-google', 'industrial-b2b-seo-gcc-procurement'],

@@ -215,7 +215,7 @@ export default function BlogPost() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {related.map((rel, i) => (
                 <motion.div key={rel.slug} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i * 0.1 }} viewport={{ once: true }} className="group">
-                  <Link href={`/blog/${rel.slug}`}>
+                  <Link href={`/blog/${rel.slug}/`}>
                     <a className="card-premium h-full flex flex-col gap-3 hover:border-accent/50 transition-all duration-300">
                       <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full border text-xs font-semibold self-start ${categoryColors[rel.category] ?? 'bg-accent/10 text-accent border-accent/20'}`}>
                         {rel.category}
