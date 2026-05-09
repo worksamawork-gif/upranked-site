@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PAGE: /industries/business
  * PRIMARY KW: business SEO Dubai (Vol: ~1,300/mo GCC | KD: 38)
  * SECONDARY KW: SEO agency Dubai UAE, SEO for companies GCC, B2B SEO Dubai, SME SEO UAE
@@ -268,7 +268,7 @@ export default function BusinessSEO() {
               <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-text-secondary mb-6">
                 <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
                 <span>/</span>
-                <Link href="/seo-industries"><a className="hover:text-accent transition-colors">Industries</a></Link>
+                <Link href="/seo-industries/"><a className="hover:text-accent transition-colors">Industries</a></Link>
                 <span>/</span>
                 <span className="text-accent">Business SEO</span>
               </nav>
@@ -289,7 +289,7 @@ export default function BusinessSEO() {
 
               {/* NAP #1 */}
               <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
@@ -301,12 +301,12 @@ export default function BusinessSEO() {
               </address>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">
                     Book Free APEX Diagnostic <ArrowRight className="w-5 h-5" />
                   </a>
                 </Link>
-                <Link href="/methodology">
+                <Link href="/methodology/">
                   <a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">
                     See the APEX Framework™
                   </a>
@@ -537,7 +537,7 @@ export default function BusinessSEO() {
         <div className="container-premium text-center">
           <p className="text-lg font-semibold text-white mb-2">Ready to turn organic search into your top revenue channel?</p>
           <p className="text-text-secondary text-sm mb-6">Book a free 30-minute APEX Diagnostic with Sama Alaa — no commitment, clear opportunity map.</p>
-          <Link href="/contact">
+          <Link href="/contact/">
             <a className="btn-primary inline-flex items-center gap-2">
               Get Your Free Business SEO Audit <ArrowRight className="w-4 h-4" />
             </a>
@@ -651,7 +651,7 @@ export default function BusinessSEO() {
                   <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                     LinkedIn Profile →
                   </a>
-                  <Link href="/about">
+                  <Link href="/about/">
                     <a className="text-accent text-sm hover:underline">Full Bio →</a>
                   </Link>
                 </div>
@@ -724,7 +724,7 @@ export default function BusinessSEO() {
 
             {/* NAP #2 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary border border-border rounded-xl p-5 bg-dark-gray/60">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us (WhatsApp)
               </a>
               <span className="hidden sm:block text-border">|</span>
@@ -779,13 +779,13 @@ export default function BusinessSEO() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">
                   Book Free APEX Diagnostic <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4"
               >
                 Contact Us
@@ -794,7 +794,7 @@ export default function BusinessSEO() {
 
             {/* NAP #3 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <span className="hidden sm:block text-border">|</span>

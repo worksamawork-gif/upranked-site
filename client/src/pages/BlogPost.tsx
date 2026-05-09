@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link, useRoute } from 'wouter';
 import { ArrowRight, ArrowLeft, Clock, Tag, Calendar } from 'lucide-react';
 import { getPostBySlug, getRelatedPosts, type BlogSection, type BlogPost } from '@/data/blogPosts';
@@ -128,7 +128,7 @@ export default function BlogPost() {
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-dark-gray to-navy opacity-60 -z-10" />
         <div className="container-premium max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <Link href="/blog">
+            <Link href="/blog/">
               <a className="inline-flex items-center gap-2 text-text-secondary hover:text-accent transition-colors text-sm mb-8">
                 <ArrowLeft className="w-4 h-4" /> Back to Blog
               </a>
@@ -184,7 +184,7 @@ export default function BlogPost() {
             <div>
               <p className="font-bold text-white">Sama Alaa</p>
               <p className="text-text-secondary text-sm">Founder, upranked.io · Creator of the APEX Framework™ · GCC Growth Intelligence Specialist</p>
-              <Link href="/about">
+              <Link href="/about/">
                 <a className="text-accent text-sm hover:underline mt-1 inline-block">About Sama →</a>
               </Link>
             </div>

@@ -1,4 +1,4 @@
-﻿import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import ImageExt from '@tiptap/extension-image';
@@ -963,7 +963,7 @@ function PostList({ posts, loading, onNew, onEdit, onDelete, onTogglePublish, on
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <a href="/blog" target="_blank" rel="noopener noreferrer"
+          <a href="/blog/" target="_blank" rel="noopener noreferrer"
             className="text-gray-400 hover:text-white text-xs flex items-center gap-1.5 transition-colors">
             <Globe className="w-3.5 h-3.5" /> View Blog
           </a>

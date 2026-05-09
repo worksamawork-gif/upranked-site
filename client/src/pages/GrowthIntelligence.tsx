@@ -1,4 +1,4 @@
-﻿import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, Briefcase, Code2, Globe, Target, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -332,12 +332,12 @@ export default function GrowthIntelligence() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
                     Book a Discovery Call <ArrowRight className="w-5 h-5" />
                   </a>
                 </Link>
-                <Link href="/methodology">
+                <Link href="/methodology/">
                   <a className="btn-secondary text-lg px-8 py-4">Our APEX Framework™</a>
                 </Link>
               </div>
@@ -345,7 +345,7 @@ export default function GrowthIntelligence() {
               {/* NAP #1 */}
               <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
               </div>
             </motion.div>
@@ -393,7 +393,7 @@ export default function GrowthIntelligence() {
               <div className="mt-8 p-4 bg-dark-gray border border-border rounded-xl text-xs text-text-secondary space-y-2">
                 <p className="text-white font-semibold text-sm mb-2">upranked.io</p>
                 <p className="flex items-center gap-1.5"><MapPin className="w-3 h-3 text-accent flex-shrink-0" /> Dubai, UAE — GCC &amp; Global</p>
-                <a href="/contact" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
+                <a href="/contact/" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> Sam@upranked.io</a>
               </div>
             </div>
@@ -527,7 +527,7 @@ export default function GrowthIntelligence() {
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
                         Sama Alaa leads every Growth Intelligence engagement personally. The four services — Business Consultation, Custom Tools, Tailored Website, and Business Strategy — are not isolated products sold by different teams. They are integrated levers in a single growth system, applied by Sama directly across Dubai, Riyadh, Kuwait City, Manama, London, and New York. There are no account managers, no handoffs, and no junior consultants involved in your strategy.
                       </p>
-                      <Link href="/about"><a className="text-accent text-sm font-semibold hover:underline">Full credentials &amp; profile →</a></Link>
+                      <Link href="/about/"><a className="text-accent text-sm font-semibold hover:underline">Full credentials &amp; profile →</a></Link>
                     </div>
                   </div>
                 </div>
@@ -593,19 +593,19 @@ export default function GrowthIntelligence() {
               Book a free discovery call with Sama Alaa. We will identify which Growth Intelligence service will have the biggest immediate impact on your business in Dubai, Riyadh, Kuwait, Bahrain, London, or New York.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                   Book a Free Discovery Call <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
-              <a href="/contact" className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2">
+              <a href="/contact/" className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2">
                 Contact Us
               </a>
             </div>
             {/* NAP #3 */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
             </div>
           </motion.div>

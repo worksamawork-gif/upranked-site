@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowRight, MapPin, Phone, Mail, Search, Globe, BarChart2, Link2, Code2, Map, Languages, FileText, Target } from 'lucide-react';
 import { Link } from 'wouter';
 import { usePageMeta } from '@/hooks/usePageMeta';
@@ -130,19 +130,19 @@ export default function SEOHub() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
                     Book Free APEX Diagnostic <ArrowRight className="w-5 h-5" />
                   </a>
                 </Link>
-                <Link href="/seo-industries">
+                <Link href="/seo-industries/">
                   <a className="btn-secondary text-lg px-8 py-4">SEO by Industry</a>
                 </Link>
               </div>
 
               <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
               </div>
             </motion.div>
@@ -228,7 +228,7 @@ export default function SEOHub() {
               <p className="text-text-secondary leading-relaxed mb-6">
                 SEO for a medical clinic in Dubai operates completely differently from SEO for an industrial B2B supplier or a professional services firm. We build sector-specific strategies for medical, industrial, and business clients.
               </p>
-              <Link href="/seo-industries">
+              <Link href="/seo-industries/">
                 <a className="btn-primary inline-flex items-center gap-2">
                   View Industry SEO <ArrowRight className="w-4 h-4" />
                 </a>
@@ -274,7 +274,7 @@ export default function SEOHub() {
               <p className="text-text-secondary leading-relaxed mb-4">
                 upranked.io is deliberately founder-led. Sama Alaa personally leads every engagement — no junior teams, no account managers. All nine SEO disciplines are applied through the APEX Framework™, built specifically for GCC market conditions.
               </p>
-              <Link href="/about">
+              <Link href="/about/">
                 <a className="text-accent font-semibold hover:underline inline-flex items-center gap-1">About Sama <ArrowRight className="w-4 h-4" /></a>
               </Link>
             </div>

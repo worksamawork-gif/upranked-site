@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PAGE: /about
  * PRIMARY KW: Sama Alaa SEO expert GCC (Vol: ~200/mo branded | KD: 12)
  * SECONDARY KW: GCC SEO expert Dubai, SEO strategist UAE, upranked.io founder, APEX Framework SEO
@@ -249,7 +249,7 @@ export default function About() {
 
             {/* NAP #1 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
@@ -261,12 +261,12 @@ export default function About() {
             </address>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">
                   Work With Us <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
-              <Link href="/methodology">
+              <Link href="/methodology/">
                 <a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">
                   Our APEX Framework™
                 </a>
@@ -421,7 +421,7 @@ export default function About() {
                   <Linkedin className="w-4 h-4" /> LinkedIn Profile
                 </a>
                 <span className="text-border">|</span>
-                <a href="/contact" className="text-accent text-sm hover:underline">
+                <a href="/contact/" className="text-accent text-sm hover:underline">
                   Contact Us →
                 </a>
               </div>
@@ -460,10 +460,10 @@ export default function About() {
           </div>
 
           <div className="text-center mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/seo-industries">
+            <Link href="/seo-industries/">
               <a className="btn-primary inline-flex items-center gap-2">View SEO Services <ArrowRight className="w-4 h-4" /></a>
             </Link>
-            <Link href="/growth-intelligence">
+            <Link href="/growth-intelligence/">
               <a className="btn-secondary inline-flex items-center gap-2">Growth Intelligence Services</a>
             </Link>
           </div>
@@ -547,7 +547,7 @@ export default function About() {
               ))}
             </div>
             <p className="text-text-secondary text-sm mt-4">Applied across all upranked.io engagements — SEO, strategy, tools, and websites</p>
-            <Link href="/methodology">
+            <Link href="/methodology/">
               <a className="inline-flex items-center gap-2 text-accent text-sm mt-3 hover:underline">
                 Full APEX Methodology Deep-Dive <ArrowRight className="w-4 h-4" />
               </a>
@@ -716,7 +716,7 @@ export default function About() {
 
             {/* NAP #2 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary border border-border rounded-xl p-5 bg-navy/40">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us (WhatsApp)
               </a>
               <span className="hidden sm:block text-border">|</span>
@@ -761,13 +761,13 @@ export default function About() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">
                   Book Free Strategy Call <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4"
               >
                 Contact Us
@@ -776,7 +776,7 @@ export default function About() {
 
             {/* NAP #3 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <span className="hidden sm:block text-border">|</span>

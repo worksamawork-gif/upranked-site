@@ -1,4 +1,4 @@
-﻿import { Mail, MessageCircle, MapPin, Linkedin, Twitter, Phone } from 'lucide-react';
+import { Mail, MessageCircle, MapPin, Linkedin, Twitter, Phone } from 'lucide-react';
 import { Link } from 'wouter';
 
 export default function Footer() {
@@ -151,7 +151,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MessageCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <a href="/contact" className="text-text-secondary hover:text-accent transition-colors text-sm">
+                <a href="/contact/" className="text-text-secondary hover:text-accent transition-colors text-sm">
                   Contact Us
                 </a>
               </li>
@@ -162,7 +162,7 @@ export default function Footer() {
             </ul>
 
             <div className="mt-8">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="inline-block px-5 py-2.5 bg-accent text-black rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-300 text-sm">
                   Book Free APEX Diagnostic
                 </a>
@@ -174,10 +174,10 @@ export default function Footer() {
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-text-secondary text-sm">© 2026 upranked.io. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <Link href="/privacy">
+            <Link href="/privacy/">
               <a className="text-text-secondary hover:text-accent transition-colors text-sm">Privacy Policy</a>
             </Link>
-            <Link href="/terms">
+            <Link href="/terms/">
               <a className="text-text-secondary hover:text-accent transition-colors text-sm">Terms of Service</a>
             </Link>
           </div>

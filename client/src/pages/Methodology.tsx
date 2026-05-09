@@ -1,4 +1,4 @@
-﻿import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -334,7 +334,7 @@ export default function Methodology() {
               {/* NAP #1 */}
               <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
               </div>
             </motion.div>
@@ -370,7 +370,7 @@ export default function Methodology() {
               <div className="mt-8 p-4 bg-dark-gray border border-border rounded-xl text-xs text-text-secondary space-y-2">
                 <p className="text-white font-semibold text-sm mb-2">upranked.io</p>
                 <p className="flex items-center gap-1.5"><MapPin className="w-3 h-3 text-accent flex-shrink-0" /> Dubai, UAE — GCC &amp; Global</p>
-                <a href="/contact" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
+                <a href="/contact/" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> Sam@upranked.io</a>
               </div>
             </div>
@@ -536,7 +536,7 @@ export default function Methodology() {
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
                         Sama Alaa developed the APEX Framework™ after observing a critical gap in the GCC market: agencies applied generic Western SEO templates to complex, trust-sensitive industries — and delivered predictably mediocre results. APEX was engineered from first principles for the GCC's unique search landscape: bilingual Arabic–English search behavior, relationship-first business culture, and competitive sectors where trust is the deciding factor. Sama personally applies the framework on every engagement across Dubai, Riyadh, Kuwait City, Manama, and global markets including London and New York.
                       </p>
-                      <Link href="/about">
+                      <Link href="/about/">
                         <a className="text-accent text-sm font-semibold hover:underline">Full profile &amp; credentials →</a>
                       </Link>
                     </div>
@@ -610,13 +610,13 @@ export default function Methodology() {
               Book a free APEX Diagnostic with Sama Alaa. We'll audit your current position and show you exactly what the framework would unlock — for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                   Book a Free APEX Diagnostic <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2"
               >
                 Contact Us
@@ -625,7 +625,7 @@ export default function Methodology() {
             {/* NAP #3 */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
             </div>
           </motion.div>

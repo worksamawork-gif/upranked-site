@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PAGE: /growth-intelligence/consultation
  * PRIMARY KW: business consultation Dubai (Vol: ~880/mo | KD: 32)
  * SECONDARY KW: growth strategy consultant GCC, business consultant Dubai UAE, Sama Alaa consultation
@@ -119,7 +119,7 @@ export default function BusinessConsultation() {
             <div>
               <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-text-secondary mb-6">
                 <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link><span>/</span>
-                <Link href="/growth-intelligence"><a className="hover:text-accent transition-colors">Growth Intelligence</a></Link><span>/</span>
+                <Link href="/growth-intelligence/"><a className="hover:text-accent transition-colors">Growth Intelligence</a></Link><span>/</span>
                 <span className="text-accent">Business Consultation</span>
               </nav>
               <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -131,13 +131,13 @@ export default function BusinessConsultation() {
                   Direct strategic consultation with the founder of upranked.io. Get the APEX Framework™ applied to your GCC growth challenge, a competitor gap analysis, and a 90-day roadmap — no junior handoffs, no agency overhead.
                 </p>
                 <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
-                  <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                  <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
                   <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
                   <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
-                  <Link href="/about"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sama Alaa</a></Link>
+                  <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
+                  <Link href="/about/"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sama Alaa</a></Link>
                 </div>
               </motion.div>
             </div>
@@ -238,7 +238,7 @@ export default function BusinessConsultation() {
         <div className="container-premium text-center">
           <p className="text-lg font-semibold text-white mb-2">Ready to get clarity on your growth path?</p>
           <p className="text-text-secondary text-sm mb-6">Book a free 30-minute APEX Diagnostic — no commitment, just a clear picture of your opportunity.</p>
-          <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2">Book Free Intro Call <ArrowRight className="w-4 h-4" /></a></Link>
+          <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2">Book Free Intro Call <ArrowRight className="w-4 h-4" /></a></Link>
         </div>
       </section>
 
@@ -254,8 +254,8 @@ export default function BusinessConsultation() {
                 <p className="text-accent text-sm mb-3">Founder &amp; Chief Growth Strategist, upranked.io · Dubai, UAE</p>
                 <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a specialist GCC growth strategist with 20+ client engagements across Medical, Industrial, and Business sectors in Dubai, Riyadh, Kuwait, and Bahrain. As the creator of the APEX Framework™, Sama personally leads every consultation — no handoffs. His direct, founder-led model means you get the same depth of expertise that built upranked.io's reputation across the GCC, London, and New York.</p>
                 <div className="flex gap-4">
-                  <Link href="/about"><a className="text-accent text-sm hover:underline">Full Bio →</a></Link>
-                  <a href="/contact" className="text-accent text-sm hover:underline">Contact Us →</a>
+                  <Link href="/about/"><a className="text-accent text-sm hover:underline">Full Bio →</a></Link>
+                  <a href="/contact/" className="text-accent text-sm hover:underline">Contact Us →</a>
                 </div>
               </div>
             </div>
@@ -281,11 +281,11 @@ export default function BusinessConsultation() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Clarity on Your <span className="text-accent">Growth Path</span></h2>
             <p className="text-text-secondary mb-6 leading-relaxed">Book a free 30-minute APEX Diagnostic with Sama Alaa. Come with your biggest growth challenge — leave with a clear, prioritised roadmap.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
-              <a href="/contact" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>
+              <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
+              <a href="/contact/" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>
             </div>
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <span className="hidden sm:block text-border">|</span>
               <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
               <span className="hidden sm:block text-border">|</span>

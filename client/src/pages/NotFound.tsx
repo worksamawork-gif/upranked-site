@@ -1,4 +1,4 @@
-﻿import { Search, Home, ArrowRight } from 'lucide-react';
+import { Search, Home, ArrowRight } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -25,7 +25,7 @@ export default function NotFound() {
               Go to Homepage
             </a>
             <a
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-dark-gray border border-border text-white rounded-lg font-semibold hover:border-accent/60 transition-all duration-300"
             >
               Contact Us

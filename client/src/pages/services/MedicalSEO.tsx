@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SEO REFERENCE BLOCK (Internal — not visible on page)
  * URL: /industries/medical
  * Primary KW: medical SEO Dubai (commercial intent)
@@ -225,19 +225,19 @@ export default function MedicalSEO() {
 
               {/* 2 CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
                     Book a Free Strategy Call <ArrowRight className="w-5 h-5" />
                   </a>
                 </Link>
-                <Link href="/methodology">
+                <Link href="/methodology/">
                   <a className="btn-secondary text-lg px-8 py-4">View APEX Framework™</a>
                 </Link>
               </div>
 
               {/* NAP #1 */}
               <div className="flex flex-wrap gap-6 text-sm text-text-secondary border-t border-border pt-6">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
@@ -435,7 +435,7 @@ export default function MedicalSEO() {
               <p className="text-white font-bold text-xl mb-1">Is your clinic invisible on Google in Dubai?</p>
               <p className="text-text-secondary">Book a free 30-min APEX Diagnostic — no obligations, just clarity on what's possible.</p>
             </div>
-            <Link href="/contact">
+            <Link href="/contact/">
               <a className="btn-primary px-8 py-3 whitespace-nowrap inline-flex items-center gap-2">
                 Get Your Free Audit <ArrowRight className="w-4 h-4" />
               </a>
@@ -473,7 +473,7 @@ export default function MedicalSEO() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/methodology">
+            <Link href="/methodology/">
               <a className="btn-secondary px-8 py-3 inline-flex items-center gap-2">
                 Explore the Full APEX Framework™ <ArrowRight className="w-4 h-4" />
               </a>
@@ -593,7 +593,7 @@ export default function MedicalSEO() {
                 <p className="text-text-secondary text-sm">Premium Growth Intelligence Lab · Medical SEO Specialists</p>
               </div>
               <div className="flex flex-wrap gap-6 text-sm md:ml-auto">
-                <a href="/contact" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
@@ -623,7 +623,7 @@ export default function MedicalSEO() {
             ))}
           </div>
           <div className="mt-6 text-center">
-            <Link href="/faq">
+            <Link href="/faq/">
               <a className="text-accent hover:underline text-sm">View all SEO FAQs →</a>
             </Link>
           </div>
@@ -642,7 +642,7 @@ export default function MedicalSEO() {
               <p className="text-xl text-text-secondary mb-8 leading-relaxed">
                 Book a free 30-minute strategy call with Sama Alaa. We'll audit your clinic's current search visibility in Dubai and across the UAE, identify the highest-intent patient queries you're missing, and give you a clear, honest picture of what it would take to dominate your market.
               </p>
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary text-xl px-12 py-6 inline-flex items-center gap-3 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                   Book Your Free Strategy Call <ArrowRight className="w-6 h-6" />
                 </a>
@@ -650,7 +650,7 @@ export default function MedicalSEO() {
 
               {/* NAP #3 */}
               <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-text-secondary border-t border-border pt-6">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">

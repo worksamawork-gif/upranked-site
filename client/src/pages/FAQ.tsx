@@ -1,4 +1,4 @@
-﻿import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ChevronDown, ArrowRight, MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
@@ -331,7 +331,7 @@ export default function FAQ() {
               {/* NAP #1 */}
               <div className="flex flex-wrap gap-5 text-sm text-text-secondary mt-6">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
               </div>
             </motion.div>
@@ -367,12 +367,12 @@ export default function FAQ() {
               <div className="mt-8 p-4 bg-dark-gray border border-border rounded-xl text-xs text-text-secondary space-y-2">
                 <p className="text-white font-semibold text-sm mb-2">upranked.io</p>
                 <p className="flex items-center gap-1.5"><MapPin className="w-3 h-3 text-accent flex-shrink-0" /> Dubai, UAE — GCC &amp; Global</p>
-                <a href="/contact" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
+                <a href="/contact/" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> Sam@upranked.io</a>
               </div>
 
               <div className="mt-4">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary w-full text-sm py-3 inline-flex items-center justify-center gap-2">
                     Book Free Call <ArrowRight className="w-4 h-4" />
                   </a>
@@ -429,7 +429,7 @@ export default function FAQ() {
                         ))}
                       </div>
                       <div className="mt-4">
-                        <Link href="/about">
+                        <Link href="/about/">
                           <a className="text-accent text-sm font-semibold hover:underline">Full credentials &amp; profile →</a>
                         </Link>
                       </div>
@@ -508,13 +508,13 @@ export default function FAQ() {
               Book a free 30-minute strategy call with Sama Alaa. Ask anything about your specific situation — no obligations, no pressure. Available for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                   Book a Free Strategy Call <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2"
               >
                 Contact Us
@@ -523,7 +523,7 @@ export default function FAQ() {
             {/* NAP #3 */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
             </div>
           </motion.div>

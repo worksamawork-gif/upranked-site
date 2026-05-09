@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PAGE: /
  * PRIMARY KW: SEO agency Dubai (Vol: ~2,400/mo | KD: 42)
  * SECONDARY KW: GCC SEO agency, growth intelligence lab, upranked.io, SEO company Dubai UAE
@@ -250,7 +250,7 @@ export default function Home() {
 
               {/* NAP #1 */}
               <address className="not-italic flex flex-wrap gap-4 text-sm text-text-secondary mb-8">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
                 <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
@@ -262,12 +262,12 @@ export default function Home() {
               </address>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary text-base px-8 py-4 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-2">
                     {isAr ? 'احجز تشخيص APEX المجاني' : 'Book Free APEX Diagnostic'} <ArrowRight className="w-5 h-5" />
                   </a>
                 </Link>
-                <Link href="/seo-industries">
+                <Link href="/seo-industries/">
                   <a className="btn-secondary text-base px-8 py-4 inline-flex items-center gap-2">
                     {isAr ? 'استكشف خدمات SEO' : 'Explore SEO Services'}
                   </a>
@@ -400,7 +400,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-8">
-            <Link href="/seo-industries">
+            <Link href="/seo-industries/">
               <a className="btn-secondary inline-flex items-center gap-2 text-sm px-6 py-2.5">
                 {isAr ? 'جميع خدمات SEO' : 'All SEO Services'} <ArrowRight className="w-4 h-4" />
               </a>
@@ -446,7 +446,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-8">
-            <Link href="/growth-intelligence">
+            <Link href="/growth-intelligence/">
               <a className="btn-secondary inline-flex items-center gap-2 text-sm px-6 py-2.5">
                 {isAr ? 'جميع خدمات ذكاء النمو' : 'All Growth Intelligence Services'} <ArrowRight className="w-4 h-4" />
               </a>
@@ -488,7 +488,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <Link href="/methodology">
+              <Link href="/methodology/">
                 <a className="btn-secondary inline-flex items-center gap-2 text-sm px-6 py-2.5">
                   Explore the Full APEX Methodology <ArrowRight className="w-4 h-4" />
                 </a>
@@ -546,7 +546,7 @@ export default function Home() {
                   Sama Alaa founded upranked.io on one conviction: the GCC's most valuable businesses deserve a growth partner who speaks their market, their language, and delivers results tied to revenue — not just traffic. With 20+ GCC client engagements across Medical, Industrial, and Business sectors, Sama personally leads every upranked.io engagement. No junior handoffs. No Western playbooks. Just sector-specific, bilingual, revenue-first SEO strategy built for Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Link href="/about">
+                  <Link href="/about/">
                     <a className="text-accent text-sm hover:underline inline-flex items-center gap-1">
                       Full Bio <ArrowRight className="w-3.5 h-3.5" />
                     </a>
@@ -556,7 +556,7 @@ export default function Home() {
                     LinkedIn →
                   </a>
                   <span className="text-border">|</span>
-                  <Link href="/contact">
+                  <Link href="/contact/">
                     <a className="text-accent text-sm hover:underline">Book a Call →</a>
                   </Link>
                 </div>
@@ -634,13 +634,13 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                   {isAr ? 'احجز تشخيص APEX المجاني' : 'Book Free APEX Diagnostic'} <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4"
               >
                 {isAr ? 'واتساب سام مباشرة' : 'Contact Us'}
@@ -649,7 +649,7 @@ export default function Home() {
 
             {/* NAP #3 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <span className="hidden sm:block text-border">|</span>
