@@ -1,0 +1,48 @@
+name: Auto-rebuild on blog publish
+
+# Triggers:
+#   1. Supabase webhook fires this via repository_dispatch when a post is published
+#   2. Manual trigger from GitHub → Actions tab → "Run workflow"
+on:
+  repository_dispatch:
+    types: [blog-published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Playwright browser
+        run: npx playwright install chromium --with-deps
+
+      - name: Build & prerender
+        run: pnpm run build:seo
+
+      - name: Commit & push updated dist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/public
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: auto-rebuild dist for new blog post [skip ci]"
+          git push

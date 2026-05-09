@@ -10,6 +10,7 @@
  */
 
 import { chromium } from 'playwright';
+import { createClient } from '@supabase/supabase-js';
 import express from 'express';
 import path from 'node:path';
 import fs from 'node:fs';
@@ -19,6 +20,23 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.resolve(__dirname, '../dist/public');
 const PORT = 4173;
 const BASE = `http://localhost:${PORT}`;
+
+const SUPABASE_URL = 'https://xusvmvvosdvmixtqkiop.supabase.co';
+const SUPABASE_KEY = process.env.SUPABASE_KEY || 'sb_publishable_dtOltW0Hz6plqrVz2e3tjQ_UculjCKG';
+
+async function fetchSupabaseBlogRoutes() {
+  try {
+    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+    const { data } = await supabase
+      .from('blog_posts')
+      .select('slug')
+      .eq('status', 'published');
+    return (data || []).map(p => `/blog/${p.slug}`);
+  } catch {
+    console.warn('  ⚠ Could not fetch Supabase blog routes, using static list only');
+    return [];
+  }
+}
 
 // All public routes to pre-render
 const ROUTES = [
@@ -107,6 +125,13 @@ async function prerender() {
 
   console.log('\n🔍 Pre-rendering pages for AI crawlers...\n');
 
+  // Merge static routes with any new blog posts published via Supabase
+  const supabaseBlogRoutes = await fetchSupabaseBlogRoutes();
+  const staticBlogSlugs = new Set(ROUTES.filter(r => r.startsWith('/blog/')));
+  const newBlogRoutes = supabaseBlogRoutes.filter(r => !staticBlogSlugs.has(r));
+  if (newBlogRoutes.length) console.log(`  + ${newBlogRoutes.length} new blog route(s) from Supabase\n`);
+  const ROUTES_ALL = [...ROUTES, ...newBlogRoutes];
+
   // Read the original Vite-built shell BEFORE any route is rendered, so that
   // pre-rendering '/' (which writes home-schema into dist/public/index.html)
   // doesn't contaminate the fallback HTML served for subsequent routes.
@@ -125,7 +150,7 @@ async function prerender() {
   let passed = 0;
   let failed = 0;
 
-  for (const route of ROUTES) {
+  for (const route of ROUTES_ALL) {
     const page = await context.newPage();
     try {
       await page.goto(`${BASE}${route}`, { waitUntil: 'networkidle', timeout: 30000 });
