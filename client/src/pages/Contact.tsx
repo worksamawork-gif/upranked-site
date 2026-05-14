@@ -177,6 +177,7 @@ export default function Contact() {
     email: '',
     phone: '',
     company: '',
+    market: '',
     service: '',
     message: '',
   });
@@ -220,8 +221,26 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormState('submitting');
-    await new Promise(r => setTimeout(r, 1200));
-    setFormState('success');
+    try {
+      const body = new URLSearchParams({
+        'form-name': 'contact',
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        company: form.company,
+        market: form.market,
+        service: form.service,
+        message: form.message,
+      }).toString();
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
+      });
+      setFormState(res.ok ? 'success' : 'error');
+    } catch {
+      setFormState('error');
+    }
   };
 
   return (
@@ -450,7 +469,8 @@ export default function Contact() {
                     </p>
                   </motion.div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="card-premium space-y-6">
+                  <form onSubmit={handleSubmit} className="card-premium space-y-6" name="contact" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-2">Send a Message</h3>
                       <p className="text-text-secondary text-sm">Fill in the form and Sama will follow up within 24 hours.</p>
@@ -508,8 +528,8 @@ export default function Contact() {
                     <div>
                       <label className="block text-sm font-medium text-text-secondary mb-2">Market / Location</label>
                       <select
-                        name="service"
-                        value={form.service}
+                        name="market"
+                        value={form.market}
                         onChange={handleChange}
                         className="input-premium"
                       >
