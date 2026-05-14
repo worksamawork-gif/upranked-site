@@ -18,7 +18,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
 import {
   ArrowRight, CheckCircle, ChevronDown, Target, BarChart2, Zap, Shield,
-  Globe, Users, Star, Award, TrendingUp, BookOpen, MapPin, Phone, Mail, Linkedin
+  Globe, Users, Star, Award, TrendingUp, BookOpen, MapPin, Phone, Mail,
+  LinkedinIcon, TwitterIcon, Facebook, Instagram
 } from 'lucide-react';
 import { usePageMeta } from '@/hooks/usePageMeta';
 
@@ -81,7 +82,7 @@ const faqs = [
   },
   {
     q: 'Can I find an SEO expert near me in Dubai — is Sama Alaa based in Dubai?',
-    a: 'Yes. upranked.io is based in Dubai, UAE, and serves clients across the GCC — Dubai, Abu Dhabi, Sharjah, Ajman, Riyadh, Jeddah, NEOM, Doha, Kuwait City, and Manama. If you\'re searching for an SEO expert near me in Dubai, an SEO consultant near me in the UAE, or a GCC growth strategist, you can reach Sama directly via our contact page or email Sam@upranked.io. All strategy calls are available remotely and in person across the region.',
+    a: 'Yes. upranked.io is based in Dubai, UAE, and serves clients across the GCC — Dubai, Abu Dhabi, Sharjah, Ajman, Riyadh, Jeddah, NEOM, Doha, Kuwait City, and Manama. If you\'re searching for an SEO expert near me in Dubai, an SEO consultant near me in the UAE, or a GCC growth strategist, you can reach Sama directly via our contact page or email uprankedio@gmail.com. All strategy calls are available remotely and in person across the region.',
   },
   {
     q: 'How does Sama Alaa differ from a typical SEO agency in Dubai?',
@@ -147,7 +148,7 @@ const schema = {
         url: 'https://upranked.io',
       },
       url: 'https://upranked.io/about',
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
       knowsAbout: [
         'Medical SEO', 'Industrial B2B SEO', 'Business SEO', 'GCC SEO Strategy',
         'Bilingual EN/AR SEO', 'APEX Framework', 'GCC Market Positioning', 'Commercial Intent SEO',
@@ -161,7 +162,7 @@ const schema = {
       url: 'https://upranked.io',
       description: 'Premium Growth Intelligence Lab — sector-specific SEO and growth strategy built for high-value businesses in the GCC.',
       telephone: '+201121664778',
-      email: 'Sam@upranked.io',
+      email: 'uprankedio@gmail.com',
       founder: { '@type': 'Person', '@id': 'https://upranked.io/about#person' },
       foundingLocation: { '@type': 'Place', name: 'Dubai, UAE' },
       areaServed: [
@@ -254,8 +255,8 @@ export default function About() {
                   <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                     <Phone className="w-4 h-4 text-accent" /> Contact Us
                   </a>
-                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                    <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                    <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                   </a>
                   <span className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · New York
@@ -332,8 +333,22 @@ export default function About() {
             >
               <div className="w-full max-w-md mx-auto bg-gradient-to-br from-dark-gray via-navy to-dark-gray border border-accent/30 rounded-2xl p-8 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent/0 via-accent to-accent/0" />
-                <div className="w-28 h-28 rounded-full bg-accent/20 border-2 border-accent/40 flex items-center justify-center mx-auto mb-5">
-                  <span className="text-accent font-black text-4xl">SA</span>
+                <div className="w-28 h-28 rounded-full border-2 border-accent/40 flex items-center justify-center mx-auto mb-5 overflow-hidden">
+                  <img
+                    src="/images/sam-hamouda-seo-consultant-dubai.webp"
+                    alt="Sama Alaa — Founder of upranked.io, GCC SEO Expert Dubai"
+                    width={112} height={112}
+                    className="w-full h-full object-cover object-top"
+                    onError={(e) => {
+                      const t = e.currentTarget;
+                      t.style.display = 'none';
+                      t.parentElement!.classList.add('bg-accent/20');
+                      const span = document.createElement('span');
+                      span.className = 'text-accent font-black text-4xl';
+                      span.textContent = 'SA';
+                      t.parentElement!.appendChild(span);
+                    }}
+                  />
                 </div>
                 <h3 className="text-white font-black text-2xl mb-1">Sama Alaa</h3>
                 <p className="text-accent text-sm font-semibold mb-1">Founder & Chief Growth Strategist</p>
@@ -351,8 +366,22 @@ export default function About() {
                     </div>
                   ))}
                 </div>
+                <div className="flex items-center justify-center gap-2 mt-5">
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="p-2 bg-navy/60 hover:bg-navy rounded-lg transition-colors" aria-label="LinkedIn">
+                    <LinkedinIcon className="w-4 h-4 text-accent" />
+                  </a>
+                  <a href="https://www.instagram.com/upranked.io/" target="_blank" rel="noopener noreferrer" className="p-2 bg-navy/60 hover:bg-navy rounded-lg transition-colors" aria-label="Instagram">
+                    <Instagram className="w-4 h-4 text-accent" />
+                  </a>
+                  <a href="https://x.com/Upranked7" target="_blank" rel="noopener noreferrer" className="p-2 bg-navy/60 hover:bg-navy rounded-lg transition-colors" aria-label="X / Twitter">
+                    <TwitterIcon className="w-4 h-4 text-accent" />
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61589100073844" target="_blank" rel="noopener noreferrer" className="p-2 bg-navy/60 hover:bg-navy rounded-lg transition-colors" aria-label="Facebook">
+                    <Facebook className="w-4 h-4 text-accent" />
+                  </a>
+                </div>
                 <Link href="/contact/">
-                  <a className="btn-primary inline-flex items-center gap-2 mt-6 text-sm px-6 py-2.5">
+                  <a className="btn-primary inline-flex items-center gap-2 mt-4 text-sm px-6 py-2.5">
                     Work With Sama <ArrowRight className="w-4 h-4" />
                   </a>
                 </Link>
@@ -437,12 +466,12 @@ export default function About() {
 
               <div className="flex items-center gap-4">
                 <a
-                  href="https://www.linkedin.com/company/115836359/"
+                  href="https://www.linkedin.com/company/upranked-io/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-accent text-sm hover:underline"
                 >
-                  <Linkedin className="w-4 h-4" /> LinkedIn Profile
+                  <LinkedinIcon className="w-4 h-4" /> LinkedIn Profile
                 </a>
                 <span className="text-border">|</span>
                 <a href="/contact/" className="text-accent text-sm hover:underline">
@@ -762,8 +791,8 @@ export default function About() {
                 <Phone className="w-4 h-4 text-accent" /> Contact Us (WhatsApp)
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2">
@@ -822,8 +851,8 @@ export default function About() {
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center">

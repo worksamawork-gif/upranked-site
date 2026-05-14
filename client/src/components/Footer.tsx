@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, MapPin, Linkedin, Twitter, Phone } from 'lucide-react';
+import { Mail, MessageCircle, MapPin, LinkedinIcon, TwitterIcon, Facebook, Instagram, Phone } from 'lucide-react';
 import { Link } from 'wouter';
 
 export default function Footer() {
@@ -23,12 +23,18 @@ export default function Footer() {
             <p className="text-text-secondary text-sm leading-relaxed">
               Premium SEO and Growth Intelligence services for high-value businesses in the GCC — UAE, Saudi Arabia, Kuwait, and Bahrain.
             </p>
-            <div className="flex items-center gap-3 pt-2">
-              <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-navy rounded-lg transition-colors" aria-label="LinkedIn">
-                <Linkedin className="w-4 h-4 text-accent" />
+            <div className="flex items-center gap-2 pt-2 flex-wrap">
+              <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-navy rounded-lg transition-colors" aria-label="LinkedIn">
+                <LinkedinIcon className="w-4 h-4 text-accent" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-navy rounded-lg transition-colors" aria-label="Twitter / X">
-                <Twitter className="w-4 h-4 text-accent" />
+              <a href="https://x.com/Upranked7" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-navy rounded-lg transition-colors" aria-label="X / Twitter">
+                <TwitterIcon className="w-4 h-4 text-accent" />
+              </a>
+              <a href="https://www.instagram.com/upranked.io/" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-navy rounded-lg transition-colors" aria-label="Instagram">
+                <Instagram className="w-4 h-4 text-accent" />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61589100073844" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-navy rounded-lg transition-colors" aria-label="Facebook">
+                <Facebook className="w-4 h-4 text-accent" />
               </a>
             </div>
           </div>
@@ -139,8 +145,8 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <a href="mailto:Sam@upranked.io" className="text-text-secondary hover:text-accent transition-colors text-sm">
-                  Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="text-text-secondary hover:text-accent transition-colors text-sm">
+                  uprankedio@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
