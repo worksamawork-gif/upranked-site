@@ -322,7 +322,7 @@ export default function About() {
         <div className="container-premium">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
 
-            {/* Photo */}
+            {/* Profile card */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -330,29 +330,34 @@ export default function About() {
               viewport={{ once: true }}
               className="relative"
             >
-              <img
-                src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sama Alaa — Founder of upranked.io Business Growth Agency, Dubai UAE"
-                width={520} height={560}
-                loading="eager"
-                className="rounded-2xl border border-border w-full max-w-md mx-auto object-cover"
-                onError={e => {
-                  const el = e.target as HTMLImageElement;
-                  el.style.display = 'none';
-                  const fallback = el.nextElementSibling as HTMLElement;
-                  if (fallback) fallback.style.display = 'flex';
-                }}
-              />
-              {/* Fallback avatar */}
-              <div className="hidden w-full max-w-md mx-auto aspect-[4/4.3] rounded-2xl bg-gradient-to-br from-dark-gray to-navy border border-border items-center justify-center">
-                <div className="text-center p-8">
-                  <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder of upranked.io" width={128} height={128} className="w-32 h-32 rounded-full object-cover object-top mx-auto mb-6 border-2 border-accent/30" decoding="async" />
-                  <p className="text-white font-bold text-xl">Sama Alaa</p>
-                  <p className="text-accent text-sm mt-1">Founder, upranked.io</p>
-                  <p className="text-text-secondary text-xs mt-1">Dubai, UAE</p>
+              <div className="w-full max-w-md mx-auto bg-gradient-to-br from-dark-gray via-navy to-dark-gray border border-accent/30 rounded-2xl p-8 text-center relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent/0 via-accent to-accent/0" />
+                <div className="w-28 h-28 rounded-full bg-accent/20 border-2 border-accent/40 flex items-center justify-center mx-auto mb-5">
+                  <span className="text-accent font-black text-4xl">SA</span>
                 </div>
+                <h3 className="text-white font-black text-2xl mb-1">Sama Alaa</h3>
+                <p className="text-accent text-sm font-semibold mb-1">Founder & Chief Growth Strategist</p>
+                <p className="text-text-secondary text-xs mb-6">upranked.io — Dubai, UAE · GCC · London · New York</p>
+                <div className="grid grid-cols-2 gap-3">
+                  {[
+                    { n: '20+', l: 'GCC clients' },
+                    { n: '6', l: 'Priority markets' },
+                    { n: 'APEX™', l: 'Proprietary framework' },
+                    { n: 'EN/AR', l: 'Bilingual SEO' },
+                  ].map(s => (
+                    <div key={s.l} className="bg-navy/60 border border-border rounded-lg px-3 py-2">
+                      <div className="text-accent font-black text-sm">{s.n}</div>
+                      <div className="text-text-secondary text-xs">{s.l}</div>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/contact/">
+                  <a className="btn-primary inline-flex items-center gap-2 mt-6 text-sm px-6 py-2.5">
+                    Work With Sama <ArrowRight className="w-4 h-4" />
+                  </a>
+                </Link>
               </div>
-              <div className="absolute -bottom-4 -right-4 w-full max-w-md aspect-[4/4.3] rounded-2xl border-2 border-accent/30 -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-full max-w-md aspect-square rounded-2xl border-2 border-accent/30 -z-10" />
             </motion.div>
 
             {/* Bio */}
@@ -487,14 +492,20 @@ export default function About() {
             </Link>
           </div>
 
-          <img
-            src="/images/sam-hamouda-seo-consultant-dubai.webp"
-            alt="Sama Alaa — founder upranked.io, GCC SEO strategist Dubai"
-            width={480} height={480}
-            loading="lazy"
-            className="w-48 h-48 rounded-full object-cover object-top mx-auto mt-10 border-2 border-accent/30"
-            onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-          />
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            {[
+              { n: '20+', l: 'GCC clients served', sub: 'Dubai, Riyadh, Kuwait, Bahrain' },
+              { n: '280%', l: 'Avg organic lead increase', sub: 'at 12 months' },
+              { n: '6', l: 'Priority markets', sub: 'UAE · KSA · Kuwait · Bahrain · UK · USA' },
+              { n: '#1', l: 'Rankings achieved', sub: 'for primary commercial terms' },
+            ].map(s => (
+              <div key={s.l} className="bg-dark-gray border border-border rounded-xl p-4 text-center hover:border-accent/40 transition-colors">
+                <div className="text-2xl font-black text-accent mb-1">{s.n}</div>
+                <div className="text-white font-semibold text-xs mb-1">{s.l}</div>
+                <div className="text-text-secondary text-xs">{s.sub}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -573,14 +584,26 @@ export default function About() {
             </Link>
           </motion.div>
 
-          <img
-            src="/images/business/apex-business-seo-process.webp"
-            alt="APEX Framework methodology — Sama Alaa's proprietary SEO process for GCC businesses"
-            width={900} height={360}
-            loading="lazy"
-            className="w-full rounded-xl border border-border mt-10"
-            onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-          />
+          <div className="mt-10 bg-dark-gray border border-border rounded-xl p-6">
+            <p className="text-accent text-xs font-semibold uppercase tracking-widest mb-6 text-center">APEX Framework™ — Measurable Outcomes at Each Phase</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { phase: 'A', name: 'Audit', result: 'Full keyword gap map & competitor intelligence delivered in week 2' },
+                { phase: 'P', name: 'Position', result: 'Revenue-intent keyword architecture approved before any content is written' },
+                { phase: 'E', name: 'Execute', result: 'On-page, technical, bilingual, schema — all shipped in the right sequence' },
+                { phase: 'X', name: 'Expand', result: 'New markets, new keywords, compounding organic ROI month over month' },
+              ].map((p, i) => (
+                <div key={p.phase} className="relative bg-navy/60 border border-border rounded-xl p-4 hover:border-accent/40 transition-colors">
+                  <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center mb-3">
+                    <span className="text-black font-black text-lg">{p.phase}</span>
+                  </div>
+                  <div className="text-white font-bold text-sm mb-2">{p.name}</div>
+                  <div className="text-text-secondary text-xs leading-relaxed">{p.result}</div>
+                  {i < 3 && <div className="hidden md:block absolute -right-2 top-8 w-4 h-0.5 bg-accent/40 z-10" />}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

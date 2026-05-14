@@ -314,16 +314,17 @@ export default function BusinessSEO() {
               </div>
             </motion.div>
 
-            {/* Hero image */}
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="block">
-              <img
-                src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sama Alaa — business SEO consultant in Dubai delivering revenue-focused organic growth for GCC companies at upranked.io"
-                width={600} height={460}
-                loading="eager"
-                decoding="async"
-                className="rounded-2xl border border-border w-full object-cover object-top"
-              />
+            {/* Hero visual */}
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/03-serp-positions.svg"
+                  alt="SERP positions chart showing business SEO rankings for GCC companies in Dubai, Riyadh, and Kuwait — upranked.io"
+                  width={800} height={600}
+                  loading="eager" decoding="async" fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -406,14 +407,20 @@ export default function BusinessSEO() {
               </div>
             </div>
 
-            <img
-              src="/images/business/seo-agency-uae-results.webp"
-              alt="SEO agency UAE — business SEO results and commercial keyword rankings for GCC companies"
-              width={800} height={400}
-              loading="lazy"
-              className="w-full rounded-xl border border-border"
-              onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-            />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+              {[
+                { metric: '280%', label: 'Avg organic lead increase', sub: 'at 12 months' },
+                { metric: '20+', label: 'GCC businesses ranked', sub: 'Dubai · Riyadh · Kuwait · Bahrain' },
+                { metric: '#1', label: 'Rankings achieved', sub: 'for primary commercial terms' },
+                { metric: '6', label: 'Priority markets', sub: 'UAE · KSA · Kuwait · Bahrain · UK · USA' },
+              ].map(s => (
+                <div key={s.metric} className="bg-dark-gray border border-border rounded-xl p-5 text-center hover:border-accent/40 transition-colors">
+                  <div className="text-3xl md:text-4xl font-black text-accent mb-1">{s.metric}</div>
+                  <div className="text-white font-semibold text-sm mb-1">{s.label}</div>
+                  <div className="text-text-secondary text-xs">{s.sub}</div>
+                </div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
@@ -489,14 +496,24 @@ export default function BusinessSEO() {
               </table>
             </div>
 
-            <img
-              src="/images/business/commercial-keywords-gcc.webp"
-              alt="commercial intent keywords GCC — business SEO keyword research for Dubai and UAE companies"
-              width={800} height={380}
-              loading="lazy"
-              className="w-full rounded-xl border border-border mt-10"
-              onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-            />
+            <div className="mt-10 bg-dark-gray border border-border rounded-xl overflow-hidden">
+              <div className="px-6 py-4 border-b border-border">
+                <p className="text-accent text-xs font-semibold uppercase tracking-widest">Why Choose upranked.io for Business SEO in the GCC</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-border">
+                {[
+                  { stat: '3 verticals only', title: 'Sector Specialist', desc: 'Business, Medical, and Industrial SEO — no generalist spread across 40 industries. Depth beats breadth in GCC competition.' },
+                  { stat: '6 priority markets', title: 'GCC-First Intelligence', desc: 'Built on UAE and Saudi Arabia market data, bilingual EN/AR keyword research, and GCC-specific ranking patterns. Not a Western playbook.' },
+                  { stat: 'Zero handoffs', title: 'Founder-Led Delivery', desc: 'Sama Alaa is personally involved in every engagement. Revenue and qualified leads — not vanity rankings — are the primary metric.' },
+                ].map(r => (
+                  <div key={r.title} className="p-6 hover:bg-navy/30 transition-colors">
+                    <div className="text-accent font-black text-xs uppercase tracking-widest mb-2">{r.stat}</div>
+                    <h4 className="text-white font-bold text-base mb-2">{r.title}</h4>
+                    <p className="text-text-secondary text-sm leading-relaxed">{r.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -583,14 +600,27 @@ export default function BusinessSEO() {
             ))}
           </div>
 
-          <img
-            src="/images/business/apex-business-seo-process.webp"
-            alt="APEX Framework business SEO process — audit position execute expand for GCC companies"
-            width={1000} height={420}
-            loading="lazy"
-            className="w-full rounded-xl border border-border"
-            onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-          />
+          <div className="mt-10 bg-dark-gray border border-border rounded-xl p-6">
+            <p className="text-accent text-xs font-semibold uppercase tracking-widest mb-6 text-center">APEX Framework™ — Compounding Revenue Timeline</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { phase: 'A', name: 'Audit', months: 'Month 1–2', outcome: 'Full digital health review, keyword gap map, competitor intelligence report' },
+                { phase: 'P', name: 'Position', months: 'Month 2–3', outcome: 'Revenue-intent keyword architecture, content brief system, technical roadmap' },
+                { phase: 'E', name: 'Execute', months: 'Month 3–6', outcome: 'On-page, technical, bilingual content, schema markup, authority link building' },
+                { phase: 'X', name: 'Expand', months: 'Month 6+', outcome: 'New markets, new keywords, compounding organic ROI month over month' },
+              ].map((p, i) => (
+                <div key={p.phase} className="relative bg-navy/60 border border-border rounded-xl p-4 hover:border-accent/40 transition-colors">
+                  <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center mb-3">
+                    <span className="text-black font-black text-lg">{p.phase}</span>
+                  </div>
+                  <div className="text-accent text-xs font-semibold uppercase tracking-widest mb-1">{p.months}</div>
+                  <div className="text-white font-bold text-sm mb-2">{p.name}</div>
+                  <div className="text-text-secondary text-xs leading-relaxed">{p.outcome}</div>
+                  {i < 3 && <div className="hidden md:block absolute -right-2 top-8 w-4 h-0.5 bg-accent/40 z-10" />}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

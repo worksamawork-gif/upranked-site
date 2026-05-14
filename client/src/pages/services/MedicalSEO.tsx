@@ -250,23 +250,18 @@ export default function MedicalSEO() {
             </motion.div>
 
             {/* Hero image */}
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="block">
-              <div className="relative rounded-2xl overflow-hidden border border-border bg-dark-gray aspect-[4/3]">
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px] relative">
                 <img
-                  src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                  alt="Sama Alaa — medical SEO consultant in Dubai ranking clinics and healthcare providers across the GCC at upranked.io"
-                  width={600}
-                  height={450}
-                  loading="eager"
-                  decoding="async"
-                  className="w-full h-full object-cover object-top opacity-80"
+                  src="/heroes/01-growth-chart.svg"
+                  alt="Organic traffic growth chart — medical SEO results for clinic clients in Dubai and GCC at upranked.io"
+                  width={800} height={600}
+                  loading="eager" decoding="async" fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-dark-gray/50">
-                  <div className="text-center p-8">
-                    <div className="text-6xl font-black text-accent mb-3">300%</div>
-                    <div className="text-white font-semibold">Average organic traffic increase</div>
-                    <div className="text-text-secondary text-sm mt-1">for GCC medical clients</div>
-                  </div>
+                <div className="absolute bottom-4 left-4 right-4 bg-navy/90 border border-accent/30 rounded-xl px-5 py-3 text-center backdrop-blur-sm">
+                  <div className="text-3xl font-black text-accent">300%</div>
+                  <div className="text-white text-sm font-semibold">Avg organic traffic increase — GCC medical clients</div>
                 </div>
               </div>
             </motion.div>
@@ -337,15 +332,27 @@ export default function MedicalSEO() {
               The GCC medical SEO landscape presents a distinctive challenge: a highly competitive English-language market in Dubai and Abu Dhabi, an underserved but substantial Arabic-language patient base searching across the Emirates and into Saudi Arabia, and a regulatory environment (DHA, MOH, HAAD) that requires specific trust signals most agencies don't know to include.
             </p>
 
-            <img
-              src="/images/medical/medical-seo-uae-patient-search-journey.webp"
-              alt="Medical SEO UAE — patient search journey from Google to clinic booking in Dubai"
-              width={800}
-              height={400}
-              loading="lazy"
-              className="w-full rounded-xl border border-border my-6"
-              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-            />
+            <div className="w-full rounded-xl border border-border my-6 overflow-hidden">
+              <div className="bg-dark-gray px-6 py-4 border-b border-border flex items-center gap-3">
+                <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
+                <p className="text-accent text-xs font-semibold uppercase tracking-widest">The Patient Search Journey — Dubai & UAE</p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-border">
+                {[
+                  { step: '01', label: 'Symptom Search', query: '"dermatologist Dubai Marina"', note: 'High urgency, location-specific' },
+                  { step: '02', label: 'Provider Research', query: '"best clinic reviews Dubai"', note: 'E-E-A-T & ratings evaluated' },
+                  { step: '03', label: 'Arabic Search', query: '"عيادة جلدية دبي مارينا"', note: '35–50% of GCC search volume' },
+                  { step: '04', label: 'Book Appointment', query: 'Click → Call / WhatsApp', note: 'Patient acquired' },
+                ].map(s => (
+                  <div key={s.step} className="p-5 bg-navy/30 hover:bg-accent/5 transition-colors">
+                    <div className="text-accent font-black text-xl mb-2">{s.step}</div>
+                    <div className="text-white font-semibold text-sm mb-2">{s.label}</div>
+                    <div className="font-mono text-xs text-accent/80 bg-navy/60 rounded px-2 py-1.5 mb-2">{s.query}</div>
+                    <div className="text-text-secondary text-xs">{s.note}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
