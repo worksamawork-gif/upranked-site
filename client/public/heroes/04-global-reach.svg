@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Global presence — Dubai, GCC, London, New York">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f1e"></stop>
+      <stop offset="100%" stop-color="#0d1426"></stop>
+    </linearGradient>
+    <pattern id="dots4" x="0" y="0" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="17" cy="17" r="1" fill="#c9a84c" fill-opacity="0.08"></circle>
+    </pattern>
+    <radialGradient id="glow4">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.12"></stop>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg4)"></rect>
+  <rect width="800" height="600" fill="url(#dots4)"></rect>
+  <ellipse cx="400" cy="300" rx="220" ry="220" fill="url(#glow4)"></ellipse>
+
+  
+  <circle cx="400" cy="300" r="180" fill="none" stroke="#2a2f3e" stroke-width="1.5"></circle>
+  <circle cx="400" cy="300" r="130" fill="none" stroke="#2a2f3e" stroke-width="1"></circle>
+  <circle cx="400" cy="300" r="80" fill="none" stroke="#2a2f3e" stroke-width="1"></circle>
+  <ellipse cx="400" cy="300" rx="180" ry="60" fill="none" stroke="#2a2f3e" stroke-width="1"></ellipse>
+  <ellipse cx="400" cy="300" rx="180" ry="120" fill="none" stroke="#2a2f3e" stroke-width="1"></ellipse>
+  <ellipse cx="400" cy="300" rx="60" ry="180" fill="none" stroke="#2a2f3e" stroke-width="1"></ellipse>
+  <ellipse cx="400" cy="300" rx="120" ry="180" fill="none" stroke="#2a2f3e" stroke-width="1"></ellipse>
+  <line x1="220" y1="300" x2="580" y2="300" stroke="#2a2f3e" stroke-width="1"></line>
+
+  
+  <path d="M 510 245 Q 380 100 290 280" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 4"></path>
+  <path d="M 510 245 Q 350 360 300 380" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 4"></path>
+  <path d="M 510 245 Q 540 290 525 320" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-opacity="0.5"></path>
+
+  
+  <circle cx="510" cy="245" r="26" fill="rgba(201,168,76,0.12)"></circle>
+  <circle cx="510" cy="245" r="18" fill="#c9a84c" stroke="#c9a84c" stroke-width="2"></circle>
+  <circle cx="510" cy="245" r="13" fill="#0a0f1e"></circle>
+  <circle cx="510" cy="245" r="3" fill="#c9a84c"></circle>
+  <text x="536" y="250" fill="#fff" font-size="14" font-family="Cairo,sans-serif" font-weight="700">Dubai · HQ</text>
+
+  
+  <circle cx="290" cy="280" r="22" fill="rgba(201,168,76,0.12)"></circle>
+  <circle cx="290" cy="280" r="14" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="2"></circle>
+  <text x="312" y="285" fill="#fff" font-size="14" font-family="Cairo,sans-serif" font-weight="700">London</text>
+
+  
+  <circle cx="300" cy="380" r="22" fill="rgba(201,168,76,0.12)"></circle>
+  <circle cx="300" cy="380" r="14" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="2"></circle>
+  <text x="322" y="385" fill="#fff" font-size="14" font-family="Cairo,sans-serif" font-weight="700">New York</text>
+
+  
+  <circle cx="525" cy="320" r="20" fill="rgba(201,168,76,0.12)"></circle>
+  <circle cx="525" cy="320" r="12" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="2"></circle>
+  <text x="545" y="325" fill="#fff" font-size="14" font-family="Cairo,sans-serif" font-weight="700">Riyadh</text>
+
+  
+  <circle cx="500" cy="285" r="18" fill="rgba(201,168,76,0.12)"></circle>
+  <circle cx="500" cy="285" r="10" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="2"></circle>
+  <text x="518" y="290" fill="#fff" font-size="14" font-family="Cairo,sans-serif" font-weight="700">Doha</text>
+
+  <text x="400" y="60" fill="#c9a84c" font-size="13" font-family="Inter,sans-serif" font-weight="700" letter-spacing="6" text-anchor="middle">GLOBAL PRESENCE</text>
+  <text x="400" y="540" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" font-weight="700" letter-spacing="3" text-anchor="middle">DUBAI · UAE · GCC · LONDON · NEW YORK</text>
+</svg>

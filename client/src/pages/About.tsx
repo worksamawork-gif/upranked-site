@@ -222,57 +222,76 @@ export default function About() {
         <div className="absolute top-20 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10" />
 
         <div className="container-premium">
-          {/* Breadcrumb */}
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-text-secondary mb-8">
-            <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
-            <span>/</span>
-            <span className="text-accent">About</span>
-          </nav>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              {/* Breadcrumb */}
+              <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-text-secondary mb-8">
+                <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
+                <span>/</span>
+                <span className="text-accent">About</span>
+              </nav>
 
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-3xl">
-            <span className="inline-block text-accent font-semibold tracking-widest text-xs uppercase bg-accent/10 border border-accent/20 rounded-full px-4 py-1.5 mb-5">
-              SEO Agency · Dubai, UAE · GCC
-            </span>
+              <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <span className="inline-block text-accent font-semibold tracking-widest text-xs uppercase bg-accent/10 border border-accent/20 rounded-full px-4 py-1.5 mb-5">
+                  SEO Agency · Dubai, UAE · GCC
+                </span>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-              <span className="gradient-text">upranked.io</span> —{' '}
-              SEO Agency for the GCC
-            </h1>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                  <span className="gradient-text">upranked.io</span> —{' '}
+                  SEO Agency for the GCC
+                </h1>
 
-            <p className="text-lg text-text-secondary mb-6 leading-relaxed max-w-2xl">
-              upranked.io is a premium SEO Agency built for high-value businesses across the GCC and globally. We specialise in Medical SEO, Industrial B2B SEO, Business SEO, and Growth Intelligence — all delivered on the proprietary APEX Framework™.
-            </p>
+                <p className="text-lg text-text-secondary mb-6 leading-relaxed">
+                  upranked.io is a premium SEO Agency built for high-value businesses across the GCC and globally. We specialise in Medical SEO, Industrial B2B SEO, Business SEO, and Growth Intelligence — all delivered on the proprietary APEX Framework™.
+                </p>
 
-            <p className="text-sm text-text-secondary mb-8 leading-relaxed max-w-2xl">
-              Founded by <span className="text-white font-semibold">Sama Alaa</span> — with 20+ GCC client engagements across Dubai, Riyadh, Kuwait City, Manama, London, and New York.
-            </p>
+                <p className="text-sm text-text-secondary mb-8 leading-relaxed">
+                  Founded by <span className="text-white font-semibold">Sama Alaa</span> — with 20+ GCC client engagements across Dubai, Riyadh, Kuwait City, Manama, London, and New York.
+                </p>
 
-            {/* NAP #1 */}
-            <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
-              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Phone className="w-4 h-4 text-accent" /> Contact Us
-              </a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
-              </a>
-              <span className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · New York
-              </span>
-            </address>
+                {/* NAP #1 */}
+                <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
+                  <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
+                    <Phone className="w-4 h-4 text-accent" /> Contact Us
+                  </a>
+                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
+                    <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                  </a>
+                  <span className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · New York
+                  </span>
+                </address>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact/">
-                <a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">
-                  Work With Us <ArrowRight className="w-5 h-5" />
-                </a>
-              </Link>
-              <Link href="/methodology/">
-                <a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">
-                  Our APEX Framework™
-                </a>
-              </Link>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/contact/">
+                    <a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">
+                      Work With Us <ArrowRight className="w-5 h-5" />
+                    </a>
+                  </Link>
+                  <Link href="/methodology/">
+                    <a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">
+                      Our APEX Framework™
+                    </a>
+                  </Link>
+                </div>
+              </motion.div>
             </div>
-          </motion.div>
+
+            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/04-global-reach.svg"
+                  alt="Global reach map showing upranked.io SEO coverage across GCC markets — Dubai, Riyadh, Kuwait, Bahrain, London, New York"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

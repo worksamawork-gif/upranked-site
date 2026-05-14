@@ -280,35 +280,24 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* ── Right: Sama's portrait ── */}
+            {/* ── Right: Hero visual ── */}
             <motion.div
               initial={{ opacity: 0, x: 24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9, delay: 0.2 }}
               className="flex justify-center items-center"
             >
-              <div className="relative w-full max-w-xs lg:max-w-sm">
-                <div className="hidden lg:block absolute -inset-6 bg-gradient-to-br from-accent/20 via-accent/5 to-transparent rounded-3xl blur-2xl" />
-                <div className="relative rounded-2xl overflow-hidden border-2 border-accent/30 shadow-2xl shadow-accent/10">
-                  <img
-                    src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                    alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
-                    width={400}
-                    height={640}
-                    loading="eager"
-                    decoding="async"
-                    fetchPriority="high"
-                    className="w-full object-cover object-top"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy via-navy/80 to-transparent px-6 py-5">
-                    <p className="text-white font-bold text-sm">Sama Alaa</p>
-                    <p className="text-accent text-xs mt-0.5">Founder &amp; GCC SEO Strategist</p>
-                    <p className="text-text-secondary text-xs mt-0.5">upranked.io — Dubai, UAE</p>
-                  </div>
-                </div>
-                <div className="absolute -bottom-4 -right-4 bg-accent text-black text-xs font-black px-3 py-1.5 rounded-lg shadow-lg">
-                  APEX Framework™
-                </div>
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/01-growth-chart.svg"
+                  alt="Organic traffic growth chart showing client results across GCC markets — upranked.io SEO agency Dubai"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
               </div>
             </motion.div>
 

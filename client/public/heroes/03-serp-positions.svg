@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" role="img" aria-label="upranked.io ranks position 1 in Dubai SERP">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f1e"></stop>
+      <stop offset="100%" stop-color="#0d1426"></stop>
+    </linearGradient>
+    <pattern id="grid3" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#c9a84c" stroke-opacity="0.04"></path>
+    </pattern>
+    <radialGradient id="glow3">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.15"></stop>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient id="goldBtn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c9a84c"></stop>
+      <stop offset="100%" stop-color="#d4b85f"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg3)"></rect>
+  <rect width="800" height="600" fill="url(#grid3)"></rect>
+  <ellipse cx="200" cy="300" rx="350" ry="280" fill="url(#glow3)"></ellipse>
+
+  
+  <rect x="100" y="80" width="600" height="60" rx="30" fill="#1a1f2e" stroke="#c9a84c" stroke-width="1.5"></rect>
+  <circle cx="138" cy="110" r="11" fill="none" stroke="#c9a84c" stroke-width="2"></circle>
+  <line x1="146" y1="118" x2="155" y2="127" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"></line>
+  <text x="170" y="116" fill="#fff" font-size="18" font-family="Inter,sans-serif">premium SEO agency dubai gcc</text>
+  <rect x="630" y="92" width="56" height="36" rx="8" fill="url(#goldBtn)"></rect>
+  <text x="658" y="116" fill="#0a0f1e" font-size="13" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Search</text>
+
+  
+  <rect x="100" y="200" width="600" height="68" rx="10" fill="rgba(201,168,76,0.1)" stroke="#c9a84c" stroke-width="2"></rect>
+  <circle cx="135" cy="234" r="20" fill="#c9a84c"></circle>
+  <text x="135" y="240" fill="#0a0f1e" font-size="18" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">#1</text>
+  <text x="170" y="228" fill="#fff" font-size="17" font-family="Cairo,sans-serif" font-weight="700">upranked.io</text>
+  <text x="170" y="250" fill="#c9a84c" font-size="13" font-family="Inter,sans-serif">Premium Growth Intelligence Lab · Dubai · GCC</text>
+  <rect x="600" y="222" width="80" height="24" rx="12" fill="rgba(201,168,76,0.15)" stroke="#c9a84c" stroke-opacity="0.4"></rect>
+  <text x="640" y="238" fill="#c9a84c" font-size="10" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1.5" text-anchor="middle">POSITION 1</text>
+
+  
+  <rect x="100" y="285" width="600" height="68" rx="10" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1"></rect>
+  <circle cx="135" cy="319" r="20" fill="#2a2f3e"></circle>
+  <text x="135" y="325" fill="#c9a84c" font-size="18" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">#2</text>
+  <text x="170" y="313" fill="#b0b0b0" font-size="17" font-family="Cairo,sans-serif" font-weight="700">competitor-agency.com</text>
+  <text x="170" y="335" fill="#666c7a" font-size="13" font-family="Inter,sans-serif">Generic SEO Services Dubai</text>
+
+  
+  <rect x="100" y="370" width="600" height="68" rx="10" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1"></rect>
+  <circle cx="135" cy="404" r="20" fill="#2a2f3e"></circle>
+  <text x="135" y="410" fill="#c9a84c" font-size="18" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">#3</text>
+  <text x="170" y="398" fill="#b0b0b0" font-size="17" font-family="Cairo,sans-serif" font-weight="700">another-seo.ae</text>
+  <text x="170" y="420" fill="#666c7a" font-size="13" font-family="Inter,sans-serif">SEO Marketing GCC Region</text>
+
+  
+  <rect x="100" y="455" width="600" height="68" rx="10" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1"></rect>
+  <circle cx="135" cy="489" r="20" fill="#2a2f3e"></circle>
+  <text x="135" y="495" fill="#c9a84c" font-size="18" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">#4</text>
+  <text x="170" y="483" fill="#b0b0b0" font-size="17" font-family="Cairo,sans-serif" font-weight="700">agency-x.com</text>
+  <text x="170" y="505" fill="#666c7a" font-size="13" font-family="Inter,sans-serif">Digital Marketing Solutions</text>
+
+  <text x="400" y="565" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" font-weight="700" letter-spacing="3" text-anchor="middle">SAMPLE SERP — DUBAI · ENGLISH</text>
+</svg>

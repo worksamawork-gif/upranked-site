@@ -16,6 +16,18 @@ export default function NotFound() {
             The page you're looking for doesn't exist or has been moved. Head back to a page below.
           </p>
 
+          <div className="w-full max-w-[600px] mx-auto mb-10">
+            <img
+              src="/heroes/07-slogan-hero.svg"
+              alt="Uplevel your digital growth — upranked.io SEO agency Dubai"
+              width={800}
+              height={600}
+              loading="eager"
+              decoding="async"
+              className="w-full h-auto rounded-2xl"
+            />
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a
               href="/"

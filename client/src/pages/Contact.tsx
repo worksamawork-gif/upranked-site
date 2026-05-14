@@ -230,36 +230,53 @@ export default function Contact() {
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-dark-gray to-navy opacity-60 -z-10" />
         <div className="container-premium">
-          <div className="max-w-4xl">
-            <nav className="text-sm text-text-secondary mb-6">
-              <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
-              <span className="mx-2 text-border">/</span>
-              <span className="text-accent">Contact</span>
-            </nav>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <nav className="text-sm text-text-secondary mb-6">
+                <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
+                <span className="mx-2 text-border">/</span>
+                <span className="text-accent">Contact</span>
+              </nav>
 
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <span className="text-accent font-semibold tracking-widest text-sm uppercase block mb-4">Get in Touch</span>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Book a Free SEO Strategy Call — Dubai, GCC, London &amp; New York
-              </h1>
-              <p className="text-xl text-text-secondary mb-8 max-w-3xl leading-relaxed">
-                A free 30-minute conversation with Sama Alaa. No pitch, no pressure — just clarity on what's possible for your business across the GCC and global markets. Available for clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.
-              </p>
-
-              {/* Featured snippet definition box */}
-              <div className="bg-dark-gray border-l-4 border-accent rounded-r-xl p-5 mb-8">
-                <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">What You Get</p>
-                <p className="text-white font-semibold mb-1">The Free APEX Diagnostic</p>
-                <p className="text-text-secondary text-sm leading-relaxed">
-                  A focused 30-minute strategy session where Sama Alaa applies the APEX Framework™ to your specific situation — delivering an honest audit of your current digital position, a competitor analysis, and a prioritized growth roadmap. No obligations, no upsells during the call.
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <span className="text-accent font-semibold tracking-widest text-sm uppercase block mb-4">Get in Touch</span>
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                  Book a Free SEO Strategy Call — Dubai, GCC, London &amp; New York
+                </h1>
+                <p className="text-xl text-text-secondary mb-8 leading-relaxed">
+                  A free 30-minute conversation with Sama Alaa. No pitch, no pressure — just clarity on what's possible for your business across the GCC and global markets. Available for clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.
                 </p>
-              </div>
 
-              {/* NAP #1 */}
-              <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
-                <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                {/* Featured snippet definition box */}
+                <div className="bg-dark-gray border-l-4 border-accent rounded-r-xl p-5 mb-8">
+                  <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">What You Get</p>
+                  <p className="text-white font-semibold mb-1">The Free APEX Diagnostic</p>
+                  <p className="text-text-secondary text-sm leading-relaxed">
+                    A focused 30-minute strategy session where Sama Alaa applies the APEX Framework™ to your specific situation — delivering an honest audit of your current digital position, a competitor analysis, and a prioritized growth roadmap. No obligations, no upsells during the call.
+                  </p>
+                </div>
+
+                {/* NAP #1 */}
+                <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
+                  <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
+                  <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                </div>
+              </motion.div>
+            </div>
+
+            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/08-magnifier-audit.svg"
+                  alt="SEO audit magnifier visual — free APEX Diagnostic call with upranked.io founder Sama Alaa"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
               </div>
             </motion.div>
           </div>
