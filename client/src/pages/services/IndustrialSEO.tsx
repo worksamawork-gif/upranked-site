@@ -209,8 +209,8 @@ export default function IndustrialSEO() {
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
               <div className="w-full max-w-[800px] relative">
                 <img
-                  src="/heroes/05-revenue-bars.svg"
-                  alt="Revenue and pipeline ROI growth chart — industrial B2B SEO results for GCC manufacturers at upranked.io"
+                  src="/heroes/18-industrial-seo.svg"
+                  alt="Industrial SEO B2B pipeline visualization — procurement search journey and organic lead generation for GCC manufacturers and suppliers at upranked.io"
                   width={800} height={600}
                   loading="eager" decoding="async" fetchPriority="high"
                   className="w-full h-auto rounded-2xl"

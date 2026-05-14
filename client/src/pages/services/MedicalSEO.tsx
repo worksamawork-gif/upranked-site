@@ -253,8 +253,8 @@ export default function MedicalSEO() {
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
               <div className="w-full max-w-[800px] relative">
                 <img
-                  src="/heroes/01-growth-chart.svg"
-                  alt="Organic traffic growth chart — medical SEO results for clinic clients in Dubai and GCC at upranked.io"
+                  src="/heroes/17-medical-seo.svg"
+                  alt="Medical SEO growth intelligence dashboard — organic patient acquisition strategy for clinics, hospitals and healthcare providers in Dubai and GCC at upranked.io"
                   width={800} height={600}
                   loading="eager" decoding="async" fetchPriority="high"
                   className="w-full h-auto rounded-2xl"

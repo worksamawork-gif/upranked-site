@@ -75,16 +75,18 @@ export default function SchemaSEO() {
                 </div>
               </motion.div>
             </div>
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
-              <img
-                src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-                alt="Sama Alaa — schema markup and structured data SEO consultant in Dubai implementing JSON-LD rich results for GCC businesses at upranked.io"
-                width={480}
-                height={640}
-                loading="eager"
-                decoding="async"
-                className="rounded-2xl border border-border object-cover object-top w-full max-w-sm"
-              />
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/12-schema-markup.svg"
+                  alt="Schema markup JSON-LD structured data visualization showing rich result types for GCC businesses — FAQ, LocalBusiness, Service schema by upranked.io Dubai"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
             </motion.div>
           </div>
         </div>

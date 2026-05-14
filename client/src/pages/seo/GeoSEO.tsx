@@ -75,16 +75,18 @@ export default function GeoSEO() {
                 </div>
               </motion.div>
             </div>
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
-              <img
-                src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sama Alaa — geo-targeted and international SEO consultant in Dubai creating location-specific strategies for GCC and global businesses at upranked.io"
-                width={480}
-                height={640}
-                loading="eager"
-                decoding="async"
-                className="rounded-2xl border border-border object-cover object-top w-full max-w-sm"
-              />
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/15-geo-targeted-seo.svg"
+                  alt="Geo-targeted SEO map showing location-specific organic strategies across UAE, Saudi Arabia, Kuwait, Bahrain, London and New York — upranked.io"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
             </motion.div>
           </div>
         </div>

@@ -340,23 +340,17 @@ export default function Industries() {
             </motion.div>
             </div>{/* end left col */}
 
-            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="relative block">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-border">
+            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
                 <img
-                  src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                  alt="Sama Alaa — industry SEO specialist in Dubai delivering Medical, Industrial and Business SEO across the GCC"
-                  width={560}
+                  src="/heroes/16-all-industries.svg"
+                  alt="Industry-specific SEO for Medical, Industrial and Business sectors across the GCC — specialist organic growth strategies by upranked.io Dubai"
+                  width={800}
                   height={600}
                   loading="eager"
                   decoding="async"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto rounded-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-white font-bold text-lg">Sama Alaa</p>
-                  <p className="text-accent text-sm">Founder · Chief Growth Strategist</p>
-                  <p className="text-text-secondary text-xs mt-1">Dubai, UAE · GCC · London · New York</p>
-                </div>
               </div>
             </motion.div>
 

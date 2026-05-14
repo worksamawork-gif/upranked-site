@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Business Strategy — chess-style growth map">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a0f1e"></stop><stop offset="100%" stop-color="#0d1426"></stop></linearGradient>
+    <pattern id="grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#c9a84c" stroke-opacity="0.045"></path></pattern>
+    <radialGradient id="glow"><stop offset="0%" stop-color="#c9a84c" stop-opacity="0.15"></stop><stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop></radialGradient>
+    <linearGradient id="goldF" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c9a84c"></stop><stop offset="100%" stop-color="#d4b85f"></stop></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"></rect>
+  <rect width="800" height="600" fill="url(#grid)"></rect>
+  <ellipse cx="400" cy="320" rx="340" ry="260" fill="url(#glow)"></ellipse>
+
+  
+  <g transform="translate(280,180)">
+    <rect width="240" height="240" fill="#1a1f2e" stroke="#c9a84c" stroke-width="2"></rect>
+    <g fill="#22273a">
+      <rect x="0" y="0" width="48" height="48"></rect><rect x="96" y="0" width="48" height="48"></rect><rect x="192" y="0" width="48" height="48"></rect>
+      <rect x="48" y="48" width="48" height="48"></rect><rect x="144" y="48" width="48" height="48"></rect>
+      <rect x="0" y="96" width="48" height="48"></rect><rect x="96" y="96" width="48" height="48"></rect><rect x="192" y="96" width="48" height="48"></rect>
+      <rect x="48" y="144" width="48" height="48"></rect><rect x="144" y="144" width="48" height="48"></rect>
+      <rect x="0" y="192" width="48" height="48"></rect><rect x="96" y="192" width="48" height="48"></rect><rect x="192" y="192" width="48" height="48"></rect>
+    </g>
+
+    
+    
+    <g transform="translate(120,120)">
+      <circle r="22" fill="url(#goldF)" stroke="#d4b85f" stroke-width="2"></circle>
+      <text x="0" y="6" fill="#0a0f1e" font-size="22" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">♛</text>
+    </g>
+
+    
+    <g stroke="#c9a84c" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 120 120 L 24 24" stroke-dasharray="4 4"></path>
+      <path d="M 120 120 L 216 24" stroke-dasharray="4 4"></path>
+      <path d="M 120 120 L 24 216" stroke-dasharray="4 4"></path>
+      <path d="M 120 120 L 216 216" stroke-dasharray="4 4"></path>
+    </g>
+
+    
+    <g>
+      <circle cx="24" cy="24" r="14" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="1.5"></circle>
+      <circle cx="24" cy="24" r="6" fill="#c9a84c"></circle>
+    </g>
+    <g>
+      <circle cx="216" cy="24" r="14" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="1.5"></circle>
+      <circle cx="216" cy="24" r="6" fill="#c9a84c"></circle>
+    </g>
+    <g>
+      <circle cx="24" cy="216" r="14" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="1.5"></circle>
+      <circle cx="24" cy="216" r="6" fill="#c9a84c"></circle>
+    </g>
+    <g>
+      <circle cx="216" cy="216" r="14" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="1.5"></circle>
+      <circle cx="216" cy="216" r="6" fill="#c9a84c"></circle>
+    </g>
+
+    
+    <text x="-10" y="125" fill="#666c7a" font-size="10" font-family="Inter,sans-serif" font-weight="700" text-anchor="end">Q2</text>
+    <text x="120" y="-10" fill="#666c7a" font-size="10" font-family="Inter,sans-serif" font-weight="700" text-anchor="middle">2026</text>
+  </g>
+
+  
+  <g font-family="Inter,sans-serif" font-size="10" font-weight="700">
+    <rect x="100" y="160" width="130" height="32" rx="6" fill="#1a1f2e" stroke="rgba(201,168,76,0.3)"></rect>
+    <text x="115" y="174" fill="#c9a84c" font-size="8" letter-spacing="1">MOVE 1</text>
+    <text x="115" y="187" fill="#fff" font-size="11" font-family="Cairo,sans-serif">Market Audit</text>
+
+    <rect x="570" y="160" width="130" height="32" rx="6" fill="#1a1f2e" stroke="rgba(201,168,76,0.3)"></rect>
+    <text x="585" y="174" fill="#c9a84c" font-size="8" letter-spacing="1">MOVE 2</text>
+    <text x="585" y="187" fill="#fff" font-size="11" font-family="Cairo,sans-serif">Position Anchor</text>
+
+    <rect x="100" y="410" width="130" height="32" rx="6" fill="#1a1f2e" stroke="rgba(201,168,76,0.3)"></rect>
+    <text x="115" y="424" fill="#c9a84c" font-size="8" letter-spacing="1">MOVE 3</text>
+    <text x="115" y="437" fill="#fff" font-size="11" font-family="Cairo,sans-serif">Compound Plays</text>
+
+    <rect x="570" y="410" width="130" height="32" rx="6" fill="#1a1f2e" stroke="rgba(201,168,76,0.3)"></rect>
+    <text x="585" y="424" fill="#c9a84c" font-size="8" letter-spacing="1">MOVE 4</text>
+    <text x="585" y="437" fill="#fff" font-size="11" font-family="Cairo,sans-serif">Scale Empire</text>
+  </g>
+
+  <text x="400" y="80" fill="#c9a84c" font-size="13" font-family="Inter,sans-serif" font-weight="700" letter-spacing="6" text-anchor="middle">BUSINESS STRATEGY</text>
+  <text x="400" y="104" fill="#fff" font-size="16" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Multi-Move Growth Playbooks</text>
+  <text x="400" y="465" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" font-weight="700" letter-spacing="3" text-anchor="middle">THINK 5 MOVES AHEAD · BUILD COMPOUNDING ADVANTAGE</text>
+</svg>

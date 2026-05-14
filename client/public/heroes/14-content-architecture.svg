@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Content Architecture — pillar pages and topic clusters">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a0f1e"></stop><stop offset="100%" stop-color="#0d1426"></stop></linearGradient>
+    <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="16" cy="16" r="1" fill="#c9a84c" fill-opacity="0.08"></circle></pattern>
+    <radialGradient id="glow"><stop offset="0%" stop-color="#c9a84c" stop-opacity="0.16"></stop><stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop></radialGradient>
+    <linearGradient id="goldF" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c9a84c"></stop><stop offset="100%" stop-color="#d4b85f"></stop></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"></rect>
+  <rect width="800" height="600" fill="url(#dots)"></rect>
+  <ellipse cx="400" cy="320" rx="340" ry="260" fill="url(#glow)"></ellipse>
+
+  
+  <rect x="320" y="150" width="160" height="80" rx="12" fill="url(#goldF)"></rect>
+  <text x="400" y="178" fill="#0a0f1e" font-size="10" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1.5" text-anchor="middle">PILLAR PAGE</text>
+  <text x="400" y="200" fill="#0a0f1e" font-size="16" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">Medical SEO</text>
+  <text x="400" y="218" fill="#0a0f1e" font-size="11" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">Complete Guide</text>
+
+  
+  
+  <line x1="320" y1="190" x2="190" y2="310" stroke="#c9a84c" stroke-width="2" stroke-opacity="0.6"></line>
+  <rect x="100" y="280" width="180" height="64" rx="10" fill="#1a1f2e" stroke="#c9a84c" stroke-width="1.5"></rect>
+  <text x="190" y="300" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1.5" text-anchor="middle">CLUSTER</text>
+  <text x="190" y="320" fill="#fff" font-size="13" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Clinic SEO Dubai</text>
+  <text x="190" y="336" fill="#888" font-size="10" font-family="Inter,sans-serif" text-anchor="middle">8 articles · 12 keywords</text>
+
+  
+  <line x1="480" y1="190" x2="610" y2="310" stroke="#c9a84c" stroke-width="2" stroke-opacity="0.6"></line>
+  <rect x="520" y="280" width="180" height="64" rx="10" fill="#1a1f2e" stroke="#c9a84c" stroke-width="1.5"></rect>
+  <text x="610" y="300" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1.5" text-anchor="middle">CLUSTER</text>
+  <text x="610" y="320" fill="#fff" font-size="13" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Hospital Network</text>
+  <text x="610" y="336" fill="#888" font-size="10" font-family="Inter,sans-serif" text-anchor="middle">12 articles · 18 keywords</text>
+
+  
+  <line x1="350" y1="230" x2="240" y2="400" stroke="#c9a84c" stroke-width="2" stroke-opacity="0.6"></line>
+  <rect x="150" y="400" width="180" height="64" rx="10" fill="#1a1f2e" stroke="#c9a84c" stroke-width="1.5"></rect>
+  <text x="240" y="420" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1.5" text-anchor="middle">CLUSTER</text>
+  <text x="240" y="440" fill="#fff" font-size="13" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Aesthetic Medicine</text>
+  <text x="240" y="456" fill="#888" font-size="10" font-family="Inter,sans-serif" text-anchor="middle">6 articles · 9 keywords</text>
+
+  
+  <line x1="450" y1="230" x2="560" y2="400" stroke="#c9a84c" stroke-width="2" stroke-opacity="0.6"></line>
+  <rect x="470" y="400" width="180" height="64" rx="10" fill="#1a1f2e" stroke="#c9a84c" stroke-width="1.5"></rect>
+  <text x="560" y="420" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1.5" text-anchor="middle">CLUSTER</text>
+  <text x="560" y="440" fill="#fff" font-size="13" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Dental Clinic SEO</text>
+  <text x="560" y="456" fill="#888" font-size="10" font-family="Inter,sans-serif" text-anchor="middle">7 articles · 11 keywords</text>
+
+  
+  <g opacity="0.5">
+    <line x1="120" y1="312" x2="80" y2="280" stroke="#c9a84c" stroke-opacity="0.4" stroke-dasharray="2 2"></line>
+    <circle cx="80" cy="280" r="6" fill="#c9a84c"></circle>
+    <line x1="100" y1="320" x2="60" y2="340" stroke="#c9a84c" stroke-opacity="0.4" stroke-dasharray="2 2"></line>
+    <circle cx="60" cy="340" r="6" fill="#c9a84c"></circle>
+    <line x1="700" y1="312" x2="740" y2="280" stroke="#c9a84c" stroke-opacity="0.4" stroke-dasharray="2 2"></line>
+    <circle cx="740" cy="280" r="6" fill="#c9a84c"></circle>
+    <line x1="720" y1="320" x2="760" y2="340" stroke="#c9a84c" stroke-opacity="0.4" stroke-dasharray="2 2"></line>
+    <circle cx="760" cy="340" r="6" fill="#c9a84c"></circle>
+    <line x1="170" y1="430" x2="90" y2="470" stroke="#c9a84c" stroke-opacity="0.4" stroke-dasharray="2 2"></line>
+    <circle cx="90" cy="470" r="6" fill="#c9a84c"></circle>
+    <line x1="640" y1="430" x2="720" y2="470" stroke="#c9a84c" stroke-opacity="0.4" stroke-dasharray="2 2"></line>
+    <circle cx="720" cy="470" r="6" fill="#c9a84c"></circle>
+  </g>
+
+  <text x="400" y="80" fill="#c9a84c" font-size="13" font-family="Inter,sans-serif" font-weight="700" letter-spacing="6" text-anchor="middle">CONTENT ARCHITECTURE</text>
+  <text x="400" y="104" fill="#fff" font-size="16" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Pillar Pages · Topic Clusters · Internal Links</text>
+  <text x="400" y="540" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" font-weight="700" letter-spacing="3" text-anchor="middle">TOPICAL AUTHORITY · SEMANTIC DEPTH</text>
+</svg>

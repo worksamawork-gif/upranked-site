@@ -318,7 +318,7 @@ export default function BusinessSEO() {
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
               <div className="w-full max-w-[800px]">
                 <img
-                  src="/heroes/03-serp-positions.svg"
+                  src="/heroes/19-business-seo.svg"
                   alt="SERP positions chart showing business SEO rankings for GCC companies in Dubai, Riyadh, and Kuwait — upranked.io"
                   width={800} height={600}
                   loading="eager" decoding="async" fetchPriority="high"

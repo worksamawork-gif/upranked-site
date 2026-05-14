@@ -355,8 +355,8 @@ export default function GrowthIntelligence() {
             <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="flex justify-center items-center">
               <div className="w-full max-w-[800px]">
                 <img
-                  src="/heroes/05-revenue-bars.svg"
-                  alt="Revenue growth bar chart showing business growth results from upranked.io Growth Intelligence services in Dubai and GCC"
+                  src="/heroes/20-all-growth-services.svg"
+                  alt="Growth Intelligence services overview — SEO, business consultation, tailored tools and website design driving organic revenue for GCC businesses at upranked.io Dubai"
                   width={800}
                   height={600}
                   loading="eager"
