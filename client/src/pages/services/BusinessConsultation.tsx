@@ -42,7 +42,7 @@ const faqs = [
   { q: 'How is this different from hiring a digital marketing agency in Dubai?', a: 'Three key differences: (1) Founder-led — you work directly with Sama Alaa, not a junior account manager who inherited your account after the sales call. (2) Strategy-first — sessions focus on the strategic layer, not execution deliverables. (3) GCC-specific — every recommendation is informed by real market intelligence from Dubai, Riyadh, Kuwait, and Bahrain, not global templates applied to the region.' },
   { q: 'Can I book a one-time consultation or do I need an ongoing retainer?', a: 'Both options are available. A one-time APEX Diagnostic session gives you clarity on your current position, a competitor gap analysis, and a 90-day roadmap. An ongoing retainer provides continuous strategic guidance, monthly accountability reviews, and priority WhatsApp access to Sama as you execute. The best fit depends on how much strategic support your team needs beyond the initial roadmap.' },
   { q: 'Do you offer business consultation for companies expanding into the GCC from London or New York?', a: 'Yes — market entry consultation for international businesses expanding into Dubai, Riyadh, Kuwait, or Bahrain is one of our core specialisations. We cover GCC search behaviour, Arabic SEO requirements, local competitor landscape, free zone positioning, GBP setup for UAE, and the go-to-market channel mix that works in your target GCC city. Engagements are conducted remotely and in person.' },
-  { q: 'How do I get started with a business consultation?', a: 'Book a free 30-minute APEX Diagnostic intro call via the Contact page, our contact page, or email Sam@upranked.io. In the intro call, Sama reviews your current position, identifies your highest-leverage growth opportunity, and outlines the consultation scope that fits your situation. No commitment required for the intro call.' },
+  { q: 'How do I get started with a business consultation?', a: 'Book a free 30-minute APEX Diagnostic intro call via the Contact page, our contact page, or email uprankedio@gmail.com. In the intro call, Sama reviews your current position, identifies your highest-leverage growth opportunity, and outlines the consultation scope that fits your situation. No commitment required for the intro call.' },
 ];
 
 const schema = {
@@ -70,7 +70,7 @@ const schema = {
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
     },
     {
       '@type': 'BreadcrumbList',
@@ -132,7 +132,7 @@ export default function BusinessConsultation() {
                 </p>
                 <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
                   <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                   <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -289,7 +289,7 @@ export default function BusinessConsultation() {
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
               <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
             </address>

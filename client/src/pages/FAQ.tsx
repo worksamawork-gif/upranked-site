@@ -131,7 +131,7 @@ const faqCategories = [
     faqs: [
       {
         q: 'How do I get started with upranked.io?',
-        a: 'Book a free 30-minute strategy call via the contact page, WhatsApp (Contact Us), or email (Sam@upranked.io). No commitment required. Sama will review your current position and give you an honest assessment of the opportunity — and whether upranked.io is the right fit for your business.',
+        a: 'Book a free 30-minute strategy call via the contact page, WhatsApp (Contact Us), or email (uprankedio@gmail.com). No commitment required. Sama will review your current position and give you an honest assessment of the opportunity — and whether upranked.io is the right fit for your business.',
       },
       {
         q: 'What is the minimum engagement with upranked.io?',
@@ -179,7 +179,7 @@ const schema = {
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+201121664778',
-        email: 'Sam@upranked.io',
+        email: 'uprankedio@gmail.com',
         contactType: 'customer service',
         areaServed: ['AE', 'SA', 'KW', 'BH', 'GB', 'US'],
       },
@@ -332,7 +332,7 @@ export default function FAQ() {
               <div className="flex flex-wrap gap-5 text-sm text-text-secondary mt-6">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               </div>
             </motion.div>
           </div>
@@ -368,7 +368,7 @@ export default function FAQ() {
                 <p className="text-white font-semibold text-sm mb-2">upranked.io</p>
                 <p className="flex items-center gap-1.5"><MapPin className="w-3 h-3 text-accent flex-shrink-0" /> Dubai, UAE — GCC &amp; Global</p>
                 <a href="/contact/" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> Sam@upranked.io</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> uprankedio@gmail.com</a>
               </div>
 
               <div className="mt-4">
@@ -524,7 +524,7 @@ export default function FAQ() {
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
               <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>

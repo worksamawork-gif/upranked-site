@@ -71,7 +71,7 @@ const faqs = [
   },
   {
     q: 'How do I get started with upranked.io?',
-    a: 'Book a free 30-minute APEX Diagnostic call with Sama Alaa. In that session, you\'ll get a clear picture of your current search position, a competitor gap analysis for your GCC market, and a prioritised roadmap — no commitment required. You can book via the Contact page, our contact page, or email Sam@upranked.io.',
+    a: 'Book a free 30-minute APEX Diagnostic call with Sama Alaa. In that session, you\'ll get a clear picture of your current search position, a competitor gap analysis for your GCC market, and a prioritised roadmap — no commitment required. You can book via the Contact page, our contact page, or email uprankedio@gmail.com.',
   },
 ];
 
@@ -87,7 +87,7 @@ const schema = {
       url: 'https://upranked.io',
       logo: 'https://upranked.io/logo.png',
       telephone: '+201121664778',
-      email: 'Sam@upranked.io',
+      email: 'uprankedio@gmail.com',
       founder: {
         '@type': 'Person',
         '@id': 'https://upranked.io/about#person',
@@ -104,7 +104,7 @@ const schema = {
         { '@type': 'City', name: 'New York' },
       ],
       availableLanguage: [{ '@type': 'Language', name: 'English' }, { '@type': 'Language', name: 'Arabic' }],
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
     },
     {
       '@type': 'FAQPage',
@@ -122,7 +122,7 @@ const schema = {
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', '@id': 'https://upranked.io/#organization' },
       url: 'https://upranked.io/about',
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
     },
     {
       '@type': 'BreadcrumbList',
@@ -253,8 +253,8 @@ export default function Home() {
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · New York
@@ -541,7 +541,7 @@ export default function Home() {
                     </a>
                   </Link>
                   <span className="text-border">|</span>
-                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                     LinkedIn →
                   </a>
                   <span className="text-border">|</span>
@@ -642,8 +642,8 @@ export default function Home() {
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center">

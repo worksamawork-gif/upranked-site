@@ -131,7 +131,7 @@ export default function TailoredWebsite() {
                 </p>
                 <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
                   <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                   <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -230,7 +230,7 @@ export default function TailoredWebsite() {
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
               <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
             </address>

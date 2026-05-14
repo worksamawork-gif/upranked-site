@@ -178,7 +178,7 @@ export default function MedicalSEO() {
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
           url: 'https://upranked.io/about',
-          sameAs: ['https://www.linkedin.com/company/115836359/'],
+          sameAs: ['https://www.linkedin.com/company/upranked-io/'],
         },
         {
           '@type': 'BreadcrumbList',
@@ -240,8 +240,8 @@ export default function MedicalSEO() {
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE
@@ -531,7 +531,7 @@ export default function MedicalSEO() {
                     <CheckCircle className="w-4 h-4 text-accent" />
                     <span>APEX Framework™ Creator</span>
                   </div>
-                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">
                     LinkedIn Profile →
                   </a>
                 </div>
@@ -603,8 +603,8 @@ export default function MedicalSEO() {
                 <a href="/contact/" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2 text-text-secondary">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE
@@ -660,8 +660,8 @@ export default function MedicalSEO() {
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC Region

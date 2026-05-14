@@ -42,7 +42,7 @@ const faqs = [
   { q: 'Do you work with companies entering the GCC from London or New York?', a: 'Yes — GCC market entry strategy is one of upranked.io\'s core specialisations. Companies expanding from London or New York into Dubai, Riyadh, Kuwait, or Bahrain need to understand: GCC buyer search behaviour and commercial intent patterns, Arabic SEO requirements and the bilingual channel split, UAE free zone and emirate-level positioning, local competitor landscape analysis, and the go-to-market channel mix that works in their specific GCC city. Sama Alaa leads every market entry engagement personally.' },
   { q: 'What does a 90-day growth roadmap include?', a: 'A 90-day growth roadmap from upranked.io includes: current position audit (keyword rankings, competitor gaps, technical health), market positioning statement and differentiation framework, prioritised channel investment plan (organic SEO, bilingual content, GBP optimisation, paid channel integration), content and authority building schedule, quick-win list for months 1–2, and a 30/60/90 milestone tracker with KPIs. The roadmap is designed to be executed by your team or in partnership with upranked.io\'s SEO retainer.' },
   { q: 'How long does a business strategy engagement last?', a: 'Typically 3–6 months for a full strategy build, implementation guidance, and quarterly review. Some clients engage for a one-time market entry strategy (4–6 weeks) and then continue with an SEO retainer to execute the digital growth components. Others continue as ongoing quarterly strategy partners as their business scales across the GCC, London, or New York. The right format depends on your team\'s execution capacity and how much ongoing strategic guidance you need.' },
-  { q: 'How do I start a business strategy engagement?', a: 'Book a free 30-minute APEX Diagnostic via the Contact page, our contact page, or email Sam@upranked.io. Sama Alaa reviews your current position, identifies your primary positioning challenge, and outlines the strategy engagement format that fits your situation — with no commitment required for the intro call.' },
+  { q: 'How do I start a business strategy engagement?', a: 'Book a free 30-minute APEX Diagnostic via the Contact page, our contact page, or email uprankedio@gmail.com. Sama Alaa reviews your current position, identifies your primary positioning challenge, and outlines the strategy engagement format that fits your situation — with no commitment required for the intro call.' },
 ];
 
 const schema = {
@@ -131,7 +131,7 @@ export default function BusinessStrategy() {
                 </p>
                 <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
                   <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                   <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -268,7 +268,7 @@ export default function BusinessStrategy() {
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
               <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
             </address>

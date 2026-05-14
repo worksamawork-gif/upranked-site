@@ -41,7 +41,7 @@ const faqs = [
   { q: 'How long does it take to build a custom growth tool?', a: 'Typically 2–8 weeks from scoping to delivery, depending on complexity. Simple dashboards and automated trackers: 2–3 weeks. Integrated intelligence platforms connecting multiple data sources: 5–8 weeks. A scoping call with Sama Alaa gives you a precise timeline based on your specific requirements before any commitment.' },
   { q: 'Can the tools integrate with our existing platforms?', a: 'Yes. Standard integrations include Google Analytics 4, Google Search Console, Google Ads, CRM platforms (HubSpot, Salesforce, Zoho), spreadsheets, databases, and most marketing platforms via APIs. For GCC-specific requirements like Arabic language data processing or local directory integrations, we build custom connectors.' },
   { q: 'Are growth tools suitable for businesses in Dubai and the GCC?', a: 'Tools built by upranked.io are specifically designed for GCC market dynamics — bilingual EN/AR data, UAE and KSA search engine patterns, free zone and emirate-level geographic segmentation, and GCC-specific competitor tracking. Whether you\'re tracking commercial keywords in Dubai, procurement searches in Riyadh, or market entry intelligence for Kuwait and Bahrain, the tools are configured for your exact market.' },
-  { q: 'How do I get started with a custom growth tool?', a: 'Book a free discovery call via the Contact page, our contact page, or email Sam@upranked.io. Describe the intelligence gap you have — the data you wish you had, the process that wastes time, or the insight that would change your decisions. Sama Alaa will assess your requirements and outline what can be built, in what timeframe, and at what investment level.' },
+  { q: 'How do I get started with a custom growth tool?', a: 'Book a free discovery call via the Contact page, our contact page, or email uprankedio@gmail.com. Describe the intelligence gap you have — the data you wish you had, the process that wastes time, or the insight that would change your decisions. Sama Alaa will assess your requirements and outline what can be built, in what timeframe, and at what investment level.' },
 ];
 
 const schema = {
@@ -130,7 +130,7 @@ export default function TailoredTools() {
                 </p>
                 <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
                   <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                   <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -229,7 +229,7 @@ export default function TailoredTools() {
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
               <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
             </address>

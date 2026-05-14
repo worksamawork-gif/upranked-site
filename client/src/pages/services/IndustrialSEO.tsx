@@ -160,7 +160,7 @@ export default function IndustrialSEO() {
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
           url: 'https://upranked.io/about',
-          sameAs: ['https://www.linkedin.com/company/115836359/'],
+          sameAs: ['https://www.linkedin.com/company/upranked-io/'],
         },
         {
           '@type': 'BreadcrumbList',
@@ -202,7 +202,7 @@ export default function IndustrialSEO() {
               {/* NAP #1 */}
               <div className="flex flex-wrap gap-6 text-sm text-text-secondary border-t border-border pt-6">
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE</span>
               </div>
             </motion.div>
@@ -434,7 +434,7 @@ export default function IndustrialSEO() {
                 <div className="flex flex-wrap gap-4 text-sm">
                   <div className="flex items-center gap-2 text-text-secondary"><BarChart2 className="w-4 h-4 text-accent" /><span>20+ GCC clients across 7 industrial sectors</span></div>
                   <div className="flex items-center gap-2 text-text-secondary"><CheckCircle className="w-4 h-4 text-accent" /><span>APEX Framework™ Creator</span></div>
-                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">LinkedIn Profile →</a>
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">LinkedIn Profile →</a>
                 </div>
               </div>
             </div>
@@ -489,7 +489,7 @@ export default function IndustrialSEO() {
               <div><p className="font-bold text-white text-lg mb-1">upranked.io</p><p className="text-text-secondary text-sm">Premium Growth Intelligence Lab · Industrial B2B SEO Specialists</p></div>
               <div className="flex flex-wrap gap-6 text-sm md:ml-auto">
                 <a href="/contact/" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                 <span className="flex items-center gap-2 text-text-secondary"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE</span>
               </div>
             </div>
@@ -527,7 +527,7 @@ export default function IndustrialSEO() {
               {/* NAP #3 */}
               <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-text-secondary border-t border-border pt-6">
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC Region</span>
               </div>
             </div>

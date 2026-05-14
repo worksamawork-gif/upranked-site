@@ -25,7 +25,7 @@ const schema = {
           name: 'How do I book a strategy call with Sama Alaa?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
+            text: 'Fill in the contact form on this page or reach out directly via our contact page or email uprankedio@gmail.com. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
           },
         },
         {
@@ -77,7 +77,7 @@ const schema = {
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
       telephone: '+201121664778',
-      email: 'Sam@upranked.io',
+      email: 'uprankedio@gmail.com',
     },
     {
       '@type': 'BreadcrumbList',
@@ -115,7 +115,7 @@ const expectItems = [
 const faqs = [
   {
     q: 'How do I book a strategy call with Sama Alaa?',
-    a: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
+    a: 'Fill in the contact form on this page or reach out directly via our contact page or email uprankedio@gmail.com. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
   },
   {
     q: 'Is the initial strategy consultation really free?',
@@ -260,7 +260,7 @@ export default function Contact() {
                 <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
                   <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
                   <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                 </div>
               </motion.div>
             </div>
@@ -312,7 +312,7 @@ export default function Contact() {
                 <p className="text-white font-semibold text-sm mb-2">upranked.io</p>
                 <p className="flex items-center gap-1.5"><MapPin className="w-3 h-3 text-accent flex-shrink-0" /> Dubai, UAE — GCC &amp; Global</p>
                 <a href="/contact/" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> Sam@upranked.io</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> uprankedio@gmail.com</a>
               </div>
 
               <div className="mt-4 p-4 bg-navy border border-accent/30 rounded-xl text-xs">
@@ -421,7 +421,7 @@ export default function Contact() {
                     </div>
                   </a>
                   <a
-                    href="mailto:Sam@upranked.io"
+                    href="mailto:uprankedio@gmail.com"
                     className="flex items-center gap-4 p-4 bg-dark-gray border border-border rounded-xl hover:border-accent/50 transition-colors group"
                   >
                     <div className="w-10 h-10 bg-accent/10 border border-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -429,7 +429,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-white font-semibold text-sm group-hover:text-accent transition-colors">Email Sama</p>
-                      <p className="text-text-secondary text-xs">Sam@upranked.io</p>
+                      <p className="text-text-secondary text-xs">uprankedio@gmail.com</p>
                     </div>
                   </a>
                 </div>
@@ -657,7 +657,7 @@ export default function Contact() {
                 Contact Us Now <ArrowRight className="w-5 h-5" />
               </a>
               <a
-                href="mailto:Sam@upranked.io"
+                href="mailto:uprankedio@gmail.com"
                 className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2"
               >
                 Email Sama
@@ -667,7 +667,7 @@ export default function Contact() {
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
               <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>

@@ -182,7 +182,7 @@ const schema = {
         name: 'upranked.io',
         url: 'https://upranked.io',
         telephone: '+201121664778',
-        email: 'Sam@upranked.io',
+        email: 'uprankedio@gmail.com',
         logo: 'https://upranked.io/logo.png',
         address: { '@type': 'PostalAddress', addressLocality: 'Dubai', addressCountry: 'AE' },
       },
@@ -218,7 +218,7 @@ const schema = {
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
       url: 'https://upranked.io/about',
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
       knowsAbout: ['Business SEO', 'GCC SEO Strategy', 'Commercial Intent SEO', 'Bilingual SEO', 'B2B Lead Generation'],
     },
     {
@@ -292,8 +292,8 @@ export default function BusinessSEO() {
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · Serving GCC
@@ -678,7 +678,7 @@ export default function BusinessSEO() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                     LinkedIn Profile →
                   </a>
                   <Link href="/about/">
@@ -758,8 +758,8 @@ export default function BusinessSEO() {
                 <Phone className="w-4 h-4 text-accent" /> Contact Us (WhatsApp)
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2">
@@ -828,8 +828,8 @@ export default function BusinessSEO() {
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center">

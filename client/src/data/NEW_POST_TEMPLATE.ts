@@ -1,4 +1,5 @@
-﻿/**
+﻿// @ts-nocheck — this file is a copy-paste template, not compiled code
+/**
  * HOW TO ADD A NEW BLOG POST
  * ─────────────────────────────────────────────────────────────────
  * 1. Copy everything inside the object below
