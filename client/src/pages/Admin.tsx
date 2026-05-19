@@ -427,7 +427,7 @@ function RichEditor({ value, onChange }: { value: string; onChange: (html: strin
   const lastValue = useRef(value);
   useEffect(() => {
     if (editor && value !== lastValue.current && !editor.isFocused) {
-      editor.commands.setContent(value || '<p></p>', false);
+      editor.commands.setContent(value || '<p></p>', { emitUpdate: false });
       lastValue.current = value;
     }
   }, [editor, value]);
@@ -943,6 +943,98 @@ function PostEditor({ post, allPosts, onBack, onSaved }: {
   );
 }
 
+// ─── Claude Token Tracker ─────────────────────────────────────────────────────
+
+function TokenTracker() {
+  const LIMIT = 1_000_000;
+  const [used, setUsed] = useState(() => {
+    const saved = localStorage.getItem('claude_tokens_used');
+    return saved ? parseInt(saved, 10) : 0;
+  });
+  const [editing, setEditing] = useState(false);
+  const [input, setInput] = useState('');
+
+  function startEdit() {
+    setInput(String(used));
+    setEditing(true);
+  }
+
+  function save() {
+    const n = parseInt(input.replace(/[^0-9]/g, ''), 10);
+    if (!isNaN(n) && n >= 0) {
+      setUsed(n);
+      localStorage.setItem('claude_tokens_used', String(n));
+    }
+    setEditing(false);
+  }
+
+  const pct = Math.min(100, (used / LIMIT) * 100);
+  const remaining = Math.max(0, LIMIT - used);
+  const barColor = pct >= 90 ? '#f87171' : pct >= 70 ? '#fbbf24' : '#C9A84C';
+
+  function fmt(n: number) {
+    if (n >= 1_000_000) return (n / 1_000_000).toFixed(2) + 'M';
+    if (n >= 1_000) return (n / 1_000).toFixed(1) + 'K';
+    return String(n);
+  }
+
+  return (
+    <div className="mx-6 mt-5 mb-1 bg-[#0a1020] border border-[#1e2d4a] rounded-xl px-5 py-4">
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-2">
+          <div className="w-5 h-5 rounded flex items-center justify-center" style={{ background: `${barColor}22` }}>
+            <span className="text-[10px] font-black" style={{ color: barColor }}>AI</span>
+          </div>
+          <p className="text-xs font-semibold text-white uppercase tracking-wider">Claude Token Budget</p>
+        </div>
+        <button onClick={startEdit}
+          className="text-xs text-gray-500 hover:text-[#C9A84C] transition-colors underline underline-offset-2">
+          Update
+        </button>
+      </div>
+
+      {/* Progress bar */}
+      <div className="w-full h-2 bg-[#1e2d4a] rounded-full overflow-hidden mb-2">
+        <div className="h-full rounded-full transition-all duration-500"
+          style={{ width: `${pct}%`, background: barColor }} />
+      </div>
+
+      <div className="flex items-center justify-between">
+        <p className="text-xs text-gray-400">
+          <span className="font-bold" style={{ color: barColor }}>{fmt(used)}</span>
+          <span className="text-gray-600"> / 1M tokens used</span>
+        </p>
+        <p className="text-xs font-bold" style={{ color: barColor }}>
+          {pct.toFixed(1)}%
+          <span className="text-gray-500 font-normal"> · {fmt(remaining)} remaining</span>
+        </p>
+      </div>
+
+      {editing && (
+        <div className="mt-3 flex gap-2 items-center">
+          <input
+            type="text"
+            value={input}
+            onChange={e => setInput(e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter') save(); if (e.key === 'Escape') setEditing(false); }}
+            placeholder="Paste token count from /cost"
+            autoFocus
+            className="flex-1 bg-[#070d1a] border border-[#1e2d4a] focus:border-[#C9A84C] rounded-lg px-3 py-1.5 text-white text-xs placeholder-gray-600 focus:outline-none transition-colors"
+          />
+          <button onClick={save}
+            className="px-3 py-1.5 bg-[#C9A84C] hover:bg-[#EAB308] text-black text-xs font-bold rounded-lg transition-colors">
+            Save
+          </button>
+          <button onClick={() => setEditing(false)}
+            className="px-3 py-1.5 border border-[#1e2d4a] text-gray-400 hover:text-white text-xs rounded-lg transition-colors">
+            Cancel
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Post List ────────────────────────────────────────────────────────────────
 
 function PostList({ posts, loading, onNew, onEdit, onDelete, onTogglePublish, onLogout }: {
@@ -972,6 +1064,7 @@ function PostList({ posts, loading, onNew, onEdit, onDelete, onTogglePublish, on
           </button>
         </div>
       </div>
+      <TokenTracker />
 
       <div className="max-w-5xl mx-auto px-6 py-8">
         <div className="flex items-center justify-between mb-8">
