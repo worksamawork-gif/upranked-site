@@ -20,8 +20,28 @@ function renderSection(section: BlogSection, index: number) {
       return <h2 key={index} className="text-2xl md:text-3xl font-bold text-white mt-10 mb-4">{section.text}</h2>;
     case 'h3':
       return <h3 key={index} className="text-xl font-bold text-accent mt-8 mb-3">{section.text}</h3>;
-    case 'p':
-      return <p key={index} className="text-text-secondary leading-relaxed mb-5">{section.text}</p>;
+    case 'p': {
+      const raw = section.text || '';
+      const parts = raw.split(/(\[([^\]]+)\]\((https?:\/\/[^)]+|\/[^)]*)\))/g);
+      const nodes: (string | JSX.Element)[] = [];
+      let i = 0;
+      while (i < parts.length) {
+        const linkMatch = parts[i].match(/^\[([^\]]+)\]\((https?:\/\/[^)]+|\/[^)]*)\)$/);
+        if (linkMatch) {
+          const [, label, href] = linkMatch;
+          const isExternal = href.startsWith('http');
+          nodes.push(
+            isExternal
+              ? <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="text-accent underline underline-offset-2 hover:text-accent/80">{label}</a>
+              : <Link key={i} href={href} className="text-accent underline underline-offset-2 hover:text-accent/80">{label}</Link>
+          );
+        } else if (parts[i]) {
+          nodes.push(parts[i]);
+        }
+        i++;
+      }
+      return <p key={index} className="text-text-secondary leading-relaxed mb-5">{nodes}</p>;
+    }
     case 'ul':
       return (
         <ul key={index} className="mb-5 space-y-2">
