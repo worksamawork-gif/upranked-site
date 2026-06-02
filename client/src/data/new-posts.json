@@ -1,3 +1,83 @@
 [
-
+  {
+    "slug": "arabic-seo-agency-dubai-uae",
+    "title": "Arabic SEO Agency in Dubai & UAE: What to Look For (And What to Avoid)",
+    "metaTitle": "Arabic SEO Agency Dubai & UAE: Complete Hiring Guide | upranked.io",
+    "metaDescription": "Hiring an Arabic SEO agency in Dubai or UAE? Learn what genuine Arabic SEO involves, the difference between real expertise and translation services, and how to evaluate any agency.",
+    "publishedAt": "2026-06-03",
+    "readTime": 9,
+    "category": "SEO Strategy",
+    "excerpt": "Most Arabic SEO agencies in Dubai are selling translation, not strategy. Here is what genuine Arabic search optimisation looks like — and the questions to ask before you sign anything.",
+    "keyIntelligence": "Arabic SEO in the UAE and GCC is not the same as translating your English website. It requires independent keyword research in Arabic, native-quality content creation, separate hreflang architecture, and a strategy that accounts for the difference between Gulf dialect and Modern Standard Arabic search behaviour. Businesses that invest in genuine Arabic SEO strategy consistently capture market share invisible to their English-only competitors — often reaching Arabic page-1 rankings 2–3x faster than equivalent English targets due to dramatically lower competition.",
+    "content": [
+      { "type": "p", "text": "If you have typed 'arabic seo agency dubai' or 'arabic seo services' into Google, you have already done more research than most businesses in your position. The GCC's Arabic-language search market is real, it is large, and it is almost entirely underserved by businesses that have built English-only digital presences. The agencies claiming to fix this are a mixed field — and knowing the difference between genuine Arabic SEO expertise and a translation service with a new logo is worth understanding before you commit budget." },
+      { "type": "h2", "text": "What Arabic SEO Actually Means in 2026" },
+      { "type": "p", "text": "Arabic SEO is not the process of translating your English website into Arabic. That is a common misconception and it is the reason most bilingual SEO campaigns in the GCC underperform. Arabic-language search optimisation is a distinct discipline that requires its own keyword research, its own content strategy, its own technical architecture, and its own link-building approach — running in parallel with, not as a subset of, your English SEO." },
+      { "type": "p", "text": "Consider how this works in practice. A Dubai-based law firm might rank for 'contract lawyer Dubai' in English. The Arabic equivalent is not just a translation of that phrase. Arabic speakers searching for legal services in the UAE might type 'محامي عقود دبي', 'مستشار قانوني الإمارات', or 'شركة محاماة دبي' — each with different monthly search volumes, different intent signals, and dramatically different competitive landscapes. Without conducting keyword research in Arabic, you cannot know which of those variants to target or how much demand actually exists." },
+      { "type": "ul", "items": [
+        "Arabic keyword research must be conducted independently using Arabic search data — not by translating English target keywords",
+        "Gulf Arabic dialect searches differ structurally from Modern Standard Arabic searches — both need to be mapped",
+        "Arabic-language search intent often differs from the equivalent English query, even for the same service",
+        "Arabic SERP competition is significantly lower than English in most GCC industries, meaning faster ranking timelines",
+        "Google evaluates Arabic content quality separately and penalises machine-translated pages"
+      ] },
+      { "type": "h2", "text": "Why Most Arabic SEO Services in Dubai Fail to Deliver" },
+      { "type": "p", "text": "The GCC has no shortage of agencies offering Arabic SEO. The majority deliver one or more of the following, none of which constitutes a real Arabic search strategy:" },
+      { "type": "h3", "text": "The Translation Approach" },
+      { "type": "p", "text": "The agency takes your existing English pages, runs them through Google Translate or a cheap translation service, and publishes the output under /ar/ subdirectories. Google can detect machine-translated content at scale and significantly discounts its authority. Arabic-speaking users detect it immediately and leave — driving up bounce rates, which further suppresses rankings. This approach costs money and does not produce rankings." },
+      { "type": "h3", "text": "The Wrong Technical Architecture" },
+      { "type": "p", "text": "Many agencies build Arabic content on a separate subdomain — ar.website.com — without understanding that this splits domain authority between two separate properties. Without proper hreflang tag implementation, Google does not understand the relationship between your English and Arabic pages, creates duplicate content signals, and may suppress both versions. A correctly structured bilingual site uses subdirectory architecture (website.com/ar/) and implements hreflang tags specifying both language and region: ar-AE for Arabic in the UAE, ar-SA for Arabic in Saudi Arabia, en-AE for English in the UAE." },
+      { "type": "h3", "text": "No Arabic Link Building" },
+      { "type": "p", "text": "Domain authority for Arabic pages is built through Arabic-language backlinks — links from Gulf-based publications, Arabic directories, regional news sites, and GCC industry platforms. An agency that builds English backlinks and expects them to transfer authority to Arabic pages does not understand how Google evaluates bilingual domains. Arabic SEO requires a separate outreach strategy targeting Arabic-language sources." },
+      { "type": "h3", "text": "Treating Arabic as an Afterthought" },
+      { "type": "p", "text": "The clearest signal that an agency does not understand Arabic SEO is when they price it as a small add-on. A genuine Arabic SEO strategy requires comparable investment to your English strategy, because it is an entirely separate market. Agencies that treat it as a minor addendum to an English retainer are telling you something important about their capability." },
+      { "type": "h2", "text": "What Genuine Arabic SEO Services in Dubai Should Include" },
+      { "type": "p", "text": "When evaluating an Arabic SEO agency or consultant in Dubai, a genuine strategy should encompass the following:" },
+      { "type": "ol", "items": [
+        "Independent Arabic keyword research: conducted in Arabic using native speaker insight and Arabic-specific search tools, not translated from English target keywords",
+        "Gulf dialect mapping: identifying which queries use Gulf dialect variants versus Modern Standard Arabic and building a content strategy that addresses both",
+        "Technical bilingual architecture: hreflang implementation, subdirectory URL structure, RTL-compatible design, Arabic fonts and typography",
+        "Native-quality Arabic content: written or reviewed by educated native Arabic speakers with domain expertise in your sector — not machine-translated",
+        "Arabic Google Business Profile optimisation: your GBP listing in Arabic, targeting Arabic map searches in your service area",
+        "Arabic citation building: consistent NAP data in Arabic across GCC-specific directories and local platforms",
+        "Arabic link acquisition: securing editorial mentions and links from Arabic-language publications relevant to your industry",
+        "Separate GSC reporting: tracking Arabic queries and pages in Google Search Console independently from English performance"
+      ] },
+      { "type": "h2", "text": "Questions to Ask Any Arabic SEO Consultant in Dubai Before You Hire" },
+      { "type": "p", "text": "The following questions will quickly separate agencies with genuine Arabic SEO expertise from those reselling translation as strategy:" },
+      { "type": "ul", "items": [
+        "Can you show me examples of Arabic content you have written (not translated) for previous clients, and what rankings did it achieve?",
+        "How do you approach keyword research for Arabic — what tools and methodology do you use?",
+        "How do you handle hreflang for a business targeting both UAE and Saudi Arabian Arabic audiences?",
+        "What Arabic-language publications have you secured backlinks from, and how do you approach Arabic link building?",
+        "Do you conduct separate keyword tracking and GSC analysis for Arabic pages versus English pages?",
+        "How do you account for Gulf dialect versus Modern Standard Arabic in your content strategy?"
+      ] },
+      { "type": "p", "text": "An agency that gives vague answers to these questions — or cannot demonstrate prior Arabic SEO work with verifiable results — is not an Arabic SEO specialist. They are a general digital agency offering a service they have not properly invested in." },
+      { "type": "h2", "text": "The Arabic Search Opportunity Most Dubai Businesses Are Still Missing" },
+      { "type": "p", "text": "The data from client work across the UAE and GCC is consistent: Arabic-language search competition in most professional services sectors is dramatically lower than English. In sectors like healthcare, legal, financial services, and industrial supply, the number of well-optimised Arabic pages competing for high-value queries can be counted on two hands." },
+      { "type": "p", "text": "This means that a business willing to invest in a genuine Arabic SEO strategy — native content, correct technical implementation, systematic Arabic link building — is typically looking at page-1 Arabic rankings within 2–4 months for queries that would take 8–12 months to achieve in English. The addressable market is significant: Arabic-language searches in the UAE alone run into the tens of thousands of monthly queries for professional services categories, with high commercial intent and almost no competition above a basic quality threshold." },
+      { "type": "blockquote", "text": "In most GCC sectors, your English website competes against dozens of well-funded competitors. Your Arabic website competes against almost nobody. That asymmetry will not last forever." },
+      { "type": "h2", "text": "Arabic SEO Strategy for Dubai Businesses: A Practical Framework" },
+      { "type": "p", "text": "A structured Arabic SEO engagement for a Dubai or UAE-based business typically proceeds in four phases:" },
+      { "type": "h3", "text": "Phase 1: Arabic Keyword Research and Market Mapping" },
+      { "type": "p", "text": "Before writing a single word of Arabic content, the keyword landscape needs to be mapped independently. This involves identifying all commercially relevant Arabic search queries in your sector, segmenting them by Gulf dialect versus MSA, mapping search volume and competition for each, and building a content architecture that prioritises the highest-value opportunities. For a Dubai medical clinic, this mapping might reveal that 'طبيب نساء وتوليد دبي' has thousands of monthly searches and near-zero well-optimised Arabic competition." },
+      { "type": "h3", "text": "Phase 2: Technical Architecture Setup" },
+      { "type": "p", "text": "Concurrent with keyword research, the technical foundation is established correctly: subdirectory URL structure for Arabic pages, hreflang tags specifying language and region combinations, RTL CSS implementation, Arabic font loading, and verification of correct indexation signals in Google Search Console. Getting this right from the start avoids expensive remediation work from a poorly structured bilingual architecture." },
+      { "type": "h3", "text": "Phase 3: Native Arabic Content Creation" },
+      { "type": "p", "text": "With keyword targets and technical architecture in place, content creation begins in priority order. Each Arabic page is written by native Arabic speakers with sector expertise — not translated from English equivalents. The target is content that Arabic-speaking users consider authoritative and genuinely useful, which is the same standard Google applies when determining what deserves to rank." },
+      { "type": "h3", "text": "Phase 4: Arabic Authority Building" },
+      { "type": "p", "text": "As Arabic pages accumulate engagement signals, an outreach programme targets Arabic-language publications, GCC industry directories, regional news platforms, and Gulf-based partner websites for editorial mentions and backlinks. The relatively thin Arabic-language link landscape means that even a modest programme of quality Arabic link acquisition produces measurable domain authority gains." },
+      { "type": "h2", "text": "How upranked.io Approaches Arabic SEO" },
+      { "type": "p", "text": "At upranked.io, Arabic and bilingual SEO is not a service added to an existing English-only methodology. The APEX Framework™ was built from the ground up to address the GCC market's linguistic complexity. Our Arabic SEO work involves native-Arabic content production, proper hreflang architecture, and keyword strategy built independently for Arabic — not derived from English translations." },
+      { "type": "p", "text": "Every Arabic SEO engagement begins with a comprehensive audit of current Arabic keyword rankings, technical architecture health, content quality signals, and backlink profile. This gives a precise starting point and a ranked list of the interventions that will move Arabic search visibility the fastest — rather than starting with a generic 12-month retainer and hoping for results." }
+    ],
+    "cta": {
+      "heading": "Ready to Capture the Arabic Search Market in Dubai & UAE?",
+      "body": "Book a free 30-minute APEX Diagnostic with Sama Alaa. We will audit your current Arabic SEO position, map the highest-value Arabic keyword opportunities in your sector, and show you exactly what a genuine bilingual strategy would look like for your business.",
+      "href": "/contact/",
+      "label": "Book Your Free Arabic SEO Diagnostic"
+    },
+    "relatedSlugs": ["bilingual-seo-arabic-english", "seo-uae-2026-what-works", "why-gcc-businesses-invisible-google"]
+  }
 ]

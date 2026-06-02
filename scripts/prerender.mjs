@@ -94,6 +94,7 @@ const ROUTES = [
   '/blog/why-gcc-businesses-invisible-google',
   '/blog/bilingual-seo-arabic-english',
   '/blog/apex-framework-explained',
+  '/blog/arabic-seo-agency-dubai-uae',
 ];
 
 function startServer(cleanShell) {
