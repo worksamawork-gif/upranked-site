@@ -25,6 +25,8 @@ const seoServices = [
   { titleEn: 'Medical SEO', titleAr: 'تحسين محركات البحث الطبية', descEn: 'Rank #1 for patient searches across Dubai Healthcare City, UAE & GCC. DHA/MOH-compliant, bilingual EN/AR.', descAr: 'تصدر نتائج البحث عن المرضى في مدينة دبي للرعاية الصحية والإمارات والخليج', icon: Stethoscope, href: '/industries/medical' },
   { titleEn: 'Industrial SEO', titleAr: 'تحسين محركات البحث الصناعية', descEn: 'B2B procurement search dominance for manufacturers and suppliers in UAE free zones and GCC industrial cities.', descAr: 'هيمنة على بحث الشراء B2B للصناع والموردين في المناطق الحرة الإماراتية', icon: Factory, href: '/industries/industrial' },
   { titleEn: 'Business SEO', titleAr: 'تحسين محركات البحث للأعمال', descEn: 'Commercial-intent SEO for professional services, B2B companies, and enterprises across Dubai, Riyadh & beyond.', descAr: 'تحسين محركات البحث الموجه للتجارة للخدمات المهنية والشركات عبر دبي والرياض وما بعدها', icon: TrendingUp, href: '/industries/business' },
+  { titleEn: 'AEO — Answer Engine', titleAr: 'تحسين محركات الإجابة', descEn: 'Get cited in ChatGPT, Google AI Overviews, Perplexity & Gemini. The fastest-growing visibility channel for Dubai businesses.', descAr: 'احصل على الاقتباس في ChatGPT ونظرات Google AI وPerplexity', icon: Zap, href: '/seo/aeo' },
+  { titleEn: 'GEO — Generative SEO', titleAr: 'تحسين محركات الذكاء الاصطناعي', descEn: 'Generative Engine Optimization — rank your brand in AI-generated answers and multi-market search simultaneously.', descAr: 'تحسين محركات البحث التوليدية للظهور في نتائج الذكاء الاصطناعي', icon: Globe, href: '/seo/geo' },
 ];
 
 const growthServices = [
@@ -309,7 +311,7 @@ export default function Home() {
       <section className="bg-dark-gray py-5 border-y border-border">
         <div className="container-premium">
           <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-xs text-text-secondary">
-            {['Medical SEO Specialists', 'Industrial B2B SEO', 'Business SEO Dubai', 'Bilingual EN/AR', 'APEX Framework™', 'GCC + London + New York'].map(t => (
+            {['Medical SEO Specialists', 'Industrial B2B SEO', 'Business SEO Dubai', 'AEO — Answer Engine', 'GEO — Generative SEO', 'Bilingual EN/AR', 'APEX Framework™', 'GCC + London + New York'].map(t => (
               <div key={t} className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 bg-accent rounded-full flex-shrink-0" />
                 <span>{t}</span>

@@ -41,6 +41,7 @@ import BilingualSEO from "./pages/seo/BilingualSEO";
 import SEOAnalytics from "./pages/seo/SEOAnalytics";
 import ContentArchitecture from "./pages/seo/ContentArchitecture";
 import GeoSEO from "./pages/seo/GeoSEO";
+import AEOSEO from "./pages/seo/AEOSEO";
 
 // Markets pages
 import GCCMarkets from "./pages/markets/gcc/GCCMarkets";
@@ -101,6 +102,7 @@ function PublicRouter() {
       <Route path="/seo/analytics" component={SEOAnalytics} />
       <Route path="/seo/content-architecture" component={ContentArchitecture} />
       <Route path="/seo/geo" component={GeoSEO} />
+      <Route path="/seo/aeo" component={AEOSEO} />
 
       {/* Markets routes */}
       <Route path="/markets/gcc" component={GCCMarkets} />

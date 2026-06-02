@@ -95,6 +95,9 @@ const ROUTES = [
   '/blog/bilingual-seo-arabic-english',
   '/blog/apex-framework-explained',
   '/blog/arabic-seo-agency-dubai-uae',
+
+  // AEO & GEO pages
+  '/seo/aeo',
 ];
 
 function startServer(cleanShell) {

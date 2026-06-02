@@ -17,7 +17,8 @@ const seoTypeLinks = [
   { label: 'Schema Markup', labelAr: 'ترميز Schema', href: '/seo/schema/', desc: 'Structured data & rich results' },
   { label: 'SEO Analytics', labelAr: 'تحليلات السيو', href: '/seo/analytics/', desc: 'Rank tracking & attribution' },
   { label: 'Content Architecture', labelAr: 'هيكل المحتوى', href: '/seo/content-architecture/', desc: 'Topic clusters & silos' },
-  { label: 'Geo-Targeted SEO', labelAr: 'السيو الجغرافي', href: '/seo/geo/', desc: 'Multi-market SEO' },
+  { label: 'AEO', labelAr: 'تحسين محركات الإجابة', href: '/seo/aeo/', desc: 'Answer & AI engine optimization' },
+  { label: 'GEO — Generative SEO', labelAr: 'تحسين محركات الذكاء الاصطناعي', href: '/seo/geo/', desc: 'ChatGPT, AI Overviews & multi-market' },
 ];
 
 const growthLinks = [
