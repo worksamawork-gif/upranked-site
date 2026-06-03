@@ -98,6 +98,7 @@ const ROUTES = [
 
   // AEO & GEO pages
   '/seo/aeo',
+  '/blog/riyadh-seo-guide-2026',
 ];
 
 function startServer(cleanShell) {
