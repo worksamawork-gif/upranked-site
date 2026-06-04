@@ -23,7 +23,8 @@ function renderSection(section: BlogSection, index: number) {
     case 'p': {
       const raw = section.text || '';
       const parts = raw.split(/(\[([^\]]+)\]\((https?:\/\/[^)]+|\/[^)]*)\))/g);
-      const nodes: (string | JSX.Element)[] = [];
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const nodes: any[] = [];
       let i = 0;
       while (i < parts.length) {
         const linkMatch = parts[i].match(/^\[([^\]]+)\]\((https?:\/\/[^)]+|\/[^)]*)\)$/);
@@ -97,32 +98,65 @@ export default function BlogPost() {
   const schemaType = p?.schemaType || 'Article';
   const hasCustomSchema = p?.schemaCustom;
 
+  // Build FAQPage schema from H3/p pairs that appear after a "FAQ" H2
+  const faqSchema = (() => {
+    if (!post?.content) return null;
+    const items: { q: string; a: string }[] = [];
+    let inFaq = false;
+    let pendingQ: string | null = null;
+    for (const block of post.content) {
+      if (block.type === 'h2' && (block.text?.toLowerCase().includes('faq') || block.text?.toLowerCase().includes('frequently asked'))) { inFaq = true; continue; }
+      if (block.type === 'h2' && inFaq) break;
+      if (!inFaq) continue;
+      if (block.type === 'h3') { pendingQ = block.text ?? null; }
+      if (block.type === 'p' && pendingQ) {
+        items.push({ q: pendingQ, a: block.text ?? '' });
+        pendingQ = null;
+      }
+    }
+    if (!items.length) return null;
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: items.map(i => ({
+        '@type': 'Question',
+        name: i.q,
+        acceptedAnswer: { '@type': 'Answer', text: i.a },
+      })),
+    };
+  })();
+
   usePageMeta(post ? {
     title: post.metaTitle,
     description: post.metaDescription,
     schemaId: `blog-post-${slug}`,
     schema: hasCustomSchema
       ? JSON.parse(p.schemaCustom)
-      : {
-          '@context': 'https://schema.org',
-          '@type': schemaType,
-          headline: post.title,
-          description: post.metaDescription,
-          ...(p?.featuredImage ? { image: { '@type': 'ImageObject', url: `https://upranked.io${p.featuredImage}`, description: p.featuredImageAlt || post.title } } : {}),
-          datePublished: post.publishedAt,
-          dateModified: post.publishedAt,
-          author: { '@type': 'Person', name: p?.author || 'Sama Alaa', url: 'https://upranked.io/about' },
-          publisher: {
-            '@type': 'Organization',
-            name: 'upranked.io',
-            url: 'https://upranked.io',
-            logo: { '@type': 'ImageObject', url: 'https://upranked.io/favicon.svg' },
+      : [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: post.title,
+            description: post.metaDescription,
+            image: p?.featuredImage
+              ? { '@type': 'ImageObject', url: `https://upranked.io${p.featuredImage}`, description: p.featuredImageAlt || post.title }
+              : { '@type': 'ImageObject', url: 'https://upranked.io/images/sam-hamouda-seo-consultant-dubai.webp', description: post.title },
+            datePublished: post.publishedAt,
+            dateModified: post.publishedAt,
+            author: { '@type': 'Person', name: p?.author || 'Sama Alaa', url: 'https://upranked.io/about' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'upranked.io',
+              url: 'https://upranked.io',
+              logo: { '@type': 'ImageObject', url: 'https://upranked.io/favicon.svg' },
+            },
+            url: `https://upranked.io/blog/${post.slug}/`,
+            mainEntityOfPage: { '@type': 'WebPage', '@id': `https://upranked.io/blog/${post.slug}/` },
+            articleSection: post.category,
+            ...(p?.focusKeyphrase ? { keywords: p.focusKeyphrase } : {}),
           },
-          url: `https://upranked.io/blog/${post.slug}/`,
-          mainEntityOfPage: { '@type': 'WebPage', '@id': `https://upranked.io/blog/${post.slug}/` },
-          articleSection: post.category,
-          ...(p?.focusKeyphrase ? { keywords: p.focusKeyphrase } : {}),
-        },
+          ...(faqSchema ? [faqSchema] : []),
+        ],
     // Extra meta tags for OG/Twitter injected below
   } : {
     title: 'Article Not Found',
@@ -172,6 +206,19 @@ export default function BlogPost() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">{post.title}</h1>
             <p className="text-xl text-text-secondary leading-relaxed">{post.excerpt}</p>
           </motion.div>
+          {post.featuredImage && (
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="mt-10">
+              <img
+                src={post.featuredImage}
+                alt={post.featuredImageAlt || post.title}
+                width={900}
+                height={500}
+                loading="eager"
+                decoding="async"
+                className="w-full max-w-3xl h-auto rounded-2xl mx-auto block"
+              />
+            </motion.div>
+          )}
         </div>
       </section>
 

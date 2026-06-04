@@ -8,6 +8,8 @@
   category: string;
   excerpt: string;
   keyIntelligence: string;
+  featuredImage?: string;
+  featuredImageAlt?: string;
   content: BlogSection[];
   cta: { heading: string; body: string; href: string; label: string };
   relatedSlugs: string[];
@@ -38,6 +40,8 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'The UAE SEO landscape has changed. Discover what search strategies are actually driving results in Dubai, Abu Dhabi, and across the GCC in 2026 — and what to stop wasting budget on.',
     publishedAt: '2026-04-10',
     readTime: 8,
+    featuredImage: '/heroes/03-serp-positions.svg',
+    featuredImageAlt: 'SEO rankings and SERP positions in the UAE and GCC — upranked.io',
     category: 'SEO Strategy',
     excerpt: 'The UAE SEO landscape has fundamentally shifted. Here\'s what\'s actually driving rankings and revenue for GCC businesses in 2026.',
     keyIntelligence: 'Google\'s 2025-2026 algorithm updates have dramatically rewarded E-E-A-T signals and penalised thin, AI-generated content — making the UAE SEO market harder to game but far more profitable for businesses that invest in genuine authority. Local pack visibility in Dubai and Abu Dhabi is now dominated by businesses with consistent NAP data, review velocity, and bilingual content. The agencies still selling "100 backlinks for $99" are actively harming their clients\' long-term rankings.',
@@ -86,6 +90,8 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'A complete guide to medical SEO for clinics, hospitals, and specialist practices in Dubai and the UAE. Covers E-E-A-T, local pack ranking, Arabic content, and patient acquisition from search.',
     publishedAt: '2026-04-14',
     readTime: 9,
+    featuredImage: '/heroes/17-medical-seo.svg',
+    featuredImageAlt: 'Medical SEO for Dubai clinics and hospitals — upranked.io',
     category: 'Medical SEO',
     excerpt: 'Dubai patients Google their symptoms, research specialists, and compare clinics before booking. Here\'s how to be the practice they find — and trust.',
     keyIntelligence: 'Medical SEO in the UAE operates under Google\'s strictest quality standards — Your Money or Your Life (YMYL) content — meaning clinics must demonstrate genuine clinical authority, verifiable credentials, and trustworthy patient experiences to rank. The shift to zero-click search and AI overviews means Dubai clinics need to win featured snippets and local pack positions, not just blue links. Practices that invest in bilingual (EN/AR) E-E-A-T content are capturing Arabic-speaking patient segments that English-only competitors completely miss.',
@@ -143,6 +149,8 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'How manufacturing, construction, oil & gas, and industrial companies can dominate the specific B2B search queries that procurement managers and engineers use in the UAE and GCC.',
     publishedAt: '2026-04-17',
     readTime: 7,
+    featuredImage: '/heroes/18-industrial-seo.svg',
+    featuredImageAlt: 'Industrial B2B SEO for GCC procurement searches — upranked.io',
     category: 'Industrial SEO',
     excerpt: 'GCC procurement managers are searching Google for suppliers right now. Most industrial companies are invisible. Here\'s how to change that.',
     keyIntelligence: 'Industrial B2B buyers in the GCC use highly specific, technical search queries with low volume but extremely high purchase intent — queries like "API 5L pipe supplier Dubai" or "HVAC preventive maintenance contract Abu Dhabi" represent RFQ-ready procurement decisions worth tens of thousands of dirhams. Most industrial suppliers ignore these because traditional SEO tools undercount their actual commercial value. The companies winning industrial SEO in the GCC are those building dense technical content ecosystems around their product and service specifications, not generic "about us" pages.',
@@ -193,6 +201,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Why GCC Businesses Are Invisible on Google | upranked.io',
     metaDescription: 'The 7 most common reasons why UAE, Saudi, and Kuwait businesses don\'t rank on Google — and the practical fixes that actually work in the GCC market.',
     publishedAt: '2026-04-20',
+    featuredImage: '/heroes/08-magnifier-audit.svg',
+    featuredImageAlt: 'SEO audit and Google visibility for GCC businesses — upranked.io',
     readTime: 6,
     category: 'SEO Strategy',
     excerpt: 'If your business doesn\'t show up when your ideal clients search on Google, you\'re losing to someone who does. Here are the 7 most common reasons why — and what to do about each.',
@@ -241,6 +251,8 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'A practical guide to ranking in both Arabic and English on Google in the UAE, Saudi Arabia, Kuwait, and Qatar. Covers hreflang, Arabic content strategy, RTL implementation, and keyword research.',
     publishedAt: '2026-04-22',
     readTime: 8,
+    featuredImage: '/heroes/11-bilingual-seo.svg',
+    featuredImageAlt: 'Bilingual SEO Arabic and English for GCC businesses — upranked.io',
     category: 'SEO Strategy',
     excerpt: 'The GCC\'s most profitable SEO strategy is also its most ignored: ranking for both Arabic and English searches. Here\'s how to do it properly.',
     keyIntelligence: 'Bilingual SEO in the GCC is not about translating existing English content into Arabic — it requires separate keyword research in Arabic, native-quality content creation, correct hreflang tag implementation, and RTL-compatible technical architecture. Arabic search queries in the UAE and Saudi Arabia are structurally different from English equivalents, targeting different search intents and different audience segments. Businesses that treat Arabic SEO as a technical afterthought consistently underperform against those that approach it as a distinct market with its own content and keyword strategy.',
@@ -289,6 +301,8 @@ export const blogPosts: BlogPost[] = [
     title: 'The APEX Framework™ Explained: How upranked.io Approaches GCC Growth',
     metaTitle: 'The APEX Framework™ Explained | upranked.io GCC Growth Methodology',
     metaDescription: 'A deep dive into the APEX Framework™ — the proprietary 4-phase growth methodology developed by Sama Alaa for high-value businesses in the GCC. Audit, Position, Execute, Expand.',
+    featuredImage: '/heroes/02-apex-framework.svg',
+    featuredImageAlt: 'APEX Framework — Audit, Position, Execute, Expand — upranked.io GCC SEO methodology',
     publishedAt: '2026-04-24',
     readTime: 7,
     category: 'Methodology',
