@@ -79,24 +79,24 @@ function renderSection(section: BlogSection, index: number) {
 export default function BlogPost() {
   const [, params] = useRoute('/blog/:slug');
   const slug = params?.slug ?? '';
-  const [post, setPost] = useState<BlogPost | null | undefined>(undefined);
+  const [post, setPost] = useState<BlogPost | null | undefined>(() => getPostBySlug(slug));
 
   useEffect(() => {
     const localPost = getPostBySlug(slug);
-    if (localPost) setPost(localPost);
-    supabase
-      .from('blog_posts')
-      .select('*')
-      .eq('slug', slug)
-      .eq('status', 'published')
-      .single()
-      .then(({ data }) => {
+    (async () => {
+      try {
+        const { data } = await supabase
+          .from('blog_posts')
+          .select('*')
+          .eq('slug', slug)
+          .eq('status', 'published')
+          .single();
         if (data) setPost(adaptPost(data) as unknown as BlogPost);
         else if (!localPost) setPost(null);
-      })
-      .catch(() => {
+      } catch {
         if (!localPost) setPost(null);
-      });
+      }
+    })();
   }, [slug]);
 
   const p = post as any;
