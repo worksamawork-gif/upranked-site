@@ -82,6 +82,8 @@ export default function BlogPost() {
   const [post, setPost] = useState<BlogPost | null | undefined>(undefined);
 
   useEffect(() => {
+    const localPost = getPostBySlug(slug);
+    if (localPost) setPost(localPost);
     supabase
       .from('blog_posts')
       .select('*')
@@ -90,12 +92,11 @@ export default function BlogPost() {
       .single()
       .then(({ data }) => {
         if (data) setPost(adaptPost(data) as unknown as BlogPost);
-        else setPost(getPostBySlug(slug) ?? null);
+        else if (!localPost) setPost(null);
       });
   }, [slug]);
 
   const p = post as any;
-  const schemaType = p?.schemaType || 'Article';
   const hasCustomSchema = p?.schemaCustom;
 
   // Build FAQPage schema from H3/p pairs that appear after a "FAQ" H2
