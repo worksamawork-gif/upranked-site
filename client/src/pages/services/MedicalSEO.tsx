@@ -40,6 +40,7 @@ const benefits = [
   { title: 'Bilingual Keyword Research', desc: 'Independent Arabic and English keyword research — not translated queries. Real search data for how GCC patients actually search in both languages.' },
   { title: 'Core Web Vitals Optimisation', desc: 'Medical websites that load in under 2.5 seconds on mobile, pass all three Core Web Vitals, and provide the seamless experience that converts search traffic into patient inquiries.' },
   { title: 'Monthly ROI Reporting', desc: 'Reports tied to patient inquiries, appointment bookings, and revenue influenced by organic search — not vanity metrics like impressions or generic rankings.' },
+  { title: 'Healthcare SEO Strategy Guide', desc: 'Every engagement includes access to our healthcare SEO UAE framework — E-E-A-T mapping, DHA compliance checklist, and specialty content architecture built specifically for Dubai and GCC medical providers.' },
 ];
 
 const process = [
@@ -146,25 +147,25 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function MedicalSEO() {
   usePageMeta({
-    title: 'Medical SEO Dubai & UAE | Healthcare SEO Agency | upranked.io',
-    description: 'Specialist medical SEO agency for clinics, hospitals & practices in Dubai & UAE. E-E-A-T content, bilingual EN/AR, GBP optimisation. Book a free strategy call.',
+    title: 'Medical & Healthcare SEO Dubai UAE — Clinics & Hospitals | upranked.io',
+    description: 'Specialist healthcare SEO agency for clinics, hospitals & practices in Dubai & UAE. E-E-A-T content, bilingual EN/AR, MedicalOrganization schema. Book a free audit.',
     schemaId: 'medical-seo-schema',
     schema: {
       '@context': 'https://schema.org',
       '@graph': [
         {
           '@type': 'Service',
-          '@id': 'https://upranked.io/industries/medical#service',
+          '@id': 'https://upranked.io/industries/medical-seo/#service',
           serviceType: 'Medical SEO',
-          name: 'Medical SEO for GCC Healthcare Providers',
-          description: 'Specialist SEO for hospitals, clinics, and medical practices across Dubai, UAE, and the wider GCC. E-E-A-T content, bilingual EN/AR strategy, Google Business Profile optimisation.',
+          name: 'Medical & Healthcare SEO for GCC Healthcare Providers',
+          description: 'Specialist healthcare SEO for hospitals, clinics, and medical practices across Dubai, UAE, and the wider GCC. E-E-A-T content, bilingual EN/AR strategy, Google Business Profile optimisation.',
           provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
           areaServed: ['AE', 'SA', 'KW', 'QA', 'BH'],
-          url: 'https://upranked.io/industries/medical',
+          url: 'https://upranked.io/industries/medical-seo/',
         },
         {
           '@type': 'FAQPage',
-          '@id': 'https://upranked.io/industries/medical#faq',
+          '@id': 'https://upranked.io/industries/medical-seo/#faq',
           mainEntity: faqs.map(f => ({
             '@type': 'Question',
             name: f.q,
@@ -185,7 +186,7 @@ export default function MedicalSEO() {
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' },
             { '@type': 'ListItem', position: 2, name: 'SEO by Industry', item: 'https://upranked.io/industries' },
-            { '@type': 'ListItem', position: 3, name: 'Medical SEO Dubai', item: 'https://upranked.io/industries/medical' },
+            { '@type': 'ListItem', position: 3, name: 'Medical SEO Dubai', item: 'https://upranked.io/industries/medical-seo/' },
           ],
         },
       ],
@@ -556,6 +557,7 @@ export default function MedicalSEO() {
                 { title: 'Founder-Led on Every Engagement', desc: 'Sama Alaa personally leads every medical SEO engagement. You\'re not passed to a junior team after signing — strategy, direction, and quality review remain with the founder throughout.' },
                 { title: 'ROI-Tied Reporting', desc: 'We report on patient inquiries, appointment bookings, and cost-per-patient from organic search — not impressions and traffic that don\'t pay your lease.' },
                 { title: 'No Long-Term Lock-in', desc: 'Month-to-month after the initial setup phase. We keep clients through results, not contracts.' },
+                { title: 'Deep Healthcare SEO Knowledge', desc: 'Read our in-depth guide on healthcare SEO strategy for UAE clinics and hospitals — covering E-E-A-T, DHA compliance, Arabic content, and MedicalOrganization schema in detail.' },
               ].map((item, i) => (
                 <motion.div key={item.title} initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: i * 0.08 }} viewport={{ once: true }} className="flex items-start gap-4 p-5 rounded-xl bg-dark-gray border border-border hover:border-accent/50 transition-colors">
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
