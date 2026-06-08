@@ -24,7 +24,9 @@ function CategoryBadge({ category }: { category: string }) {
 }
 
 export default function Blog() {
-  const [blogPosts, setBlogPosts] = useState(staticPosts);
+  const [blogPosts, setBlogPosts] = useState(() =>
+    [...staticPosts].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+  );
 
   useEffect(() => {
     supabase
@@ -37,7 +39,8 @@ export default function Blog() {
           const adapted = data.map(adaptPost);
           const staticSlugs = new Set(staticPosts.map(p => p.slug));
           const newOnly = adapted.filter(p => !staticSlugs.has(p.slug));
-          setBlogPosts([...newOnly, ...staticPosts] as any);
+          const merged = [...newOnly, ...staticPosts] as any[];
+          setBlogPosts(merged.sort((a: any, b: any) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()));
         }
       });
   }, []);

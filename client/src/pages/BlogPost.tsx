@@ -79,23 +79,27 @@ function renderSection(section: BlogSection, index: number) {
 export default function BlogPost() {
   const [, params] = useRoute('/blog/:slug');
   const slug = params?.slug ?? '';
-  const [post, setPost] = useState<BlogPost | null | undefined>(undefined);
+  const [post, setPost] = useState<BlogPost | null | undefined>(() => getPostBySlug(slug));
 
   useEffect(() => {
-    supabase
-      .from('blog_posts')
-      .select('*')
-      .eq('slug', slug)
-      .eq('status', 'published')
-      .single()
-      .then(({ data }) => {
+    const localPost = getPostBySlug(slug);
+    (async () => {
+      try {
+        const { data } = await supabase
+          .from('blog_posts')
+          .select('*')
+          .eq('slug', slug)
+          .eq('status', 'published')
+          .single();
         if (data) setPost(adaptPost(data) as unknown as BlogPost);
-        else setPost(getPostBySlug(slug) ?? null);
-      });
+        else if (!localPost) setPost(null);
+      } catch {
+        if (!localPost) setPost(null);
+      }
+    })();
   }, [slug]);
 
   const p = post as any;
-  const schemaType = p?.schemaType || 'Article';
   const hasCustomSchema = p?.schemaCustom;
 
   // Build FAQPage schema from H3/p pairs that appear after a "FAQ" H2
@@ -127,7 +131,7 @@ export default function BlogPost() {
   })();
 
   usePageMeta(post ? {
-    title: post.metaTitle,
+    title: post.metaTitle.replace(/ \| upranked\.io$/i, ''),
     description: post.metaDescription,
     schemaId: `blog-post-${slug}`,
     schema: hasCustomSchema

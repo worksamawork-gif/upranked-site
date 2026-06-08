@@ -102,6 +102,7 @@ const ROUTES = [
   '/blog/aeo-geo-bahrain-dubai-gcc-ai-search',
   '/blog/healthcare-seo-uae-2026',
   '/blog/dubai-seo-guide-2026',
+  '/blog/kuwait-seo-guide-2026',
 ];
 
 function startServer(cleanShell) {
