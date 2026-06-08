@@ -127,7 +127,7 @@ export default function BlogPost() {
   })();
 
   usePageMeta(post ? {
-    title: post.metaTitle,
+    title: post.metaTitle.replace(/ \| upranked\.io$/i, ''),
     description: post.metaDescription,
     schemaId: `blog-post-${slug}`,
     schema: hasCustomSchema
