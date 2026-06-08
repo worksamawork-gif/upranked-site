@@ -247,9 +247,9 @@ export default function FAQ() {
   const sectionRefs = useRef<Record<string, IntersectionObserverEntry>>({});
 
   usePageMeta({
-    title: 'SEO Agency FAQ — Dubai, GCC & Global Markets',
+    title: 'SEO Agency Dubai FAQ — Pricing, Process & Results | upranked.io',
     description:
-      'Answers to every common question about upranked.io\'s SEO services, APEX Framework™ methodology, and Growth Intelligence services for businesses in Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London UK, and New York USA.',
+      'Honest answers on SEO pricing, timelines, and results for businesses in Dubai, Riyadh, Kuwait & London. See how upranked.io works, what the APEX Framework™ delivers, and how to get started.',
     schema,
     schemaId: 'faq-schema',
   });

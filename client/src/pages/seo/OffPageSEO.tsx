@@ -73,8 +73,8 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function OffPageSEO() {
   usePageMeta({
-    title: 'Off-Page SEO Dubai & GCC — Authority Building & Link Strategy',
-    description: 'Off-page SEO and link building for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. GCC-relevant backlinks, digital PR, citation building — APEX Framework by Sama Alaa.',
+    title: 'Off-Page SEO Dubai — Link Building & Domain Authority for GCC',
+    description: 'Build domain authority that ranks — GCC-relevant backlinks, Gulf business digital PR, and citation building for Dubai, Riyadh, Kuwait & Bahrain. APEX Framework by Sama Alaa.',
     schema,
     schemaId: 'off-page-seo-schema',
   });

@@ -199,8 +199,8 @@ export default function About() {
   const [activeSection, setActiveSection] = useState('');
 
   usePageMeta({
-    title: 'upranked.io — SEO Agency Dubai & GCC | Sama Alaa',
-    description: 'upranked.io is a premium SEO Agency in Dubai specialising in Medical, Industrial & Business SEO across the GCC. Founded by Sama Alaa. Built on the APEX Framework™.',
+    title: 'Sama Alaa — Founder-Led SEO Agency Dubai & GCC | upranked.io',
+    description: 'Meet Sama Alaa, founder of upranked.io. Specialist in Medical, Industrial & Business SEO for the GCC. Founder-led on every engagement — APEX Framework™. Dubai-based, GCC-wide.',
     schemaId: 'about-schema',
     schema,
   });

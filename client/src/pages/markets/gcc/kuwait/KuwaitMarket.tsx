@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function KuwaitMarket() {
-  usePageMeta({ title: 'SEO Agency Kuwait City — Arabic SEO for Kuwait Businesses', description: 'SEO agency for Kuwait City and Kuwait. Arabic SEO, Google Business Profile, local citations and bilingual content — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'kuwait-market-schema' });
+  usePageMeta({ title: 'SEO Agency Kuwait City — Rank #1 in Kuwait | upranked.io', description: "Rank higher in Kuwait City searches with Arabic & English SEO, Google Business Profile, and bilingual content built for Kuwait's commercial market. APEX Framework by Sama Alaa.", schema, schemaId: 'kuwait-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

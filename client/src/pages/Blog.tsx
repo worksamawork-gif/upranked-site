@@ -43,8 +43,8 @@ export default function Blog() {
   }, []);
 
   usePageMeta({
-    title: 'Blog — Growth Intelligence for GCC Businesses',
-    description: 'In-depth articles on SEO, growth strategy, and digital intelligence for high-value businesses in the UAE, Saudi Arabia, Kuwait, Bahrain, and Qatar.',
+    title: 'SEO Blog Dubai & GCC — Strategy, Insights & Rankings 2026',
+    description: 'SEO insights, keyword strategy, and GCC market intelligence from Sama Alaa at upranked.io. Practical guides for businesses targeting UAE, Saudi Arabia, Kuwait & Bahrain.',
     schemaId: 'blog-schema',
     schema: {
       '@context': 'https://schema.org',
