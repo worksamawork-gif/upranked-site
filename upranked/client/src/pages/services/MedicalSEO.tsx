@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SEO REFERENCE BLOCK (Internal — not visible on page)
  * URL: /industries/medical
  * Primary KW: medical SEO Dubai (commercial intent)
@@ -40,6 +40,7 @@ const benefits = [
   { title: 'Bilingual Keyword Research', desc: 'Independent Arabic and English keyword research — not translated queries. Real search data for how GCC patients actually search in both languages.' },
   { title: 'Core Web Vitals Optimisation', desc: 'Medical websites that load in under 2.5 seconds on mobile, pass all three Core Web Vitals, and provide the seamless experience that converts search traffic into patient inquiries.' },
   { title: 'Monthly ROI Reporting', desc: 'Reports tied to patient inquiries, appointment bookings, and revenue influenced by organic search — not vanity metrics like impressions or generic rankings.' },
+  { title: 'Healthcare SEO Strategy Guide', desc: 'Every engagement includes access to our healthcare SEO UAE framework — E-E-A-T mapping, DHA compliance checklist, and specialty content architecture built specifically for Dubai and GCC medical providers.' },
 ];
 
 const process = [
@@ -146,25 +147,25 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function MedicalSEO() {
   usePageMeta({
-    title: 'Medical SEO Dubai & UAE | Healthcare SEO Agency | upranked.io',
-    description: 'Specialist medical SEO agency for clinics, hospitals & practices in Dubai & UAE. E-E-A-T content, bilingual EN/AR, GBP optimisation. Book a free strategy call.',
+    title: 'Medical & Healthcare SEO Dubai UAE — Clinics & Hospitals | upranked.io',
+    description: 'Specialist healthcare SEO agency for clinics, hospitals & practices in Dubai & UAE. E-E-A-T content, bilingual EN/AR, MedicalOrganization schema. Book a free audit.',
     schemaId: 'medical-seo-schema',
     schema: {
       '@context': 'https://schema.org',
       '@graph': [
         {
           '@type': 'Service',
-          '@id': 'https://upranked.io/industries/medical#service',
+          '@id': 'https://upranked.io/industries/medical-seo/#service',
           serviceType: 'Medical SEO',
-          name: 'Medical SEO for GCC Healthcare Providers',
-          description: 'Specialist SEO for hospitals, clinics, and medical practices across Dubai, UAE, and the wider GCC. E-E-A-T content, bilingual EN/AR strategy, Google Business Profile optimisation.',
+          name: 'Medical & Healthcare SEO for GCC Healthcare Providers',
+          description: 'Specialist healthcare SEO for hospitals, clinics, and medical practices across Dubai, UAE, and the wider GCC. E-E-A-T content, bilingual EN/AR strategy, Google Business Profile optimisation.',
           provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
           areaServed: ['AE', 'SA', 'KW', 'QA', 'BH'],
-          url: 'https://upranked.io/industries/medical',
+          url: 'https://upranked.io/industries/medical-seo/',
         },
         {
           '@type': 'FAQPage',
-          '@id': 'https://upranked.io/industries/medical#faq',
+          '@id': 'https://upranked.io/industries/medical-seo/#faq',
           mainEntity: faqs.map(f => ({
             '@type': 'Question',
             name: f.q,
@@ -178,14 +179,14 @@ export default function MedicalSEO() {
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
           url: 'https://upranked.io/about',
-          sameAs: ['https://www.linkedin.com/company/115836359/'],
+          sameAs: ['https://www.linkedin.com/company/upranked-io/'],
         },
         {
           '@type': 'BreadcrumbList',
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' },
             { '@type': 'ListItem', position: 2, name: 'SEO by Industry', item: 'https://upranked.io/industries' },
-            { '@type': 'ListItem', position: 3, name: 'Medical SEO Dubai', item: 'https://upranked.io/industries/medical' },
+            { '@type': 'ListItem', position: 3, name: 'Medical SEO Dubai', item: 'https://upranked.io/industries/medical-seo/' },
           ],
         },
       ],
@@ -225,23 +226,23 @@ export default function MedicalSEO() {
 
               {/* 2 CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
                     Book a Free Strategy Call <ArrowRight className="w-5 h-5" />
                   </a>
                 </Link>
-                <Link href="/methodology">
+                <Link href="/methodology/">
                   <a className="btn-secondary text-lg px-8 py-4">View APEX Framework™</a>
                 </Link>
               </div>
 
               {/* NAP #1 */}
               <div className="flex flex-wrap gap-6 text-sm text-text-secondary border-t border-border pt-6">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE
@@ -250,23 +251,18 @@ export default function MedicalSEO() {
             </motion.div>
 
             {/* Hero image */}
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="block">
-              <div className="relative rounded-2xl overflow-hidden border border-border bg-dark-gray aspect-[4/3]">
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px] relative">
                 <img
-                  src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                  alt="Sama Alaa — medical SEO consultant in Dubai ranking clinics and healthcare providers across the GCC at upranked.io"
-                  width={600}
-                  height={450}
-                  loading="eager"
-                  decoding="async"
-                  className="w-full h-full object-cover object-top opacity-80"
+                  src="/heroes/17-medical-seo.svg"
+                  alt="Medical SEO growth intelligence dashboard — organic patient acquisition strategy for clinics, hospitals and healthcare providers in Dubai and GCC at upranked.io"
+                  width={800} height={600}
+                  loading="eager" decoding="async" fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-dark-gray/50">
-                  <div className="text-center p-8">
-                    <div className="text-6xl font-black text-accent mb-3">300%</div>
-                    <div className="text-white font-semibold">Average organic traffic increase</div>
-                    <div className="text-text-secondary text-sm mt-1">for GCC medical clients</div>
-                  </div>
+                <div className="absolute bottom-4 left-4 right-4 bg-navy/90 border border-accent/30 rounded-xl px-5 py-3 text-center backdrop-blur-sm">
+                  <div className="text-3xl font-black text-accent">300%</div>
+                  <div className="text-white text-sm font-semibold">Avg organic traffic increase — GCC medical clients</div>
                 </div>
               </div>
             </motion.div>
@@ -337,15 +333,27 @@ export default function MedicalSEO() {
               The GCC medical SEO landscape presents a distinctive challenge: a highly competitive English-language market in Dubai and Abu Dhabi, an underserved but substantial Arabic-language patient base searching across the Emirates and into Saudi Arabia, and a regulatory environment (DHA, MOH, HAAD) that requires specific trust signals most agencies don't know to include.
             </p>
 
-            <img
-              src="/images/medical/medical-seo-uae-patient-search-journey.webp"
-              alt="Medical SEO UAE — patient search journey from Google to clinic booking in Dubai"
-              width={800}
-              height={400}
-              loading="lazy"
-              className="w-full rounded-xl border border-border my-6"
-              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-            />
+            <div className="w-full rounded-xl border border-border my-6 overflow-hidden">
+              <div className="bg-dark-gray px-6 py-4 border-b border-border flex items-center gap-3">
+                <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
+                <p className="text-accent text-xs font-semibold uppercase tracking-widest">The Patient Search Journey — Dubai & UAE</p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-border">
+                {[
+                  { step: '01', label: 'Symptom Search', query: '"dermatologist Dubai Marina"', note: 'High urgency, location-specific' },
+                  { step: '02', label: 'Provider Research', query: '"best clinic reviews Dubai"', note: 'E-E-A-T & ratings evaluated' },
+                  { step: '03', label: 'Arabic Search', query: '"عيادة جلدية دبي مارينا"', note: '35–50% of GCC search volume' },
+                  { step: '04', label: 'Book Appointment', query: 'Click → Call / WhatsApp', note: 'Patient acquired' },
+                ].map(s => (
+                  <div key={s.step} className="p-5 bg-navy/30 hover:bg-accent/5 transition-colors">
+                    <div className="text-accent font-black text-xl mb-2">{s.step}</div>
+                    <div className="text-white font-semibold text-sm mb-2">{s.label}</div>
+                    <div className="font-mono text-xs text-accent/80 bg-navy/60 rounded px-2 py-1.5 mb-2">{s.query}</div>
+                    <div className="text-text-secondary text-xs">{s.note}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -435,7 +443,7 @@ export default function MedicalSEO() {
               <p className="text-white font-bold text-xl mb-1">Is your clinic invisible on Google in Dubai?</p>
               <p className="text-text-secondary">Book a free 30-min APEX Diagnostic — no obligations, just clarity on what's possible.</p>
             </div>
-            <Link href="/contact">
+            <Link href="/contact/">
               <a className="btn-primary px-8 py-3 whitespace-nowrap inline-flex items-center gap-2">
                 Get Your Free Audit <ArrowRight className="w-4 h-4" />
               </a>
@@ -473,7 +481,7 @@ export default function MedicalSEO() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/methodology">
+            <Link href="/methodology/">
               <a className="btn-secondary px-8 py-3 inline-flex items-center gap-2">
                 Explore the Full APEX Framework™ <ArrowRight className="w-4 h-4" />
               </a>
@@ -524,7 +532,7 @@ export default function MedicalSEO() {
                     <CheckCircle className="w-4 h-4 text-accent" />
                     <span>APEX Framework™ Creator</span>
                   </div>
-                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">
                     LinkedIn Profile →
                   </a>
                 </div>
@@ -549,6 +557,7 @@ export default function MedicalSEO() {
                 { title: 'Founder-Led on Every Engagement', desc: 'Sama Alaa personally leads every medical SEO engagement. You\'re not passed to a junior team after signing — strategy, direction, and quality review remain with the founder throughout.' },
                 { title: 'ROI-Tied Reporting', desc: 'We report on patient inquiries, appointment bookings, and cost-per-patient from organic search — not impressions and traffic that don\'t pay your lease.' },
                 { title: 'No Long-Term Lock-in', desc: 'Month-to-month after the initial setup phase. We keep clients through results, not contracts.' },
+                { title: 'Deep Healthcare SEO Knowledge', desc: 'Read our in-depth guide on healthcare SEO strategy for UAE clinics and hospitals — covering E-E-A-T, DHA compliance, Arabic content, and MedicalOrganization schema in detail.' },
               ].map((item, i) => (
                 <motion.div key={item.title} initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: i * 0.08 }} viewport={{ once: true }} className="flex items-start gap-4 p-5 rounded-xl bg-dark-gray border border-border hover:border-accent/50 transition-colors">
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -593,11 +602,11 @@ export default function MedicalSEO() {
                 <p className="text-text-secondary text-sm">Premium Growth Intelligence Lab · Medical SEO Specialists</p>
               </div>
               <div className="flex flex-wrap gap-6 text-sm md:ml-auto">
-                <a href="/contact" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2 text-text-secondary">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE
@@ -623,7 +632,7 @@ export default function MedicalSEO() {
             ))}
           </div>
           <div className="mt-6 text-center">
-            <Link href="/faq">
+            <Link href="/faq/">
               <a className="text-accent hover:underline text-sm">View all SEO FAQs →</a>
             </Link>
           </div>
@@ -642,7 +651,7 @@ export default function MedicalSEO() {
               <p className="text-xl text-text-secondary mb-8 leading-relaxed">
                 Book a free 30-minute strategy call with Sama Alaa. We'll audit your clinic's current search visibility in Dubai and across the UAE, identify the highest-intent patient queries you're missing, and give you a clear, honest picture of what it would take to dominate your market.
               </p>
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary text-xl px-12 py-6 inline-flex items-center gap-3 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                   Book Your Free Strategy Call <ArrowRight className="w-6 h-6" />
                 </a>
@@ -650,11 +659,11 @@ export default function MedicalSEO() {
 
               {/* NAP #3 */}
               <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-text-secondary border-t border-border pt-6">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC Region

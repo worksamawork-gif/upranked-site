@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PAGE: /growth-intelligence/consultation
  * PRIMARY KW: business consultation Dubai (Vol: ~880/mo | KD: 32)
  * SECONDARY KW: growth strategy consultant GCC, business consultant Dubai UAE, Sama Alaa consultation
@@ -42,7 +42,7 @@ const faqs = [
   { q: 'How is this different from hiring a digital marketing agency in Dubai?', a: 'Three key differences: (1) Founder-led — you work directly with Sama Alaa, not a junior account manager who inherited your account after the sales call. (2) Strategy-first — sessions focus on the strategic layer, not execution deliverables. (3) GCC-specific — every recommendation is informed by real market intelligence from Dubai, Riyadh, Kuwait, and Bahrain, not global templates applied to the region.' },
   { q: 'Can I book a one-time consultation or do I need an ongoing retainer?', a: 'Both options are available. A one-time APEX Diagnostic session gives you clarity on your current position, a competitor gap analysis, and a 90-day roadmap. An ongoing retainer provides continuous strategic guidance, monthly accountability reviews, and priority WhatsApp access to Sama as you execute. The best fit depends on how much strategic support your team needs beyond the initial roadmap.' },
   { q: 'Do you offer business consultation for companies expanding into the GCC from London or New York?', a: 'Yes — market entry consultation for international businesses expanding into Dubai, Riyadh, Kuwait, or Bahrain is one of our core specialisations. We cover GCC search behaviour, Arabic SEO requirements, local competitor landscape, free zone positioning, GBP setup for UAE, and the go-to-market channel mix that works in your target GCC city. Engagements are conducted remotely and in person.' },
-  { q: 'How do I get started with a business consultation?', a: 'Book a free 30-minute APEX Diagnostic intro call via the Contact page, our contact page, or email Sam@upranked.io. In the intro call, Sama reviews your current position, identifies your highest-leverage growth opportunity, and outlines the consultation scope that fits your situation. No commitment required for the intro call.' },
+  { q: 'How do I get started with a business consultation?', a: 'Book a free 30-minute APEX Diagnostic intro call via the Contact page, our contact page, or email uprankedio@gmail.com. In the intro call, Sama reviews your current position, identifies your highest-leverage growth opportunity, and outlines the consultation scope that fits your situation. No commitment required for the intro call.' },
 ];
 
 const schema = {
@@ -70,7 +70,7 @@ const schema = {
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
     },
     {
       '@type': 'BreadcrumbList',
@@ -119,7 +119,7 @@ export default function BusinessConsultation() {
             <div>
               <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-text-secondary mb-6">
                 <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link><span>/</span>
-                <Link href="/growth-intelligence"><a className="hover:text-accent transition-colors">Growth Intelligence</a></Link><span>/</span>
+                <Link href="/growth-intelligence/"><a className="hover:text-accent transition-colors">Growth Intelligence</a></Link><span>/</span>
                 <span className="text-accent">Business Consultation</span>
               </nav>
               <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -131,26 +131,28 @@ export default function BusinessConsultation() {
                   Direct strategic consultation with the founder of upranked.io. Get the APEX Framework™ applied to your GCC growth challenge, a competitor gap analysis, and a 90-day roadmap — no junior handoffs, no agency overhead.
                 </p>
                 <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
-                  <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                  <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                   <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
-                  <Link href="/about"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sama Alaa</a></Link>
+                  <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
+                  <Link href="/about/"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sama Alaa</a></Link>
                 </div>
               </motion.div>
             </div>
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
-              <img
-                src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-                alt="Sama Alaa — business growth consultant and strategist in Dubai offering APEX Framework advisory for GCC businesses at upranked.io"
-                width={480}
-                height={640}
-                loading="eager"
-                decoding="async"
-                className="rounded-2xl border border-border object-cover object-top w-full max-w-sm"
-              />
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/21-business-consultation.svg"
+                  alt="Business consultation and APEX Framework growth advisory for GCC companies — strategic planning, market entry, and revenue growth by upranked.io Dubai"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -238,7 +240,7 @@ export default function BusinessConsultation() {
         <div className="container-premium text-center">
           <p className="text-lg font-semibold text-white mb-2">Ready to get clarity on your growth path?</p>
           <p className="text-text-secondary text-sm mb-6">Book a free 30-minute APEX Diagnostic — no commitment, just a clear picture of your opportunity.</p>
-          <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2">Book Free Intro Call <ArrowRight className="w-4 h-4" /></a></Link>
+          <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2">Book Free Intro Call <ArrowRight className="w-4 h-4" /></a></Link>
         </div>
       </section>
 
@@ -254,8 +256,8 @@ export default function BusinessConsultation() {
                 <p className="text-accent text-sm mb-3">Founder &amp; Chief Growth Strategist, upranked.io · Dubai, UAE</p>
                 <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a specialist GCC growth strategist with 20+ client engagements across Medical, Industrial, and Business sectors in Dubai, Riyadh, Kuwait, and Bahrain. As the creator of the APEX Framework™, Sama personally leads every consultation — no handoffs. His direct, founder-led model means you get the same depth of expertise that built upranked.io's reputation across the GCC, London, and New York.</p>
                 <div className="flex gap-4">
-                  <Link href="/about"><a className="text-accent text-sm hover:underline">Full Bio →</a></Link>
-                  <a href="/contact" className="text-accent text-sm hover:underline">Contact Us →</a>
+                  <Link href="/about/"><a className="text-accent text-sm hover:underline">Full Bio →</a></Link>
+                  <a href="/contact/" className="text-accent text-sm hover:underline">Contact Us →</a>
                 </div>
               </div>
             </div>
@@ -281,13 +283,13 @@ export default function BusinessConsultation() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Clarity on Your <span className="text-accent">Growth Path</span></h2>
             <p className="text-text-secondary mb-6 leading-relaxed">Book a free 30-minute APEX Diagnostic with Sama Alaa. Come with your biggest growth challenge — leave with a clear, prioritised roadmap.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
-              <a href="/contact" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>
+              <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
+              <a href="/contact/" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>
             </div>
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
             </address>

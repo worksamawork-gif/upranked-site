@@ -1,4 +1,4 @@
-﻿import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -303,39 +303,56 @@ export default function Methodology() {
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-dark-gray to-navy opacity-60 -z-10" />
         <div className="container-premium">
-          <div className="max-w-5xl">
-            <nav className="text-sm text-text-secondary mb-6">
-              <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
-              <span className="mx-2 text-border">/</span>
-              <span className="text-accent">Methodology</span>
-            </nav>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <nav className="text-sm text-text-secondary mb-6">
+                <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
+                <span className="mx-2 text-border">/</span>
+                <span className="text-accent">Methodology</span>
+              </nav>
 
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <span className="text-accent font-semibold tracking-widest text-sm uppercase block mb-4">Our Methodology</span>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                The <span className="gradient-text">APEX Framework™</span> — upranked.io's SEO Methodology for Dubai & GCC Growth
-              </h1>
-              <p className="text-xl text-text-secondary mb-8 max-w-3xl leading-relaxed">
-                A proprietary 4-phase growth methodology developed by Sama Alaa for high-value, trust-sensitive industries across Dubai, Riyadh, Kuwait City, Manama, London, and New York. Not a template — a system engineered for compounding returns.
-              </p>
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <span className="text-accent font-semibold tracking-widest text-sm uppercase block mb-4">Our Methodology</span>
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                  The <span className="gradient-text">APEX Framework™</span> — upranked.io's SEO Methodology for Dubai & GCC Growth
+                </h1>
+                <p className="text-xl text-text-secondary mb-8 max-w-3xl leading-relaxed">
+                  A proprietary 4-phase growth methodology developed by Sama Alaa for high-value, trust-sensitive industries across Dubai, Riyadh, Kuwait City, Manama, London, and New York. Not a template — a system engineered for compounding returns.
+                </p>
 
-              <div className="flex flex-wrap items-center gap-4 mb-8">
-                <div className="flex items-center gap-3 bg-dark-gray border border-accent/30 rounded-xl px-5 py-3">
-                  <span className="text-3xl font-black text-accent tracking-[0.3em]">APEX</span>
-                  <span className="text-text-secondary text-sm">Audit · Position · Execute · Expand</span>
+                <div className="flex flex-wrap items-center gap-4 mb-8">
+                  <div className="flex items-center gap-3 bg-dark-gray border border-accent/30 rounded-xl px-5 py-3">
+                    <span className="text-3xl font-black text-accent tracking-[0.3em]">APEX</span>
+                    <span className="text-text-secondary text-sm">Audit · Position · Execute · Expand</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {['Dubai UAE', 'Riyadh KSA', 'Kuwait', 'Bahrain', 'London UK', 'New York USA'].map(m => (
+                      <span key={m} className="text-xs bg-navy border border-border rounded-full px-3 py-1 text-text-secondary">{m}</span>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {['Dubai UAE', 'Riyadh KSA', 'Kuwait', 'Bahrain', 'London UK', 'New York USA'].map(m => (
-                    <span key={m} className="text-xs bg-navy border border-border rounded-full px-3 py-1 text-text-secondary">{m}</span>
-                  ))}
-                </div>
-              </div>
 
-              {/* NAP #1 */}
-              <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
-                <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                {/* NAP #1 */}
+                <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
+                  <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
+                  <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
+                </div>
+              </motion.div>
+            </div>
+
+            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/02-apex-framework.svg"
+                  alt="APEX Framework methodology diagram — Audit, Position, Execute, Expand — upranked.io SEO system for GCC growth"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
               </div>
             </motion.div>
           </div>
@@ -370,8 +387,8 @@ export default function Methodology() {
               <div className="mt-8 p-4 bg-dark-gray border border-border rounded-xl text-xs text-text-secondary space-y-2">
                 <p className="text-white font-semibold text-sm mb-2">upranked.io</p>
                 <p className="flex items-center gap-1.5"><MapPin className="w-3 h-3 text-accent flex-shrink-0" /> Dubai, UAE — GCC &amp; Global</p>
-                <a href="/contact" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> uprankedio@gmail.com</a>
               </div>
             </div>
           </aside>
@@ -536,7 +553,7 @@ export default function Methodology() {
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
                         Sama Alaa developed the APEX Framework™ after observing a critical gap in the GCC market: agencies applied generic Western SEO templates to complex, trust-sensitive industries — and delivered predictably mediocre results. APEX was engineered from first principles for the GCC's unique search landscape: bilingual Arabic–English search behavior, relationship-first business culture, and competitive sectors where trust is the deciding factor. Sama personally applies the framework on every engagement across Dubai, Riyadh, Kuwait City, Manama, and global markets including London and New York.
                       </p>
-                      <Link href="/about">
+                      <Link href="/about/">
                         <a className="text-accent text-sm font-semibold hover:underline">Full profile &amp; credentials →</a>
                       </Link>
                     </div>
@@ -610,13 +627,13 @@ export default function Methodology() {
               Book a free APEX Diagnostic with Sama Alaa. We'll audit your current position and show you exactly what the framework would unlock — for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                   Book a Free APEX Diagnostic <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2"
               >
                 Contact Us
@@ -625,8 +642,8 @@ export default function Methodology() {
             {/* NAP #3 */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>

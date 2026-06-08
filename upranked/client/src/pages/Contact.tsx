@@ -1,4 +1,4 @@
-﻿import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, Mail, Phone, MapPin, CheckCircle, ChevronDown } from 'lucide-react';
@@ -25,7 +25,7 @@ const schema = {
           name: 'How do I book a strategy call with Sama Alaa?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
+            text: 'Fill in the contact form on this page or reach out directly via our contact page or email uprankedio@gmail.com. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
           },
         },
         {
@@ -77,7 +77,7 @@ const schema = {
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
       telephone: '+201121664778',
-      email: 'Sam@upranked.io',
+      email: 'uprankedio@gmail.com',
     },
     {
       '@type': 'BreadcrumbList',
@@ -115,7 +115,7 @@ const expectItems = [
 const faqs = [
   {
     q: 'How do I book a strategy call with Sama Alaa?',
-    a: 'Fill in the contact form on this page or reach out directly via our contact page or email Sam@upranked.io. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
+    a: 'Fill in the contact form on this page or reach out directly via our contact page or email uprankedio@gmail.com. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
   },
   {
     q: 'Is the initial strategy consultation really free?',
@@ -177,6 +177,7 @@ export default function Contact() {
     email: '',
     phone: '',
     company: '',
+    market: '',
     service: '',
     message: '',
   });
@@ -220,8 +221,26 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormState('submitting');
-    await new Promise(r => setTimeout(r, 1200));
-    setFormState('success');
+    try {
+      const body = new URLSearchParams({
+        'form-name': 'contact',
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        company: form.company,
+        market: form.market,
+        service: form.service,
+        message: form.message,
+      }).toString();
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
+      });
+      setFormState(res.ok ? 'success' : 'error');
+    } catch {
+      setFormState('error');
+    }
   };
 
   return (
@@ -230,36 +249,53 @@ export default function Contact() {
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-dark-gray to-navy opacity-60 -z-10" />
         <div className="container-premium">
-          <div className="max-w-4xl">
-            <nav className="text-sm text-text-secondary mb-6">
-              <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
-              <span className="mx-2 text-border">/</span>
-              <span className="text-accent">Contact</span>
-            </nav>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <nav className="text-sm text-text-secondary mb-6">
+                <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
+                <span className="mx-2 text-border">/</span>
+                <span className="text-accent">Contact</span>
+              </nav>
 
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <span className="text-accent font-semibold tracking-widest text-sm uppercase block mb-4">Get in Touch</span>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Book a Free SEO Strategy Call — Dubai, GCC, London &amp; New York
-              </h1>
-              <p className="text-xl text-text-secondary mb-8 max-w-3xl leading-relaxed">
-                A free 30-minute conversation with Sama Alaa. No pitch, no pressure — just clarity on what's possible for your business across the GCC and global markets. Available for clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.
-              </p>
-
-              {/* Featured snippet definition box */}
-              <div className="bg-dark-gray border-l-4 border-accent rounded-r-xl p-5 mb-8">
-                <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">What You Get</p>
-                <p className="text-white font-semibold mb-1">The Free APEX Diagnostic</p>
-                <p className="text-text-secondary text-sm leading-relaxed">
-                  A focused 30-minute strategy session where Sama Alaa applies the APEX Framework™ to your specific situation — delivering an honest audit of your current digital position, a competitor analysis, and a prioritized growth roadmap. No obligations, no upsells during the call.
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <span className="text-accent font-semibold tracking-widest text-sm uppercase block mb-4">Get in Touch</span>
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                  Book a Free SEO Strategy Call — Dubai, GCC, London &amp; New York
+                </h1>
+                <p className="text-xl text-text-secondary mb-8 leading-relaxed">
+                  A free 30-minute conversation with Sama Alaa. No pitch, no pressure — just clarity on what's possible for your business across the GCC and global markets. Available for clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.
                 </p>
-              </div>
 
-              {/* NAP #1 */}
-              <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
-                <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                {/* Featured snippet definition box */}
+                <div className="bg-dark-gray border-l-4 border-accent rounded-r-xl p-5 mb-8">
+                  <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">What You Get</p>
+                  <p className="text-white font-semibold mb-1">The Free APEX Diagnostic</p>
+                  <p className="text-text-secondary text-sm leading-relaxed">
+                    A focused 30-minute strategy session where Sama Alaa applies the APEX Framework™ to your specific situation — delivering an honest audit of your current digital position, a competitor analysis, and a prioritized growth roadmap. No obligations, no upsells during the call.
+                  </p>
+                </div>
+
+                {/* NAP #1 */}
+                <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
+                  <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
+                  <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
+                </div>
+              </motion.div>
+            </div>
+
+            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/08-magnifier-audit.svg"
+                  alt="SEO audit magnifier visual — free APEX Diagnostic call with upranked.io founder Sama Alaa"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
               </div>
             </motion.div>
           </div>
@@ -294,8 +330,8 @@ export default function Contact() {
               <div className="mt-8 p-4 bg-dark-gray border border-border rounded-xl text-xs text-text-secondary space-y-2">
                 <p className="text-white font-semibold text-sm mb-2">upranked.io</p>
                 <p className="flex items-center gap-1.5"><MapPin className="w-3 h-3 text-accent flex-shrink-0" /> Dubai, UAE — GCC &amp; Global</p>
-                <a href="/contact" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> uprankedio@gmail.com</a>
               </div>
 
               <div className="mt-4 p-4 bg-navy border border-accent/30 rounded-xl text-xs">
@@ -392,7 +428,7 @@ export default function Contact() {
                 {/* Direct contact options */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                   <a
-                    href="/contact"
+                    href="/contact/"
                     className="flex items-center gap-4 p-4 bg-dark-gray border border-border rounded-xl hover:border-accent/50 transition-colors group"
                   >
                     <div className="w-10 h-10 bg-green-500/20 border border-green-500/30 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -404,7 +440,7 @@ export default function Contact() {
                     </div>
                   </a>
                   <a
-                    href="mailto:Sam@upranked.io"
+                    href="mailto:uprankedio@gmail.com"
                     className="flex items-center gap-4 p-4 bg-dark-gray border border-border rounded-xl hover:border-accent/50 transition-colors group"
                   >
                     <div className="w-10 h-10 bg-accent/10 border border-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -412,7 +448,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-white font-semibold text-sm group-hover:text-accent transition-colors">Email Sama</p>
-                      <p className="text-text-secondary text-xs">Sam@upranked.io</p>
+                      <p className="text-text-secondary text-xs">uprankedio@gmail.com</p>
                     </div>
                   </a>
                 </div>
@@ -433,7 +469,8 @@ export default function Contact() {
                     </p>
                   </motion.div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="card-premium space-y-6">
+                  <form onSubmit={handleSubmit} className="card-premium space-y-6" name="contact" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-2">Send a Message</h3>
                       <p className="text-text-secondary text-sm">Fill in the form and Sama will follow up within 24 hours.</p>
@@ -491,8 +528,8 @@ export default function Contact() {
                     <div>
                       <label className="block text-sm font-medium text-text-secondary mb-2">Market / Location</label>
                       <select
-                        name="service"
-                        value={form.service}
+                        name="market"
+                        value={form.market}
                         onChange={handleChange}
                         className="input-premium"
                       >
@@ -634,13 +671,13 @@ export default function Contact() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300"
               >
                 Contact Us Now <ArrowRight className="w-5 h-5" />
               </a>
               <a
-                href="mailto:Sam@upranked.io"
+                href="mailto:uprankedio@gmail.com"
                 className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2"
               >
                 Email Sama
@@ -649,8 +686,8 @@ export default function Contact() {
             {/* NAP #3 */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>

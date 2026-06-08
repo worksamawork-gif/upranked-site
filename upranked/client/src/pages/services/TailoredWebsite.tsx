@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PAGE: /growth-intelligence/websites
  * PRIMARY KW: custom website Dubai (Vol: ~1,600/mo | KD: 36)
  * SECONDARY KW: SEO website design Dubai GCC, website design company UAE, bilingual website GCC
@@ -118,7 +118,7 @@ export default function TailoredWebsite() {
             <div>
               <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-text-secondary mb-6">
                 <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link><span>/</span>
-                <Link href="/growth-intelligence"><a className="hover:text-accent transition-colors">Growth Intelligence</a></Link><span>/</span>
+                <Link href="/growth-intelligence/"><a className="hover:text-accent transition-colors">Growth Intelligence</a></Link><span>/</span>
                 <span className="text-accent">Tailored Website</span>
               </nav>
               <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -130,26 +130,28 @@ export default function TailoredWebsite() {
                   Premium custom websites for businesses in Dubai, the GCC, London, and New York. SEO architecture built in from day one — not retrofitted. Bilingual EN/AR with full RTL support, Core Web Vitals optimised, and conversion-first from the first page.
                 </p>
                 <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
-                  <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                  <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                   <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Discuss Your Project <ArrowRight className="w-5 h-5" /></a></Link>
-                  <Link href="/about"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Our Approach</a></Link>
+                  <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Discuss Your Project <ArrowRight className="w-5 h-5" /></a></Link>
+                  <Link href="/about/"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Our Approach</a></Link>
                 </div>
               </motion.div>
             </div>
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
-              <img
-                src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-                alt="Sama Alaa — custom website designer and SEO strategist in Dubai building bilingual conversion-optimised sites for GCC businesses at upranked.io"
-                width={480}
-                height={640}
-                loading="eager"
-                decoding="async"
-                className="rounded-2xl border border-border object-cover object-top w-full max-w-sm"
-              />
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/23-tailored-website.svg"
+                  alt="Tailored SEO-optimised website design for GCC businesses — bilingual EN/AR, conversion-focused, performance-built by upranked.io Dubai"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -222,13 +224,13 @@ export default function TailoredWebsite() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready for a Website That <span className="text-accent">Works as Hard as You Do</span>?</h2>
             <p className="text-text-secondary mb-6 leading-relaxed">Book a free discovery call with Sama Alaa. Define your ideal website — how it looks, what it converts, and how it ranks in Dubai, Riyadh, London, or your target market.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Discovery Call <ArrowRight className="w-5 h-5" /></a></Link>
-              <a href="/contact" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>
+              <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Discovery Call <ArrowRight className="w-5 h-5" /></a></Link>
+              <a href="/contact/" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>
             </div>
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · NY</span>
             </address>

@@ -1,4 +1,4 @@
-﻿import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -7,14 +7,14 @@ import { usePageMeta } from '../../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency Riyadh KSA — Arabic SEO for Saudi Arabia Businesses', description: 'SEO services for businesses in Riyadh and across Saudi Arabia — Arabic-first SEO, Vision 2030 sectors, Google Maps and local SEO by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/ksa/riyadh', areaServed: ['Riyadh', 'Jeddah', 'Makkah', 'Saudi Arabia'] },
+    { '@type': 'Service', name: 'SEO Agency Riyadh KSA — Arabic SEO for Saudi Arabia Businesses', description: 'SEO services for businesses in Riyadh and across Saudi Arabia — Arabic-first SEO, Vision 2030 sectors, Google Maps and local SEO by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/ksa/riyadh/', areaServed: ['Riyadh', 'Jeddah', 'Makkah', 'Saudi Arabia'] },
     { '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'Why is Arabic SEO more important in Saudi Arabia than in UAE?', acceptedAnswer: { '@type': 'Answer', text: 'Saudi Arabia has a significantly higher proportion of Arabic-first searchers than UAE. KSA nationals make up a larger share of the buyer base, and Arabic is the dominant search language across most commercial sectors. In Riyadh and Jeddah, English-only SEO can miss 50–70% of potential organic traffic depending on the sector. upranked.io\'s KSA SEO strategy is Arabic-first by default.' } },
       { '@type': 'Question', name: 'What are the highest-growth SEO sectors in Riyadh under Vision 2030?', acceptedAnswer: { '@type': 'Answer', text: "Saudi Arabia's Vision 2030 is driving explosive growth in entertainment, tourism, healthcare, technology, and professional services sectors — all of which have rapidly growing search volumes in Riyadh and Jeddah. upranked.io tracks Vision 2030 sector development and adapts content strategies to emerging high-volume KSA search queries as the market evolves." } },
       { '@type': 'Question', name: 'Do you offer SEO services near me in Riyadh?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io serves businesses in Riyadh, Jeddah, Makkah, and across Saudi Arabia. While upranked.io is headquartered in Dubai, all KSA client engagements are managed directly by Sama Alaa with deep KSA market knowledge and Arabic-native SEO specialists. Book a free APEX Diagnostic call for Riyadh SEO strategy.' } },
       { '@type': 'Question', name: 'How is SEO in Saudi Arabia different from SEO in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'KSA SEO differs from Dubai SEO in three key ways: (1) Arabic is the dominant search language in KSA vs more balanced EN/AR in Dubai; (2) KSA has different sector dynamics — higher focus on retail, hospitality, and government-adjacent B2B; (3) KSA search volumes are higher in absolute terms as the largest GCC economy. Google Business Profile setup also differs slightly for KSA address formatting.' } },
     ] },
-    { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'GCC Markets', item: 'https://upranked.io/markets/gcc' }, { '@type': 'ListItem', position: 3, name: 'Riyadh SEO', item: 'https://upranked.io/markets/gcc/ksa/riyadh' }] },
+    { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'GCC Markets', item: 'https://upranked.io/markets/gcc/' }, { '@type': 'ListItem', position: 3, name: 'Riyadh SEO', item: 'https://upranked.io/markets/gcc/ksa/riyadh/' }] },
     { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function RiyadhMarket() {
-  usePageMeta({ title: 'SEO Agency Riyadh KSA — Arabic SEO for Saudi Arabia Businesses', description: 'SEO agency for Riyadh and Saudi Arabia. Arabic-first SEO, Vision 2030 sector content, Google Business Profile, local citations — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'riyadh-market-schema' });
+  usePageMeta({ title: 'Riyadh SEO Agency KSA — Arabic-First SEO for Saudi Businesses | upranked.io', description: 'SEO agency for Riyadh and Saudi Arabia. Arabic-first keyword research, Vision 2030 sector content, Google Business Profile — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'riyadh-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -60,7 +60,7 @@ export default function RiyadhMarket() {
           <nav className="text-sm text-text-secondary mb-6">
             <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
             <span className="mx-2 text-border">/</span>
-            <Link href="/markets/gcc"><a className="hover:text-accent transition-colors">GCC Markets</a></Link>
+            <Link href="/markets/gcc/"><a className="hover:text-accent transition-colors">GCC Markets</a></Link>
             <span className="mx-2 text-border">/</span>
             <span className="text-accent">Riyadh, KSA</span>
           </nav>
@@ -74,8 +74,8 @@ export default function RiyadhMarket() {
             </div>
             <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>
@@ -113,8 +113,8 @@ export default function RiyadhMarket() {
               <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across KSA, UAE, Kuwait, and Bahrain markets. All KSA engagements are managed directly by Sama with Arabic-native SEO specialists — combining strategic oversight with native Arabic market knowledge for Riyadh, Jeddah, and across Saudi Arabia.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               </div>
             </div>
           </div>
@@ -139,15 +139,15 @@ export default function RiyadhMarket() {
         <div className="container-premium text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <h2 className="text-4xl font-bold mb-6">Lead Your Sector in <span className="text-accent">Saudi Arabia</span></h2>
-            <p className="text-xl text-text-secondary mb-8 max-w-xl mx-auto">Book a free APEX Diagnostic. We will audit your KSA search presence and show you exactly how much Arabic search traffic you are missing in Riyadh, Jeddah, and across Saudi Arabia.</p>
+            <p className="text-xl text-text-secondary mb-8 max-w-xl mx-auto">Book a free APEX Diagnostic. We will audit your KSA search presence and show you exactly how much Arabic search traffic you are missing in Riyadh, Jeddah, and across Saudi Arabia. <Link href="/blog/riyadh-seo-guide-2026/"><a className="text-accent hover:underline">Read the complete Riyadh SEO guide →</a></Link></p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <Link href="/contact"><a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2">Book Free Call <ArrowRight className="w-5 h-5" /></a></Link>
-              <a href="/contact" className="btn-secondary text-lg px-10 py-5">Contact Us</a>
+              <Link href="/contact/"><a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2">Book Free Call <ArrowRight className="w-5 h-5" /></a></Link>
+              <a href="/contact/" className="btn-secondary text-lg px-10 py-5">Contact Us</a>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>

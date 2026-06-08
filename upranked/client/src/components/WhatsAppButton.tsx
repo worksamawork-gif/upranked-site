@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
           WhatsApp Sama
         </a>
         <a
-          href="/contact"
+          href="/contact/"
           className="flex-1 flex items-center justify-center py-3 bg-accent text-black rounded-lg font-semibold text-sm"
         >
           Book a Call

@@ -10,6 +10,7 @@
  */
 
 import { chromium } from 'playwright';
+import { createClient } from '@supabase/supabase-js';
 import express from 'express';
 import path from 'node:path';
 import fs from 'node:fs';
@@ -19,6 +20,23 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.resolve(__dirname, '../dist/public');
 const PORT = 4173;
 const BASE = `http://localhost:${PORT}`;
+
+const SUPABASE_URL = 'https://xusvmvvosdvmixtqkiop.supabase.co';
+const SUPABASE_KEY = process.env.SUPABASE_KEY || 'sb_publishable_dtOltW0Hz6plqrVz2e3tjQ_UculjCKG';
+
+async function fetchSupabaseBlogRoutes() {
+  try {
+    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+    const { data } = await supabase
+      .from('blog_posts')
+      .select('slug')
+      .eq('status', 'published');
+    return (data || []).map(p => `/blog/${p.slug}`);
+  } catch {
+    console.warn('  ⚠ Could not fetch Supabase blog routes, using static list only');
+    return [];
+  }
+}
 
 // All public routes to pre-render
 const ROUTES = [
@@ -76,18 +94,28 @@ const ROUTES = [
   '/blog/why-gcc-businesses-invisible-google',
   '/blog/bilingual-seo-arabic-english',
   '/blog/apex-framework-explained',
+  '/blog/arabic-seo-agency-dubai-uae',
+
+  // AEO & GEO pages
+  '/seo/aeo',
+  '/blog/riyadh-seo-guide-2026',
+  '/blog/aeo-geo-bahrain-dubai-gcc-ai-search',
+  '/blog/healthcare-seo-uae-2026',
+  '/blog/dubai-seo-guide-2026',
+  '/blog/kuwait-seo-guide-2026',
 ];
 
-function startServer() {
+function startServer(cleanShell) {
   return new Promise((resolve, reject) => {
     const app = express();
     app.use(express.static(DIST_DIR));
-    // SPA fallback for client-side routes (suppress URIError from unresolved env placeholders)
+    // SPA fallback: always serve the ORIGINAL clean Vite shell (not a pre-rendered
+    // home page) so schema tags from '/' don't bleed into other routes during prerender.
     app.use((err, _req, res, next) => {
-      if (err instanceof URIError) return res.sendFile(path.join(DIST_DIR, 'index.html'));
+      if (err instanceof URIError) return res.send(cleanShell);
       next(err);
     });
-    app.get('*', (_req, res) => res.sendFile(path.join(DIST_DIR, 'index.html')));
+    app.get('*', (_req, res) => res.send(cleanShell));
     const server = app.listen(PORT, () => resolve(server));
     server.on('error', reject);
   });
@@ -106,7 +134,19 @@ async function prerender() {
 
   console.log('\n🔍 Pre-rendering pages for AI crawlers...\n');
 
-  const server = await startServer();
+  // Merge static routes with any new blog posts published via Supabase
+  const supabaseBlogRoutes = await fetchSupabaseBlogRoutes();
+  const staticBlogSlugs = new Set(ROUTES.filter(r => r.startsWith('/blog/')));
+  const newBlogRoutes = supabaseBlogRoutes.filter(r => !staticBlogSlugs.has(r));
+  if (newBlogRoutes.length) console.log(`  + ${newBlogRoutes.length} new blog route(s) from Supabase\n`);
+  const ROUTES_ALL = [...ROUTES, ...newBlogRoutes];
+
+  // Read the original Vite-built shell BEFORE any route is rendered, so that
+  // pre-rendering '/' (which writes home-schema into dist/public/index.html)
+  // doesn't contaminate the fallback HTML served for subsequent routes.
+  const cleanShell = fs.readFileSync(path.join(DIST_DIR, 'index.html'), 'utf-8');
+
+  const server = await startServer(cleanShell);
   const browser = await chromium.launch();
   const context = await browser.newContext({
     // Block analytics and font downloads to speed up rendering
@@ -119,7 +159,7 @@ async function prerender() {
   let passed = 0;
   let failed = 0;
 
-  for (const route of ROUTES) {
+  for (const route of ROUTES_ALL) {
     const page = await context.newPage();
     try {
       await page.goto(`${BASE}${route}`, { waitUntil: 'networkidle', timeout: 30000 });

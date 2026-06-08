@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { ArrowRight, Clock, Tag } from 'lucide-react';
 import { allPosts as staticPosts } from '@/data/blogPosts';
@@ -43,8 +43,8 @@ export default function Blog() {
   }, []);
 
   usePageMeta({
-    title: 'Blog — Growth Intelligence for GCC Businesses',
-    description: 'In-depth articles on SEO, growth strategy, and digital intelligence for high-value businesses in the UAE, Saudi Arabia, Kuwait, Bahrain, and Qatar.',
+    title: 'SEO Blog Dubai & GCC — Strategy, Insights & Rankings 2026',
+    description: 'SEO insights, keyword strategy, and GCC market intelligence from Sama Alaa at upranked.io. Practical guides for businesses targeting UAE, Saudi Arabia, Kuwait & Bahrain.',
     schemaId: 'blog-schema',
     schema: {
       '@context': 'https://schema.org',
@@ -81,7 +81,7 @@ export default function Blog() {
         <div className="container-premium">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <p className="text-accent font-semibold tracking-widest text-xs uppercase mb-6">Latest Article</p>
-            <Link href={`/blog/${featured.slug}`}>
+            <Link href={`/blog/${featured.slug}/`}>
               <a className="block group">
                 <div className="card-premium p-8 md:p-10 hover:border-accent/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-accent/10">
                   <div className="flex flex-wrap items-center gap-4 mb-6">
@@ -129,7 +129,7 @@ export default function Blog() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <Link href={`/blog/${post.slug}`}>
+                <Link href={`/blog/${post.slug}/`}>
                   <a className="card-premium h-full flex flex-col gap-4 hover:border-accent/50 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-accent/10">
                     <div className="flex items-center justify-between gap-3">
                       <CategoryBadge category={post.category} />
@@ -164,7 +164,7 @@ export default function Blog() {
             <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
               Knowledge is one thing — execution is another. Book a free APEX Diagnostic with Sama Alaa and get a clear, actionable plan for your specific market position.
             </p>
-            <Link href="/contact">
+            <Link href="/contact/">
               <a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                 Book a Free APEX Diagnostic <ArrowRight className="w-5 h-5" />
               </a>

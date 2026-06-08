@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { ArrowRight, MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
 import { usePageMeta } from '../../../hooks/usePageMeta';
@@ -6,8 +6,8 @@ import { usePageMeta } from '../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency GCC — Gulf Cooperation Council SEO Services', description: 'SEO services for businesses across the Gulf Cooperation Council — Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain. APEX Framework bilingual SEO by upranked.io.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc', areaServed: ['Dubai', 'Abu Dhabi', 'Riyadh', 'Jeddah', 'Kuwait City', 'Manama'] },
-    { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://upranked.io/markets/gcc' }, { '@type': 'ListItem', position: 3, name: 'GCC', item: 'https://upranked.io/markets/gcc' }] },
+    { '@type': 'Service', name: 'SEO Agency GCC — Gulf Cooperation Council SEO Services', description: 'SEO services for businesses across the Gulf Cooperation Council — Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain. APEX Framework bilingual SEO by upranked.io.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/', areaServed: ['Dubai', 'Abu Dhabi', 'Riyadh', 'Jeddah', 'Kuwait City', 'Manama'] },
+    { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://upranked.io/markets/gcc/' }, { '@type': 'ListItem', position: 3, name: 'GCC', item: 'https://upranked.io/markets/gcc/' }] },
     { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
@@ -20,7 +20,7 @@ const markets = [
 ];
 
 export default function GCCMarkets() {
-  usePageMeta({ title: 'SEO Agency GCC — Dubai, Riyadh, Kuwait & Bahrain Search Optimization', description: 'SEO services across the Gulf Cooperation Council — Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain. Bilingual Arabic-English SEO, APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'gcc-markets-schema' });
+  usePageMeta({ title: 'GCC SEO Agency — Dubai, Riyadh, Kuwait & Bahrain | upranked.io', description: 'Expert SEO across the Gulf Cooperation Council — bilingual Arabic-English strategies for Dubai UAE, Riyadh KSA, Kuwait City, and Manama Bahrain. APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'gcc-markets-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -41,8 +41,8 @@ export default function GCCMarkets() {
             </div>
             <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>
@@ -76,6 +76,7 @@ export default function GCCMarkets() {
             <p>The GCC's digital search environment differs fundamentally from Western markets. Arabic-language search behavior, bilingual buyer journeys, and market-specific regulatory contexts mean that SEO strategies built for London or New York underperform systematically in Dubai and Riyadh.</p>
             <p>upranked.io's APEX Framework was built from the ground up for GCC conditions — native Arabic keyword research, RTL technical architecture, hreflang implementation, and bilingual content strategies that address how GCC buyers actually search, not how Western frameworks assume they do.</p>
             <p>Every GCC engagement covers all four priority markets simultaneously, ensuring businesses benefit from cross-market authority building and consistent brand signals across Dubai, Riyadh, Kuwait City, and Manama.</p>
+            <p>For market-specific SEO strategy guides, see: <Link href="/blog/dubai-seo-guide-2026/"><a className="text-accent hover:underline">Dubai SEO 2026</a></Link>, <Link href="/blog/riyadh-seo-guide-2026/"><a className="text-accent hover:underline">Riyadh SEO 2026</a></Link>, and <Link href="/blog/kuwait-seo-guide-2026/"><a className="text-accent hover:underline">Kuwait SEO 2026</a></Link>.</p>
           </div>
         </div>
       </section>
@@ -99,8 +100,8 @@ export default function GCCMarkets() {
               <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               </div>
             </div>
           </div>
@@ -127,13 +128,13 @@ export default function GCCMarkets() {
             <h2 className="text-4xl font-bold mb-6">Dominate <span className="text-accent">GCC Search</span></h2>
             <p className="text-xl text-text-secondary mb-8 max-w-xl mx-auto">Book a free APEX Diagnostic. We will show you exactly where your GCC search presence stands across Dubai, Riyadh, Kuwait, and Bahrain — and what it takes to lead your sector.</p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <Link href="/contact"><a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2">Book Free Call <ArrowRight className="w-5 h-5" /></a></Link>
-              <a href="/contact" className="btn-secondary text-lg px-10 py-5">Contact Us</a>
+              <Link href="/contact/"><a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2">Book Free Call <ArrowRight className="w-5 h-5" /></a></Link>
+              <a href="/contact/" className="btn-secondary text-lg px-10 py-5">Contact Us</a>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>

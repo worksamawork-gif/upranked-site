@@ -1,4 +1,4 @@
-﻿import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -59,7 +59,7 @@ export default function SEOAnalytics() {
         <div className="container-premium">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <nav className="text-sm text-text-secondary mb-6"><Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link><span className="mx-2 text-border">/</span><Link href="/seo"><a className="hover:text-accent transition-colors">SEO</a></Link><span className="mx-2 text-border">/</span><span className="text-accent">SEO Analytics</span></nav>
+              <nav className="text-sm text-text-secondary mb-6"><Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link><span className="mx-2 text-border">/</span><Link href="/seo/"><a className="hover:text-accent transition-colors">SEO</a></Link><span className="mx-2 text-border">/</span><span className="text-accent">SEO Analytics</span></nav>
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 <span className="text-accent font-semibold tracking-widest text-sm uppercase block mb-4">SEO Analytics</span>
                 <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">SEO Analytics Dubai &amp; GCC — <span className="gradient-text">Rank Tracking &amp; Revenue Attribution</span></h1>
@@ -70,21 +70,23 @@ export default function SEOAnalytics() {
                 </div>
                 <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
                   <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-                  <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                  <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                  <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                 </div>
               </motion.div>
             </div>
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-start pt-4 lg:pt-16">
-              <img
-                src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sama Alaa — SEO analytics consultant in Dubai tracking GCC keyword rankings and attributing organic revenue for businesses at upranked.io"
-                width={480}
-                height={640}
-                loading="eager"
-                decoding="async"
-                className="rounded-2xl border border-border object-cover object-top w-full max-w-sm"
-              />
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/13-seo-analytics.svg"
+                  alt="SEO analytics dashboard tracking organic traffic growth, keyword rankings, and revenue attribution for Dubai and GCC businesses — upranked.io"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -122,8 +124,8 @@ export default function SEOAnalytics() {
               <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               </div>
             </div>
           </div>
@@ -148,13 +150,13 @@ export default function SEOAnalytics() {
             <h2 className="text-4xl font-bold mb-6">Measure <span className="text-accent">What Matters</span></h2>
             <p className="text-xl text-text-secondary mb-8 max-w-xl mx-auto">Book a free APEX Diagnostic. We will audit your current analytics setup and show you exactly what your SEO is — and is not — delivering across Dubai, Riyadh, Kuwait, Bahrain, London, and New York.</p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <Link href="/contact"><a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2">Book Free Call <ArrowRight className="w-5 h-5" /></a></Link>
-              <a href="/contact" className="btn-secondary text-lg px-10 py-5">Contact Us</a>
+              <Link href="/contact/"><a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2">Book Free Call <ArrowRight className="w-5 h-5" /></a></Link>
+              <a href="/contact/" className="btn-secondary text-lg px-10 py-5">Contact Us</a>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>

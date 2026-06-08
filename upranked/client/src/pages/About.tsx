@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PAGE: /about
  * PRIMARY KW: Sama Alaa SEO expert GCC (Vol: ~200/mo branded | KD: 12)
  * SECONDARY KW: GCC SEO expert Dubai, SEO strategist UAE, upranked.io founder, APEX Framework SEO
@@ -18,7 +18,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
 import {
   ArrowRight, CheckCircle, ChevronDown, Target, BarChart2, Zap, Shield,
-  Globe, Users, Star, Award, TrendingUp, BookOpen, MapPin, Phone, Mail, Linkedin
+  Globe, Users, Star, Award, TrendingUp, BookOpen, MapPin, Phone, Mail,
+  LinkedinIcon, TwitterIcon, Facebook, Instagram
 } from 'lucide-react';
 import { usePageMeta } from '@/hooks/usePageMeta';
 
@@ -81,7 +82,7 @@ const faqs = [
   },
   {
     q: 'Can I find an SEO expert near me in Dubai — is Sama Alaa based in Dubai?',
-    a: 'Yes. upranked.io is based in Dubai, UAE, and serves clients across the GCC — Dubai, Abu Dhabi, Sharjah, Ajman, Riyadh, Jeddah, NEOM, Doha, Kuwait City, and Manama. If you\'re searching for an SEO expert near me in Dubai, an SEO consultant near me in the UAE, or a GCC growth strategist, you can reach Sama directly via our contact page or email Sam@upranked.io. All strategy calls are available remotely and in person across the region.',
+    a: 'Yes. upranked.io is based in Dubai, UAE, and serves clients across the GCC — Dubai, Abu Dhabi, Sharjah, Ajman, Riyadh, Jeddah, NEOM, Doha, Kuwait City, and Manama. If you\'re searching for an SEO expert near me in Dubai, an SEO consultant near me in the UAE, or a GCC growth strategist, you can reach Sama directly via our contact page or email uprankedio@gmail.com. All strategy calls are available remotely and in person across the region.',
   },
   {
     q: 'How does Sama Alaa differ from a typical SEO agency in Dubai?',
@@ -147,7 +148,7 @@ const schema = {
         url: 'https://upranked.io',
       },
       url: 'https://upranked.io/about',
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
       knowsAbout: [
         'Medical SEO', 'Industrial B2B SEO', 'Business SEO', 'GCC SEO Strategy',
         'Bilingual EN/AR SEO', 'APEX Framework', 'GCC Market Positioning', 'Commercial Intent SEO',
@@ -161,7 +162,7 @@ const schema = {
       url: 'https://upranked.io',
       description: 'Premium Growth Intelligence Lab — sector-specific SEO and growth strategy built for high-value businesses in the GCC.',
       telephone: '+201121664778',
-      email: 'Sam@upranked.io',
+      email: 'uprankedio@gmail.com',
       founder: { '@type': 'Person', '@id': 'https://upranked.io/about#person' },
       foundingLocation: { '@type': 'Place', name: 'Dubai, UAE' },
       areaServed: [
@@ -198,8 +199,8 @@ export default function About() {
   const [activeSection, setActiveSection] = useState('');
 
   usePageMeta({
-    title: 'upranked.io — SEO Agency Dubai & GCC | Sama Alaa',
-    description: 'upranked.io is a premium SEO Agency in Dubai specialising in Medical, Industrial & Business SEO across the GCC. Founded by Sama Alaa. Built on the APEX Framework™.',
+    title: 'Sama Alaa — Founder-Led SEO Agency Dubai & GCC | upranked.io',
+    description: 'Meet Sama Alaa, founder of upranked.io. Specialist in Medical, Industrial & Business SEO for the GCC. Founder-led on every engagement — APEX Framework™. Dubai-based, GCC-wide.',
     schemaId: 'about-schema',
     schema,
   });
@@ -222,57 +223,76 @@ export default function About() {
         <div className="absolute top-20 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10" />
 
         <div className="container-premium">
-          {/* Breadcrumb */}
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-text-secondary mb-8">
-            <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
-            <span>/</span>
-            <span className="text-accent">About</span>
-          </nav>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              {/* Breadcrumb */}
+              <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-text-secondary mb-8">
+                <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
+                <span>/</span>
+                <span className="text-accent">About</span>
+              </nav>
 
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-3xl">
-            <span className="inline-block text-accent font-semibold tracking-widest text-xs uppercase bg-accent/10 border border-accent/20 rounded-full px-4 py-1.5 mb-5">
-              SEO Agency · Dubai, UAE · GCC
-            </span>
+              <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <span className="inline-block text-accent font-semibold tracking-widest text-xs uppercase bg-accent/10 border border-accent/20 rounded-full px-4 py-1.5 mb-5">
+                  SEO Agency · Dubai, UAE · GCC
+                </span>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-              <span className="gradient-text">upranked.io</span> —{' '}
-              SEO Agency for the GCC
-            </h1>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                  <span className="gradient-text">upranked.io</span> —{' '}
+                  SEO Agency for the GCC
+                </h1>
 
-            <p className="text-lg text-text-secondary mb-6 leading-relaxed max-w-2xl">
-              upranked.io is a premium SEO Agency built for high-value businesses across the GCC and globally. We specialise in Medical SEO, Industrial B2B SEO, Business SEO, and Growth Intelligence — all delivered on the proprietary APEX Framework™.
-            </p>
+                <p className="text-lg text-text-secondary mb-6 leading-relaxed">
+                  upranked.io is a premium SEO Agency built for high-value businesses across the GCC and globally. We specialise in Medical SEO, Industrial B2B SEO, Business SEO, and Growth Intelligence — all delivered on the proprietary APEX Framework™.
+                </p>
 
-            <p className="text-sm text-text-secondary mb-8 leading-relaxed max-w-2xl">
-              Founded by <span className="text-white font-semibold">Sama Alaa</span> — with 20+ GCC client engagements across Dubai, Riyadh, Kuwait City, Manama, London, and New York.
-            </p>
+                <p className="text-sm text-text-secondary mb-8 leading-relaxed">
+                  Founded by <span className="text-white font-semibold">Sama Alaa</span> — with 20+ GCC client engagements across Dubai, Riyadh, Kuwait City, Manama, London, and New York.
+                </p>
 
-            {/* NAP #1 */}
-            <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Phone className="w-4 h-4 text-accent" /> Contact Us
-              </a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
-              </a>
-              <span className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · New York
-              </span>
-            </address>
+                {/* NAP #1 */}
+                <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
+                  <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
+                    <Phone className="w-4 h-4 text-accent" /> Contact Us
+                  </a>
+                  <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                    <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
+                  </a>
+                  <span className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · New York
+                  </span>
+                </address>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
-                <a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">
-                  Work With Us <ArrowRight className="w-5 h-5" />
-                </a>
-              </Link>
-              <Link href="/methodology">
-                <a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">
-                  Our APEX Framework™
-                </a>
-              </Link>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/contact/">
+                    <a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">
+                      Work With Us <ArrowRight className="w-5 h-5" />
+                    </a>
+                  </Link>
+                  <Link href="/methodology/">
+                    <a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">
+                      Our APEX Framework™
+                    </a>
+                  </Link>
+                </div>
+              </motion.div>
             </div>
-          </motion.div>
+
+            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/04-global-reach.svg"
+                  alt="Global reach map showing upranked.io SEO coverage across GCC markets — Dubai, Riyadh, Kuwait, Bahrain, London, New York"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -303,7 +323,7 @@ export default function About() {
         <div className="container-premium">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
 
-            {/* Photo */}
+            {/* Profile card */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -311,29 +331,62 @@ export default function About() {
               viewport={{ once: true }}
               className="relative"
             >
-              <img
-                src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sama Alaa — Founder of upranked.io Business Growth Agency, Dubai UAE"
-                width={520} height={560}
-                loading="eager"
-                className="rounded-2xl border border-border w-full max-w-md mx-auto object-cover"
-                onError={e => {
-                  const el = e.target as HTMLImageElement;
-                  el.style.display = 'none';
-                  const fallback = el.nextElementSibling as HTMLElement;
-                  if (fallback) fallback.style.display = 'flex';
-                }}
-              />
-              {/* Fallback avatar */}
-              <div className="hidden w-full max-w-md mx-auto aspect-[4/4.3] rounded-2xl bg-gradient-to-br from-dark-gray to-navy border border-border items-center justify-center">
-                <div className="text-center p-8">
-                  <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder of upranked.io" width={128} height={128} className="w-32 h-32 rounded-full object-cover object-top mx-auto mb-6 border-2 border-accent/30" decoding="async" />
-                  <p className="text-white font-bold text-xl">Sama Alaa</p>
-                  <p className="text-accent text-sm mt-1">Founder, upranked.io</p>
-                  <p className="text-text-secondary text-xs mt-1">Dubai, UAE</p>
+              <div className="w-full max-w-md mx-auto bg-gradient-to-br from-dark-gray via-navy to-dark-gray border border-accent/30 rounded-2xl p-8 text-center relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent/0 via-accent to-accent/0" />
+                <div className="w-28 h-28 rounded-full border-2 border-accent/40 flex items-center justify-center mx-auto mb-5 overflow-hidden">
+                  <img
+                    src="/images/sam-hamouda-seo-consultant-dubai.webp"
+                    alt="Sama Alaa — Founder of upranked.io, GCC SEO Expert Dubai"
+                    width={112} height={112}
+                    className="w-full h-full object-cover object-top"
+                    onError={(e) => {
+                      const t = e.currentTarget;
+                      t.style.display = 'none';
+                      t.parentElement!.classList.add('bg-accent/20');
+                      const span = document.createElement('span');
+                      span.className = 'text-accent font-black text-4xl';
+                      span.textContent = 'SA';
+                      t.parentElement!.appendChild(span);
+                    }}
+                  />
                 </div>
+                <h3 className="text-white font-black text-2xl mb-1">Sama Alaa</h3>
+                <p className="text-accent text-sm font-semibold mb-1">Founder & Chief Growth Strategist</p>
+                <p className="text-text-secondary text-xs mb-6">upranked.io — Dubai, UAE · GCC · London · New York</p>
+                <div className="grid grid-cols-2 gap-3">
+                  {[
+                    { n: '20+', l: 'GCC clients' },
+                    { n: '6', l: 'Priority markets' },
+                    { n: 'APEX™', l: 'Proprietary framework' },
+                    { n: 'EN/AR', l: 'Bilingual SEO' },
+                  ].map(s => (
+                    <div key={s.l} className="bg-navy/60 border border-border rounded-lg px-3 py-2">
+                      <div className="text-accent font-black text-sm">{s.n}</div>
+                      <div className="text-text-secondary text-xs">{s.l}</div>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center justify-center gap-2 mt-5">
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="p-2 bg-navy/60 hover:bg-navy rounded-lg transition-colors" aria-label="LinkedIn">
+                    <LinkedinIcon className="w-4 h-4 text-accent" />
+                  </a>
+                  <a href="https://www.instagram.com/upranked.io/" target="_blank" rel="noopener noreferrer" className="p-2 bg-navy/60 hover:bg-navy rounded-lg transition-colors" aria-label="Instagram">
+                    <Instagram className="w-4 h-4 text-accent" />
+                  </a>
+                  <a href="https://x.com/Upranked7" target="_blank" rel="noopener noreferrer" className="p-2 bg-navy/60 hover:bg-navy rounded-lg transition-colors" aria-label="X / Twitter">
+                    <TwitterIcon className="w-4 h-4 text-accent" />
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61589100073844" target="_blank" rel="noopener noreferrer" className="p-2 bg-navy/60 hover:bg-navy rounded-lg transition-colors" aria-label="Facebook">
+                    <Facebook className="w-4 h-4 text-accent" />
+                  </a>
+                </div>
+                <Link href="/contact/">
+                  <a className="btn-primary inline-flex items-center gap-2 mt-4 text-sm px-6 py-2.5">
+                    Work With Sama <ArrowRight className="w-4 h-4" />
+                  </a>
+                </Link>
               </div>
-              <div className="absolute -bottom-4 -right-4 w-full max-w-md aspect-[4/4.3] rounded-2xl border-2 border-accent/30 -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-full max-w-md aspect-square rounded-2xl border-2 border-accent/30 -z-10" />
             </motion.div>
 
             {/* Bio */}
@@ -413,15 +466,15 @@ export default function About() {
 
               <div className="flex items-center gap-4">
                 <a
-                  href="https://www.linkedin.com/company/115836359/"
+                  href="https://www.linkedin.com/company/upranked-io/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-accent text-sm hover:underline"
                 >
-                  <Linkedin className="w-4 h-4" /> LinkedIn Profile
+                  <LinkedinIcon className="w-4 h-4" /> LinkedIn Profile
                 </a>
                 <span className="text-border">|</span>
-                <a href="/contact" className="text-accent text-sm hover:underline">
+                <a href="/contact/" className="text-accent text-sm hover:underline">
                   Contact Us →
                 </a>
               </div>
@@ -460,22 +513,28 @@ export default function About() {
           </div>
 
           <div className="text-center mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/seo-industries">
+            <Link href="/seo-industries/">
               <a className="btn-primary inline-flex items-center gap-2">View SEO Services <ArrowRight className="w-4 h-4" /></a>
             </Link>
-            <Link href="/growth-intelligence">
+            <Link href="/growth-intelligence/">
               <a className="btn-secondary inline-flex items-center gap-2">Growth Intelligence Services</a>
             </Link>
           </div>
 
-          <img
-            src="/images/sam-hamouda-seo-consultant-dubai.webp"
-            alt="Sama Alaa — founder upranked.io, GCC SEO strategist Dubai"
-            width={480} height={480}
-            loading="lazy"
-            className="w-48 h-48 rounded-full object-cover object-top mx-auto mt-10 border-2 border-accent/30"
-            onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-          />
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            {[
+              { n: '20+', l: 'GCC clients served', sub: 'Dubai, Riyadh, Kuwait, Bahrain' },
+              { n: '280%', l: 'Avg organic lead increase', sub: 'at 12 months' },
+              { n: '6', l: 'Priority markets', sub: 'UAE · KSA · Kuwait · Bahrain · UK · USA' },
+              { n: '#1', l: 'Rankings achieved', sub: 'for primary commercial terms' },
+            ].map(s => (
+              <div key={s.l} className="bg-dark-gray border border-border rounded-xl p-4 text-center hover:border-accent/40 transition-colors">
+                <div className="text-2xl font-black text-accent mb-1">{s.n}</div>
+                <div className="text-white font-semibold text-xs mb-1">{s.l}</div>
+                <div className="text-text-secondary text-xs">{s.sub}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -547,21 +606,33 @@ export default function About() {
               ))}
             </div>
             <p className="text-text-secondary text-sm mt-4">Applied across all upranked.io engagements — SEO, strategy, tools, and websites</p>
-            <Link href="/methodology">
+            <Link href="/methodology/">
               <a className="inline-flex items-center gap-2 text-accent text-sm mt-3 hover:underline">
                 Full APEX Methodology Deep-Dive <ArrowRight className="w-4 h-4" />
               </a>
             </Link>
           </motion.div>
 
-          <img
-            src="/images/business/apex-business-seo-process.webp"
-            alt="APEX Framework methodology — Sama Alaa's proprietary SEO process for GCC businesses"
-            width={900} height={360}
-            loading="lazy"
-            className="w-full rounded-xl border border-border mt-10"
-            onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-          />
+          <div className="mt-10 bg-dark-gray border border-border rounded-xl p-6">
+            <p className="text-accent text-xs font-semibold uppercase tracking-widest mb-6 text-center">APEX Framework™ — Measurable Outcomes at Each Phase</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { phase: 'A', name: 'Audit', result: 'Full keyword gap map & competitor intelligence delivered in week 2' },
+                { phase: 'P', name: 'Position', result: 'Revenue-intent keyword architecture approved before any content is written' },
+                { phase: 'E', name: 'Execute', result: 'On-page, technical, bilingual, schema — all shipped in the right sequence' },
+                { phase: 'X', name: 'Expand', result: 'New markets, new keywords, compounding organic ROI month over month' },
+              ].map((p, i) => (
+                <div key={p.phase} className="relative bg-navy/60 border border-border rounded-xl p-4 hover:border-accent/40 transition-colors">
+                  <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center mb-3">
+                    <span className="text-black font-black text-lg">{p.phase}</span>
+                  </div>
+                  <div className="text-white font-bold text-sm mb-2">{p.name}</div>
+                  <div className="text-text-secondary text-xs leading-relaxed">{p.result}</div>
+                  {i < 3 && <div className="hidden md:block absolute -right-2 top-8 w-4 h-0.5 bg-accent/40 z-10" />}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -716,12 +787,12 @@ export default function About() {
 
             {/* NAP #2 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary border border-border rounded-xl p-5 bg-navy/40">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us (WhatsApp)
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2">
@@ -761,13 +832,13 @@ export default function About() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">
                   Book Free Strategy Call <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4"
               >
                 Contact Us
@@ -776,12 +847,12 @@ export default function About() {
 
             {/* NAP #3 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center">

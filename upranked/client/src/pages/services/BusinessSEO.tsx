@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PAGE: /industries/business
  * PRIMARY KW: business SEO Dubai (Vol: ~1,300/mo GCC | KD: 38)
  * SECONDARY KW: SEO agency Dubai UAE, SEO for companies GCC, B2B SEO Dubai, SME SEO UAE
@@ -182,7 +182,7 @@ const schema = {
         name: 'upranked.io',
         url: 'https://upranked.io',
         telephone: '+201121664778',
-        email: 'Sam@upranked.io',
+        email: 'uprankedio@gmail.com',
         logo: 'https://upranked.io/logo.png',
         address: { '@type': 'PostalAddress', addressLocality: 'Dubai', addressCountry: 'AE' },
       },
@@ -218,7 +218,7 @@ const schema = {
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
       url: 'https://upranked.io/about',
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
       knowsAbout: ['Business SEO', 'GCC SEO Strategy', 'Commercial Intent SEO', 'Bilingual SEO', 'B2B Lead Generation'],
     },
     {
@@ -268,7 +268,7 @@ export default function BusinessSEO() {
               <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-text-secondary mb-6">
                 <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
                 <span>/</span>
-                <Link href="/seo-industries"><a className="hover:text-accent transition-colors">Industries</a></Link>
+                <Link href="/seo-industries/"><a className="hover:text-accent transition-colors">Industries</a></Link>
                 <span>/</span>
                 <span className="text-accent">Business SEO</span>
               </nav>
@@ -289,11 +289,11 @@ export default function BusinessSEO() {
 
               {/* NAP #1 */}
               <address className="not-italic flex flex-col sm:flex-row gap-4 text-sm text-text-secondary mb-8">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · Serving GCC
@@ -301,12 +301,12 @@ export default function BusinessSEO() {
               </address>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">
                     Book Free APEX Diagnostic <ArrowRight className="w-5 h-5" />
                   </a>
                 </Link>
-                <Link href="/methodology">
+                <Link href="/methodology/">
                   <a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">
                     See the APEX Framework™
                   </a>
@@ -314,16 +314,17 @@ export default function BusinessSEO() {
               </div>
             </motion.div>
 
-            {/* Hero image */}
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="block">
-              <img
-                src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sama Alaa — business SEO consultant in Dubai delivering revenue-focused organic growth for GCC companies at upranked.io"
-                width={600} height={460}
-                loading="eager"
-                decoding="async"
-                className="rounded-2xl border border-border w-full object-cover object-top"
-              />
+            {/* Hero visual */}
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/19-business-seo.svg"
+                  alt="SERP positions chart showing business SEO rankings for GCC companies in Dubai, Riyadh, and Kuwait — upranked.io"
+                  width={800} height={600}
+                  loading="eager" decoding="async" fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -406,14 +407,20 @@ export default function BusinessSEO() {
               </div>
             </div>
 
-            <img
-              src="/images/business/seo-agency-uae-results.webp"
-              alt="SEO agency UAE — business SEO results and commercial keyword rankings for GCC companies"
-              width={800} height={400}
-              loading="lazy"
-              className="w-full rounded-xl border border-border"
-              onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-            />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+              {[
+                { metric: '280%', label: 'Avg organic lead increase', sub: 'at 12 months' },
+                { metric: '20+', label: 'GCC businesses ranked', sub: 'Dubai · Riyadh · Kuwait · Bahrain' },
+                { metric: '#1', label: 'Rankings achieved', sub: 'for primary commercial terms' },
+                { metric: '6', label: 'Priority markets', sub: 'UAE · KSA · Kuwait · Bahrain · UK · USA' },
+              ].map(s => (
+                <div key={s.metric} className="bg-dark-gray border border-border rounded-xl p-5 text-center hover:border-accent/40 transition-colors">
+                  <div className="text-3xl md:text-4xl font-black text-accent mb-1">{s.metric}</div>
+                  <div className="text-white font-semibold text-sm mb-1">{s.label}</div>
+                  <div className="text-text-secondary text-xs">{s.sub}</div>
+                </div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
@@ -489,14 +496,24 @@ export default function BusinessSEO() {
               </table>
             </div>
 
-            <img
-              src="/images/business/commercial-keywords-gcc.webp"
-              alt="commercial intent keywords GCC — business SEO keyword research for Dubai and UAE companies"
-              width={800} height={380}
-              loading="lazy"
-              className="w-full rounded-xl border border-border mt-10"
-              onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-            />
+            <div className="mt-10 bg-dark-gray border border-border rounded-xl overflow-hidden">
+              <div className="px-6 py-4 border-b border-border">
+                <p className="text-accent text-xs font-semibold uppercase tracking-widest">Why Choose upranked.io for Business SEO in the GCC</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-border">
+                {[
+                  { stat: '3 verticals only', title: 'Sector Specialist', desc: 'Business, Medical, and Industrial SEO — no generalist spread across 40 industries. Depth beats breadth in GCC competition.' },
+                  { stat: '6 priority markets', title: 'GCC-First Intelligence', desc: 'Built on UAE and Saudi Arabia market data, bilingual EN/AR keyword research, and GCC-specific ranking patterns. Not a Western playbook.' },
+                  { stat: 'Zero handoffs', title: 'Founder-Led Delivery', desc: 'Sama Alaa is personally involved in every engagement. Revenue and qualified leads — not vanity rankings — are the primary metric.' },
+                ].map(r => (
+                  <div key={r.title} className="p-6 hover:bg-navy/30 transition-colors">
+                    <div className="text-accent font-black text-xs uppercase tracking-widest mb-2">{r.stat}</div>
+                    <h4 className="text-white font-bold text-base mb-2">{r.title}</h4>
+                    <p className="text-text-secondary text-sm leading-relaxed">{r.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -537,7 +554,7 @@ export default function BusinessSEO() {
         <div className="container-premium text-center">
           <p className="text-lg font-semibold text-white mb-2">Ready to turn organic search into your top revenue channel?</p>
           <p className="text-text-secondary text-sm mb-6">Book a free 30-minute APEX Diagnostic with Sama Alaa — no commitment, clear opportunity map.</p>
-          <Link href="/contact">
+          <Link href="/contact/">
             <a className="btn-primary inline-flex items-center gap-2">
               Get Your Free Business SEO Audit <ArrowRight className="w-4 h-4" />
             </a>
@@ -583,14 +600,27 @@ export default function BusinessSEO() {
             ))}
           </div>
 
-          <img
-            src="/images/business/apex-business-seo-process.webp"
-            alt="APEX Framework business SEO process — audit position execute expand for GCC companies"
-            width={1000} height={420}
-            loading="lazy"
-            className="w-full rounded-xl border border-border"
-            onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-          />
+          <div className="mt-10 bg-dark-gray border border-border rounded-xl p-6">
+            <p className="text-accent text-xs font-semibold uppercase tracking-widest mb-6 text-center">APEX Framework™ — Compounding Revenue Timeline</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { phase: 'A', name: 'Audit', months: 'Month 1–2', outcome: 'Full digital health review, keyword gap map, competitor intelligence report' },
+                { phase: 'P', name: 'Position', months: 'Month 2–3', outcome: 'Revenue-intent keyword architecture, content brief system, technical roadmap' },
+                { phase: 'E', name: 'Execute', months: 'Month 3–6', outcome: 'On-page, technical, bilingual content, schema markup, authority link building' },
+                { phase: 'X', name: 'Expand', months: 'Month 6+', outcome: 'New markets, new keywords, compounding organic ROI month over month' },
+              ].map((p, i) => (
+                <div key={p.phase} className="relative bg-navy/60 border border-border rounded-xl p-4 hover:border-accent/40 transition-colors">
+                  <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center mb-3">
+                    <span className="text-black font-black text-lg">{p.phase}</span>
+                  </div>
+                  <div className="text-accent text-xs font-semibold uppercase tracking-widest mb-1">{p.months}</div>
+                  <div className="text-white font-bold text-sm mb-2">{p.name}</div>
+                  <div className="text-text-secondary text-xs leading-relaxed">{p.outcome}</div>
+                  {i < 3 && <div className="hidden md:block absolute -right-2 top-8 w-4 h-0.5 bg-accent/40 z-10" />}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -648,10 +678,10 @@ export default function BusinessSEO() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                     LinkedIn Profile →
                   </a>
-                  <Link href="/about">
+                  <Link href="/about/">
                     <a className="text-accent text-sm hover:underline">Full Bio →</a>
                   </Link>
                 </div>
@@ -724,12 +754,12 @@ export default function BusinessSEO() {
 
             {/* NAP #2 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary border border-border rounded-xl p-5 bg-dark-gray/60">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us (WhatsApp)
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2">
@@ -779,13 +809,13 @@ export default function BusinessSEO() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">
                   Book Free APEX Diagnostic <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4"
               >
                 Contact Us
@@ -794,12 +824,12 @@ export default function BusinessSEO() {
 
             {/* NAP #3 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center">

@@ -39,6 +39,8 @@ export function usePageMeta({ title, description, schema, schemaId = 'page-schem
 
     let script: HTMLScriptElement | null = null;
     if (schema) {
+      // Remove any pre-rendered copy with the same id before injecting to prevent duplicates
+      document.getElementById(schemaId)?.remove();
       script = document.createElement('script');
       script.type = 'application/ld+json';
       script.id = schemaId;

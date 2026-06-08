@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Client revenue growth bars over 6 quarters">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f1e"></stop>
+      <stop offset="100%" stop-color="#0d1426"></stop>
+    </linearGradient>
+    <linearGradient id="barG1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.4"></stop>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.15"></stop>
+    </linearGradient>
+    <linearGradient id="barG2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4b85f"></stop>
+      <stop offset="100%" stop-color="#c9a84c"></stop>
+    </linearGradient>
+    <pattern id="grid5" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#c9a84c" stroke-opacity="0.04"></path>
+    </pattern>
+    <radialGradient id="glow5">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.15"></stop>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg5)"></rect>
+  <rect width="800" height="600" fill="url(#grid5)"></rect>
+  <ellipse cx="600" cy="300" rx="350" ry="250" fill="url(#glow5)"></ellipse>
+
+  
+  <line x1="100" y1="160" x2="740" y2="160" stroke="#2a2f3e" stroke-width="1" stroke-dasharray="2 4"></line>
+  <text x="90" y="164" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" text-anchor="end">$250k</text>
+  <line x1="100" y1="240" x2="740" y2="240" stroke="#2a2f3e" stroke-width="1" stroke-dasharray="2 4"></line>
+  <text x="90" y="244" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" text-anchor="end">$200k</text>
+  <line x1="100" y1="320" x2="740" y2="320" stroke="#2a2f3e" stroke-width="1" stroke-dasharray="2 4"></line>
+  <text x="90" y="324" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" text-anchor="end">$150k</text>
+  <line x1="100" y1="400" x2="740" y2="400" stroke="#2a2f3e" stroke-width="1" stroke-dasharray="2 4"></line>
+  <text x="90" y="404" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" text-anchor="end">$100k</text>
+  <line x1="100" y1="480" x2="740" y2="480" stroke="#2a2f3e" stroke-width="2"></line>
+
+  
+  <rect x="130" y="380" width="90" height="100" rx="8" fill="url(#barG1)" stroke="#c9a84c" stroke-opacity="0.4" stroke-width="1"></rect>
+  <text x="175" y="368" fill="#888" font-size="13" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">$50k</text>
+  <text x="175" y="500" fill="#666c7a" font-size="12" font-family="Inter,sans-serif" text-anchor="middle">Q1</text>
+
+  <rect x="235" y="320" width="90" height="160" rx="8" fill="url(#barG1)" stroke="#c9a84c" stroke-opacity="0.4" stroke-width="1"></rect>
+  <text x="280" y="308" fill="#888" font-size="13" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">$100k</text>
+  <text x="280" y="500" fill="#666c7a" font-size="12" font-family="Inter,sans-serif" text-anchor="middle">Q2</text>
+
+  <rect x="340" y="280" width="90" height="200" rx="8" fill="url(#barG1)" stroke="#c9a84c" stroke-opacity="0.4" stroke-width="1"></rect>
+  <text x="385" y="268" fill="#888" font-size="13" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">$150k</text>
+  <text x="385" y="500" fill="#666c7a" font-size="12" font-family="Inter,sans-serif" text-anchor="middle">Q3</text>
+
+  <rect x="445" y="220" width="90" height="260" rx="8" fill="url(#barG1)" stroke="#c9a84c" stroke-opacity="0.4" stroke-width="1"></rect>
+  <text x="490" y="208" fill="#888" font-size="13" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">$200k</text>
+  <text x="490" y="500" fill="#666c7a" font-size="12" font-family="Inter,sans-serif" text-anchor="middle">Q4</text>
+
+  <rect x="550" y="180" width="90" height="300" rx="8" fill="url(#barG1)" stroke="#c9a84c" stroke-opacity="0.4" stroke-width="1"></rect>
+  <text x="595" y="168" fill="#888" font-size="13" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">$250k</text>
+  <text x="595" y="500" fill="#666c7a" font-size="12" font-family="Inter,sans-serif" text-anchor="middle">Q5</text>
+
+  <rect x="655" y="130" width="90" height="350" rx="8" fill="url(#barG2)" stroke="#d4b85f" stroke-width="2"></rect>
+  <text x="700" y="118" fill="#d4b85f" font-size="13" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">$300k</text>
+  <text x="700" y="500" fill="#666c7a" font-size="12" font-family="Inter,sans-serif" text-anchor="middle">Q6</text>
+
+  <text x="400" y="80" fill="#c9a84c" font-size="13" font-family="Inter,sans-serif" font-weight="700" letter-spacing="6" text-anchor="middle">CLIENT REVENUE FROM ORGANIC SEARCH</text>
+  <text x="400" y="105" fill="#fff" font-size="20" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">6-Quarter Trajectory · 3.5× Growth</text>
+  <text x="400" y="555" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" text-anchor="middle">Aggregated across upranked.io client portfolio · 2024–2025</text>
+</svg>

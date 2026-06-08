@@ -51,7 +51,7 @@ export default function Terms() {
 
               <section>
                 <h2 className="text-xl font-bold text-white mb-3">7. Contact</h2>
-                <p>For any questions regarding these Terms, contact us at <a href="mailto:Sam@upranked.io" className="text-accent hover:underline">Sam@upranked.io</a>.</p>
+                <p>For any questions regarding these Terms, contact us at <a href="mailto:uprankedio@gmail.com" className="text-accent hover:underline">uprankedio@gmail.com</a>.</p>
               </section>
             </div>
           </motion.div>

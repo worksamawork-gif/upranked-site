@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Geo-Targeted SEO — Dubai, Abu Dhabi, Riyadh, Doha, Kuwait">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a0f1e"></stop><stop offset="100%" stop-color="#0d1426"></stop></linearGradient>
+    <pattern id="grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#c9a84c" stroke-opacity="0.045"></path></pattern>
+    <radialGradient id="glow"><stop offset="0%" stop-color="#c9a84c" stop-opacity="0.18"></stop><stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop></radialGradient>
+    <radialGradient id="pinGlow"><stop offset="0%" stop-color="#c9a84c" stop-opacity="0.4"></stop><stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"></rect>
+  <rect width="800" height="600" fill="url(#grid)"></rect>
+  <ellipse cx="400" cy="320" rx="340" ry="260" fill="url(#glow)"></ellipse>
+
+  
+  <g stroke="#2a2f3e" fill="rgba(255,255,255,0.02)" stroke-width="1.5">
+    <path d="M 200 230 Q 180 200 220 180 L 280 175 Q 330 180 360 200 L 420 210 Q 480 215 530 240 L 580 260 Q 620 290 615 330 L 600 380 Q 570 420 510 425 L 420 420 Q 350 410 290 380 L 240 350 Q 200 320 200 280 Z"></path>
+  </g>
+
+  
+  <g stroke="#2a2f3e" fill="none" stroke-width="0.8" stroke-opacity="0.6">
+    <path d="M 230 270 Q 260 250 300 250 L 360 255 Q 420 270 460 295"></path>
+    <path d="M 250 330 Q 290 320 340 325 L 410 340 Q 470 355 510 370"></path>
+  </g>
+
+  
+  
+  <g>
+    <circle cx="450" cy="290" r="38" fill="url(#pinGlow)"></circle>
+    <circle cx="450" cy="290" r="20" fill="#c9a84c" stroke="#d4b85f" stroke-width="2"></circle>
+    <text x="450" y="295" fill="#0a0f1e" font-size="11" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">DXB</text>
+    <line x1="450" y1="270" x2="450" y2="240" stroke="#c9a84c" stroke-width="1.5"></line>
+    <rect x="395" y="208" width="110" height="32" rx="8" fill="#1a1f2e" stroke="#c9a84c" stroke-width="1.5"></rect>
+    <text x="450" y="222" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1" text-anchor="middle">HQ · POS #1</text>
+    <text x="450" y="234" fill="#fff" font-size="11" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Dubai · UAE</text>
+  </g>
+
+  
+  <g>
+    <circle cx="380" cy="310" r="14" fill="rgba(201,168,76,0.25)" stroke="#c9a84c" stroke-width="1.5"></circle>
+    <text x="380" y="314" fill="#fff" font-size="10" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">AUH</text>
+    <line x1="380" y1="324" x2="380" y2="355" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.5"></line>
+    <rect x="325" y="358" width="110" height="28" rx="6" fill="#1a1f2e" stroke="#2a2f3e"></rect>
+    <text x="380" y="370" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" text-anchor="middle">POS #2</text>
+    <text x="380" y="382" fill="#b0b0b0" font-size="10" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Abu Dhabi</text>
+  </g>
+
+  
+  <g>
+    <circle cx="290" cy="330" r="14" fill="rgba(201,168,76,0.25)" stroke="#c9a84c" stroke-width="1.5"></circle>
+    <text x="290" y="334" fill="#fff" font-size="10" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">RUH</text>
+    <line x1="290" y1="344" x2="290" y2="395" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.5"></line>
+    <rect x="235" y="398" width="110" height="28" rx="6" fill="#1a1f2e" stroke="#2a2f3e"></rect>
+    <text x="290" y="410" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" text-anchor="middle">POS #1</text>
+    <text x="290" y="422" fill="#b0b0b0" font-size="10" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Riyadh · KSA</text>
+  </g>
+
+  
+  <g>
+    <circle cx="420" cy="270" r="12" fill="rgba(201,168,76,0.25)" stroke="#c9a84c" stroke-width="1.5"></circle>
+    <text x="420" y="274" fill="#fff" font-size="9" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">DOH</text>
+    <line x1="420" y1="258" x2="420" y2="155" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.5"></line>
+    <rect x="365" y="120" width="110" height="34" rx="6" fill="#1a1f2e" stroke="#2a2f3e"></rect>
+    <text x="420" y="134" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" text-anchor="middle">POS #3</text>
+    <text x="420" y="147" fill="#b0b0b0" font-size="10" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Doha · Qatar</text>
+  </g>
+
+  
+  <g>
+    <circle cx="340" cy="265" r="12" fill="rgba(201,168,76,0.25)" stroke="#c9a84c" stroke-width="1.5"></circle>
+    <text x="340" y="269" fill="#fff" font-size="9" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">KWI</text>
+    <line x1="340" y1="253" x2="340" y2="155" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.5"></line>
+    <rect x="285" y="120" width="110" height="34" rx="6" fill="#1a1f2e" stroke="#2a2f3e"></rect>
+    <text x="340" y="134" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" text-anchor="middle">POS #2</text>
+    <text x="340" y="147" fill="#b0b0b0" font-size="10" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Kuwait City</text>
+  </g>
+
+  
+  <g>
+    <circle cx="420" cy="320" r="10" fill="rgba(201,168,76,0.18)" stroke="#c9a84c" stroke-width="1.2"></circle>
+    <text x="420" y="323" fill="#fff" font-size="8" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">BAH</text>
+  </g>
+
+  
+  <rect x="600" y="420" width="170" height="120" rx="10" fill="rgba(201,168,76,0.08)" stroke="rgba(201,168,76,0.3)"></rect>
+  <text x="615" y="442" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1">GEO PERFORMANCE</text>
+  <text x="615" y="468" fill="#fff" font-size="14" font-family="Cairo,sans-serif" font-weight="700">6 cities</text>
+  <text x="615" y="484" fill="#888" font-size="10" font-family="Inter,sans-serif">tracked simultaneously</text>
+  <line x1="615" y1="496" x2="755" y2="496" stroke="#2a2f3e"></line>
+  <text x="615" y="514" fill="#fff" font-size="14" font-family="Cairo,sans-serif" font-weight="700">94%</text>
+  <text x="615" y="530" fill="#888" font-size="10" font-family="Inter,sans-serif">in top 3 positions</text>
+
+  <text x="400" y="80" fill="#c9a84c" font-size="13" font-family="Inter,sans-serif" font-weight="700" letter-spacing="6" text-anchor="middle">GEO-TARGETED SEO</text>
+  <text x="400" y="104" fill="#fff" font-size="16" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">City-Level Search Dominance</text>
+  <text x="400" y="565" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" font-weight="700" letter-spacing="3" text-anchor="middle">DUBAI · ABU DHABI · RIYADH · DOHA · KUWAIT</text>
+</svg>

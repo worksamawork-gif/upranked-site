@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SEO REFERENCE BLOCK (Internal)
  * URL: /industries/industrial
  * Primary KW: industrial SEO UAE (commercial, high intent)
@@ -160,7 +160,7 @@ export default function IndustrialSEO() {
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
           url: 'https://upranked.io/about',
-          sameAs: ['https://www.linkedin.com/company/115836359/'],
+          sameAs: ['https://www.linkedin.com/company/upranked-io/'],
         },
         {
           '@type': 'BreadcrumbList',
@@ -196,25 +196,28 @@ export default function IndustrialSEO() {
                 ))}
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Link href="/contact"><a className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">Book a Free Strategy Call <ArrowRight className="w-5 h-5" /></a></Link>
-                <Link href="/methodology"><a className="btn-secondary text-lg px-8 py-4">View APEX Framework™</a></Link>
+                <Link href="/contact/"><a className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">Book a Free Strategy Call <ArrowRight className="w-5 h-5" /></a></Link>
+                <Link href="/methodology/"><a className="btn-secondary text-lg px-8 py-4">View APEX Framework™</a></Link>
               </div>
               {/* NAP #1 */}
               <div className="flex flex-wrap gap-6 text-sm text-text-secondary border-t border-border pt-6">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE</span>
               </div>
             </motion.div>
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="block">
-              <div className="relative rounded-2xl overflow-hidden border border-border bg-dark-gray aspect-[4/3]">
-                <img src="/images/sam-hamouda-best-seo-consultant-gcc.webp" alt="Sama Alaa — industrial and B2B SEO consultant in Dubai ranking manufacturers and suppliers across the GCC at upranked.io" width={600} height={450} loading="eager" decoding="async" className="w-full h-full object-cover object-top opacity-80" />
-                <div className="absolute inset-0 flex items-center justify-center bg-dark-gray/50">
-                  <div className="text-center p-8">
-                    <div className="text-6xl font-black text-accent mb-3">6.2x</div>
-                    <div className="text-white font-semibold">Average pipeline ROI</div>
-                    <div className="text-text-secondary text-sm mt-1">for GCC industrial clients at 12 months</div>
-                  </div>
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px] relative">
+                <img
+                  src="/heroes/18-industrial-seo.svg"
+                  alt="Industrial SEO B2B pipeline visualization — procurement search journey and organic lead generation for GCC manufacturers and suppliers at upranked.io"
+                  width={800} height={600}
+                  loading="eager" decoding="async" fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
+                <div className="absolute bottom-4 left-4 right-4 bg-navy/90 border border-accent/30 rounded-xl px-5 py-3 text-center backdrop-blur-sm">
+                  <div className="text-3xl font-black text-accent">6.2x</div>
+                  <div className="text-white text-sm font-semibold">Avg pipeline ROI — GCC industrial clients at 12 months</div>
                 </div>
               </div>
             </motion.div>
@@ -259,7 +262,28 @@ export default function IndustrialSEO() {
             </div>
             <p className="text-text-secondary leading-relaxed mb-5">In Dubai, Abu Dhabi, and across the GCC, B2B procurement increasingly begins with a Google search. Whether a procurement manager at a major developer is sourcing HVAC contractors in Jebel Ali or an oil & gas operations team is comparing industrial valve suppliers near me in Abu Dhabi, the companies that appear at the top of those results receive the first call.</p>
             <p className="text-text-secondary leading-relaxed mb-6">The challenge with industrial SEO in the UAE is specificity. Generic digital marketing agencies optimise for broad traffic — the industrial sector needs a different approach: technical content, product specification pages, certification-specific landing pages, and a deep understanding of how procurement search behaviour differs from consumer intent.</p>
-            <img src="/images/industrial/industrial-seo-uae-procurement-search-process.webp" alt="Industrial SEO UAE — how procurement managers search for B2B suppliers in Dubai and GCC" width={800} height={400} loading="lazy" className="w-full rounded-xl border border-border my-6" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+            <div className="w-full rounded-xl border border-border my-6 overflow-hidden">
+              <div className="bg-dark-gray px-6 py-4 border-b border-border flex items-center gap-3">
+                <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
+                <p className="text-accent text-xs font-semibold uppercase tracking-widest">GCC B2B Procurement Search Process</p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-border">
+                {[
+                  { step: '01', label: 'Requirement Identified', query: '"ISO valve supplier UAE"', type: 'Technical spec search' },
+                  { step: '02', label: 'Supplier Discovery', query: '"approved vendor Dubai"', type: 'Authority & cert check' },
+                  { step: '03', label: 'Shortlisting', query: '"MEP contractor reviews GCC"', type: 'Comparison & validation' },
+                  { step: '04', label: 'RFQ Submitted', query: 'Direct website inquiry', type: 'High-intent conversion' },
+                  { step: '05', label: 'Contract Awarded', query: 'Vendor selected', type: 'Pipeline value realized' },
+                ].map(s => (
+                  <div key={s.step} className="p-4 bg-navy/30 hover:bg-accent/5 transition-colors">
+                    <div className="text-accent font-black text-xl mb-2">{s.step}</div>
+                    <div className="text-white font-semibold text-sm mb-1">{s.label}</div>
+                    <div className="font-mono text-xs text-accent/80 bg-navy/60 rounded px-2 py-1 mb-2">{s.query}</div>
+                    <div className="text-text-secondary text-xs">{s.type}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -346,7 +370,7 @@ export default function IndustrialSEO() {
               <p className="text-white font-bold text-xl mb-1">Is your industrial company invisible in GCC procurement searches?</p>
               <p className="text-text-secondary">Get a free APEX audit — see exactly which RFQ-ready searches you're missing.</p>
             </div>
-            <Link href="/contact"><a className="btn-primary px-8 py-3 whitespace-nowrap inline-flex items-center gap-2">Get Your Free Audit <ArrowRight className="w-4 h-4" /></a></Link>
+            <Link href="/contact/"><a className="btn-primary px-8 py-3 whitespace-nowrap inline-flex items-center gap-2">Get Your Free Audit <ArrowRight className="w-4 h-4" /></a></Link>
           </div>
         </div>
       </section>
@@ -370,7 +394,7 @@ export default function IndustrialSEO() {
               </motion.div>
             ))}
           </div>
-          <div className="text-center mt-10"><Link href="/methodology"><a className="btn-secondary px-8 py-3 inline-flex items-center gap-2">Explore the Full APEX Framework™ <ArrowRight className="w-4 h-4" /></a></Link></div>
+          <div className="text-center mt-10"><Link href="/methodology/"><a className="btn-secondary px-8 py-3 inline-flex items-center gap-2">Explore the Full APEX Framework™ <ArrowRight className="w-4 h-4" /></a></Link></div>
         </div>
       </section>
 
@@ -410,7 +434,7 @@ export default function IndustrialSEO() {
                 <div className="flex flex-wrap gap-4 text-sm">
                   <div className="flex items-center gap-2 text-text-secondary"><BarChart2 className="w-4 h-4 text-accent" /><span>20+ GCC clients across 7 industrial sectors</span></div>
                   <div className="flex items-center gap-2 text-text-secondary"><CheckCircle className="w-4 h-4 text-accent" /><span>APEX Framework™ Creator</span></div>
-                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">LinkedIn Profile →</a>
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:underline">LinkedIn Profile →</a>
                 </div>
               </div>
             </div>
@@ -464,8 +488,8 @@ export default function IndustrialSEO() {
             <div className="p-6 rounded-xl bg-navy border border-accent/30 flex flex-col md:flex-row gap-6 items-start md:items-center">
               <div><p className="font-bold text-white text-lg mb-1">upranked.io</p><p className="text-text-secondary text-sm">Premium Growth Intelligence Lab · Industrial B2B SEO Specialists</p></div>
               <div className="flex flex-wrap gap-6 text-sm md:ml-auto">
-                <a href="/contact" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                 <span className="flex items-center gap-2 text-text-secondary"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE</span>
               </div>
             </div>
@@ -487,7 +511,7 @@ export default function IndustrialSEO() {
               </motion.div>
             ))}
           </div>
-          <div className="mt-6 text-center"><Link href="/blog/industrial-b2b-seo-gcc-procurement"><a className="text-accent hover:underline text-sm">Read: Industrial B2B SEO — Full Guide →</a></Link></div>
+          <div className="mt-6 text-center"><Link href="/blog/industrial-b2b-seo-gcc-procurement/"><a className="text-accent hover:underline text-sm">Read: Industrial B2B SEO — Full Guide →</a></Link></div>
         </div>
       </section>
 
@@ -499,11 +523,11 @@ export default function IndustrialSEO() {
               <p className="text-accent font-semibold tracking-widest text-sm uppercase mb-4">Free APEX Diagnostic — No Obligation</p>
               <h2 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">Ready to Outrank Your <span className="text-accent">Industrial Competitors</span> in the GCC?</h2>
               <p className="text-xl text-text-secondary mb-8 leading-relaxed">Book a free 30-minute strategy call with Sama Alaa. We'll identify the exact procurement searches your target buyers are running in Dubai, Abu Dhabi, and across the GCC — and show you exactly what it takes to rank for them.</p>
-              <Link href="/contact"><a className="btn-primary text-xl px-12 py-6 inline-flex items-center gap-3 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">Book Your Free Strategy Call <ArrowRight className="w-6 h-6" /></a></Link>
+              <Link href="/contact/"><a className="btn-primary text-xl px-12 py-6 inline-flex items-center gap-3 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">Book Your Free Strategy Call <ArrowRight className="w-6 h-6" /></a></Link>
               {/* NAP #3 */}
               <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-text-secondary border-t border-border pt-6">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC Region</span>
               </div>
             </div>

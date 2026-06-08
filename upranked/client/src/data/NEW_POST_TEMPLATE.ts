@@ -1,4 +1,5 @@
-﻿/**
+﻿// @ts-nocheck — this file is a copy-paste template, not compiled code
+/**
  * HOW TO ADD A NEW BLOG POST
  * ─────────────────────────────────────────────────────────────────
  * 1. Copy everything inside the object below
@@ -68,7 +69,7 @@
   cta: {
     heading: 'Ready to Apply This to Your Business?',
     body: 'Book a free 30-minute APEX Diagnostic with Sama Alaa and get a clear, actionable plan for your GCC market.',
-    href: '/contact',
+    href: '/contact/',
     label: 'Book Your Free APEX Diagnostic',
   },
 

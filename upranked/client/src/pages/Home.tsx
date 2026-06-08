@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PAGE: /
  * PRIMARY KW: SEO agency Dubai (Vol: ~2,400/mo | KD: 42)
  * SECONDARY KW: GCC SEO agency, growth intelligence lab, upranked.io, SEO company Dubai UAE
@@ -25,6 +25,8 @@ const seoServices = [
   { titleEn: 'Medical SEO', titleAr: 'تحسين محركات البحث الطبية', descEn: 'Rank #1 for patient searches across Dubai Healthcare City, UAE & GCC. DHA/MOH-compliant, bilingual EN/AR.', descAr: 'تصدر نتائج البحث عن المرضى في مدينة دبي للرعاية الصحية والإمارات والخليج', icon: Stethoscope, href: '/industries/medical' },
   { titleEn: 'Industrial SEO', titleAr: 'تحسين محركات البحث الصناعية', descEn: 'B2B procurement search dominance for manufacturers and suppliers in UAE free zones and GCC industrial cities.', descAr: 'هيمنة على بحث الشراء B2B للصناع والموردين في المناطق الحرة الإماراتية', icon: Factory, href: '/industries/industrial' },
   { titleEn: 'Business SEO', titleAr: 'تحسين محركات البحث للأعمال', descEn: 'Commercial-intent SEO for professional services, B2B companies, and enterprises across Dubai, Riyadh & beyond.', descAr: 'تحسين محركات البحث الموجه للتجارة للخدمات المهنية والشركات عبر دبي والرياض وما بعدها', icon: TrendingUp, href: '/industries/business' },
+  { titleEn: 'AEO — Answer Engine', titleAr: 'تحسين محركات الإجابة', descEn: 'Get cited in ChatGPT, Google AI Overviews, Perplexity & Gemini. The fastest-growing visibility channel for Dubai businesses.', descAr: 'احصل على الاقتباس في ChatGPT ونظرات Google AI وPerplexity', icon: Zap, href: '/seo/aeo' },
+  { titleEn: 'GEO — Generative SEO', titleAr: 'تحسين محركات الذكاء الاصطناعي', descEn: 'Generative Engine Optimization — rank your brand in AI-generated answers and multi-market search simultaneously.', descAr: 'تحسين محركات البحث التوليدية للظهور في نتائج الذكاء الاصطناعي', icon: Globe, href: '/seo/geo' },
 ];
 
 const growthServices = [
@@ -71,7 +73,7 @@ const faqs = [
   },
   {
     q: 'How do I get started with upranked.io?',
-    a: 'Book a free 30-minute APEX Diagnostic call with Sama Alaa. In that session, you\'ll get a clear picture of your current search position, a competitor gap analysis for your GCC market, and a prioritised roadmap — no commitment required. You can book via the Contact page, our contact page, or email Sam@upranked.io.',
+    a: 'Book a free 30-minute APEX Diagnostic call with Sama Alaa. In that session, you\'ll get a clear picture of your current search position, a competitor gap analysis for your GCC market, and a prioritised roadmap — no commitment required. You can book via the Contact page, our contact page, or email uprankedio@gmail.com.',
   },
 ];
 
@@ -87,7 +89,7 @@ const schema = {
       url: 'https://upranked.io',
       logo: 'https://upranked.io/logo.png',
       telephone: '+201121664778',
-      email: 'Sam@upranked.io',
+      email: 'uprankedio@gmail.com',
       founder: {
         '@type': 'Person',
         '@id': 'https://upranked.io/about#person',
@@ -104,7 +106,7 @@ const schema = {
         { '@type': 'City', name: 'New York' },
       ],
       availableLanguage: [{ '@type': 'Language', name: 'English' }, { '@type': 'Language', name: 'Arabic' }],
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
     },
     {
       '@type': 'FAQPage',
@@ -122,7 +124,7 @@ const schema = {
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', '@id': 'https://upranked.io/#organization' },
       url: 'https://upranked.io/about',
-      sameAs: ['https://www.linkedin.com/company/115836359/'],
+      sameAs: ['https://www.linkedin.com/company/upranked-io/'],
     },
     {
       '@type': 'BreadcrumbList',
@@ -250,11 +252,11 @@ export default function Home() {
 
               {/* NAP #1 */}
               <address className="not-italic flex flex-wrap gap-4 text-sm text-text-secondary mb-8">
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
                   <Phone className="w-4 h-4 text-accent" /> Contact Us
                 </a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors">
-                  <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
                 </a>
                 <span className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent" /> Dubai, UAE · GCC · London · New York
@@ -262,12 +264,12 @@ export default function Home() {
               </address>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary text-base px-8 py-4 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-2">
                     {isAr ? 'احجز تشخيص APEX المجاني' : 'Book Free APEX Diagnostic'} <ArrowRight className="w-5 h-5" />
                   </a>
                 </Link>
-                <Link href="/seo-industries">
+                <Link href="/seo-industries/">
                   <a className="btn-secondary text-base px-8 py-4 inline-flex items-center gap-2">
                     {isAr ? 'استكشف خدمات SEO' : 'Explore SEO Services'}
                   </a>
@@ -280,35 +282,24 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* ── Right: Sama's portrait ── */}
+            {/* ── Right: Hero visual ── */}
             <motion.div
               initial={{ opacity: 0, x: 24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9, delay: 0.2 }}
               className="flex justify-center items-center"
             >
-              <div className="relative w-full max-w-xs lg:max-w-sm">
-                <div className="hidden lg:block absolute -inset-6 bg-gradient-to-br from-accent/20 via-accent/5 to-transparent rounded-3xl blur-2xl" />
-                <div className="relative rounded-2xl overflow-hidden border-2 border-accent/30 shadow-2xl shadow-accent/10">
-                  <img
-                    src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                    alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
-                    width={400}
-                    height={640}
-                    loading="eager"
-                    decoding="async"
-                    fetchPriority="high"
-                    className="w-full object-cover object-top"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy via-navy/80 to-transparent px-6 py-5">
-                    <p className="text-white font-bold text-sm">Sama Alaa</p>
-                    <p className="text-accent text-xs mt-0.5">Founder &amp; GCC SEO Strategist</p>
-                    <p className="text-text-secondary text-xs mt-0.5">upranked.io — Dubai, UAE</p>
-                  </div>
-                </div>
-                <div className="absolute -bottom-4 -right-4 bg-accent text-black text-xs font-black px-3 py-1.5 rounded-lg shadow-lg">
-                  APEX Framework™
-                </div>
+              <div className="w-full max-w-[800px]">
+                <img
+                  src="/heroes/01-growth-chart.svg"
+                  alt="Organic traffic growth chart showing client results across GCC markets — upranked.io SEO agency Dubai"
+                  width={800}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="w-full h-auto rounded-2xl"
+                />
               </div>
             </motion.div>
 
@@ -320,7 +311,7 @@ export default function Home() {
       <section className="bg-dark-gray py-5 border-y border-border">
         <div className="container-premium">
           <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-xs text-text-secondary">
-            {['Medical SEO Specialists', 'Industrial B2B SEO', 'Business SEO Dubai', 'Bilingual EN/AR', 'APEX Framework™', 'GCC + London + New York'].map(t => (
+            {['Medical SEO Specialists', 'Industrial B2B SEO', 'Business SEO Dubai', 'AEO — Answer Engine', 'GEO — Generative SEO', 'Bilingual EN/AR', 'APEX Framework™', 'GCC + London + New York'].map(t => (
               <div key={t} className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 bg-accent rounded-full flex-shrink-0" />
                 <span>{t}</span>
@@ -400,7 +391,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-8">
-            <Link href="/seo-industries">
+            <Link href="/seo-industries/">
               <a className="btn-secondary inline-flex items-center gap-2 text-sm px-6 py-2.5">
                 {isAr ? 'جميع خدمات SEO' : 'All SEO Services'} <ArrowRight className="w-4 h-4" />
               </a>
@@ -446,7 +437,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-8">
-            <Link href="/growth-intelligence">
+            <Link href="/growth-intelligence/">
               <a className="btn-secondary inline-flex items-center gap-2 text-sm px-6 py-2.5">
                 {isAr ? 'جميع خدمات ذكاء النمو' : 'All Growth Intelligence Services'} <ArrowRight className="w-4 h-4" />
               </a>
@@ -488,7 +479,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <Link href="/methodology">
+              <Link href="/methodology/">
                 <a className="btn-secondary inline-flex items-center gap-2 text-sm px-6 py-2.5">
                   Explore the Full APEX Methodology <ArrowRight className="w-4 h-4" />
                 </a>
@@ -546,17 +537,17 @@ export default function Home() {
                   Sama Alaa founded upranked.io on one conviction: the GCC's most valuable businesses deserve a growth partner who speaks their market, their language, and delivers results tied to revenue — not just traffic. With 20+ GCC client engagements across Medical, Industrial, and Business sectors, Sama personally leads every upranked.io engagement. No junior handoffs. No Western playbooks. Just sector-specific, bilingual, revenue-first SEO strategy built for Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Link href="/about">
+                  <Link href="/about/">
                     <a className="text-accent text-sm hover:underline inline-flex items-center gap-1">
                       Full Bio <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </Link>
                   <span className="text-border">|</span>
-                  <a href="https://www.linkedin.com/company/115836359/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
+                  <a href="https://www.linkedin.com/company/upranked-io/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                     LinkedIn →
                   </a>
                   <span className="text-border">|</span>
-                  <Link href="/contact">
+                  <Link href="/contact/">
                     <a className="text-accent text-sm hover:underline">Book a Call →</a>
                   </Link>
                 </div>
@@ -634,13 +625,13 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                   {isAr ? 'احجز تشخيص APEX المجاني' : 'Book Free APEX Diagnostic'} <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
               <a
-                href="/contact"
+                href="/contact/"
                 className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4"
               >
                 {isAr ? 'واتساب سام مباشرة' : 'Contact Us'}
@@ -649,12 +640,12 @@ export default function Home() {
 
             {/* NAP #3 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary">
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
                 <Phone className="w-4 h-4 text-accent" /> Contact Us
               </a>
               <span className="hidden sm:block text-border">|</span>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
-                <Mail className="w-4 h-4 text-accent" /> Sam@upranked.io
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors justify-center">
+                <Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2 justify-center">

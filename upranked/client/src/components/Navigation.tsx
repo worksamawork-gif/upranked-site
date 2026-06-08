@@ -3,40 +3,41 @@ import { Menu, X, Globe, ChevronDown, Search, TrendingUp, MapPin, Stethoscope, L
 import { Link, useLocation } from 'wouter';
 
 const seoIndustryLinks = [
-  { label: 'Medical SEO', labelAr: 'تحسين محركات البحث الطبية', href: '/industries/medical-seo', desc: 'For clinics & hospitals' },
-  { label: 'Industrial SEO', labelAr: 'تحسين محركات البحث الصناعية', href: '/industries/industrial-seo', desc: 'For B2B & manufacturing' },
-  { label: 'Business SEO', labelAr: 'تحسين محركات البحث للأعمال', href: '/industries/business-seo', desc: 'Revenue-focused SEO' },
+  { label: 'Medical SEO', labelAr: 'تحسين محركات البحث الطبية', href: '/industries/medical-seo/', desc: 'For clinics & hospitals' },
+  { label: 'Industrial SEO', labelAr: 'تحسين محركات البحث الصناعية', href: '/industries/industrial-seo/', desc: 'For B2B & manufacturing' },
+  { label: 'Business SEO', labelAr: 'تحسين محركات البحث للأعمال', href: '/industries/business-seo/', desc: 'Revenue-focused SEO' },
 ];
 
 const seoTypeLinks = [
-  { label: 'On-Page SEO', labelAr: 'تحسين الصفحات', href: '/seo/on-page', desc: 'Content, keywords, metadata' },
-  { label: 'Off-Page SEO', labelAr: 'بناء الروابط', href: '/seo/off-page', desc: 'Authority & link building' },
-  { label: 'Technical SEO', labelAr: 'السيو التقني', href: '/seo/technical', desc: 'Site speed & architecture' },
-  { label: 'Local SEO', labelAr: 'السيو المحلي', href: '/seo/local', desc: 'Near-me & Google Maps' },
-  { label: 'Bilingual SEO', labelAr: 'السيو ثنائي اللغة', href: '/seo/bilingual', desc: 'Arabic & English search' },
-  { label: 'Schema Markup', labelAr: 'ترميز Schema', href: '/seo/schema', desc: 'Structured data & rich results' },
-  { label: 'SEO Analytics', labelAr: 'تحليلات السيو', href: '/seo/analytics', desc: 'Rank tracking & attribution' },
-  { label: 'Content Architecture', labelAr: 'هيكل المحتوى', href: '/seo/content-architecture', desc: 'Topic clusters & silos' },
-  { label: 'Geo-Targeted SEO', labelAr: 'السيو الجغرافي', href: '/seo/geo', desc: 'Multi-market SEO' },
+  { label: 'On-Page SEO', labelAr: 'تحسين الصفحات', href: '/seo/on-page/', desc: 'Content, keywords, metadata' },
+  { label: 'Off-Page SEO', labelAr: 'بناء الروابط', href: '/seo/off-page/', desc: 'Authority & link building' },
+  { label: 'Technical SEO', labelAr: 'السيو التقني', href: '/seo/technical/', desc: 'Site speed & architecture' },
+  { label: 'Local SEO', labelAr: 'السيو المحلي', href: '/seo/local/', desc: 'Near-me & Google Maps' },
+  { label: 'Bilingual SEO', labelAr: 'السيو ثنائي اللغة', href: '/seo/bilingual/', desc: 'Arabic & English search' },
+  { label: 'Schema Markup', labelAr: 'ترميز Schema', href: '/seo/schema/', desc: 'Structured data & rich results' },
+  { label: 'SEO Analytics', labelAr: 'تحليلات السيو', href: '/seo/analytics/', desc: 'Rank tracking & attribution' },
+  { label: 'Content Architecture', labelAr: 'هيكل المحتوى', href: '/seo/content-architecture/', desc: 'Topic clusters & silos' },
+  { label: 'AEO', labelAr: 'تحسين محركات الإجابة', href: '/seo/aeo/', desc: 'Answer & AI engine optimization' },
+  { label: 'GEO — Generative SEO', labelAr: 'تحسين محركات الذكاء الاصطناعي', href: '/seo/geo/', desc: 'ChatGPT, AI Overviews & multi-market' },
 ];
 
 const growthLinks = [
-  { label: 'Business Consultation', labelAr: 'استشارات الأعمال', href: '/growth-intelligence/consultation', desc: 'Expert consultation for your business' },
-  { label: 'Tailored Tools', labelAr: 'أدوات مخصصة', href: '/growth-intelligence/tools', desc: 'Custom growth tools' },
-  { label: 'Tailored Website', labelAr: 'موقع مخصص', href: '/growth-intelligence/websites', desc: 'Custom website for your business' },
-  { label: 'Business Strategy', labelAr: 'استراتيجية الأعمال', href: '/growth-intelligence/strategy', desc: 'Market positioning & growth' },
+  { label: 'Business Consultation', labelAr: 'استشارات الأعمال', href: '/growth-intelligence/consultation/', desc: 'Expert consultation for your business' },
+  { label: 'Tailored Tools', labelAr: 'أدوات مخصصة', href: '/growth-intelligence/tools/', desc: 'Custom growth tools' },
+  { label: 'Tailored Website', labelAr: 'موقع مخصص', href: '/growth-intelligence/websites/', desc: 'Custom website for your business' },
+  { label: 'Business Strategy', labelAr: 'استراتيجية الأعمال', href: '/growth-intelligence/strategy/', desc: 'Market positioning & growth' },
 ];
 
 const marketsLinks = [
-  { label: 'All GCC Markets', labelAr: 'أسواق دول الخليج', href: '/markets/gcc', desc: 'Dubai, Riyadh, Kuwait, Bahrain' },
-  { label: 'Dubai, UAE 🇦🇪', labelAr: 'دبي، الإمارات', href: '/markets/gcc/uae/dubai', desc: 'UAE\'s largest digital market' },
-  { label: 'Riyadh, KSA 🇸🇦', labelAr: 'الرياض، السعودية', href: '/markets/gcc/ksa/riyadh', desc: 'Arabic-first SEO for KSA' },
-  { label: 'Kuwait City 🇰🇼', labelAr: 'مدينة الكويت', href: '/markets/gcc/kuwait', desc: 'High per-capita GCC market' },
-  { label: 'Manama, Bahrain 🇧🇭', labelAr: 'المنامة، البحرين', href: '/markets/gcc/bahrain', desc: 'GCC financial hub' },
-  { label: 'London, UK 🇬🇧', labelAr: 'لندن، المملكة المتحدة', href: '/markets/uk/london', desc: 'UK market SEO' },
-  { label: 'New York, USA 🇺🇸', labelAr: 'نيويورك، أمريكا', href: '/markets/usa/new-york', desc: 'US market SEO' },
-  { label: 'Germany 🇩🇪', labelAr: 'ألمانيا', href: '/markets/eu/germany', desc: 'Frankfurt, Berlin & DACH' },
-  { label: 'France 🇫🇷', labelAr: 'فرنسا', href: '/markets/eu/france', desc: 'Paris & French market' },
+  { label: 'All GCC Markets', labelAr: 'أسواق دول الخليج', href: '/markets/gcc/', desc: 'Dubai, Riyadh, Kuwait, Bahrain' },
+  { label: 'Dubai, UAE 🇦🇪', labelAr: 'دبي، الإمارات', href: '/markets/gcc/uae/dubai/', desc: 'UAE\'s largest digital market' },
+  { label: 'Riyadh, KSA 🇸🇦', labelAr: 'الرياض، السعودية', href: '/markets/gcc/ksa/riyadh/', desc: 'Arabic-first SEO for KSA' },
+  { label: 'Kuwait City 🇰🇼', labelAr: 'مدينة الكويت', href: '/markets/gcc/kuwait/', desc: 'High per-capita GCC market' },
+  { label: 'Manama, Bahrain 🇧🇭', labelAr: 'المنامة، البحرين', href: '/markets/gcc/bahrain/', desc: 'GCC financial hub' },
+  { label: 'London, UK 🇬🇧', labelAr: 'لندن، المملكة المتحدة', href: '/markets/uk/london/', desc: 'UK market SEO' },
+  { label: 'New York, USA 🇺🇸', labelAr: 'نيويورك، أمريكا', href: '/markets/usa/new-york/', desc: 'US market SEO' },
+  { label: 'Germany 🇩🇪', labelAr: 'ألمانيا', href: '/markets/eu/germany/', desc: 'Frankfurt, Berlin & DACH' },
+  { label: 'France 🇫🇷', labelAr: 'فرنسا', href: '/markets/eu/france/', desc: 'Paris & French market' },
 ];
 
 export default function Navigation() {
@@ -87,19 +88,19 @@ export default function Navigation() {
   const topNavLinks = language === 'en'
     ? [
         { label: 'Home', href: '/' },
-        { label: 'About', href: '/about' },
-        { label: 'Methodology', href: '/methodology' },
-        { label: 'Blog', href: '/blog' },
-        { label: 'FAQ', href: '/faq' },
-        { label: 'Contact', href: '/contact' },
+        { label: 'About', href: '/about/' },
+        { label: 'Methodology', href: '/methodology/' },
+        { label: 'Blog', href: '/blog/' },
+        { label: 'FAQ', href: '/faq/' },
+        { label: 'Contact', href: '/contact/' },
       ]
     : [
         { label: 'الرئيسية', href: '/' },
-        { label: 'من نحن', href: '/about' },
-        { label: 'المنهجية', href: '/methodology' },
-        { label: 'المدونة', href: '/blog' },
-        { label: 'الأسئلة الشائعة', href: '/faq' },
-        { label: 'اتصل بنا', href: '/contact' },
+        { label: 'من نحن', href: '/about/' },
+        { label: 'المنهجية', href: '/methodology/' },
+        { label: 'المدونة', href: '/blog/' },
+        { label: 'الأسئلة الشائعة', href: '/faq/' },
+        { label: 'اتصل بنا', href: '/contact/' },
       ];
 
   return (
@@ -157,7 +158,7 @@ export default function Navigation() {
                         {language === 'en' ? 'SEO Types' : 'أنواع SEO'}
                       </span>
                     </div>
-                    <Link href="/seo">
+                    <Link href="/seo/">
                       <a className="flex flex-col px-4 py-2 hover:bg-navy border-b border-border/50 transition-colors" onClick={closeAll}>
                         <span className="font-bold text-accent text-xs">All SEO Types →</span>
                       </a>
@@ -182,7 +183,7 @@ export default function Navigation() {
                         {language === 'en' ? 'SEO Industries' : 'قطاعات SEO'}
                       </span>
                     </div>
-                    <Link href="/seo-industries">
+                    <Link href="/seo-industries/">
                       <a className="flex flex-col px-4 py-2 hover:bg-navy border-b border-border/50 transition-colors" onClick={closeAll}>
                         <span className="font-bold text-accent text-xs">All Industries →</span>
                       </a>
@@ -205,7 +206,7 @@ export default function Navigation() {
                         {language === 'en' ? 'Growth' : 'ذكاء النمو'}
                       </span>
                     </div>
-                    <Link href="/growth-intelligence">
+                    <Link href="/growth-intelligence/">
                       <a className="flex flex-col px-4 py-2 hover:bg-navy border-b border-border/50 transition-colors" onClick={closeAll}>
                         <span className="font-bold text-accent text-xs">All Growth Services →</span>
                       </a>
@@ -259,7 +260,7 @@ export default function Navigation() {
             <Globe className="w-5 h-5 text-accent" />
             <span className="hidden md:inline text-sm font-semibold text-accent">{language.toUpperCase()}</span>
           </button>
-          <Link href="/contact">
+          <Link href="/contact/">
             <a className="hidden md:inline-block px-5 py-2 bg-accent text-black rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-200 shadow-lg hover:shadow-accent/40 hover:-translate-y-0.5 active:translate-y-0 text-sm whitespace-nowrap">
               {ctaLabel}
             </a>
@@ -292,7 +293,7 @@ export default function Navigation() {
                     <Search className="w-3.5 h-3.5 text-accent" />
                     <span className="text-xs font-bold text-accent uppercase tracking-wider">{language === 'en' ? 'SEO Types' : 'أنواع SEO'}</span>
                   </div>
-                  <Link href="/seo">
+                  <Link href="/seo/">
                     <a className="block py-1.5 px-3 text-accent font-semibold hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>All SEO Types →</a>
                   </Link>
                   {seoTypeLinks.map(link => (
@@ -312,7 +313,7 @@ export default function Navigation() {
                     <Stethoscope className="w-3.5 h-3.5 text-accent" />
                     <span className="text-xs font-bold text-accent uppercase tracking-wider">{language === 'en' ? 'SEO Industries' : 'قطاعات SEO'}</span>
                   </div>
-                  <Link href="/seo-industries">
+                  <Link href="/seo-industries/">
                     <a className="block py-1.5 px-3 text-accent font-semibold hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>All Industries →</a>
                   </Link>
                   {seoIndustryLinks.map(link => (
@@ -332,7 +333,7 @@ export default function Navigation() {
                     <TrendingUp className="w-3.5 h-3.5 text-accent" />
                     <span className="text-xs font-bold text-accent uppercase tracking-wider">{language === 'en' ? 'Growth Intelligence' : 'ذكاء النمو'}</span>
                   </div>
-                  <Link href="/growth-intelligence">
+                  <Link href="/growth-intelligence/">
                     <a className="block py-1.5 px-3 text-accent font-semibold hover:bg-navy/40 rounded-lg text-sm transition-colors" onClick={() => setIsOpen(false)}>All Growth Services →</a>
                   </Link>
                   {growthLinks.map(link => (
@@ -376,7 +377,7 @@ export default function Navigation() {
             ))}
 
             <div className="pt-3 border-t border-border">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="block w-full text-center px-6 py-3 bg-accent text-black rounded-lg font-semibold hover:bg-yellow-500 transition-all" onClick={() => setIsOpen(false)}>
                   {ctaLabel}
                 </a>

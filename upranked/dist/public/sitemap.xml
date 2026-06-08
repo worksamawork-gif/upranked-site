@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Core pages -->
   <url>
     <loc>https://upranked.io/</loc>
     <lastmod>2026-04-26</lastmod>
@@ -32,8 +31,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Legal -->
   <url>
     <loc>https://upranked.io/privacy/</loc>
     <lastmod>2026-05-01</lastmod>
@@ -46,8 +43,6 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
-  <!-- SEO hubs -->
   <url>
     <loc>https://upranked.io/seo/</loc>
     <lastmod>2026-05-01</lastmod>
@@ -78,8 +73,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- SEO service cluster pages -->
   <url>
     <loc>https://upranked.io/seo/on-page/</loc>
     <lastmod>2026-04-26</lastmod>
@@ -134,8 +127,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Growth Intelligence -->
   <url>
     <loc>https://upranked.io/growth-intelligence/</loc>
     <lastmod>2026-04-26</lastmod>
@@ -166,8 +157,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- GCC Markets -->
   <url>
     <loc>https://upranked.io/markets/gcc/</loc>
     <lastmod>2026-04-26</lastmod>
@@ -198,8 +187,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Global Markets -->
   <url>
     <loc>https://upranked.io/markets/uk/london/</loc>
     <lastmod>2026-04-26</lastmod>
@@ -224,8 +211,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog -->
   <url>
     <loc>https://upranked.io/blog/</loc>
     <lastmod>2026-04-26</lastmod>

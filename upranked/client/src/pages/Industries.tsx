@@ -1,4 +1,4 @@
-﻿import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, Stethoscope, Factory, TrendingUp, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -300,7 +300,7 @@ export default function Industries() {
             <nav className="text-sm text-text-secondary mb-6">
               <Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link>
               <span className="mx-2 text-border">/</span>
-              <Link href="/seo"><a className="hover:text-accent transition-colors">SEO Types</a></Link>
+              <Link href="/seo/"><a className="hover:text-accent transition-colors">SEO Types</a></Link>
               <span className="mx-2 text-border">/</span>
               <span className="text-accent">SEO by Industry</span>
             </nav>
@@ -321,12 +321,12 @@ export default function Industries() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <Link href="/contact">
+                <Link href="/contact/">
                   <a className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
                     Book a Free Strategy Call <ArrowRight className="w-5 h-5" />
                   </a>
                 </Link>
-                <Link href="/methodology">
+                <Link href="/methodology/">
                   <a className="btn-secondary text-lg px-8 py-4">Our APEX Framework™</a>
                 </Link>
               </div>
@@ -334,29 +334,23 @@ export default function Industries() {
               {/* NAP #1 */}
               <div className="flex flex-wrap gap-5 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-                <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
               </div>
             </motion.div>
             </div>{/* end left col */}
 
-            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="relative block">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-border">
+            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="flex justify-center items-center">
+              <div className="w-full max-w-[800px]">
                 <img
-                  src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                  alt="Sama Alaa — industry SEO specialist in Dubai delivering Medical, Industrial and Business SEO across the GCC"
-                  width={560}
+                  src="/heroes/16-all-industries.svg"
+                  alt="Industry-specific SEO for Medical, Industrial and Business sectors across the GCC — specialist organic growth strategies by upranked.io Dubai"
+                  width={800}
                   height={600}
                   loading="eager"
                   decoding="async"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto rounded-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-white font-bold text-lg">Sama Alaa</p>
-                  <p className="text-accent text-sm">Founder · Chief Growth Strategist</p>
-                  <p className="text-text-secondary text-xs mt-1">Dubai, UAE · GCC · London · New York</p>
-                </div>
               </div>
             </motion.div>
 
@@ -404,8 +398,8 @@ export default function Industries() {
               <div className="mt-8 p-4 bg-dark-gray border border-border rounded-xl text-xs text-text-secondary space-y-2">
                 <p className="text-white font-semibold text-sm mb-2">upranked.io</p>
                 <p className="flex items-center gap-1.5"><MapPin className="w-3 h-3 text-accent flex-shrink-0" /> Dubai, UAE — GCC &amp; Global</p>
-                <a href="/contact" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
-                <a href="mailto:Sam@upranked.io" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> Sam@upranked.io</a>
+                <a href="/contact/" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone className="w-3 h-3 text-accent flex-shrink-0" /> Contact Us</a>
+                <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Mail className="w-3 h-3 text-accent flex-shrink-0" /> uprankedio@gmail.com</a>
               </div>
             </div>
           </aside>
@@ -540,7 +534,7 @@ export default function Industries() {
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
                         Sama Alaa built upranked.io around a specific hypothesis: sector knowledge is the biggest SEO advantage a GCC business can have. After working across healthcare, industrial B2B, and professional services in Dubai, Riyadh, Kuwait City, Manama, London, and New York, Sama developed deep playbooks for each vertical — keyword landscapes, content architectures, and trust-building frameworks specific to each industry. Every industry SEO engagement is led personally by Sama, ensuring that sector depth is applied at every stage.
                       </p>
-                      <Link href="/about"><a className="text-accent text-sm font-semibold hover:underline">Full credentials →</a></Link>
+                      <Link href="/about/"><a className="text-accent text-sm font-semibold hover:underline">Full credentials →</a></Link>
                     </div>
                   </div>
                 </div>
@@ -606,20 +600,20 @@ export default function Industries() {
               Book a free 30-minute APEX Diagnostic with Sama Alaa. We will assess your sector, your market in Dubai, Riyadh, Kuwait, Bahrain, London, or New York — and tell you exactly where to focus first.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
-              <Link href="/contact">
+              <Link href="/contact/">
                 <a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">
                   Book a Free APEX Diagnostic <ArrowRight className="w-5 h-5" />
                 </a>
               </Link>
-              <a href="/contact" className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2">
+              <a href="/contact/" className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2">
                 Contact Us
               </a>
             </div>
             {/* NAP #3 */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE (GCC, UK &amp; USA)</span>
-              <a href="/contact" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
-              <a href="mailto:Sam@upranked.io" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> Sam@upranked.io</a>
+              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>
+              <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors"><Mail className="w-4 h-4 text-accent" /> uprankedio@gmail.com</a>
             </div>
           </motion.div>
         </div>
