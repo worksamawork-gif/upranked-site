@@ -93,6 +93,9 @@ export default function BlogPost() {
       .then(({ data }) => {
         if (data) setPost(adaptPost(data) as unknown as BlogPost);
         else if (!localPost) setPost(null);
+      })
+      .catch(() => {
+        if (!localPost) setPost(null);
       });
   }, [slug]);
 
