@@ -45,6 +45,7 @@ const ROUTES = [
   '/methodology',
   '/contact',
   '/faq',
+  '/pricing',
   '/blog',
 
   // SEO hub + types
@@ -103,6 +104,9 @@ const ROUTES = [
   '/blog/healthcare-seo-uae-2026',
   '/blog/dubai-seo-guide-2026',
   '/blog/kuwait-seo-guide-2026',
+  '/blog/geo-targeting-seo-dubai',
+  '/blog/bilingual-seo-arabic-english',
+  '/blog/medical-seo-dubai-clinics',
 ];
 
 function startServer(cleanShell) {
