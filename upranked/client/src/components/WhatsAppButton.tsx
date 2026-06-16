@@ -1,9 +1,9 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 
 const WHATSAPP_NUMBER = '201039173978';
-const MESSAGE = encodeURIComponent("Hi Sama, I'd like to book a free APEX Diagnostic for my business.");
+const MESSAGE = encodeURIComponent("Hi Sam, I'd like to book a free APEX Diagnostic for my business.");
 
 export default function WhatsAppButton() {
   const [tooltipVisible, setTooltipVisible] = useState(false);
@@ -22,7 +22,7 @@ export default function WhatsAppButton() {
           className="flex-1 flex items-center justify-center gap-2 py-3 bg-[#25D366] text-white rounded-lg font-semibold text-sm"
         >
           <WhatsAppIcon className="w-4 h-4" />
-          WhatsApp Sama
+          WhatsApp Sam
         </a>
         <a
           href="/contact/"
@@ -41,7 +41,7 @@ export default function WhatsAppButton() {
             exit={{ opacity: 0, y: 8, scale: 0.95 }}
             className="hidden md:block bg-dark-gray border border-border rounded-xl px-4 py-3 shadow-xl max-w-[200px] text-right"
           >
-            <p className="text-white text-sm font-semibold">Chat with Sama</p>
+            <p className="text-white text-sm font-semibold">Chat with Sam</p>
             <p className="text-text-secondary text-xs mt-0.5">Free APEX Diagnostic</p>
           </motion.div>
         )}

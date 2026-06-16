@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -12,10 +12,10 @@ const schema = {
       { '@type': 'Question', name: 'What is technical SEO?', acceptedAnswer: { '@type': 'Answer', text: 'Technical SEO refers to optimizing the infrastructure of a website — crawlability, indexation, site speed, Core Web Vitals, mobile usability, structured data, and URL architecture — so search engines can efficiently discover, understand, and rank your content. For GCC businesses in Dubai and Riyadh, technical SEO must also account for bilingual RTL page architecture.' } },
       { '@type': 'Question', name: 'What Core Web Vitals scores do Dubai websites need to rank?', acceptedAnswer: { '@type': 'Answer', text: 'Google requires LCP (Largest Contentful Paint) under 2.5 seconds, FID/INP under 200ms, and CLS (Cumulative Layout Shift) under 0.1 to pass the Core Web Vitals assessment. Dubai-hosted websites with international CDN delivery often struggle with LCP — upranked.io audits and fixes these issues as part of every technical SEO engagement.' } },
       { '@type': 'Question', name: 'How does bilingual RTL architecture affect technical SEO in the GCC?', acceptedAnswer: { '@type': 'Answer', text: 'Arabic RTL websites require correct hreflang tag implementation, separate URL structures for AR and EN versions, RTL-compatible schema markup, and bilingual XML sitemaps. Incorrect implementation causes duplicate content penalties and splits link equity between EN and AR versions of the same page — a common and costly technical error for GCC businesses.' } },
-      { '@type': 'Question', name: 'Do you offer technical SEO audits near me in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io offers forensic technical SEO audits for businesses across Dubai, Abu Dhabi, Riyadh, Kuwait City, Manama, London, and New York. Every audit is delivered with a prioritized fix list and Sama Alaa personally oversees all implementation.' } },
+      { '@type': 'Question', name: 'Do you offer technical SEO audits near me in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io offers forensic technical SEO audits for businesses across Dubai, Abu Dhabi, Riyadh, Kuwait City, Manama, London, and New York. Every audit is delivered with a prioritized fix list and Sam personally oversees all implementation.' } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'SEO', item: 'https://upranked.io/industries' }, { '@type': 'ListItem', position: 3, name: 'Technical SEO', item: 'https://upranked.io/seo/technical' }] },
-    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sam', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -32,7 +32,7 @@ const faqs = [
   { q: 'What is technical SEO?', a: 'Technical SEO refers to optimizing the infrastructure of a website — crawlability, indexation, site speed, Core Web Vitals, mobile usability, structured data, and URL architecture — so search engines can efficiently discover, understand, and rank your content. For GCC businesses in Dubai and Riyadh, technical SEO must also account for bilingual RTL page architecture.' },
   { q: 'What Core Web Vitals scores do Dubai websites need to rank?', a: 'Google requires LCP under 2.5 seconds, FID/INP under 200ms, and CLS under 0.1 to pass the Core Web Vitals assessment. Dubai-hosted websites with international CDN delivery often struggle with LCP — upranked.io audits and fixes these issues as part of every technical SEO engagement.' },
   { q: 'How does bilingual RTL architecture affect technical SEO in the GCC?', a: 'Arabic RTL websites require correct hreflang implementation, separate URL structures for AR and EN versions, RTL-compatible schema markup, and bilingual XML sitemaps. Incorrect implementation causes duplicate content penalties and splits link equity between language versions.' },
-  { q: 'Do you offer technical SEO audits near me in Dubai?', a: 'Yes. upranked.io offers forensic technical SEO audits for businesses across Dubai, Abu Dhabi, Riyadh, Kuwait City, Manama, London, and New York. Every audit is delivered with a prioritized fix list and Sama Alaa personally oversees all implementation.' },
+  { q: 'Do you offer technical SEO audits near me in Dubai?', a: 'Yes. upranked.io offers forensic technical SEO audits for businesses across Dubai, Abu Dhabi, Riyadh, Kuwait City, Manama, London, and New York. Every audit is delivered with a prioritized fix list and Sam personally oversees all implementation.' },
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function TechnicalSEO() {
-  usePageMeta({ title: 'Technical SEO Dubai & GCC — Site Architecture, Speed & Crawlability', description: 'Technical SEO audits for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Core Web Vitals, bilingual RTL architecture, crawl fixes — APEX Framework by Sama Alaa.', schema, schemaId: 'technical-seo-schema' });
+  usePageMeta({ title: 'Technical SEO Dubai & GCC — Site Architecture, Speed & Crawlability', description: 'Technical SEO audits for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Core Web Vitals, bilingual RTL architecture, crawl fixes — APEX Framework by Sam.', schema, schemaId: 'technical-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -109,8 +109,8 @@ export default function TechnicalSEO() {
         <div className="container-premium max-w-4xl">
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
-              src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
+              src="/favicon.svg"
+              alt="Sam — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
               width={400}
               height={640}
               loading="lazy"
@@ -119,9 +119,9 @@ export default function TechnicalSEO() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Written &amp; Overseen By</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

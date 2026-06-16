@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" role="img" aria-label="On-Page SEO — optimized page anatomy">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a0f1e"></stop><stop offset="100%" stop-color="#0d1426"></stop></linearGradient>
+    <pattern id="grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#c9a84c" stroke-opacity="0.045"></path></pattern>
+    <radialGradient id="glow"><stop offset="0%" stop-color="#c9a84c" stop-opacity="0.15"></stop><stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"></rect>
+  <rect width="800" height="600" fill="url(#grid)"></rect>
+  <ellipse cx="400" cy="320" rx="320" ry="260" fill="url(#glow)"></ellipse>
+
+  
+  <rect x="120" y="100" width="560" height="420" rx="14" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1.5"></rect>
+  <rect x="120" y="100" width="560" height="38" rx="14" fill="#0a0f1e"></rect>
+  <rect x="120" y="120" width="560" height="18" fill="#0a0f1e"></rect>
+  <circle cx="142" cy="119" r="5" fill="#666c7a"></circle>
+  <circle cx="160" cy="119" r="5" fill="#666c7a"></circle>
+  <circle cx="178" cy="119" r="5" fill="#666c7a"></circle>
+  <rect x="220" y="110" width="320" height="20" rx="10" fill="#2a2f3e"></rect>
+  <text x="240" y="124" fill="#c9a84c" font-size="11" font-family="Inter,sans-serif">upranked.io/services/medical-seo</text>
+
+  
+  <g>
+    <rect x="150" y="160" width="500" height="34" rx="6" fill="rgba(201,168,76,0.12)" stroke="#c9a84c" stroke-width="1.5"></rect>
+    <text x="166" y="182" fill="#fff" font-size="15" font-family="Cairo,sans-serif" font-weight="700">Medical SEO Dubai · Premium Healthcare…</text>
+    <rect x="546" y="166" width="86" height="22" rx="11" fill="#c9a84c"></rect>
+    <text x="589" y="181" fill="#0a0f1e" font-size="9" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1" text-anchor="middle">TITLE TAG</text>
+  </g>
+
+  
+  <g>
+    <rect x="150" y="205" width="500" height="48" rx="6" fill="rgba(255,255,255,0.03)" stroke="#2a2f3e" stroke-width="1"></rect>
+    <text x="166" y="224" fill="#b0b0b0" font-size="11" font-family="Inter,sans-serif">Sector-specific SEO for clinics and hospitals across</text>
+    <text x="166" y="240" fill="#b0b0b0" font-size="11" font-family="Inter,sans-serif">the GCC. Patient enquiries that compound monthly.</text>
+    <rect x="546" y="211" width="86" height="22" rx="11" fill="rgba(201,168,76,0.15)" stroke="#c9a84c" stroke-opacity="0.4"></rect>
+    <text x="589" y="226" fill="#c9a84c" font-size="9" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1" text-anchor="middle">META</text>
+  </g>
+
+  
+  <g>
+    <rect x="150" y="265" width="500" height="42" rx="6" fill="rgba(201,168,76,0.08)" stroke="#c9a84c" stroke-opacity="0.4" stroke-width="1.5"></rect>
+    <text x="166" y="293" fill="#fff" font-size="22" font-family="Cairo,sans-serif" font-weight="800">Medical SEO Dubai — GCC</text>
+    <rect x="606" y="271" width="30" height="30" rx="6" fill="#c9a84c"></rect>
+    <text x="621" y="291" fill="#0a0f1e" font-size="13" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">H1</text>
+  </g>
+
+  
+  <g>
+    <rect x="150" y="320" width="400" height="20" rx="4" fill="rgba(255,255,255,0.04)"></rect>
+    <text x="166" y="335" fill="#b0b0b0" font-size="13" font-family="Cairo,sans-serif" font-weight="700">Sector-Specific Approach</text>
+    <rect x="606" y="320" width="30" height="20" rx="4" fill="rgba(201,168,76,0.15)"></rect>
+    <text x="621" y="335" fill="#c9a84c" font-size="10" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">H2</text>
+  </g>
+
+  <g>
+    <rect x="170" y="350" width="300" height="16" rx="4" fill="rgba(255,255,255,0.03)"></rect>
+    <text x="186" y="362" fill="#888" font-size="11" font-family="Cairo,sans-serif" font-weight="700">Clinic Network SEO</text>
+    <rect x="526" y="350" width="30" height="16" rx="4" fill="rgba(201,168,76,0.08)"></rect>
+    <text x="541" y="362" fill="#888" font-size="9" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">H3</text>
+  </g>
+
+  
+  <g>
+    <rect x="150" y="380" width="180" height="100" rx="8" fill="#2a2f3e"></rect>
+    <circle cx="180" cy="410" r="14" fill="#c9a84c" fill-opacity="0.3"></circle>
+    <path d="M165 440 L185 420 L210 445 L240 415 L260 460 L150 460 Z" fill="#c9a84c" fill-opacity="0.3"></path>
+    <rect x="340" y="380" width="310" height="100" rx="8" fill="rgba(255,255,255,0.03)" stroke="#2a2f3e" stroke-width="1"></rect>
+    <text x="356" y="402" fill="#c9a84c" font-size="10" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1">ALT TEXT</text>
+    <text x="356" y="422" fill="#fff" font-size="12" font-family="Inter,sans-serif">&#34;Patient consultation at premium Dubai</text>
+    <text x="356" y="438" fill="#fff" font-size="12" font-family="Inter,sans-serif">healthcare clinic — upranked.io case study&#34;</text>
+    <line x1="356" y1="450" x2="630" y2="450" stroke="#2a2f3e"></line>
+    <text x="356" y="468" fill="#666c7a" font-size="10" font-family="Inter,sans-serif">Optimized for image SEO · descriptive · keyword-rich</text>
+  </g>
+
+  <text x="400" y="80" fill="#c9a84c" font-size="13" font-family="Inter,sans-serif" font-weight="700" letter-spacing="6" text-anchor="middle">ON-PAGE SEO</text>
+  <text x="400" y="560" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" font-weight="700" letter-spacing="3" text-anchor="middle">EVERY ELEMENT TUNED FOR REVENUE</text>
+</svg>

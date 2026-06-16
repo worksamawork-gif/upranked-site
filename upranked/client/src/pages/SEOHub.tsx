@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { ArrowRight, MapPin, Phone, Mail, Search, Globe, BarChart2, Link2, Code2, Map, Languages, FileText, Target } from 'lucide-react';
 import { Link } from 'wouter';
 import { usePageMeta } from '@/hooks/usePageMeta';
@@ -250,13 +250,13 @@ export default function SEOHub() {
         </div>
       </section>
 
-      {/* Sama bio */}
+      {/* Sam bio */}
       <section className="py-20 px-4 md:px-6 lg:px-8">
         <div className="container-premium">
           <div className="bg-dark-gray border border-border rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">
             <img
-              src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sama Alaa — founder of upranked.io, SEO specialist in Dubai and the GCC"
+              src="/favicon.svg"
+              alt="Sam — founder of upranked.io, SEO specialist in Dubai and the GCC"
               width={120}
               height={120}
               loading="lazy"
@@ -265,12 +265,12 @@ export default function SEOHub() {
             />
             <div>
               <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-2">Founder-Led SEO</p>
-              <h3 className="text-2xl font-bold mb-3">Every SEO type delivered personally by Sama Alaa</h3>
+              <h3 className="text-2xl font-bold mb-3">Every SEO type delivered personally by Sam</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                upranked.io is deliberately founder-led. Sama Alaa personally leads every engagement — no junior teams, no account managers. All nine SEO disciplines are applied through the APEX Framework™, built specifically for GCC market conditions.
+                upranked.io is deliberately founder-led. Sam personally leads every engagement — no junior teams, no account managers. All nine SEO disciplines are applied through the APEX Framework™, built specifically for GCC market conditions.
               </p>
               <Link href="/about/">
-                <a className="text-accent font-semibold hover:underline inline-flex items-center gap-1">About Sama <ArrowRight className="w-4 h-4" /></a>
+                <a className="text-accent font-semibold hover:underline inline-flex items-center gap-1">About Sam <ArrowRight className="w-4 h-4" /></a>
               </Link>
             </div>
           </div>

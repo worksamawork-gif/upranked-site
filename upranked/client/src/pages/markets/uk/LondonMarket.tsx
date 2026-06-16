@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -7,7 +7,7 @@ import { usePageMeta } from '../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency London UK — Search Optimization for London Businesses', description: 'SEO services for businesses in London and the UK — technical SEO, content strategy, link building and local SEO by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/uk/london', areaServed: ['London', 'United Kingdom'] },
+    { '@type': 'Service', name: 'SEO Agency London UK — Search Optimization for London Businesses', description: 'SEO services for businesses in London and the UK — technical SEO, content strategy, link building and local SEO by upranked.io. APEX Framework by Sam.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/uk/london', areaServed: ['London', 'United Kingdom'] },
     { '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'Does upranked.io offer SEO services in London?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io serves businesses in London and the wider UK market. While upranked.io is headquartered in Dubai, the APEX Framework is market-agnostic — the same structured SEO methodology applied in Dubai and Riyadh delivers measurable results in London\'s competitive market. Book a free APEX Diagnostic call to discuss your London SEO strategy.' } },
       { '@type': 'Question', name: 'How competitive is SEO in London compared to Dubai?', acceptedAnswer: { '@type': 'Answer', text: "London is one of the world's most competitive SEO markets — significantly more competitive than most GCC cities. Financial services, legal, property, and professional B2B sectors in London have extremely high keyword competition and CPC values. Effective London SEO requires deep technical foundations, high-authority link profiles, and comprehensive content architecture — exactly what the APEX Framework delivers." } },
@@ -15,7 +15,7 @@ const schema = {
       { '@type': 'Question', name: 'What London sectors does upranked.io have experience with?', acceptedAnswer: { '@type': 'Answer', text: 'upranked.io serves London businesses in financial services and fintech, professional B2B services, healthcare and medical, legal services, and technology. These align with the GCC sectors where upranked.io has the deepest expertise — making cross-market GCC-to-London expansion strategies a natural capability.' } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'London SEO', item: 'https://upranked.io/markets/uk/london' }] },
-    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sam', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function LondonMarket() {
-  usePageMeta({ title: 'SEO Agency London UK — Technical SEO & Content Strategy', description: 'SEO agency for London and the UK. Technical SEO, content architecture, link building and GCC-to-London expansion SEO — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'london-market-schema' });
+  usePageMeta({ title: 'SEO Agency London UK — Technical SEO & Content Strategy', description: 'SEO agency for London and the UK. Technical SEO, content architecture, link building and GCC-to-London expansion SEO — APEX Framework by Sam at upranked.io.', schema, schemaId: 'london-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -97,7 +97,7 @@ export default function LondonMarket() {
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
               src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-              alt="Sama Alaa — SEO strategist at upranked.io serving London UK and GCC businesses"
+              alt="Sam — SEO strategist at upranked.io serving London UK and GCC businesses"
               width={400}
               height={640}
               loading="lazy"
@@ -106,9 +106,9 @@ export default function LondonMarket() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Your London SEO Strategist</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across GCC and global markets. The APEX Framework — upranked.io's structured SEO methodology — is market-agnostic, delivering the same systematic content architecture and technical foundations that win in Dubai and Riyadh to London's highly competitive financial services, legal, and professional B2B sectors.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam is a GCC SEO strategist with deep expertise across GCC and global markets. The APEX Framework — upranked.io's structured SEO methodology — is market-agnostic, delivering the same systematic content architecture and technical foundations that win in Dubai and Riyadh to London's highly competitive financial services, legal, and professional B2B sectors.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

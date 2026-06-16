@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -7,14 +7,14 @@ import { usePageMeta } from '../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency France — Paris & French Market Search Optimization', description: 'SEO services for businesses in France — technical SEO, content strategy, and GCC-to-France expansion SEO by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/eu/france', areaServed: ['Paris', 'Lyon', 'Marseille', 'France'] },
+    { '@type': 'Service', name: 'SEO Agency France — Paris & French Market Search Optimization', description: 'SEO services for businesses in France — technical SEO, content strategy, and GCC-to-France expansion SEO by upranked.io. APEX Framework by Sam.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/eu/france', areaServed: ['Paris', 'Lyon', 'Marseille', 'France'] },
     { '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'Does upranked.io offer SEO services in France?', acceptedAnswer: { '@type': 'Answer', text: "Yes. upranked.io serves businesses in France — including Paris's financial and luxury sectors, Lyon's industrial market, and France's broader professional services ecosystem. The APEX Framework delivers structured SEO across French market verticals. Book a free APEX Diagnostic to discuss your France SEO strategy." } },
       { '@type': 'Question', name: 'How competitive is SEO in France compared to Dubai?', acceptedAnswer: { '@type': 'Answer', text: "France is a sophisticated SEO market with strong competition in luxury, finance, technology, and professional services — particularly in Paris. French buyers research extensively online before engaging B2B service providers, making content authority and technical foundations essential for ranking success in France." } },
       { '@type': 'Question', name: 'Do you serve GCC businesses expanding into France?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io specifically serves GCC businesses entering the French market — investment firms targeting Paris financial institutions, GCC luxury brands expanding in France, and Gulf healthcare groups entering the European market. Cross-market GCC-to-France SEO from a single specialist is a core upranked.io capability.' } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'France SEO', item: 'https://upranked.io/markets/eu/france' }] },
-    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sam', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -50,7 +50,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function FranceMarket() {
-  usePageMeta({ title: 'SEO Agency France — Paris & French Market Search Optimization', description: 'SEO agency for France and Paris. Technical SEO, content architecture, luxury & financial SEO, and GCC-to-France expansion — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'france-market-schema' });
+  usePageMeta({ title: 'SEO Agency France — Paris & French Market Search Optimization', description: 'SEO agency for France and Paris. Technical SEO, content architecture, luxury & financial SEO, and GCC-to-France expansion — APEX Framework by Sam at upranked.io.', schema, schemaId: 'france-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -97,12 +97,12 @@ export default function FranceMarket() {
       <section className="section-padding bg-dark-gray">
         <div className="container-premium max-w-4xl">
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
-            <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — SEO strategist at upranked.io serving France and GCC businesses" width={112} height={176} loading="lazy" decoding="async" className="w-28 h-44 rounded-xl object-cover object-top flex-shrink-0" />
+            <img src="/favicon.svg" alt="Sam — SEO strategist at upranked.io serving France and GCC businesses" width={112} height={176} loading="lazy" decoding="async" className="w-28 h-44 rounded-xl object-cover object-top flex-shrink-0" />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Your France SEO Strategist</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across GCC and global markets. The APEX Framework — upranked.io's structured SEO methodology — delivers the same systematic content architecture and technical foundations that win in Dubai and Riyadh to France's competitive luxury, financial, and professional B2B sectors.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam is a GCC SEO strategist with deep expertise across GCC and global markets. The APEX Framework — upranked.io's structured SEO methodology — delivers the same systematic content architecture and technical foundations that win in Dubai and Riyadh to France's competitive luxury, financial, and professional B2B sectors.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

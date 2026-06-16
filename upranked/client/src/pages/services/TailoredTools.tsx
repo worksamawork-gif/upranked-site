@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PAGE: /growth-intelligence/tools
  * PRIMARY KW: custom SEO tools Dubai / growth intelligence tools GCC (Vol: ~320/mo | KD: 22)
  * SECONDARY KW: custom marketing dashboard GCC, SEO dashboard Dubai, growth intelligence platform UAE
@@ -38,10 +38,10 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 const faqs = [
   { q: 'What kind of custom growth tools does upranked.io build?', a: 'upranked.io builds purpose-built growth intelligence tools for businesses in Dubai, the GCC, London, and New York. Common tools include: custom SEO rank tracking dashboards tied to your commercial keywords, automated competitor monitoring and alert systems, pipeline intelligence platforms that connect organic traffic to CRM data, bilingual keyword opportunity finders for EN/AR GCC markets, content performance analytics platforms, and GCC market intelligence aggregators. Every tool is built around your specific intelligence gap — not a generic SaaS template.' },
   { q: 'Do I need a technical team to use the tools upranked.io builds?', a: 'No. Tools are designed with your team\'s capability in mind. Clean interfaces, automated workflows, scheduled reports delivered to your inbox, and clear output that non-technical users can act on immediately. Training is included in every tool delivery. The goal is intelligence at your fingertips — not a platform that requires an engineer to operate.' },
-  { q: 'How long does it take to build a custom growth tool?', a: 'Typically 2–8 weeks from scoping to delivery, depending on complexity. Simple dashboards and automated trackers: 2–3 weeks. Integrated intelligence platforms connecting multiple data sources: 5–8 weeks. A scoping call with Sama Alaa gives you a precise timeline based on your specific requirements before any commitment.' },
+  { q: 'How long does it take to build a custom growth tool?', a: 'Typically 2–8 weeks from scoping to delivery, depending on complexity. Simple dashboards and automated trackers: 2–3 weeks. Integrated intelligence platforms connecting multiple data sources: 5–8 weeks. A scoping call with Sam gives you a precise timeline based on your specific requirements before any commitment.' },
   { q: 'Can the tools integrate with our existing platforms?', a: 'Yes. Standard integrations include Google Analytics 4, Google Search Console, Google Ads, CRM platforms (HubSpot, Salesforce, Zoho), spreadsheets, databases, and most marketing platforms via APIs. For GCC-specific requirements like Arabic language data processing or local directory integrations, we build custom connectors.' },
   { q: 'Are growth tools suitable for businesses in Dubai and the GCC?', a: 'Tools built by upranked.io are specifically designed for GCC market dynamics — bilingual EN/AR data, UAE and KSA search engine patterns, free zone and emirate-level geographic segmentation, and GCC-specific competitor tracking. Whether you\'re tracking commercial keywords in Dubai, procurement searches in Riyadh, or market entry intelligence for Kuwait and Bahrain, the tools are configured for your exact market.' },
-  { q: 'How do I get started with a custom growth tool?', a: 'Book a free discovery call via the Contact page, our contact page, or email uprankedio@gmail.com. Describe the intelligence gap you have — the data you wish you had, the process that wastes time, or the insight that would change your decisions. Sama Alaa will assess your requirements and outline what can be built, in what timeframe, and at what investment level.' },
+  { q: 'How do I get started with a custom growth tool?', a: 'Book a free discovery call via the Contact page, our contact page, or email uprankedio@gmail.com. Describe the intelligence gap you have — the data you wish you had, the process that wastes time, or the insight that would change your decisions. Sam will assess your requirements and outline what can be built, in what timeframe, and at what investment level.' },
 ];
 
 const schema = {
@@ -65,7 +65,7 @@ const schema = {
     {
       '@type': 'Person',
       '@id': 'https://upranked.io/about#person',
-      name: 'Sama Alaa',
+      name: 'Sam',
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -92,7 +92,7 @@ const toolExamples = [
 ];
 
 const steps = [
-  { n: '01', title: 'Problem Discovery', desc: 'Sama Alaa maps the intelligence gap — the data you don\'t have, the process that costs time, or the insight that would change your decisions.' },
+  { n: '01', title: 'Problem Discovery', desc: 'Sam maps the intelligence gap — the data you don\'t have, the process that costs time, or the insight that would change your decisions.' },
   { n: '02', title: 'Tool Architecture', desc: 'Data sources, automation logic, output format, and workflow integration designed before a single line of code is written.' },
   { n: '03', title: 'Build & Integrate', desc: 'The tool is built and integrated with your existing platforms — GA4, GSC, CRM, or custom data sources. No generic SaaS compromise.' },
   { n: '04', title: 'Training & Iteration', desc: 'Full team training on delivery, plus a 30-day iteration cycle to refine the tool based on real usage before handoff is complete.' },
@@ -135,7 +135,7 @@ export default function TailoredTools() {
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Discuss Your Tool Idea <ArrowRight className="w-5 h-5" /></a></Link>
-                  <Link href="/about/"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sama Alaa</a></Link>
+                  <Link href="/about/"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sam</a></Link>
                 </div>
               </motion.div>
             </div>
@@ -215,13 +215,49 @@ export default function TailoredTools() {
         </div>
       </section>
 
+      {/* ── INVESTMENT / PRICING ── */}
+      <section className="section-padding bg-navy">
+        <div className="container-premium max-w-3xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-3">Investment — <span className="text-accent">Transparent Pricing</span></h2>
+              <p className="text-text-secondary">Custom tools are scoped per project. Here is how most engagements start.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="border border-border bg-dark-gray/50 rounded-2xl p-6 flex flex-col gap-3">
+                <span className="text-xs text-text-secondary font-semibold uppercase tracking-widest">Start Here</span>
+                <div>
+                  <p className="text-3xl font-black text-white">$650</p>
+                  <p className="text-text-secondary text-xs mt-0.5">AED 2,400 · one-time</p>
+                </div>
+                <p className="font-bold text-white text-sm">APEX Diagnostic</p>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">Defines the intelligence gap your business faces and maps the tool that would have the highest impact — before you invest in a build.</p>
+                <Link href="/contact/"><a className="w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold border border-accent text-accent hover:bg-accent/10 flex items-center justify-center gap-2 transition-all">Book Diagnostic <ArrowRight className="w-4 h-4" /></a></Link>
+              </div>
+              <div className="border border-accent bg-dark-gray rounded-2xl p-6 flex flex-col gap-3 shadow-xl shadow-accent/10">
+                <span className="self-start bg-accent text-navy text-xs font-bold px-3 py-1 rounded-full">Custom Build</span>
+                <div>
+                  <p className="text-3xl font-black text-white">Custom</p>
+                  <p className="text-text-secondary text-xs mt-0.5">Scoped per project requirements</p>
+                </div>
+                <p className="font-bold text-white text-sm">Tailored Growth Tool</p>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">Every tool is built to spec. Book a free discovery call — Sam will define scope, timeline, and investment based on your specific data and business requirements.</p>
+                <Link href="/contact/"><a className="w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold bg-accent text-navy hover:bg-accent/90 flex items-center justify-center gap-2 transition-all">Scope Your Tool <ArrowRight className="w-4 h-4" /></a></Link>
+              </div>
+            </div>
+            <p className="text-center text-text-secondary text-xs mb-2">No retainer required to start. Prices in USD.</p>
+            <div className="text-center"><Link href="/pricing/"><a className="text-accent hover:underline text-sm inline-flex items-center gap-1">View all packages — full pricing breakdown <ArrowRight className="w-3.5 h-3.5" /></a></Link></div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* BOOKING CTA + NAP */}
       <section className="section-padding bg-gradient-to-br from-navy via-dark-gray to-navy">
         <div className="container-premium max-w-3xl text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Star className="w-12 h-12 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Have a Growth Problem That Needs a <span className="text-accent">Custom Tool</span>?</h2>
-            <p className="text-text-secondary mb-6 leading-relaxed">Book a free discovery call with Sama Alaa. Describe the intelligence gap you face — we'll tell you exactly what can be built, in what timeframe, at what investment.</p>
+            <p className="text-text-secondary mb-6 leading-relaxed">Book a free discovery call with Sam. Describe the intelligence gap you face — we'll tell you exactly what can be built, in what timeframe, at what investment.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Discovery Call <ArrowRight className="w-5 h-5" /></a></Link>
               <a href="/contact/" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>

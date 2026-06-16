@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, Mail, Phone, MapPin, CheckCircle, ChevronDown } from 'lucide-react';
@@ -13,7 +13,7 @@ const schema = {
       '@type': 'ContactPage',
       name: 'Book a Free SEO Strategy Call — upranked.io',
       description:
-        'Book a free 30-minute SEO strategy call with Sama Alaa, founder of upranked.io. Serving businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York.',
+        'Book a free 30-minute SEO strategy call with Sam, founder of upranked.io. Serving businesses in Dubai, Riyadh, Kuwait City, Manama, London, and New York.',
       url: 'https://upranked.io/contact',
       provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
     },
@@ -22,10 +22,10 @@ const schema = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'How do I book a strategy call with Sama Alaa?',
+          name: 'How do I book a strategy call with Sam?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Fill in the contact form on this page or reach out directly via our contact page or email uprankedio@gmail.com. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
+            text: 'Fill in the contact form on this page or reach out directly via our contact page or email uprankedio@gmail.com. Sam reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
           },
         },
         {
@@ -41,7 +41,7 @@ const schema = {
           name: 'How long does the strategy call take?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'The initial call is 30 minutes. If there is strong alignment and a clear opportunity, Sama may invite you to an extended 60-minute APEX Diagnostic session at no cost. All scheduling happens over WhatsApp or email — no booking software required.',
+            text: 'The initial call is 30 minutes. If there is strong alignment and a clear opportunity, Sam may invite you to an extended 60-minute APEX Diagnostic session at no cost. All scheduling happens over WhatsApp or email — no booking software required.',
           },
         },
         {
@@ -57,22 +57,22 @@ const schema = {
           name: 'What should I prepare before my SEO strategy call?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Nothing formal is required. It helps to have a rough sense of your current website performance, your top 3 competitors, and the growth outcome you are chasing. Sama will guide the conversation — you do not need to prepare a brief or presentation.',
+            text: 'Nothing formal is required. It helps to have a rough sense of your current website performance, your top 3 competitors, and the growth outcome you are chasing. Sam will guide the conversation — you do not need to prepare a brief or presentation.',
           },
         },
         {
           '@type': 'Question',
-          name: 'How quickly will Sama respond to my inquiry near me in the GCC?',
+          name: 'How quickly will Sam respond to my inquiry near me in the GCC?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'All inquiries are reviewed personally by Sama within 24 hours. Businesses in Dubai, Riyadh, Kuwait, and Bahrain receive priority responses given the time zone alignment. London and New York inquiries are also responded to within the same 24-hour window.',
+            text: 'All inquiries are reviewed personally by Sam within 24 hours. Businesses in Dubai, Riyadh, Kuwait, and Bahrain receive priority responses given the time zone alignment. London and New York inquiries are also responded to within the same 24-hour window.',
           },
         },
       ],
     },
     {
       '@type': 'Person',
-      name: 'Sama Alaa',
+      name: 'Sam',
       jobTitle: 'Founder & GCC SEO Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -106,7 +106,7 @@ const serviceAreas = [
 ];
 
 const expectItems = [
-  'A real conversation with Sama — not an intake form review with a junior team',
+  'A real conversation with Sam — not an intake form review with a junior team',
   'Honest assessment of your current digital position in the GCC or global market',
   'Specific opportunities identified based on your industry and target market',
   'Clear next steps whether you engage with us or not — no high-pressure close',
@@ -114,8 +114,8 @@ const expectItems = [
 
 const faqs = [
   {
-    q: 'How do I book a strategy call with Sama Alaa?',
-    a: 'Fill in the contact form on this page or reach out directly via our contact page or email uprankedio@gmail.com. Sama reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
+    q: 'How do I book a strategy call with Sam?',
+    a: 'Fill in the contact form on this page or reach out directly via our contact page or email uprankedio@gmail.com. Sam reviews every inquiry personally and responds within 24 hours to schedule your free strategy call.',
   },
   {
     q: 'Is the initial strategy consultation really free?',
@@ -123,7 +123,7 @@ const faqs = [
   },
   {
     q: 'How long does the strategy call take?',
-    a: 'The initial call is 30 minutes. If there is strong alignment and a clear opportunity, Sama may invite you to an extended 60-minute APEX Diagnostic session at no cost. All scheduling happens over WhatsApp or email — no booking software required.',
+    a: 'The initial call is 30 minutes. If there is strong alignment and a clear opportunity, Sam may invite you to an extended 60-minute APEX Diagnostic session at no cost. All scheduling happens over WhatsApp or email — no booking software required.',
   },
   {
     q: 'Can I book a strategy call if I am not based in Dubai?',
@@ -131,11 +131,11 @@ const faqs = [
   },
   {
     q: 'What should I prepare before my SEO strategy call?',
-    a: 'Nothing formal is required. It helps to have a rough sense of your current website performance, your top 3 competitors, and the growth outcome you are chasing. Sama will guide the conversation — you do not need to prepare a brief or presentation.',
+    a: 'Nothing formal is required. It helps to have a rough sense of your current website performance, your top 3 competitors, and the growth outcome you are chasing. Sam will guide the conversation — you do not need to prepare a brief or presentation.',
   },
   {
-    q: 'How quickly will Sama respond to my inquiry near me in the GCC?',
-    a: 'All inquiries are reviewed personally by Sama within 24 hours. Businesses in Dubai, Riyadh, Kuwait, and Bahrain receive priority responses given the time zone alignment. London and New York inquiries are also responded to within the same 24-hour window.',
+    q: 'How quickly will Sam respond to my inquiry near me in the GCC?',
+    a: 'All inquiries are reviewed personally by Sam within 24 hours. Businesses in Dubai, Riyadh, Kuwait, and Bahrain receive priority responses given the time zone alignment. London and New York inquiries are also responded to within the same 24-hour window.',
   },
 ];
 
@@ -187,7 +187,7 @@ export default function Contact() {
   usePageMeta({
     title: 'Book a Free SEO Strategy Call — Dubai, GCC & Global',
     description:
-      'Book a free 30-minute SEO strategy call with Sama Alaa at upranked.io. Serving businesses in Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London UK, and New York USA.',
+      'Book a free 30-minute SEO strategy call with Sam at upranked.io. Serving businesses in Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London UK, and New York USA.',
     schema,
     schemaId: 'contact-schema',
   });
@@ -263,7 +263,7 @@ export default function Contact() {
                   Book a Free SEO Strategy Call — Dubai, GCC, London &amp; New York
                 </h1>
                 <p className="text-xl text-text-secondary mb-8 leading-relaxed">
-                  A free 30-minute conversation with Sama Alaa. No pitch, no pressure — just clarity on what's possible for your business across the GCC and global markets. Available for clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.
+                  A free 30-minute conversation with Sam. No pitch, no pressure — just clarity on what's possible for your business across the GCC and global markets. Available for clients in Dubai, Riyadh, Kuwait City, Manama, London, and New York.
                 </p>
 
                 {/* Featured snippet definition box */}
@@ -271,7 +271,7 @@ export default function Contact() {
                   <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">What You Get</p>
                   <p className="text-white font-semibold mb-1">The Free APEX Diagnostic</p>
                   <p className="text-text-secondary text-sm leading-relaxed">
-                    A focused 30-minute strategy session where Sama Alaa applies the APEX Framework™ to your specific situation — delivering an honest audit of your current digital position, a competitor analysis, and a prioritized growth roadmap. No obligations, no upsells during the call.
+                    A focused 30-minute strategy session where Sam applies the APEX Framework™ to your specific situation — delivering an honest audit of your current digital position, a competitor analysis, and a prioritized growth roadmap. No obligations, no upsells during the call.
                   </p>
                 </div>
 
@@ -288,7 +288,7 @@ export default function Contact() {
               <div className="w-full max-w-[800px]">
                 <img
                   src="/heroes/08-magnifier-audit.svg"
-                  alt="SEO audit magnifier visual — free APEX Diagnostic call with upranked.io founder Sama Alaa"
+                  alt="SEO audit magnifier visual — free APEX Diagnostic call with upranked.io founder Sam"
                   width={800}
                   height={600}
                   loading="eager"
@@ -336,7 +336,7 @@ export default function Contact() {
 
               <div className="mt-4 p-4 bg-navy border border-accent/30 rounded-xl text-xs">
                 <p className="text-accent font-semibold mb-1">Response Time</p>
-                <p className="text-text-secondary">All inquiries reviewed personally by Sama within 24 hours. Priority for GCC-based businesses.</p>
+                <p className="text-text-secondary">All inquiries reviewed personally by Sam within 24 hours. Priority for GCC-based businesses.</p>
               </div>
             </div>
           </aside>
@@ -354,7 +354,7 @@ export default function Contact() {
               >
                 <h2 className="text-3xl font-bold text-white mb-4">What to Expect</h2>
                 <p className="text-text-secondary mb-8 leading-relaxed">
-                  The free APEX Diagnostic is not a sales call disguised as a consultation. It is a structured 30-minute session where Sama reviews your actual situation — your market, your competitors, your current digital position — and gives you a frank, expert perspective on what is possible. The goal is to leave you with clarity, not a quote.
+                  The free APEX Diagnostic is not a sales call disguised as a consultation. It is a structured 30-minute session where Sam reviews your actual situation — your market, your competitors, your current digital position — and gives you a frank, expert perspective on what is possible. The goal is to leave you with clarity, not a quote.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
@@ -399,12 +399,12 @@ export default function Contact() {
                 <div className="mt-10 bg-dark-gray border border-accent/30 rounded-2xl p-6">
                   <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-4">Who You'll Speak With</p>
                   <div className="flex flex-col sm:flex-row gap-5">
-                    <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder of upranked.io, GCC SEO Strategist Dubai" width={64} height={64} loading="lazy" className="w-16 h-16 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
+                    <img src="/favicon.svg" alt="Sam — Founder of upranked.io, GCC SEO Strategist Dubai" width={64} height={64} loading="lazy" className="w-16 h-16 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
                     <div>
-                      <h3 className="text-lg font-bold text-white mb-1">Sama Alaa</h3>
+                      <h3 className="text-lg font-bold text-white mb-1">Sam</h3>
                       <p className="text-accent text-sm font-medium mb-3">Founder, upranked.io — GCC SEO Strategist &amp; Creator of the APEX Framework™</p>
                       <p className="text-text-secondary text-sm leading-relaxed">
-                        Sama Alaa personally handles every initial strategy conversation at upranked.io. There are no junior intake calls, no gatekeeping staff. When you book a call, you speak directly with the founder — the same person who will design and execute your growth strategy if you choose to move forward.
+                        Sam personally handles every initial strategy conversation at upranked.io. There are no junior intake calls, no gatekeeping staff. When you book a call, you speak directly with the founder — the same person who will design and execute your growth strategy if you choose to move forward.
                       </p>
                     </div>
                   </div>
@@ -422,7 +422,7 @@ export default function Contact() {
               >
                 <h2 className="text-3xl font-bold text-white mb-4">Book Your Free Strategy Call</h2>
                 <p className="text-text-secondary mb-8 leading-relaxed">
-                  Fill in the form below or contact Sama directly via WhatsApp or email. All messages are read and responded to personally within 24 hours — whether you are in Dubai, London, New York, or anywhere across the GCC.
+                  Fill in the form below or contact Sam directly via WhatsApp or email. All messages are read and responded to personally within 24 hours — whether you are in Dubai, London, New York, or anywhere across the GCC.
                 </p>
 
                 {/* Direct contact options */}
@@ -447,7 +447,7 @@ export default function Contact() {
                       <Mail className="w-4 h-4 text-accent" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold text-sm group-hover:text-accent transition-colors">Email Sama</p>
+                      <p className="text-white font-semibold text-sm group-hover:text-accent transition-colors">Email Sam</p>
                       <p className="text-text-secondary text-xs">uprankedio@gmail.com</p>
                     </div>
                   </a>
@@ -465,7 +465,7 @@ export default function Contact() {
                     </div>
                     <h3 className="text-3xl font-bold text-white mb-4">Message Received</h3>
                     <p className="text-text-secondary leading-relaxed max-w-md mx-auto">
-                      Thank you for reaching out. Sama will review your details personally and be in touch within 24 hours to schedule your strategy call.
+                      Thank you for reaching out. Sam will review your details personally and be in touch within 24 hours to schedule your strategy call.
                     </p>
                   </motion.div>
                 ) : (
@@ -473,7 +473,7 @@ export default function Contact() {
                     <input type="hidden" name="form-name" value="contact" />
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-2">Send a Message</h3>
-                      <p className="text-text-secondary text-sm">Fill in the form and Sama will follow up within 24 hours.</p>
+                      <p className="text-text-secondary text-sm">Fill in the form and Sam will follow up within 24 hours.</p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -598,7 +598,7 @@ export default function Contact() {
                     </button>
 
                     <p className="text-text-secondary text-xs text-center">
-                      By submitting this form you agree to be contacted by Sama Alaa at upranked.io. No spam — ever.
+                      By submitting this form you agree to be contacted by Sam at upranked.io. No spam — ever.
                     </p>
                   </form>
                 )}
@@ -646,7 +646,7 @@ export default function Contact() {
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
                 <h2 className="text-3xl font-bold text-white mb-2">Booking FAQs</h2>
                 <p className="text-text-secondary mb-8">
-                  Common questions about booking a strategy call with Sama Alaa at upranked.io — for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
+                  Common questions about booking a strategy call with Sam at upranked.io — for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
                 </p>
                 <div className="space-y-3">
                   {faqs.map(faq => (
@@ -667,7 +667,7 @@ export default function Contact() {
               Ready to Talk? <span className="text-accent">Book Your Free Call.</span>
             </h2>
             <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
-              30 minutes with Sama Alaa. Free, honest, and focused on your actual situation — whether you are in Dubai, Riyadh, Kuwait, Bahrain, London, or New York.
+              30 minutes with Sam. Free, honest, and focused on your actual situation — whether you are in Dubai, Riyadh, Kuwait, Bahrain, London, or New York.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               <a
@@ -680,7 +680,7 @@ export default function Contact() {
                 href="mailto:uprankedio@gmail.com"
                 className="btn-secondary text-lg px-10 py-5 inline-flex items-center gap-2"
               >
-                Email Sama
+                Email Sam
               </a>
             </div>
             {/* NAP #3 */}

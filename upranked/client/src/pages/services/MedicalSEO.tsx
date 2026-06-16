@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SEO REFERENCE BLOCK (Internal — not visible on page)
  * URL: /industries/medical
  * Primary KW: medical SEO Dubai (commercial intent)
@@ -100,7 +100,7 @@ const faqs = [
   },
   {
     q: 'What upranked.io\'s medical SEO differ from other agencies in the UAE?',
-    a: 'Three factors: sector exclusivity (we only work with high-value GCC businesses, not generic SMBs), the APEX Framework™ (a proprietary 4-phase methodology built for trust-sensitive industries), and founder-led delivery (Sama Alaa leads every medical SEO engagement personally — not a junior account manager). We also provide bilingual EN/AR strategy as standard, not as an add-on.',
+    a: 'Three factors: sector exclusivity (we only work with high-value GCC businesses, not generic SMBs), the APEX Framework™ (a proprietary 4-phase methodology built for trust-sensitive industries), and founder-led delivery (Sam leads every medical SEO engagement personally — not a junior account manager). We also provide bilingual EN/AR strategy as standard, not as an add-on.',
   },
 ];
 
@@ -174,8 +174,8 @@ export default function MedicalSEO() {
         },
         {
           '@type': 'Person',
-          '@id': 'https://upranked.io/about#Sama',
-          name: 'Sama Alaa',
+          '@id': 'https://upranked.io/about#Sam',
+          name: 'Sam',
           jobTitle: 'Founder & Chief Growth Strategist',
           worksFor: { '@type': 'Organization', name: 'upranked.io' },
           url: 'https://upranked.io/about',
@@ -216,7 +216,7 @@ export default function MedicalSEO() {
 
               {/* Trust bar */}
               <div className="flex flex-wrap gap-4 mb-8 text-sm text-text-secondary">
-                {['DHA/MOH-Aware Strategy', 'Bilingual EN/AR', 'E-E-A-T Specialists', 'Founder-Led by Sama Alaa'].map(t => (
+                {['DHA/MOH-Aware Strategy', 'Bilingual EN/AR', 'E-E-A-T Specialists', 'Founder-Led by Sam'].map(t => (
                   <div key={t} className="flex items-center gap-1.5">
                     <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
                     <span>{t}</span>
@@ -296,7 +296,7 @@ export default function MedicalSEO() {
                 ['#whats-included', 'What\'s Included in Medical SEO'],
                 ['#apex-process', 'The APEX Framework™ for Healthcare'],
                 ['#results', 'Results & Statistics'],
-                ['#expert-review', 'Expert Review — Sama Alaa'],
+                ['#expert-review', 'Expert Review — Sam'],
                 ['#why-upranked', 'Why upranked.io for Medical SEO?'],
                 ['#service-areas', 'Service Areas — Dubai & GCC'],
                 ['#faq', 'Frequently Asked Questions'],
@@ -511,17 +511,17 @@ export default function MedicalSEO() {
             <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-6">Expert Review & E-E-A-T Verification</p>
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="flex-shrink-0">
-                <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder upranked.io, Medical SEO Expert GCC" width={96} height={96} loading="lazy" className="w-24 h-24 rounded-full object-cover object-top border-2 border-accent/30" decoding="async" />
+                <img src="/favicon.svg" alt="Sam — Founder upranked.io, Medical SEO Expert GCC" width={96} height={96} loading="lazy" className="w-24 h-24 rounded-full object-cover object-top border-2 border-accent/30" decoding="async" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-xl font-bold text-white">Sama Alaa</h3>
+                  <h3 className="text-xl font-bold text-white">Sam</h3>
                   <span className="text-xs bg-accent/20 text-accent border border-accent/30 px-2 py-0.5 rounded-full font-semibold">Reviewed & Verified</span>
                 </div>
                 <p className="text-accent font-semibold text-sm mb-1">Founder, upranked.io · Creator of the APEX Framework™</p>
                 <p className="text-text-secondary text-sm mb-4">GCC Growth Intelligence Specialist · Medical SEO Expert · Bilingual EN/AR Strategy</p>
                 <p className="text-text-secondary leading-relaxed mb-4">
-                  All medical SEO strategies on this page have been designed and personally reviewed by Sama Alaa. Every engagement at upranked.io is founder-led — meaning the strategy, content architecture, and execution direction for your clinic or practice comes directly from Sama, not delegated to a junior account manager. Sama has worked with medical practices across Dubai, Abu Dhabi, and the wider GCC, building the APEX Framework™ specifically for the complex authority requirements of healthcare SEO in the UAE.
+                  All medical SEO strategies on this page have been designed and personally reviewed by Sam. Every engagement at upranked.io is founder-led — meaning the strategy, content architecture, and execution direction for your clinic or practice comes directly from Sam, not delegated to a junior account manager. Sam has worked with medical practices across Dubai, Abu Dhabi, and the wider GCC, building the APEX Framework™ specifically for the complex authority requirements of healthcare SEO in the UAE.
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm">
                   <div className="flex items-center gap-2 text-text-secondary">
@@ -554,7 +554,7 @@ export default function MedicalSEO() {
                 { title: 'Medical SEO Specialists — Not Generalists', desc: 'We don\'t serve restaurants, e-commerce, or SaaS alongside your clinic. Our GCC-only focus means every strategy, keyword database, and link contact is relevant to high-value healthcare in Dubai and the UAE.' },
                 { title: 'The APEX Framework™ — Built for E-E-A-T', desc: 'Standard SEO playbooks were not designed for YMYL content. The APEX Framework™ was built specifically for trust-sensitive industries — starting with the authority signals Google requires before rankings can move.' },
                 { title: 'Bilingual Capability — Real Arabic SEO', desc: 'We don\'t machine-translate your English pages. We conduct independent Arabic keyword research, write native-quality Arabic medical content, and implement correct RTL architecture — capturing a patient segment your English-only competitors cannot reach.' },
-                { title: 'Founder-Led on Every Engagement', desc: 'Sama Alaa personally leads every medical SEO engagement. You\'re not passed to a junior team after signing — strategy, direction, and quality review remain with the founder throughout.' },
+                { title: 'Founder-Led on Every Engagement', desc: 'Sam personally leads every medical SEO engagement. You\'re not passed to a junior team after signing — strategy, direction, and quality review remain with the founder throughout.' },
                 { title: 'ROI-Tied Reporting', desc: 'We report on patient inquiries, appointment bookings, and cost-per-patient from organic search — not impressions and traffic that don\'t pay your lease.' },
                 { title: 'No Long-Term Lock-in', desc: 'Month-to-month after the initial setup phase. We keep clients through results, not contracts.' },
                 { title: 'Deep Healthcare SEO Knowledge', desc: 'Read our in-depth guide on healthcare SEO strategy for UAE clinics and hospitals — covering E-E-A-T, DHA compliance, Arabic content, and MedicalOrganization schema in detail.' },
@@ -639,6 +639,39 @@ export default function MedicalSEO() {
         </div>
       </section>
 
+      {/* ── INVESTMENT / PRICING ── */}
+      <section className="section-padding bg-navy">
+        <div className="container-premium max-w-4xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-10">
+            <h2 className="text-3xl font-bold mb-3">Investment — <span className="text-accent">Transparent Pricing</span></h2>
+            <p className="text-text-secondary">No "contact us for a quote." Here is exactly what Medical SEO costs at upranked.io.</p>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            {[
+              { name: 'APEX Diagnostic', tag: 'One-Time', price: '$650', sub: 'AED 2,400 · one-time', desc: 'Full audit, competitor gap analysis, bilingual keyword map, and 90-day roadmap — before you commit to a retainer.', highlight: false },
+              { name: 'Authority Retainer', tag: 'Most Popular', price: '$2,200', sub: 'AED 8,100 / month', desc: 'Full bilingual EN/AR SEO — technical, content, link building, AEO/GEO. Built for Medical and high-trust healthcare sectors.', highlight: true },
+              { name: 'GCC Scale', tag: 'Multi-Market', price: '$3,600', sub: 'AED 13,200 / month', desc: 'Multi-market coverage for clinics and medical groups operating across UAE, KSA, Kuwait, or Bahrain.', highlight: false },
+            ].map((p, i) => (
+              <motion.div key={p.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i * 0.1 }} viewport={{ once: true }}
+                className={`rounded-2xl border p-6 flex flex-col gap-3 ${p.highlight ? 'border-accent bg-dark-gray shadow-xl shadow-accent/10' : 'border-border bg-dark-gray/50'}`}>
+                {p.highlight
+                  ? <span className="self-start bg-accent text-navy text-xs font-bold px-3 py-1 rounded-full">{p.tag}</span>
+                  : <span className="text-xs text-text-secondary font-semibold uppercase tracking-widest">{p.tag}</span>}
+                <div>
+                  <p className="text-3xl font-black text-white">{p.price}</p>
+                  <p className="text-text-secondary text-xs mt-0.5">{p.sub}</p>
+                </div>
+                <p className="font-bold text-white text-sm">{p.name}</p>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">{p.desc}</p>
+                <Link href="/contact/"><a className={`w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 transition-all ${p.highlight ? 'bg-accent text-navy hover:bg-accent/90' : 'border border-accent text-accent hover:bg-accent/10'}`}>Get Started <ArrowRight className="w-4 h-4" /></a></Link>
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-center text-text-secondary text-xs mb-2">3-month minimum on retainers. APEX Diagnostic fee credited to first retainer month. Prices in USD.</p>
+          <div className="text-center"><Link href="/pricing/"><a className="text-accent hover:underline text-sm inline-flex items-center gap-1">Full pricing breakdown — compare all packages <ArrowRight className="w-3.5 h-3.5" /></a></Link></div>
+        </div>
+      </section>
+
       {/* ── BOOKING CTA (most prominent) ──────────────────────────────────── */}
       <section className="section-padding bg-dark-gray">
         <div className="container-premium text-center">
@@ -649,7 +682,7 @@ export default function MedicalSEO() {
                 Ready to Become the <span className="text-accent">Top-Ranked</span> Medical Practice in Your Speciality?
               </h2>
               <p className="text-xl text-text-secondary mb-8 leading-relaxed">
-                Book a free 30-minute strategy call with Sama Alaa. We'll audit your clinic's current search visibility in Dubai and across the UAE, identify the highest-intent patient queries you're missing, and give you a clear, honest picture of what it would take to dominate your market.
+                Book a free 30-minute strategy call with Sam. We'll audit your clinic's current search visibility in Dubai and across the UAE, identify the highest-intent patient queries you're missing, and give you a clear, honest picture of what it would take to dominate your market.
               </p>
               <Link href="/contact/">
                 <a className="btn-primary text-xl px-12 py-6 inline-flex items-center gap-3 hover:shadow-2xl hover:shadow-accent/40 transform hover:scale-105 transition-all duration-300">

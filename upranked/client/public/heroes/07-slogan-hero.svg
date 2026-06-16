@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" role="img" aria-label="upranked.io slogan — Uplevel your digital growth">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f1e"></stop>
+      <stop offset="100%" stop-color="#0d1426"></stop>
+    </linearGradient>
+    <pattern id="grid7" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#c9a84c" stroke-opacity="0.05"></path>
+    </pattern>
+    <radialGradient id="glow7">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient id="goldT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4b85f"></stop>
+      <stop offset="100%" stop-color="#c9a84c"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg7)"></rect>
+  <rect width="800" height="600" fill="url(#grid7)"></rect>
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="url(#glow7)"></ellipse>
+
+  <line x1="80" y1="200" x2="200" y2="200" stroke="#c9a84c" stroke-width="2"></line>
+  <line x1="600" y1="400" x2="720" y2="400" stroke="#c9a84c" stroke-width="2"></line>
+
+  <text x="100" y="180" fill="#c9a84c" fill-opacity="0.18" font-size="200" font-family="Cairo,sans-serif" font-weight="800">&#34;</text>
+
+  <text x="400" y="270" fill="#fff" font-size="62" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle" letter-spacing="-2">Uplevel your</text>
+  <text x="400" y="345" fill="url(#goldT)" font-size="62" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle" letter-spacing="-2">digital growth.</text>
+
+  <line x1="350" y1="385" x2="450" y2="385" stroke="#c9a84c" stroke-width="2"></line>
+
+  <text x="400" y="430" fill="#888" font-size="16" font-family="Inter,sans-serif" font-weight="500" text-anchor="middle" letter-spacing="3">PREMIUM SEO · GROWTH INTELLIGENCE LAB</text>
+  <text x="400" y="460" fill="#666c7a" font-size="13" font-family="Inter,sans-serif" text-anchor="middle">Organic search as a revenue function — not a marketing cost.</text>
+
+  
+  <g transform="translate(355,500)">
+    <rect width="40" height="40" rx="8" fill="#c9a84c"></rect>
+    <text x="20" y="30" fill="#0a0f1e" font-size="22" font-family="Cairo,sans-serif" font-weight="800" text-anchor="middle">U</text>
+  </g>
+  <text x="405" y="528" fill="#fff" font-size="18" font-family="Cairo,sans-serif" font-weight="800">upranked<tspan fill="#c9a84c">.io</tspan></text>
+</svg>

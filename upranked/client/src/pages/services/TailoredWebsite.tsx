@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PAGE: /growth-intelligence/websites
  * PRIMARY KW: custom website Dubai (Vol: ~1,600/mo | KD: 36)
  * SECONDARY KW: SEO website design Dubai GCC, website design company UAE, bilingual website GCC
@@ -66,7 +66,7 @@ const schema = {
     {
       '@type': 'Person',
       '@id': 'https://upranked.io/about#person',
-      name: 'Sama Alaa',
+      name: 'Sam',
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -216,13 +216,49 @@ export default function TailoredWebsite() {
         </div>
       </section>
 
+      {/* ── INVESTMENT / PRICING ── */}
+      <section className="section-padding bg-navy">
+        <div className="container-premium max-w-3xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-3">Investment — <span className="text-accent">Transparent Pricing</span></h2>
+              <p className="text-text-secondary">Website projects are scoped per requirements. Here is how most clients start.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="border border-border bg-dark-gray/50 rounded-2xl p-6 flex flex-col gap-3">
+                <span className="text-xs text-text-secondary font-semibold uppercase tracking-widest">Start Here</span>
+                <div>
+                  <p className="text-3xl font-black text-white">$650</p>
+                  <p className="text-text-secondary text-xs mt-0.5">AED 2,400 · one-time</p>
+                </div>
+                <p className="font-bold text-white text-sm">APEX Diagnostic</p>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">Audit your current website's technical health, SEO architecture, and conversion gaps — so your new site is built on a validated foundation, not guesswork.</p>
+                <Link href="/contact/"><a className="w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold border border-accent text-accent hover:bg-accent/10 flex items-center justify-center gap-2 transition-all">Book Diagnostic <ArrowRight className="w-4 h-4" /></a></Link>
+              </div>
+              <div className="border border-accent bg-dark-gray rounded-2xl p-6 flex flex-col gap-3 shadow-xl shadow-accent/10">
+                <span className="self-start bg-accent text-navy text-xs font-bold px-3 py-1 rounded-full">Custom Project</span>
+                <div>
+                  <p className="text-3xl font-black text-white">Custom</p>
+                  <p className="text-text-secondary text-xs mt-0.5">Scoped per project requirements</p>
+                </div>
+                <p className="font-bold text-white text-sm">Tailored Website Build</p>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">Every website is built to spec — bilingual EN/AR, SEO-ready architecture, and designed for your target GCC market. Scope and investment on the free discovery call.</p>
+                <Link href="/contact/"><a className="w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold bg-accent text-navy hover:bg-accent/90 flex items-center justify-center gap-2 transition-all">Scope Your Website <ArrowRight className="w-4 h-4" /></a></Link>
+              </div>
+            </div>
+            <p className="text-center text-text-secondary text-xs mb-2">No retainer required to start. Prices in USD.</p>
+            <div className="text-center"><Link href="/pricing/"><a className="text-accent hover:underline text-sm inline-flex items-center gap-1">View all packages — full pricing breakdown <ArrowRight className="w-3.5 h-3.5" /></a></Link></div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* BOOKING CTA + NAP */}
       <section className="section-padding bg-gradient-to-br from-navy via-dark-gray to-navy">
         <div className="container-premium max-w-3xl text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Star className="w-12 h-12 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready for a Website That <span className="text-accent">Works as Hard as You Do</span>?</h2>
-            <p className="text-text-secondary mb-6 leading-relaxed">Book a free discovery call with Sama Alaa. Define your ideal website — how it looks, what it converts, and how it ranks in Dubai, Riyadh, London, or your target market.</p>
+            <p className="text-text-secondary mb-6 leading-relaxed">Book a free discovery call with Sam. Define your ideal website — how it looks, what it converts, and how it ranks in Dubai, Riyadh, London, or your target market.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Discovery Call <ArrowRight className="w-5 h-5" /></a></Link>
               <a href="/contact/" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>

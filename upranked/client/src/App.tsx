@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Admin from "./pages/Admin";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import Pricing from "./pages/Pricing";
 
 // SEO / Industry pages
 import MedicalSEO from "./pages/services/MedicalSEO";
@@ -75,6 +76,7 @@ function PublicRouter() {
       <Route path="/methodology" component={Methodology} />
       <Route path="/contact" component={Contact} />
       <Route path="/faq" component={FAQ} />
+      <Route path="/pricing" component={Pricing} />
 
       {/* Hub routes */}
       <Route path="/seo" component={SEOHub} />

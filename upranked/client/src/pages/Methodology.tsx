@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -11,7 +11,7 @@ const schema = {
       '@type': 'Service',
       name: 'APEX Framework™ SEO Methodology',
       description:
-        'The APEX Framework™ is upranked.io\'s proprietary 4-phase SEO methodology — Audit, Position, Execute, Expand — engineered by Sama Alaa for high-value businesses in Dubai, the GCC, London, and New York.',
+        'The APEX Framework™ is upranked.io\'s proprietary 4-phase SEO methodology — Audit, Position, Execute, Expand — engineered by Sam for high-value businesses in Dubai, the GCC, London, and New York.',
       provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
       areaServed: [
         { '@type': 'City', name: 'Dubai' },
@@ -55,7 +55,7 @@ const schema = {
           name: 'Can I find an SEO methodology expert near me in Dubai?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. upranked.io is a Dubai-based and GCC-focused SEO agency. Sama Alaa applies the APEX Framework directly with clients across UAE, Saudi Arabia, Kuwait, and Bahrain. Remote and in-person engagements are both available.',
+            text: 'Yes. upranked.io is a Dubai-based and GCC-focused SEO agency. Sam applies the APEX Framework directly with clients across UAE, Saudi Arabia, Kuwait, and Bahrain. Remote and in-person engagements are both available.',
           },
         },
         {
@@ -68,17 +68,17 @@ const schema = {
         },
         {
           '@type': 'Question',
-          name: 'What makes Sama Alaa\'s SEO methodology different from other agencies?',
+          name: 'What makes Sam\'s SEO methodology different from other agencies?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Three differences: (1) GCC-first market intelligence built into every phase, (2) positioning-before-execution sequencing that most agencies skip, and (3) founder-executed delivery — Sama applies APEX personally on every engagement, not delegated to junior staff.',
+            text: 'Three differences: (1) GCC-first market intelligence built into every phase, (2) positioning-before-execution sequencing that most agencies skip, and (3) founder-executed delivery — Sam applies APEX personally on every engagement, not delegated to junior staff.',
           },
         },
       ],
     },
     {
       '@type': 'Person',
-      name: 'Sama Alaa',
+      name: 'Sam',
       jobTitle: 'Founder & GCC SEO Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -180,7 +180,7 @@ const differentiators = [
   },
   {
     title: 'Founder-Executed, Not Delegated',
-    desc: 'Sama Alaa applies the APEX Framework personally on every engagement. The methodology doesn\'t get watered down through layers of account managers and junior analysts.',
+    desc: 'Sam applies the APEX Framework personally on every engagement. The methodology doesn\'t get watered down through layers of account managers and junior analysts.',
   },
   {
     title: 'Compounding Returns by Design',
@@ -203,15 +203,15 @@ const faqs = [
   },
   {
     q: 'Can I find an SEO methodology expert near me in Dubai?',
-    a: 'Yes. upranked.io is a Dubai-based and GCC-focused SEO agency. Sama Alaa applies the APEX Framework directly with clients across UAE, Saudi Arabia, Kuwait, and Bahrain. Remote and in-person engagements are both available.',
+    a: 'Yes. upranked.io is a Dubai-based and GCC-focused SEO agency. Sam applies the APEX Framework directly with clients across UAE, Saudi Arabia, Kuwait, and Bahrain. Remote and in-person engagements are both available.',
   },
   {
     q: 'Does the APEX Framework work for bilingual Arabic-English websites?',
     a: 'Absolutely. Bilingual SEO strategy is built into the Execute phase — including Arabic keyword research, RTL technical architecture, and hreflang implementation. The GCC market demands bilingual coverage, and APEX delivers it natively.',
   },
   {
-    q: "What makes Sama Alaa's SEO methodology different from other agencies?",
-    a: 'Three differences: (1) GCC-first market intelligence built into every phase, (2) positioning-before-execution sequencing that most agencies skip, and (3) founder-executed delivery — Sama applies APEX personally on every engagement, not delegated to junior staff.',
+    q: "What makes Sam's SEO methodology different from other agencies?",
+    a: 'Three differences: (1) GCC-first market intelligence built into every phase, (2) positioning-before-execution sequencing that most agencies skip, and (3) founder-executed delivery — Sam applies APEX personally on every engagement, not delegated to junior staff.',
   },
 ];
 
@@ -228,7 +228,7 @@ const comparisonRows = [
   ['Starting point', 'Deep forensic audit', 'Template checklist'],
   ['Strategy', 'Positioning-first, then execution', 'Tactics first, strategy maybe'],
   ['Market intelligence', 'GCC + bilingual built in', 'Generic, English-only'],
-  ['Execution', 'Founder-led by Sama Alaa', 'Delegated to juniors'],
+  ['Execution', 'Founder-led by Sam', 'Delegated to juniors'],
   ['Measurement', 'Revenue, leads, ROI', 'Rankings, traffic only'],
   ['Time horizon', 'Compounding 6–18 months', 'Short-term wins'],
   ['Bilingual', 'EN + Arabic, RTL-optimized', 'Rarely offered'],
@@ -272,7 +272,7 @@ export default function Methodology() {
   usePageMeta({
     title: 'APEX Framework SEO Methodology | Dubai & GCC',
     description:
-      "The APEX Framework™ is upranked.io's proprietary SEO methodology: Audit → Position → Execute → Expand. Developed by Sama Alaa for GCC businesses in Dubai, Riyadh, Kuwait, Bahrain, London & New York.",
+      "The APEX Framework™ is upranked.io's proprietary SEO methodology: Audit → Position → Execute → Expand. Developed by Sam for GCC businesses in Dubai, Riyadh, Kuwait, Bahrain, London & New York.",
     schema,
     schemaId: 'methodology-schema',
   });
@@ -317,7 +317,7 @@ export default function Methodology() {
                   The <span className="gradient-text">APEX Framework™</span> — upranked.io's SEO Methodology for Dubai & GCC Growth
                 </h1>
                 <p className="text-xl text-text-secondary mb-8 max-w-3xl leading-relaxed">
-                  A proprietary 4-phase growth methodology developed by Sama Alaa for high-value, trust-sensitive industries across Dubai, Riyadh, Kuwait City, Manama, London, and New York. Not a template — a system engineered for compounding returns.
+                  A proprietary 4-phase growth methodology developed by Sam for high-value, trust-sensitive industries across Dubai, Riyadh, Kuwait City, Manama, London, and New York. Not a template — a system engineered for compounding returns.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 mb-8">
@@ -404,7 +404,7 @@ export default function Methodology() {
                   <p className="text-white font-semibold text-lg mb-3">What is the APEX Framework™?</p>
                   <p className="text-text-secondary leading-relaxed">
                     The <strong className="text-white">APEX Framework™</strong> is upranked.io's proprietary 4-phase SEO and growth methodology —{' '}
-                    <strong className="text-accent">Audit → Position → Execute → Expand</strong> — engineered by Sama Alaa for complex, trust-sensitive businesses in the GCC and global markets. It is the only SEO methodology built specifically around the Arabic–English bilingual search landscape, long B2B and healthcare trust cycles, and GCC market competitive dynamics. APEX is not a checklist — it is a compounding growth system applied across Dubai, Riyadh, Kuwait City, Manama, London, and New York.
+                    <strong className="text-accent">Audit → Position → Execute → Expand</strong> — engineered by Sam for complex, trust-sensitive businesses in the GCC and global markets. It is the only SEO methodology built specifically around the Arabic–English bilingual search landscape, long B2B and healthcare trust cycles, and GCC market competitive dynamics. APEX is not a checklist — it is a compounding growth system applied across Dubai, Riyadh, Kuwait City, Manama, London, and New York.
                   </p>
                 </div>
 
@@ -544,14 +544,14 @@ export default function Methodology() {
                 <div className="bg-dark-gray border border-accent/30 rounded-2xl p-8">
                   <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-5">About the Creator — E-E-A-T</p>
                   <div className="flex flex-col md:flex-row gap-6">
-                    <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder upranked.io, Creator of the APEX Framework™" width={80} height={80} loading="lazy" className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
+                    <img src="/favicon.svg" alt="Sam — Founder upranked.io, Creator of the APEX Framework™" width={80} height={80} loading="lazy" className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+                      <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
                       <p className="text-accent text-sm font-medium mb-4">
                         Founder, upranked.io — GCC SEO Strategist &amp; Creator of the APEX Framework™
                       </p>
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                        Sama Alaa developed the APEX Framework™ after observing a critical gap in the GCC market: agencies applied generic Western SEO templates to complex, trust-sensitive industries — and delivered predictably mediocre results. APEX was engineered from first principles for the GCC's unique search landscape: bilingual Arabic–English search behavior, relationship-first business culture, and competitive sectors where trust is the deciding factor. Sama personally applies the framework on every engagement across Dubai, Riyadh, Kuwait City, Manama, and global markets including London and New York.
+                        Sam developed the APEX Framework™ after observing a critical gap in the GCC market: agencies applied generic Western SEO templates to complex, trust-sensitive industries — and delivered predictably mediocre results. APEX was engineered from first principles for the GCC's unique search landscape: bilingual Arabic–English search behavior, relationship-first business culture, and competitive sectors where trust is the deciding factor. Sam personally applies the framework on every engagement across Dubai, Riyadh, Kuwait City, Manama, and global markets including London and New York.
                       </p>
                       <Link href="/about/">
                         <a className="text-accent text-sm font-semibold hover:underline">Full profile &amp; credentials →</a>
@@ -624,7 +624,7 @@ export default function Methodology() {
               See the <span className="text-accent">APEX Framework™</span> Applied to Your Business
             </h2>
             <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
-              Book a free APEX Diagnostic with Sama Alaa. We'll audit your current position and show you exactly what the framework would unlock — for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
+              Book a free APEX Diagnostic with Sam. We'll audit your current position and show you exactly what the framework would unlock — for businesses in Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               <Link href="/contact/">

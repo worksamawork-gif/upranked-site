@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail, Zap, Brain, MessageSquare } from 'lucide-react';
@@ -30,7 +30,7 @@ const schema = {
       ],
     },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'SEO Services', item: 'https://upranked.io/seo' }, { '@type': 'ListItem', position: 3, name: 'AEO — Answer Engine Optimization', item: 'https://upranked.io/seo/aeo' }] },
-    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sam', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -223,8 +223,8 @@ export default function AEOSEO() {
         <div className="container-premium max-w-4xl">
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
-              src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
+              src="/favicon.svg"
+              alt="Sam — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
               width={400}
               height={640}
               loading="lazy"
@@ -233,10 +233,10 @@ export default function AEOSEO() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">AEO Strategy by</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
               <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                Sama Alaa leads all AEO and answer engine strategy at upranked.io — covering schema markup architecture, E-E-A-T authority building, and Arabic AEO for Dubai, UAE, and GCC clients. Every AEO engagement is delivered on the APEX Framework™, adapted for the unique entity and authority landscape of the GCC market.
+                Sam leads all AEO and answer engine strategy at upranked.io — covering schema markup architecture, E-E-A-T authority building, and Arabic AEO for Dubai, UAE, and GCC clients. Every AEO engagement is delivered on the APEX Framework™, adapted for the unique entity and authority landscape of the GCC market.
               </p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>

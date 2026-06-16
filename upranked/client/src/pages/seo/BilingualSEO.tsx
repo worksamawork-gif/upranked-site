@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -15,7 +15,7 @@ const schema = {
       { '@type': 'Question', name: 'Which GCC countries benefit most from bilingual Arabic SEO?', acceptedAnswer: { '@type': 'Answer', text: "All GCC markets benefit from bilingual SEO, but Saudi Arabia (Riyadh, Jeddah, Makkah) has the highest proportion of Arabic-first searchers — making Arabic SEO a critical investment for businesses targeting KSA. UAE (Dubai, Abu Dhabi) has a more balanced EN/AR split. Kuwait and Bahrain lean more heavily Arabic for consumer-facing queries. upranked.io tailors the bilingual ratio for each market." } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'SEO', item: 'https://upranked.io/industries' }, { '@type': 'ListItem', position: 3, name: 'Bilingual SEO', item: 'https://upranked.io/seo/bilingual' }] },
-    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sam', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function BilingualSEO() {
-  usePageMeta({ title: 'Bilingual SEO Dubai — Arabic & English Search Optimization GCC', description: 'Bilingual EN/AR SEO for Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain. Native Arabic keyword research, RTL architecture, hreflang — APEX Framework by Sama Alaa.', schema, schemaId: 'bilingual-seo-schema' });
+  usePageMeta({ title: 'Bilingual SEO Dubai — Arabic & English Search Optimization GCC', description: 'Bilingual EN/AR SEO for Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain. Native Arabic keyword research, RTL architecture, hreflang — APEX Framework by Sam.', schema, schemaId: 'bilingual-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -109,8 +109,8 @@ export default function BilingualSEO() {
         <div className="container-premium max-w-4xl">
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
-              src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
+              src="/favicon.svg"
+              alt="Sam — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
               width={400}
               height={640}
               loading="lazy"
@@ -119,9 +119,9 @@ export default function BilingualSEO() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Written &amp; Overseen By</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

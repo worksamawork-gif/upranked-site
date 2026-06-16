@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, Stethoscope, Factory, TrendingUp, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -64,7 +64,7 @@ const schema = {
           name: 'Can I find an industry SEO expert near me in Dubai?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. upranked.io is Dubai-based with deep GCC market expertise across all three SEO verticals. Sama Alaa personally leads all industry-specific SEO engagements for clients in Dubai, Riyadh, Kuwait City, and Manama. London and New York clients are served remotely.',
+            text: 'Yes. upranked.io is Dubai-based with deep GCC market expertise across all three SEO verticals. Sam personally leads all industry-specific SEO engagements for clients in Dubai, Riyadh, Kuwait City, and Manama. London and New York clients are served remotely.',
           },
         },
         {
@@ -87,7 +87,7 @@ const schema = {
     },
     {
       '@type': 'Person',
-      name: 'Sama Alaa',
+      name: 'Sam',
       jobTitle: 'Founder & GCC SEO Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -179,7 +179,7 @@ const commonBenefits = [
   'APEX Framework™ — proprietary 4-phase SEO methodology',
   'GCC-first intelligence: UAE, KSA, Kuwait, Bahrain — plus London & New York',
   'Bilingual SEO — English + Arabic with full RTL support',
-  'Founder-led by Sama Alaa on every engagement',
+  'Founder-led by Sam on every engagement',
   'Reporting tied to leads and revenue, not vanity metrics',
   'Featured snippet optimization and @graph JSON-LD schema',
 ];
@@ -217,7 +217,7 @@ const faqs = [
   },
   {
     q: 'Can I find an industry SEO expert near me in Dubai?',
-    a: 'Yes. upranked.io is Dubai-based with deep GCC market expertise across all three SEO verticals. Sama Alaa personally leads all industry-specific SEO engagements for clients in Dubai, Riyadh, Kuwait City, and Manama. London and New York clients are served remotely.',
+    a: 'Yes. upranked.io is Dubai-based with deep GCC market expertise across all three SEO verticals. Sam personally leads all industry-specific SEO engagements for clients in Dubai, Riyadh, Kuwait City, and Manama. London and New York clients are served remotely.',
   },
   {
     q: 'Does upranked.io offer bilingual Arabic-English SEO for all industries?',
@@ -265,7 +265,7 @@ export default function Industries() {
   usePageMeta({
     title: 'Industry SEO Dubai & GCC — Medical, Industrial & Business SEO',
     description:
-      'Industry-specific SEO for medical, industrial, and business sectors in Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London UK, and New York USA. APEX Framework™ by Sama Alaa.',
+      'Industry-specific SEO for medical, industrial, and business sectors in Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London UK, and New York USA. APEX Framework™ by Sam.',
     schema,
     schemaId: 'industries-schema',
     canonical: 'https://upranked.io/seo-industries',
@@ -505,7 +505,7 @@ export default function Industries() {
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
                 <h2 className="text-3xl font-bold text-white mb-4">What Every Industry Engagement Includes</h2>
                 <p className="text-text-secondary mb-8 leading-relaxed">
-                  Regardless of sector, every upranked.io industry SEO engagement is built on the same non-negotiable foundation — the APEX Framework™ applied by Sama Alaa across Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
+                  Regardless of sector, every upranked.io industry SEO engagement is built on the same non-negotiable foundation — the APEX Framework™ applied by Sam across Dubai, Riyadh, Kuwait, Bahrain, London, and New York.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                   {commonBenefits.map((b, i) => (
@@ -527,12 +527,12 @@ export default function Industries() {
                 <div className="bg-dark-gray border border-accent/30 rounded-2xl p-8">
                   <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-5">Industry SEO Expertise — E-E-A-T</p>
                   <div className="flex flex-col sm:flex-row gap-6">
-                    <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder upranked.io, Industry SEO Expert GCC" width={80} height={80} loading="lazy" className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
+                    <img src="/favicon.svg" alt="Sam — Founder upranked.io, Industry SEO Expert GCC" width={80} height={80} loading="lazy" className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0 border-2 border-accent/30" decoding="async" />
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+                      <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
                       <p className="text-accent text-sm font-medium mb-4">Founder, upranked.io — GCC SEO Strategist &amp; Creator of the APEX Framework™</p>
                       <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                        Sama Alaa built upranked.io around a specific hypothesis: sector knowledge is the biggest SEO advantage a GCC business can have. After working across healthcare, industrial B2B, and professional services in Dubai, Riyadh, Kuwait City, Manama, London, and New York, Sama developed deep playbooks for each vertical — keyword landscapes, content architectures, and trust-building frameworks specific to each industry. Every industry SEO engagement is led personally by Sama, ensuring that sector depth is applied at every stage.
+                        Sam built upranked.io around a specific hypothesis: sector knowledge is the biggest SEO advantage a GCC business can have. After working across healthcare, industrial B2B, and professional services in Dubai, Riyadh, Kuwait City, Manama, London, and New York, Sam developed deep playbooks for each vertical — keyword landscapes, content architectures, and trust-building frameworks specific to each industry. Every industry SEO engagement is led personally by Sam, ensuring that sector depth is applied at every stage.
                       </p>
                       <Link href="/about/"><a className="text-accent text-sm font-semibold hover:underline">Full credentials →</a></Link>
                     </div>
@@ -597,7 +597,7 @@ export default function Industries() {
               Not Sure Which SEO Industry Package <span className="text-accent">Fits Your Business</span>?
             </h2>
             <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
-              Book a free 30-minute APEX Diagnostic with Sama Alaa. We will assess your sector, your market in Dubai, Riyadh, Kuwait, Bahrain, London, or New York — and tell you exactly where to focus first.
+              Book a free 30-minute APEX Diagnostic with Sam. We will assess your sector, your market in Dubai, Riyadh, Kuwait, Bahrain, London, or New York — and tell you exactly where to focus first.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               <Link href="/contact/">

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+﻿import { useState, useEffect, useRef } from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import ImageExt from '@tiptap/extension-image';
@@ -76,8 +76,8 @@ const DEFAULT_FORM: PostForm = {
   cta_heading: 'Ready to grow your business in the GCC?',
   cta_body: 'Book a free APEX Diagnostic with our consulting team and get a clear, actionable plan.',
   cta_label: 'Book Free Diagnostic', cta_href: '/contact',
-  author: 'Sama Alaa',
-  author_image: '/images/sam-hamouda-seo-consultant-dubai.webp',
+  author: 'Sam',
+  author_image: '/favicon.svg',
   related_slugs: [],
 };
 
@@ -134,8 +134,8 @@ function postToForm(p: SupabasePost): PostForm {
     cta_body: p.cta_body || '',
     cta_label: p.cta_label || 'Book Free Diagnostic',
     cta_href: p.cta_href || '/contact',
-    author: p.author || 'Sama Alaa',
-    author_image: p.author_image || '/images/sam-hamouda-seo-consultant-dubai.webp',
+    author: p.author || 'Sam',
+    author_image: p.author_image || '/favicon.svg',
     related_slugs: p.related_slugs || [],
   };
 }
@@ -905,7 +905,7 @@ function PostEditor({ post, allPosts, onBack, onSaved }: {
                 <input type="text" value={form.author} onChange={e => set('author', e.target.value)} className={inputCls} />
               </Field>
             </div>
-            <Field label="Author Image URL" hint="Default is Sama's photo — only change if guest post">
+            <Field label="Author Image URL" hint="Default is Sam's photo — only change if guest post">
               <input type="text" value={form.author_image} onChange={e => set('author_image', e.target.value)} className={inputCls} />
             </Field>
             <Field label="Related Posts" hint="Pick posts to recommend at the bottom of this article">

@@ -1,10 +1,10 @@
-/*
+﻿/*
  * PAGE: /growth-intelligence/consultation
  * PRIMARY KW: business consultation Dubai (Vol: ~880/mo | KD: 32)
- * SECONDARY KW: growth strategy consultant GCC, business consultant Dubai UAE, Sama Alaa consultation
+ * SECONDARY KW: growth strategy consultant GCC, business consultant Dubai UAE, Sam consultation
  * NEAR ME: business consultant near me Dubai, growth strategist near me UAE
- * META TITLE (60 chars): Business Consultation Dubai | Sama Alaa | upranked.io
- * META DESC (158 chars): 1-on-1 business consultation with Sama Alaa in Dubai & GCC. APEX Framework™ applied to your growth bottlenecks. 90-day roadmap. Book a free intro call.
+ * META TITLE (60 chars): Business Consultation Dubai | Sam | upranked.io
+ * META DESC (158 chars): 1-on-1 business consultation with Sam in Dubai & GCC. APEX Framework™ applied to your growth bottlenecks. 90-day roadmap. Book a free intro call.
  * SCHEMA: @graph → Service + FAQPage + Person + BreadcrumbList
  */
 
@@ -37,12 +37,12 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 }
 
 const faqs = [
-  { q: 'What is business consultation with Sama Alaa and who is it for?', a: 'Business consultation with Sama Alaa is a direct, founder-led strategic advisory service for business owners, marketing leaders, and founders across Dubai, the GCC, London, and New York. It is designed for companies that need senior-level strategic thinking applied to their specific growth challenge — not a generic agency package. Each engagement uses the APEX Framework™ to diagnose, position, and build an actionable 90-day growth roadmap.' },
-  { q: 'What topics does a business consultation session cover?', a: 'Sessions are tailored to your priority challenge. Common topics include: organic search strategy and SEO investment planning, GCC market entry positioning, competitive displacement strategy, digital channel mix optimisation, bilingual EN/AR content and SEO strategy, Google Business Profile and local SEO, and building a revenue attribution framework to measure marketing ROI. You come with the challenge — Sama applies the APEX Framework™ to build your roadmap.' },
-  { q: 'How is this different from hiring a digital marketing agency in Dubai?', a: 'Three key differences: (1) Founder-led — you work directly with Sama Alaa, not a junior account manager who inherited your account after the sales call. (2) Strategy-first — sessions focus on the strategic layer, not execution deliverables. (3) GCC-specific — every recommendation is informed by real market intelligence from Dubai, Riyadh, Kuwait, and Bahrain, not global templates applied to the region.' },
-  { q: 'Can I book a one-time consultation or do I need an ongoing retainer?', a: 'Both options are available. A one-time APEX Diagnostic session gives you clarity on your current position, a competitor gap analysis, and a 90-day roadmap. An ongoing retainer provides continuous strategic guidance, monthly accountability reviews, and priority WhatsApp access to Sama as you execute. The best fit depends on how much strategic support your team needs beyond the initial roadmap.' },
+  { q: 'What is business consultation with Sam and who is it for?', a: 'Business consultation with Sam is a direct, founder-led strategic advisory service for business owners, marketing leaders, and founders across Dubai, the GCC, London, and New York. It is designed for companies that need senior-level strategic thinking applied to their specific growth challenge — not a generic agency package. Each engagement uses the APEX Framework™ to diagnose, position, and build an actionable 90-day growth roadmap.' },
+  { q: 'What topics does a business consultation session cover?', a: 'Sessions are tailored to your priority challenge. Common topics include: organic search strategy and SEO investment planning, GCC market entry positioning, competitive displacement strategy, digital channel mix optimisation, bilingual EN/AR content and SEO strategy, Google Business Profile and local SEO, and building a revenue attribution framework to measure marketing ROI. You come with the challenge — Sam applies the APEX Framework™ to build your roadmap.' },
+  { q: 'How is this different from hiring a digital marketing agency in Dubai?', a: 'Three key differences: (1) Founder-led — you work directly with Sam, not a junior account manager who inherited your account after the sales call. (2) Strategy-first — sessions focus on the strategic layer, not execution deliverables. (3) GCC-specific — every recommendation is informed by real market intelligence from Dubai, Riyadh, Kuwait, and Bahrain, not global templates applied to the region.' },
+  { q: 'Can I book a one-time consultation or do I need an ongoing retainer?', a: 'Both options are available. A one-time APEX Diagnostic session gives you clarity on your current position, a competitor gap analysis, and a 90-day roadmap. An ongoing retainer provides continuous strategic guidance, monthly accountability reviews, and priority WhatsApp access to Sam as you execute. The best fit depends on how much strategic support your team needs beyond the initial roadmap.' },
   { q: 'Do you offer business consultation for companies expanding into the GCC from London or New York?', a: 'Yes — market entry consultation for international businesses expanding into Dubai, Riyadh, Kuwait, or Bahrain is one of our core specialisations. We cover GCC search behaviour, Arabic SEO requirements, local competitor landscape, free zone positioning, GBP setup for UAE, and the go-to-market channel mix that works in your target GCC city. Engagements are conducted remotely and in person.' },
-  { q: 'How do I get started with a business consultation?', a: 'Book a free 30-minute APEX Diagnostic intro call via the Contact page, our contact page, or email uprankedio@gmail.com. In the intro call, Sama reviews your current position, identifies your highest-leverage growth opportunity, and outlines the consultation scope that fits your situation. No commitment required for the intro call.' },
+  { q: 'How do I get started with a business consultation?', a: 'Book a free 30-minute APEX Diagnostic intro call via the Contact page, our contact page, or email uprankedio@gmail.com. In the intro call, Sam reviews your current position, identifies your highest-leverage growth opportunity, and outlines the consultation scope that fits your situation. No commitment required for the intro call.' },
 ];
 
 const schema = {
@@ -51,9 +51,9 @@ const schema = {
     {
       '@type': 'Service',
       '@id': 'https://upranked.io/growth-intelligence/consultation#service',
-      name: 'Business Consultation Dubai — 1-on-1 with Sama Alaa',
+      name: 'Business Consultation Dubai — 1-on-1 with Sam',
       serviceType: 'Business Consultation',
-      description: '1-on-1 strategic business consultation with Sama Alaa, founder of upranked.io. APEX Framework™ applied to your GCC growth challenges. 90-day roadmap delivered.',
+      description: '1-on-1 strategic business consultation with Sam, founder of upranked.io. APEX Framework™ applied to your GCC growth challenges. 90-day roadmap delivered.',
       provider: { '@type': 'Organization', '@id': 'https://upranked.io/#organization', name: 'upranked.io', url: 'https://upranked.io' },
       areaServed: ['Dubai', 'Riyadh', 'Kuwait', 'Bahrain', 'London', 'New York'],
       url: 'https://upranked.io/growth-intelligence/consultation',
@@ -66,7 +66,7 @@ const schema = {
     {
       '@type': 'Person',
       '@id': 'https://upranked.io/about#person',
-      name: 'Sama Alaa',
+      name: 'Sam',
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io' },
       url: 'https://upranked.io/about',
@@ -90,20 +90,20 @@ const benefits = [
   { icon: BarChart3, title: '90-Day Growth Roadmap', desc: 'A prioritised, actionable roadmap with specific milestones, KPIs, and channel investments delivered after each session.' },
   { icon: TrendingUp, title: 'Competitor Intelligence', desc: 'A full competitor gap analysis for your GCC or global market — where they rank, where they are weak, and how to displace them.' },
   { icon: Zap, title: 'Revenue Attribution Setup', desc: 'Guidance on connecting organic, paid, and referral channels to actual revenue — so you always know your true marketing ROI.' },
-  { icon: Shield, title: 'Priority WhatsApp Access', desc: 'Direct WhatsApp line to Sama between sessions for urgent questions, quick reviews, and strategic sounding-board support.' },
+  { icon: Shield, title: 'Priority WhatsApp Access', desc: 'Direct WhatsApp line to Sam between sessions for urgent questions, quick reviews, and strategic sounding-board support.' },
 ];
 
 const steps = [
-  { n: '01', title: 'Free APEX Diagnostic Call', desc: 'A free 30-minute intro call. Sama reviews your current digital position, identifies your top growth opportunity, and scopes the right consultation format for your situation.' },
-  { n: '02', title: 'Pre-Session Audit', desc: 'Before the main session, Sama conducts a full review of your website, keyword rankings, competitor landscape, and GCC market position. No session starts cold.' },
+  { n: '01', title: 'Free APEX Diagnostic Call', desc: 'A free 30-minute intro call. Sam reviews your current digital position, identifies your top growth opportunity, and scopes the right consultation format for your situation.' },
+  { n: '02', title: 'Pre-Session Audit', desc: 'Before the main session, Sam conducts a full review of your website, keyword rankings, competitor landscape, and GCC market position. No session starts cold.' },
   { n: '03', title: '90-Minute Strategy Session', desc: 'A focused working session applying the APEX Framework™ to your specific challenge. Output: a clear 90-day growth roadmap with prioritised actions, KPIs, and quick wins.' },
   { n: '04', title: 'Ongoing Accountability', desc: 'Optional monthly check-in calls, resource sharing, and priority WhatsApp access as you execute. Strategy is only valuable when it leaves the document.' },
 ];
 
 export default function BusinessConsultation() {
   usePageMeta({
-    title: 'Business Consultation Dubai | Sama Alaa | upranked.io',
-    description: '1-on-1 business consultation with Sama Alaa in Dubai & GCC. APEX Framework™ applied to your growth bottlenecks. 90-day roadmap. Book a free intro call.',
+    title: 'Business Consultation Dubai | Sam | upranked.io',
+    description: '1-on-1 business consultation with Sam in Dubai & GCC. APEX Framework™ applied to your growth bottlenecks. 90-day roadmap. Book a free intro call.',
     schemaId: 'consultation-schema',
     schema,
   });
@@ -137,7 +137,7 @@ export default function BusinessConsultation() {
                 </address>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-7 py-3.5">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
-                  <Link href="/about/"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sama Alaa</a></Link>
+                  <Link href="/about/"><a className="btn-secondary inline-flex items-center gap-2 text-base px-7 py-3.5">Meet Sam</a></Link>
                 </div>
               </motion.div>
             </div>
@@ -176,7 +176,7 @@ export default function BusinessConsultation() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">What Is <span className="text-accent">Business Consultation</span> with upranked.io?</h2>
             <div className="border-l-4 border-accent bg-dark-gray/80 rounded-r-xl p-6 mb-8">
               <p className="text-accent text-xs font-semibold uppercase tracking-wide mb-2">Definition</p>
-              <p className="text-text-secondary leading-relaxed"><strong className="text-white">Business consultation at upranked.io</strong> is a direct, founder-led strategic advisory service where Sama Alaa applies the APEX Framework™ — Audit → Position → Execute → Expand — to your specific growth challenge in Dubai, the GCC, London, or New York. Unlike generalist agency consultations, every session is focused on commercial outcomes: where you rank, where competitors are vulnerable, what your organic growth opportunity is, and the exact prioritised moves to capture it.</p>
+              <p className="text-text-secondary leading-relaxed"><strong className="text-white">Business consultation at upranked.io</strong> is a direct, founder-led strategic advisory service where Sam applies the APEX Framework™ — Audit → Position → Execute → Expand — to your specific growth challenge in Dubai, the GCC, London, or New York. Unlike generalist agency consultations, every session is focused on commercial outcomes: where you rank, where competitors are vulnerable, what your organic growth opportunity is, and the exact prioritised moves to capture it.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {[
@@ -244,17 +244,17 @@ export default function BusinessConsultation() {
         </div>
       </section>
 
-      {/* Sama BIO */}
+      {/* Sam BIO */}
       <section className="section-padding bg-dark-gray">
         <div className="container-premium max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }} className="border border-accent/30 rounded-2xl p-8 bg-navy/60">
             <p className="text-accent text-xs font-semibold uppercase tracking-widest mb-5">Your Consultant — E-E-A-T Verified</p>
             <div className="flex flex-col sm:flex-row gap-6 items-start">
-              <img src="/images/sam-hamouda-best-seo-consultant-gcc.webp" alt="Sama Alaa — business consultant Dubai, founder upranked.io GCC SEO strategist" width={140} height={140} loading="lazy" className="rounded-xl border border-accent/20 flex-shrink-0 w-28 h-28 sm:w-36 sm:h-36 object-cover object-top" decoding="async" />
+              <img src="/images/sam-hamouda-best-seo-consultant-gcc.webp" alt="Sam — business consultant Dubai, founder upranked.io GCC SEO strategist" width={140} height={140} loading="lazy" className="rounded-xl border border-accent/20 flex-shrink-0 w-28 h-28 sm:w-36 sm:h-36 object-cover object-top" decoding="async" />
               <div>
-                <h2 className="text-2xl font-bold text-white mb-1">Sama Alaa</h2>
+                <h2 className="text-2xl font-bold text-white mb-1">Sam</h2>
                 <p className="text-accent text-sm mb-3">Founder &amp; Chief Growth Strategist, upranked.io · Dubai, UAE</p>
-                <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a specialist GCC growth strategist with 20+ client engagements across Medical, Industrial, and Business sectors in Dubai, Riyadh, Kuwait, and Bahrain. As the creator of the APEX Framework™, Sama personally leads every consultation — no handoffs. His direct, founder-led model means you get the same depth of expertise that built upranked.io's reputation across the GCC, London, and New York.</p>
+                <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam is a specialist GCC growth strategist with 20+ client engagements across Medical, Industrial, and Business sectors in Dubai, Riyadh, Kuwait, and Bahrain. As the creator of the APEX Framework™, Sam personally leads every consultation — no handoffs. His direct, founder-led model means you get the same depth of expertise that built upranked.io's reputation across the GCC, London, and New York.</p>
                 <div className="flex gap-4">
                   <Link href="/about/"><a className="text-accent text-sm hover:underline">Full Bio →</a></Link>
                   <a href="/contact/" className="text-accent text-sm hover:underline">Contact Us →</a>
@@ -275,13 +275,49 @@ export default function BusinessConsultation() {
         </div>
       </section>
 
+      {/* ── INVESTMENT / PRICING ── */}
+      <section className="section-padding bg-navy">
+        <div className="container-premium max-w-3xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-3">Investment — <span className="text-accent">Transparent Pricing</span></h2>
+              <p className="text-text-secondary">Consultation engagements are scoped per project. Here is how most clients start.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="border border-border bg-dark-gray/50 rounded-2xl p-6 flex flex-col gap-3">
+                <span className="text-xs text-text-secondary font-semibold uppercase tracking-widest">Start Here</span>
+                <div>
+                  <p className="text-3xl font-black text-white">$650</p>
+                  <p className="text-text-secondary text-xs mt-0.5">AED 2,400 · one-time</p>
+                </div>
+                <p className="font-bold text-white text-sm">APEX Diagnostic</p>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">One-time session: full audit, competitor analysis, GCC keyword map, and 90-day prioritised roadmap. Defines exactly where to focus before committing to an ongoing retainer.</p>
+                <Link href="/contact/"><a className="w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold border border-accent text-accent hover:bg-accent/10 flex items-center justify-center gap-2 transition-all">Book Diagnostic <ArrowRight className="w-4 h-4" /></a></Link>
+              </div>
+              <div className="border border-accent bg-dark-gray rounded-2xl p-6 flex flex-col gap-3 shadow-xl shadow-accent/10">
+                <span className="self-start bg-accent text-navy text-xs font-bold px-3 py-1 rounded-full">Ongoing Retainer</span>
+                <div>
+                  <p className="text-3xl font-black text-white">Custom</p>
+                  <p className="text-text-secondary text-xs mt-0.5">Scoped to your requirements</p>
+                </div>
+                <p className="font-bold text-white text-sm">Monthly Consultation Retainer</p>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">Regular strategy sessions, priority WhatsApp access, and monthly accountability reviews. Scope and investment defined on the free intro call.</p>
+                <Link href="/contact/"><a className="w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold bg-accent text-navy hover:bg-accent/90 flex items-center justify-center gap-2 transition-all">Scope Your Retainer <ArrowRight className="w-4 h-4" /></a></Link>
+              </div>
+            </div>
+            <p className="text-center text-text-secondary text-xs mb-2">APEX Diagnostic fee credited toward your first retainer month. Prices in USD.</p>
+            <div className="text-center"><Link href="/pricing/"><a className="text-accent hover:underline text-sm inline-flex items-center gap-1">View all SEO + Growth Intelligence packages <ArrowRight className="w-3.5 h-3.5" /></a></Link></div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* BOOKING CTA + NAP #2 & #3 */}
       <section className="section-padding bg-gradient-to-br from-navy via-dark-gray to-navy">
         <div className="container-premium max-w-3xl text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Star className="w-12 h-12 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Clarity on Your <span className="text-accent">Growth Path</span></h2>
-            <p className="text-text-secondary mb-6 leading-relaxed">Book a free 30-minute APEX Diagnostic with Sama Alaa. Come with your biggest growth challenge — leave with a clear, prioritised roadmap.</p>
+            <p className="text-text-secondary mb-6 leading-relaxed">Book a free 30-minute APEX Diagnostic with Sam. Come with your biggest growth challenge — leave with a clear, prioritised roadmap.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/contact/"><a className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">Book Free Intro Call <ArrowRight className="w-5 h-5" /></a></Link>
               <a href="/contact/" className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4">Contact Us</a>

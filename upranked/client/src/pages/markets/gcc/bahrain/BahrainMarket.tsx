@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -7,7 +7,7 @@ import { usePageMeta } from '../../../../hooks/usePageMeta';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Service', name: 'SEO Agency Manama Bahrain — SEO for Bahrain Businesses', description: 'SEO services for businesses in Manama and Bahrain — Arabic-English SEO, Google Business Profile, financial services and B2B SEO by upranked.io. APEX Framework by Sama Alaa.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/bahrain', areaServed: ['Manama', 'Bahrain'] },
+    { '@type': 'Service', name: 'SEO Agency Manama Bahrain — SEO for Bahrain Businesses', description: 'SEO services for businesses in Manama and Bahrain — Arabic-English SEO, Google Business Profile, financial services and B2B SEO by upranked.io. APEX Framework by Sam.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/bahrain', areaServed: ['Manama', 'Bahrain'] },
     { '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'What makes Bahrain a strategic SEO market for GCC expansion?', acceptedAnswer: { '@type': 'Answer', text: "Bahrain's compact market has outsized importance for businesses using it as a GCC expansion base — particularly in financial services, fintech, and professional B2B. Bahrain's regulatory environment makes it a preferred first market for international businesses entering the GCC, and a strong Bahrain SEO presence builds credibility that transfers across the region. Bahrain also has a bilingual buyer base leaning more Arabic than UAE but less than KSA." } },
       { '@type': 'Question', name: 'Which sectors benefit most from SEO in Bahrain?', acceptedAnswer: { '@type': 'Answer', text: 'Financial services and fintech have the highest SEO ROI in Bahrain — Bahrain is a licensed financial hub and searches for banking, investment, and fintech services have very high commercial intent. Professional B2B services, healthcare, and real estate also benefit significantly. Bahrain\'s relatively smaller competitive SEO landscape means businesses can rank faster than in Dubai or Riyadh with less overall investment.' } },
@@ -15,7 +15,7 @@ const schema = {
       { '@type': 'Question', name: 'How long does SEO take to show results in Bahrain?', acceptedAnswer: { '@type': 'Answer', text: "Bahrain's smaller competitive SEO landscape means ranking improvements typically appear faster than in larger GCC markets like Dubai or Riyadh. Most Bahrain businesses see measurable improvements within 2–3 months and significant ranking shifts in months 3–6. The relative lack of sophisticated SEO competition in Bahrain creates significant ranking opportunities for businesses that invest early." } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'GCC Markets', item: 'https://upranked.io/markets/gcc' }, { '@type': 'ListItem', position: 3, name: 'Bahrain SEO', item: 'https://upranked.io/markets/gcc/bahrain' }] },
-    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sam', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function BahrainMarket() {
-  usePageMeta({ title: 'SEO Agency Manama Bahrain — Arabic & English SEO for Bahrain Businesses', description: 'SEO agency for Manama and Bahrain. Financial services SEO, Arabic-English bilingual content, Google Business Profile — APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'bahrain-market-schema' });
+  usePageMeta({ title: 'SEO Agency Manama Bahrain — Arabic & English SEO for Bahrain Businesses', description: 'SEO agency for Manama and Bahrain. Financial services SEO, Arabic-English bilingual content, Google Business Profile — APEX Framework by Sam at upranked.io.', schema, schemaId: 'bahrain-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -99,7 +99,7 @@ export default function BahrainMarket() {
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
               src="/images/sam-hamouda-best-seo-consultant-gcc.webp"
-              alt="Sama Alaa — GCC SEO strategist specializing in Bahrain and Manama bilingual SEO"
+              alt="Sam — GCC SEO strategist specializing in Bahrain and Manama bilingual SEO"
               width={400}
               height={640}
               loading="lazy"
@@ -108,9 +108,9 @@ export default function BahrainMarket() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Your Bahrain SEO Strategist</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across Bahrain, UAE, KSA, and Kuwait markets. The APEX Framework — upranked.io's structured SEO methodology — builds bilingual SEO foundations for Bahrain businesses that establish search dominance in Manama and scale credibility across the wider GCC.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam is a GCC SEO strategist with deep expertise across Bahrain, UAE, KSA, and Kuwait markets. The APEX Framework — upranked.io's structured SEO methodology — builds bilingual SEO foundations for Bahrain businesses that establish search dominance in Manama and scale credibility across the wider GCC.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

@@ -91,6 +91,7 @@ export default function Navigation() {
         { label: 'About', href: '/about/' },
         { label: 'Methodology', href: '/methodology/' },
         { label: 'Blog', href: '/blog/' },
+        { label: 'Pricing', href: '/pricing/' },
         { label: 'FAQ', href: '/faq/' },
         { label: 'Contact', href: '/contact/' },
       ]
@@ -99,6 +100,7 @@ export default function Navigation() {
         { label: 'من نحن', href: '/about/' },
         { label: 'المنهجية', href: '/methodology/' },
         { label: 'المدونة', href: '/blog/' },
+        { label: 'الأسعار', href: '/pricing/' },
         { label: 'الأسئلة الشائعة', href: '/faq/' },
         { label: 'اتصل بنا', href: '/contact/' },
       ];
@@ -265,7 +267,7 @@ export default function Navigation() {
               {ctaLabel}
             </a>
           </Link>
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 hover:bg-dark-gray rounded-lg transition-colors" aria-label="Toggle menu">
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-3 hover:bg-dark-gray rounded-lg transition-colors" aria-label="Toggle menu">
             {isOpen ? <X className="w-6 h-6 text-accent" /> : <Menu className="w-6 h-6 text-accent" />}
           </button>
         </div>
@@ -274,7 +276,7 @@ export default function Navigation() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-dark-gray border-t border-border animate-fade-in-down">
-          <div className="container-premium py-4 space-y-1">
+          <div className="container-premium py-4 space-y-1 max-h-[80vh] overflow-y-auto">
 
             {/* Services accordion */}
             <button

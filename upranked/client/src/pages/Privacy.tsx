@@ -19,7 +19,7 @@ export default function Privacy() {
             <div className="prose prose-invert max-w-none space-y-8 text-text-secondary leading-relaxed">
               <section>
                 <h2 className="text-xl font-bold text-white mb-3">1. Who We Are</h2>
-                <p>upranked.io is a premium SEO agency based in Dubai, UAE, operated by Sama Alaa. We provide SEO strategy and digital growth services to businesses across the GCC and globally. Contact: <a href="mailto:uprankedio@gmail.com" className="text-accent hover:underline">uprankedio@gmail.com</a></p>
+                <p>upranked.io is a premium SEO agency based in Dubai, UAE, operated by Sam. We provide SEO strategy and digital growth services to businesses across the GCC and globally. Contact: <a href="mailto:uprankedio@gmail.com" className="text-accent hover:underline">uprankedio@gmail.com</a></p>
               </section>
 
               <section>

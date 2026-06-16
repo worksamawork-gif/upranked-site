@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+﻿import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle, ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
@@ -15,7 +15,7 @@ const schema = {
       { '@type': 'Question', name: 'Do you implement Arabic schema markup for bilingual GCC websites?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. upranked.io implements schema markup separately for EN and AR versions of GCC websites — ensuring Arabic-language pages have correctly localized structured data, Arabic business name, address, and phone number (NAP) in the correct format, and hreflang signals aligned with schema language declarations.' } },
     ] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'SEO', item: 'https://upranked.io/industries' }, { '@type': 'ListItem', position: 3, name: 'Schema Markup', item: 'https://upranked.io/seo/schema' }] },
-    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sam', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function SchemaSEO() {
-  usePageMeta({ title: 'Schema Markup & Structured Data Dubai & GCC — Rich Results SEO', description: 'Schema markup and @graph JSON-LD implementation for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. FAQPage, LocalBusiness, MedicalOrg rich results by Sama Alaa.', schema, schemaId: 'schema-seo-schema' });
+  usePageMeta({ title: 'Schema Markup & Structured Data Dubai & GCC — Rich Results SEO', description: 'Schema markup and @graph JSON-LD implementation for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. FAQPage, LocalBusiness, MedicalOrg rich results by Sam.', schema, schemaId: 'schema-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -109,8 +109,8 @@ export default function SchemaSEO() {
         <div className="container-premium max-w-4xl">
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
-              src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
+              src="/favicon.svg"
+              alt="Sam — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
               width={400}
               height={640}
               loading="lazy"
@@ -119,9 +119,9 @@ export default function SchemaSEO() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">Written &amp; Overseen By</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { Link, useRoute } from 'wouter';
 import { ArrowRight, ArrowLeft, Clock, Tag, Calendar } from 'lucide-react';
 import { getPostBySlug, getRelatedPosts, type BlogSection, type BlogPost } from '@/data/blogPosts';
@@ -144,10 +144,10 @@ export default function BlogPost() {
             description: post.metaDescription,
             image: p?.featuredImage
               ? { '@type': 'ImageObject', url: `https://upranked.io${p.featuredImage}`, description: p.featuredImageAlt || post.title }
-              : { '@type': 'ImageObject', url: 'https://upranked.io/images/sam-hamouda-seo-consultant-dubai.webp', description: post.title },
+              : { '@type': 'ImageObject', url: 'https://upranked.io/favicon.svg', description: post.title },
             datePublished: post.publishedAt,
             dateModified: post.publishedAt,
-            author: { '@type': 'Person', name: p?.author || 'Sama Alaa', url: 'https://upranked.io/about' },
+            author: { '@type': 'Person', name: p?.author || 'Sam', url: 'https://upranked.io/about' },
             publisher: {
               '@type': 'Organization',
               name: 'upranked.io',
@@ -251,12 +251,12 @@ export default function BlogPost() {
 
           {/* Author */}
           <div className="mt-12 p-6 rounded-xl bg-dark-gray border border-border flex items-start gap-4">
-            <img src="/images/sam-hamouda-seo-consultant-dubai.webp" alt="Sama Alaa — Founder of upranked.io" width={48} height={48} loading="lazy" className="w-12 h-12 rounded-full object-cover object-top flex-shrink-0 border border-accent/30" decoding="async" />
+            <img src="/favicon.svg" alt="Sam — Founder of upranked.io" width={48} height={48} loading="lazy" className="w-12 h-12 rounded-full object-cover object-top flex-shrink-0 border border-accent/30" decoding="async" />
             <div>
-              <p className="font-bold text-white">Sama Alaa</p>
+              <p className="font-bold text-white">Sam</p>
               <p className="text-text-secondary text-sm">Founder, upranked.io · Creator of the APEX Framework™ · GCC Growth Intelligence Specialist</p>
               <Link href="/about/">
-                <a className="text-accent text-sm hover:underline mt-1 inline-block">About Sama →</a>
+                <a className="text-accent text-sm hover:underline mt-1 inline-block">About Sam →</a>
               </Link>
             </div>
           </div>

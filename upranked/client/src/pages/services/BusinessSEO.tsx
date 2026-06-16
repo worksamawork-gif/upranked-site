@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PAGE: /industries/business
  * PRIMARY KW: business SEO Dubai (Vol: ~1,300/mo GCC | KD: 38)
  * SECONDARY KW: SEO agency Dubai UAE, SEO for companies GCC, B2B SEO Dubai, SME SEO UAE
@@ -149,7 +149,7 @@ const tocItems = [
   { id: 'benefits', label: 'What You Get' },
   { id: 'apex', label: 'The APEX Process' },
   { id: 'results', label: 'Results & Stats' },
-  { id: 'about-Sama', label: 'About Sama Alaa' },
+  { id: 'about-Sam', label: 'About Sam' },
   { id: 'why-upranked', label: 'Why upranked.io' },
   { id: 'service-areas', label: 'Service Areas' },
   { id: 'faq', label: 'FAQ' },
@@ -214,7 +214,7 @@ const schema = {
     {
       '@type': 'Person',
       '@id': 'https://upranked.io/about#person',
-      name: 'Sama Alaa',
+      name: 'Sam',
       jobTitle: 'Founder & Chief Growth Strategist',
       worksFor: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' },
       url: 'https://upranked.io/about',
@@ -504,7 +504,7 @@ export default function BusinessSEO() {
                 {[
                   { stat: '3 verticals only', title: 'Sector Specialist', desc: 'Business, Medical, and Industrial SEO — no generalist spread across 40 industries. Depth beats breadth in GCC competition.' },
                   { stat: '6 priority markets', title: 'GCC-First Intelligence', desc: 'Built on UAE and Saudi Arabia market data, bilingual EN/AR keyword research, and GCC-specific ranking patterns. Not a Western playbook.' },
-                  { stat: 'Zero handoffs', title: 'Founder-Led Delivery', desc: 'Sama Alaa is personally involved in every engagement. Revenue and qualified leads — not vanity rankings — are the primary metric.' },
+                  { stat: 'Zero handoffs', title: 'Founder-Led Delivery', desc: 'Sam is personally involved in every engagement. Revenue and qualified leads — not vanity rankings — are the primary metric.' },
                 ].map(r => (
                   <div key={r.title} className="p-6 hover:bg-navy/30 transition-colors">
                     <div className="text-accent font-black text-xs uppercase tracking-widest mb-2">{r.stat}</div>
@@ -553,7 +553,7 @@ export default function BusinessSEO() {
       <section className="py-12 bg-gradient-to-r from-accent/10 via-navy to-accent/10 border-y border-accent/20">
         <div className="container-premium text-center">
           <p className="text-lg font-semibold text-white mb-2">Ready to turn organic search into your top revenue channel?</p>
-          <p className="text-text-secondary text-sm mb-6">Book a free 30-minute APEX Diagnostic with Sama Alaa — no commitment, clear opportunity map.</p>
+          <p className="text-text-secondary text-sm mb-6">Book a free 30-minute APEX Diagnostic with Sam — no commitment, clear opportunity map.</p>
           <Link href="/contact/">
             <a className="btn-primary inline-flex items-center gap-2">
               Get Your Free Business SEO Audit <ArrowRight className="w-4 h-4" />
@@ -646,7 +646,7 @@ export default function BusinessSEO() {
       </section>
 
       {/* ── E-E-A-T BIO BOX ── */}
-      <section id="about-Sama" className="section-padding bg-navy">
+      <section id="about-Sam" className="section-padding bg-navy">
         <div className="container-premium max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -660,17 +660,17 @@ export default function BusinessSEO() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <img
-                src="/images/sam-hamouda-seo-consultant-dubai.webp"
-                alt="Sama Alaa — business SEO expert Dubai, founder of upranked.io GCC SEO agency"
+                src="/favicon.svg"
+                alt="Sam — business SEO expert Dubai, founder of upranked.io GCC SEO agency"
                 width={140} height={140}
                 loading="lazy"
                 className="rounded-xl border border-accent/20 flex-shrink-0 w-28 h-28 sm:w-36 sm:h-36 object-cover object-top"
               />
               <div>
-                <h2 className="text-2xl font-bold text-white mb-1">Sama Alaa</h2>
+                <h2 className="text-2xl font-bold text-white mb-1">Sam</h2>
                 <p className="text-accent text-sm mb-4">Founder &amp; Chief Growth Strategist, upranked.io · Dubai, UAE</p>
                 <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                  Sama Alaa is a specialist business SEO strategist with 20+ GCC client engagements across professional services, B2B technology, financial services, and e-commerce in Dubai, Abu Dhabi, Riyadh, Doha, and Kuwait City. As the creator of the APEX Framework™ — upranked.io's proprietary Audit → Position → Execute → Expand methodology — Sama brings sector-specific GCC market knowledge that generic agencies built on Western playbooks cannot replicate.
+                  Sam is a specialist business SEO strategist with 20+ GCC client engagements across professional services, B2B technology, financial services, and e-commerce in Dubai, Abu Dhabi, Riyadh, Doha, and Kuwait City. As the creator of the APEX Framework™ — upranked.io's proprietary Audit → Position → Execute → Expand methodology — Sam brings sector-specific GCC market knowledge that generic agencies built on Western playbooks cannot replicate.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {['Business SEO', 'Commercial Intent Strategy', 'GCC Market Positioning', 'Bilingual EN/AR SEO', 'B2B Lead Generation', 'Revenue Attribution'].map(tag => (
@@ -709,7 +709,7 @@ export default function BusinessSEO() {
               { icon: BarChart3, title: 'Revenue Reporting, Not Vanity Metrics', body: 'Every monthly report links organic activity to leads, proposals, and revenue. You can compare your SEO ROI against paid search or any other channel with full attribution transparency.' },
               { icon: Globe, title: 'True Bilingual SEO', body: 'Native Arabic keyword research, independent Arabic content strategy, and technical RTL configuration. Arabic SEO as a fully parallel channel — not translated English content repackaged.' },
               { icon: Shield, title: 'APEX Framework™ Methodology', body: 'A proprietary 4-phase framework built from 20+ GCC client engagements. Not a generic agency checklist — a structured, commercially focused system that adapts to GCC market conditions.' },
-              { icon: Users, title: 'Direct Access to Sama Alaa', body: 'You work directly with the founder, not handed to a junior account manager. Sama owns every strategy, every review, every recommendation — full accountability from kickoff to results.' },
+              { icon: Users, title: 'Direct Access to Sam', body: 'You work directly with the founder, not handed to a junior account manager. Sam owns every strategy, every review, every recommendation — full accountability from kickoff to results.' },
               { icon: Award, title: 'Sector-Specific Knowledge', body: 'Business SEO for Dubai and GCC is not one-size-fits-all. We bring deep knowledge of how buyers search in professional services, B2B tech, financial services, real estate, and logistics across the region.' },
             ].map((item, i) => (
               <motion.div
@@ -795,6 +795,39 @@ export default function BusinessSEO() {
         </div>
       </section>
 
+      {/* ── INVESTMENT / PRICING ── */}
+      <section className="section-padding bg-navy">
+        <div className="container-premium max-w-4xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-10">
+            <h2 className="text-3xl font-bold mb-3">Investment — <span className="text-accent">Transparent Pricing</span></h2>
+            <p className="text-text-secondary">No "contact us for a quote." Here is exactly what Business SEO costs at upranked.io.</p>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            {[
+              { name: 'APEX Diagnostic', tag: 'One-Time', price: '$650', sub: 'AED 2,400 · one-time', desc: 'Full audit, competitor gap analysis, keyword map, and 90-day roadmap — before you commit to a retainer.', highlight: false },
+              { name: 'Growth Retainer', tag: 'Great Start', price: '$1,200', sub: 'AED 4,400 / month', desc: 'Technical SEO, on-page optimisation, GBP, English keyword targeting, and monthly reporting. Ideal for single-market GCC businesses.', highlight: false },
+              { name: 'Authority Retainer', tag: 'Most Popular', price: '$2,200', sub: 'AED 8,100 / month', desc: 'Full bilingual EN/AR SEO — technical, content production, link building, and AEO/GEO for professional services and B2B firms.', highlight: true },
+            ].map((p, i) => (
+              <motion.div key={p.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i * 0.1 }} viewport={{ once: true }}
+                className={`rounded-2xl border p-6 flex flex-col gap-3 ${p.highlight ? 'border-accent bg-dark-gray shadow-xl shadow-accent/10' : 'border-border bg-dark-gray/50'}`}>
+                {p.highlight
+                  ? <span className="self-start bg-accent text-navy text-xs font-bold px-3 py-1 rounded-full">{p.tag}</span>
+                  : <span className="text-xs text-text-secondary font-semibold uppercase tracking-widest">{p.tag}</span>}
+                <div>
+                  <p className="text-3xl font-black text-white">{p.price}</p>
+                  <p className="text-text-secondary text-xs mt-0.5">{p.sub}</p>
+                </div>
+                <p className="font-bold text-white text-sm">{p.name}</p>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">{p.desc}</p>
+                <Link href="/contact/"><a className={`w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 transition-all ${p.highlight ? 'bg-accent text-navy hover:bg-accent/90' : 'border border-accent text-accent hover:bg-accent/10'}`}>Get Started <ArrowRight className="w-4 h-4" /></a></Link>
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-center text-text-secondary text-xs mb-2">3-month minimum on retainers. APEX Diagnostic fee credited to first retainer month. Prices in USD.</p>
+          <div className="text-center"><Link href="/pricing/"><a className="text-accent hover:underline text-sm inline-flex items-center gap-1">Full pricing breakdown — compare all packages <ArrowRight className="w-3.5 h-3.5" /></a></Link></div>
+        </div>
+      </section>
+
       {/* ── BOOKING CTA + NAP #3 ── */}
       <section className="section-padding bg-gradient-to-br from-navy via-dark-gray to-navy relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent -z-10" />
@@ -805,7 +838,7 @@ export default function BusinessSEO() {
               Ready to Make Business SEO Your <span className="text-accent">Top Revenue Channel</span>?
             </h2>
             <p className="text-text-secondary mb-6 leading-relaxed">
-              Book a free 30-minute APEX Diagnostic call with Sama Alaa. Walk away with a clear picture of your Dubai and GCC search opportunity, a competitor gap analysis, and a prioritised roadmap — no commitment required.
+              Book a free 30-minute APEX Diagnostic call with Sam. Walk away with a clear picture of your Dubai and GCC search opportunity, a competitor gap analysis, and a prioritised roadmap — no commitment required.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

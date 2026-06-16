@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { ArrowRight, MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
 import { usePageMeta } from '../../../hooks/usePageMeta';
@@ -8,7 +8,7 @@ const schema = {
   '@graph': [
     { '@type': 'Service', name: 'SEO Agency GCC — Gulf Cooperation Council SEO Services', description: 'SEO services for businesses across the Gulf Cooperation Council — Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain. APEX Framework bilingual SEO by upranked.io.', provider: { '@type': 'Organization', name: 'upranked.io', url: 'https://upranked.io' }, url: 'https://upranked.io/markets/gcc/', areaServed: ['Dubai', 'Abu Dhabi', 'Riyadh', 'Jeddah', 'Kuwait City', 'Manama'] },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io' }, { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://upranked.io/markets/gcc/' }, { '@type': 'ListItem', position: 3, name: 'GCC', item: 'https://upranked.io/markets/gcc/' }] },
-    { '@type': 'Person', name: 'Sama Alaa', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
+    { '@type': 'Person', name: 'Sam', jobTitle: 'Founder & GCC SEO Strategist', worksFor: { '@type': 'Organization', name: 'upranked.io' }, url: 'https://upranked.io/about' },
   ],
 };
 
@@ -20,7 +20,7 @@ const markets = [
 ];
 
 export default function GCCMarkets() {
-  usePageMeta({ title: 'GCC SEO Agency — Dubai, Riyadh, Kuwait & Bahrain | upranked.io', description: 'Expert SEO across the Gulf Cooperation Council — bilingual Arabic-English strategies for Dubai UAE, Riyadh KSA, Kuwait City, and Manama Bahrain. APEX Framework by Sama Alaa at upranked.io.', schema, schemaId: 'gcc-markets-schema' });
+  usePageMeta({ title: 'GCC SEO Agency — Dubai, Riyadh, Kuwait & Bahrain | upranked.io', description: 'Expert SEO across the Gulf Cooperation Council — bilingual Arabic-English strategies for Dubai UAE, Riyadh KSA, Kuwait City, and Manama Bahrain. APEX Framework by Sam at upranked.io.', schema, schemaId: 'gcc-markets-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
@@ -85,8 +85,8 @@ export default function GCCMarkets() {
         <div className="container-premium max-w-4xl">
           <div className="bg-navy border border-border rounded-xl p-8 flex flex-col md:flex-row gap-8 items-start mb-12">
             <img
-              src="/images/sam-hamouda-seo-consultant-dubai.webp"
-              alt="Sama Alaa — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
+              src="/favicon.svg"
+              alt="Sam — Founder and GCC SEO Strategist at upranked.io, Dubai UAE"
               width={400}
               height={640}
               loading="lazy"
@@ -95,9 +95,9 @@ export default function GCCMarkets() {
             />
             <div>
               <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-2">About the Strategist</p>
-              <h3 className="text-xl font-bold text-white mb-1">Sama Alaa</h3>
+              <h3 className="text-xl font-bold text-white mb-1">Sam</h3>
               <p className="text-accent text-sm mb-3">Founder &amp; GCC SEO Strategist — upranked.io</p>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sama Alaa is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
+              <p className="text-text-secondary text-sm leading-relaxed mb-4">Sam is a GCC SEO strategist with deep expertise across UAE, KSA, Kuwait, and Bahrain markets. The APEX Framework — upranked.io's structured SEO methodology — was developed from hands-on experience ranking competitive GCC sectors including financial services, healthcare, industrial, and professional B2B.</p>
               <div className="flex flex-wrap gap-4 text-sm text-text-secondary">
                 <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
                 <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone className="w-4 h-4 text-accent" /> Contact Us</a>

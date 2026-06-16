@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, MapPin, LinkedinIcon, TwitterIcon, Facebook, Instagram, Phone } from 'lucide-react';
+﻿import { Mail, MessageCircle, MapPin, LinkedinIcon, TwitterIcon, Facebook, Instagram, Phone } from 'lucide-react';
 import { Link } from 'wouter';
 
 export default function Footer() {
@@ -101,8 +101,9 @@ export default function Footer() {
             <h4 className="font-bold text-sm uppercase tracking-widest text-accent mb-4">Company</h4>
             <ul className="space-y-2">
               {[
-                { label: 'About Sama Alaa', href: '/about' },
+                { label: 'About Sam', href: '/about' },
                 { label: 'APEX Methodology', href: '/methodology' },
+                { label: 'Pricing', href: '/pricing' },
                 { label: 'Insights / Blog', href: '/blog' },
                 { label: 'FAQ', href: '/faq' },
                 { label: 'Contact', href: '/contact' },

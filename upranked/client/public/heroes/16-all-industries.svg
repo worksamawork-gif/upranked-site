@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" role="img" aria-label="All Industries — sector grid">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a0f1e"></stop><stop offset="100%" stop-color="#0d1426"></stop></linearGradient>
+    <pattern id="grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#c9a84c" stroke-opacity="0.045"></path></pattern>
+    <radialGradient id="glow"><stop offset="0%" stop-color="#c9a84c" stop-opacity="0.15"></stop><stop offset="100%" stop-color="#c9a84c" stop-opacity="0"></stop></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"></rect>
+  <rect width="800" height="600" fill="url(#grid)"></rect>
+  <ellipse cx="400" cy="320" rx="340" ry="260" fill="url(#glow)"></ellipse>
+
+  
+  <g font-family="Cairo,sans-serif" font-weight="700">
+    
+    <g>
+      <rect x="100" y="160" width="180" height="110" rx="12" fill="rgba(201,168,76,0.12)" stroke="#c9a84c" stroke-width="1.5"></rect>
+      <g transform="translate(180,200)" stroke="#c9a84c" stroke-width="2" fill="none" stroke-linecap="round">
+        <rect x="-18" y="-12" width="36" height="28" rx="3"></rect>
+        <line x1="0" y1="-6" x2="0" y2="10"></line><line x1="-8" y1="2" x2="8" y2="2"></line>
+      </g>
+      <text x="190" y="248" fill="#fff" font-size="14" text-anchor="middle">Medical</text>
+    </g>
+    
+    <g>
+      <rect x="310" y="160" width="180" height="110" rx="12" fill="rgba(201,168,76,0.12)" stroke="#c9a84c" stroke-width="1.5"></rect>
+      <g transform="translate(400,195)" stroke="#c9a84c" stroke-width="2" fill="none" stroke-linecap="round">
+        <rect x="-20" y="0" width="14" height="18"></rect><rect x="-4" y="-8" width="14" height="26"></rect><rect x="12" y="-16" width="14" height="34"></rect>
+      </g>
+      <text x="400" y="248" fill="#fff" font-size="14" text-anchor="middle">Industrial B2B</text>
+    </g>
+    
+    <g>
+      <rect x="520" y="160" width="180" height="110" rx="12" fill="rgba(201,168,76,0.12)" stroke="#c9a84c" stroke-width="1.5"></rect>
+      <g transform="translate(610,195)" stroke="#c9a84c" stroke-width="2" fill="none" stroke-linecap="round">
+        <rect x="-18" y="-10" width="36" height="24" rx="2"></rect><line x1="-10" y1="-4" x2="10" y2="-4"></line><line x1="-10" y1="4" x2="6" y2="4"></line>
+      </g>
+      <text x="610" y="248" fill="#fff" font-size="14" text-anchor="middle">Business</text>
+    </g>
+    
+    <g>
+      <rect x="100" y="290" width="180" height="110" rx="12" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1.5"></rect>
+      <g transform="translate(190,325)" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round">
+        <path d="M-18 8 L-18 -10 L18 -10 L18 8 Z"></path><path d="M-12 8 V0 H12 V8"></path>
+      </g>
+      <text x="190" y="378" fill="#b0b0b0" font-size="14" text-anchor="middle">Hospitality</text>
+    </g>
+    
+    <g>
+      <rect x="310" y="290" width="180" height="110" rx="12" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1.5"></rect>
+      <g transform="translate(400,325)" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-18 10 L-18 -4 L0 -16 L18 -4 L18 10 Z"></path><rect x="-5" y="0" width="10" height="10"></rect>
+      </g>
+      <text x="400" y="378" fill="#b0b0b0" font-size="14" text-anchor="middle">Real Estate</text>
+    </g>
+    
+    <g>
+      <rect x="520" y="290" width="180" height="110" rx="12" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1.5"></rect>
+      <g transform="translate(610,325)" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round">
+        <line x1="-16" y1="-10" x2="16" y2="-10"></line><line x1="-12" y1="-10" x2="-12" y2="10"></line><line x1="0" y1="-10" x2="0" y2="10"></line><line x1="12" y1="-10" x2="12" y2="10"></line><line x1="-16" y1="10" x2="16" y2="10"></line>
+      </g>
+      <text x="610" y="378" fill="#b0b0b0" font-size="14" text-anchor="middle">Finance</text>
+    </g>
+    
+    <g>
+      <rect x="100" y="420" width="180" height="100" rx="12" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1.5"></rect>
+      <g transform="translate(190,455)" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round">
+        <path d="M-16 -8 L-12 -8 L-8 8 L14 8"></path><circle cx="-4" cy="14" r="2"></circle><circle cx="11" cy="14" r="2"></circle>
+      </g>
+      <text x="190" y="500" fill="#b0b0b0" font-size="14" text-anchor="middle">E-commerce</text>
+    </g>
+    
+    <g>
+      <rect x="310" y="420" width="180" height="100" rx="12" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1.5"></rect>
+      <g transform="translate(400,455)" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-18 0 L0 -10 L18 0 L0 10 Z"></path><path d="M-10 4 V12"></path><path d="M10 4 V12"></path>
+      </g>
+      <text x="400" y="500" fill="#b0b0b0" font-size="14" text-anchor="middle">Education</text>
+    </g>
+    
+    <g>
+      <rect x="520" y="420" width="180" height="100" rx="12" fill="#1a1f2e" stroke="#2a2f3e" stroke-width="1.5"></rect>
+      <g transform="translate(610,455)" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round">
+        <line x1="0" y1="-12" x2="0" y2="12"></line><line x1="-12" y1="-8" x2="12" y2="-8"></line><path d="M-12 -8 L-16 8 L-8 8 Z" fill="none"></path><path d="M12 -8 L8 8 L16 8 Z" fill="none"></path>
+      </g>
+      <text x="610" y="500" fill="#b0b0b0" font-size="14" text-anchor="middle">Legal</text>
+    </g>
+  </g>
+
+  <text x="400" y="80" fill="#c9a84c" font-size="13" font-family="Inter,sans-serif" font-weight="700" letter-spacing="6" text-anchor="middle">ALL INDUSTRIES</text>
+  <text x="400" y="104" fill="#fff" font-size="16" font-family="Cairo,sans-serif" font-weight="700" text-anchor="middle">Sector-Specific Growth Intelligence</text>
+  <text x="400" y="560" fill="#666c7a" font-size="11" font-family="Inter,sans-serif" font-weight="700" letter-spacing="3" text-anchor="middle">SPECIALIST FOCUS · MEDICAL · B2B · BUSINESS</text>
+</svg>
