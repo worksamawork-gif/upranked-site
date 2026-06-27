@@ -1,0 +1,34 @@
+# ── Credentials & secrets ──
+gsc/
+*.env
+*.env.*
+
+# ── Claude Code / AI agent internals ──
+.claude/
+.agents/
+skills-lock.json
+
+# ── Planning & internal docs (not for production) ──
+_knowledge/
+CLAUDE.md
+CURRENT_PROJECT_STATE.md
+MASTER_CONTEXT.md
+PRODUCT.md
+PROJECT_MAP.md
+tree.json
+
+# ── Design assets (large, not deployed) ──
+UprankedDesignSystem/
+Upranked Design System*/
+impeccable-style-universal/
+
+# ── Data files ──
+*.xlsx
+*.docx
+*.zip
+
+# ── OS / IDE ──
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

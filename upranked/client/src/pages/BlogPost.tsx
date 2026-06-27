@@ -22,7 +22,7 @@ function renderSection(section: BlogSection, index: number) {
       return <h3 key={index} className="text-xl font-bold text-accent mt-8 mb-3">{section.text}</h3>;
     case 'p': {
       const raw = section.text || '';
-      const parts = raw.split(/(\[([^\]]+)\]\((https?:\/\/[^)]+|\/[^)]*)\))/g);
+      const parts = raw.split(/(\[[^\]]+\]\((?:https?:\/\/[^)]+|\/[^)]*)\))/g);
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const nodes: any[] = [];
       let i = 0;

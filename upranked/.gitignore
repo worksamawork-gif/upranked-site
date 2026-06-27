@@ -113,3 +113,16 @@ temp/
 # Manus artifacts (auto-generated, not part of source)
 client/public/__manus__/
 dist/public/__manus__/
+
+# Claude Code / AI agent internals
+.claude/
+.agents/
+skills-lock.json
+
+# Planning & internal docs (not for production)
+CLAUDE.md
+CURRENT_PROJECT_STATE.md
+MASTER_CONTEXT.md
+PRODUCT.md
+PROJECT_MAP.md
+_knowledge/
