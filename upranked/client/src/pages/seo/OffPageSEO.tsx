@@ -192,6 +192,18 @@ export default function OffPageSEO() {
           </div>
         </div>
       </section>
+      <section className="section-padding bg-dark-gray">
+        <div className="container-premium max-w-3xl">
+          <div className="p-5 bg-navy border border-accent/20 rounded-xl flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-1">Related Reading</p>
+              <p className="text-white font-semibold text-sm mb-1">Arabic SEO Agency in Dubai — Full 2026 Guide</p>
+              <p className="text-text-secondary text-xs leading-relaxed">Why Arabic-language link building is a separate channel — and how GCC businesses build off-page authority for both English and Arabic search.</p>
+            </div>
+            <Link href="/blog/arabic-seo-agency-dubai-uae/"><a className="btn-primary text-sm px-5 py-2.5 whitespace-nowrap inline-flex items-center gap-2">Read Guide <ArrowRight className="w-4 h-4" /></a></Link>
+          </div>
+        </div>
+      </section>
       <section className="section-padding bg-navy">
         <div className="container-premium text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>

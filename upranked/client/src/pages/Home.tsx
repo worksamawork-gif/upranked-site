@@ -869,10 +869,12 @@ export default function Home() {
                 </a>
               </Link>
               <a
-                href="/contact/"
+                href="https://wa.me/201039173978?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20free%20APEX%20Diagnostic%20call"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-secondary inline-flex items-center gap-2 text-base px-8 py-4"
               >
-                {isAr ? 'واتساب Sam مباشرة' : 'Contact Us'}
+                {isAr ? 'واتساب Sam مباشرة' : 'WhatsApp Sam'}
               </a>
             </div>
 

@@ -428,15 +428,17 @@ export default function Contact() {
                 {/* Direct contact options */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                   <a
-                    href="/contact/"
-                    className="flex items-center gap-4 p-4 bg-dark-gray border border-border rounded-xl hover:border-accent/50 transition-colors group"
+                    href="https://wa.me/201039173978?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20free%20APEX%20Diagnostic%20call"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 bg-dark-gray border border-green-500/30 rounded-xl hover:border-green-500/70 transition-colors group"
                   >
                     <div className="w-10 h-10 bg-green-500/20 border border-green-500/30 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Phone className="w-4 h-4 text-green-400" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold text-sm group-hover:text-accent transition-colors">Contact Us</p>
-                      <p className="text-text-secondary text-xs">Contact Us</p>
+                      <p className="text-white font-semibold text-sm group-hover:text-green-400 transition-colors">WhatsApp Sam</p>
+                      <p className="text-text-secondary text-xs">+20 103 917 3978 — fastest reply</p>
                     </div>
                   </a>
                   <a

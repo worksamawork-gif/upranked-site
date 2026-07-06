@@ -110,6 +110,10 @@ const ROUTES = [
   '/blog/middle-east-seo-strategy',
   '/blog/bahrain-seo-guide-2026',
   '/blog/off-page-seo-link-building-dubai',
+  '/blog/choose-arabic-seo-agency-dubai',
+  '/blog/arabic-seo-services-dubai-guide',
+  '/blog/dubai-clinic-seo-page-9',
+  '/blog/riyadh-seo-vision-2030',
 ];
 
 function startServer(cleanShell) {

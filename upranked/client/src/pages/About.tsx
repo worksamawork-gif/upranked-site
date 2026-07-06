@@ -787,8 +787,8 @@ export default function About() {
 
             {/* NAP #2 */}
             <address className="not-italic flex flex-col sm:flex-row gap-4 justify-center text-sm text-text-secondary border border-border rounded-xl p-5 bg-navy/40">
-              <a href="/contact/" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Phone className="w-4 h-4 text-accent" /> Contact Us (WhatsApp)
+              <a href="https://wa.me/201039173978?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20free%20APEX%20Diagnostic%20call" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Phone className="w-4 h-4 text-accent" /> WhatsApp Sam
               </a>
               <span className="hidden sm:block text-border">|</span>
               <a href="mailto:uprankedio@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">

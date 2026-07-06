@@ -147,8 +147,8 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function MedicalSEO() {
   usePageMeta({
-    title: 'Medical & Healthcare SEO Dubai UAE — Clinics & Hospitals | upranked.io',
-    description: 'Specialist healthcare SEO agency for clinics, hospitals & practices in Dubai & UAE. E-E-A-T content, bilingual EN/AR, MedicalOrganization schema. Book a free audit.',
+    title: 'Medical SEO Agency Dubai UAE — Clinics, Hospitals & Healthcare | upranked.io',
+    description: 'Medical SEO agency for Dubai UAE clinics & hospitals. E-E-A-T content that ranks on Google, bilingual EN/AR, MedicalOrganization schema. Book a free diagnostic.',
     schemaId: 'medical-seo-schema',
     schema: {
       '@context': 'https://schema.org',
@@ -635,6 +635,20 @@ export default function MedicalSEO() {
             <Link href="/faq/">
               <a className="text-accent hover:underline text-sm">View all SEO FAQs →</a>
             </Link>
+          </div>
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="p-5 bg-dark-gray border border-accent/20 rounded-xl flex flex-col gap-3">
+              <p className="text-xs text-accent font-semibold uppercase tracking-widest">Related Reading</p>
+              <p className="text-white font-semibold text-sm">Healthcare SEO UAE 2026 — Medical Clinic Rankings Guide</p>
+              <p className="text-text-secondary text-xs leading-relaxed">How UAE clinics go from page 9 to page 1 — E-E-A-T, DHA compliance, bilingual content strategy.</p>
+              <Link href="/blog/healthcare-seo-uae-2026/"><a className="text-accent text-xs font-semibold hover:underline inline-flex items-center gap-1">Read Guide <ArrowRight className="w-3 h-3" /></a></Link>
+            </div>
+            <div className="p-5 bg-dark-gray border border-accent/20 rounded-xl flex flex-col gap-3">
+              <p className="text-xs text-accent font-semibold uppercase tracking-widest">Related Reading</p>
+              <p className="text-white font-semibold text-sm">Medical SEO for Dubai Clinics — 2026 Strategy</p>
+              <p className="text-text-secondary text-xs leading-relaxed">Step-by-step playbook for ranking a Dubai medical practice in a YMYL-heavy Google environment.</p>
+              <Link href="/blog/medical-seo-dubai-clinics/"><a className="text-accent text-xs font-semibold hover:underline inline-flex items-center gap-1">Read Guide <ArrowRight className="w-3 h-3" /></a></Link>
+            </div>
           </div>
         </div>
       </section>

@@ -225,15 +225,15 @@ export default function TailoredWebsite() {
               <p className="text-text-secondary">Website projects are scoped per requirements. Here is how most clients start.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="border border-border bg-dark-gray/50 rounded-2xl p-6 flex flex-col gap-3">
-                <span className="text-xs text-text-secondary font-semibold uppercase tracking-widest">Start Here</span>
+              <div className="border border-accent/40 bg-dark-gray/50 rounded-2xl p-6 flex flex-col gap-3">
+                <span className="text-xs text-accent font-semibold uppercase tracking-widest">Free · Limited Time</span>
                 <div>
-                  <p className="text-3xl font-black text-white">$650</p>
-                  <p className="text-text-secondary text-xs mt-0.5">AED 2,400 · one-time</p>
+                  <p className="text-3xl font-black text-accent">FREE</p>
+                  <p className="text-text-secondary text-xs mt-0.5 line-through">Was $650 / AED 2,400</p>
                 </div>
                 <p className="font-bold text-white text-sm">APEX Diagnostic</p>
-                <p className="text-text-secondary text-sm leading-relaxed flex-1">Audit your current website's technical health, SEO architecture, and conversion gaps — so your new site is built on a validated foundation, not guesswork.</p>
-                <Link href="/contact/"><a className="w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold border border-accent text-accent hover:bg-accent/10 flex items-center justify-center gap-2 transition-all">Book Diagnostic <ArrowRight className="w-4 h-4" /></a></Link>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">For a limited time, Sam will audit your website's technical health, SEO architecture, and conversion gaps — completely free. Walk away with a clear roadmap before any project starts.</p>
+                <Link href="/contact/"><a className="w-full text-center py-2.5 px-4 rounded-xl text-sm font-semibold bg-accent text-navy hover:bg-accent/90 flex items-center justify-center gap-2 transition-all">Claim Free Diagnostic <ArrowRight className="w-4 h-4" /></a></Link>
               </div>
               <div className="border border-accent bg-dark-gray rounded-2xl p-6 flex flex-col gap-3 shadow-xl shadow-accent/10">
                 <span className="self-start bg-accent text-navy text-xs font-bold px-3 py-1 rounded-full">Custom Project</span>

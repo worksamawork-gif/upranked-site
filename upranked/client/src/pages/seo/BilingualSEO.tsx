@@ -103,6 +103,14 @@ export default function BilingualSEO() {
         <div className="container-premium max-w-3xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Bilingual SEO FAQs — Dubai &amp; GCC</h2>
           <div className="space-y-3">{faqs.map(faq => <FAQItem key={faq.q} q={faq.q} a={faq.a} />)}</div>
+          <div className="mt-10 p-5 bg-dark-gray border border-accent/20 rounded-xl flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-1">Related Reading</p>
+              <p className="text-white font-semibold text-sm mb-1">Arabic SEO Agency in Dubai — Full 2026 Guide</p>
+              <p className="text-text-secondary text-xs leading-relaxed">How GCC businesses capture Arabic search traffic: native keyword research, dialect strategy, and ranking methodology for Dubai and Saudi Arabia.</p>
+            </div>
+            <Link href="/blog/arabic-seo-agency-dubai-uae/"><a className="btn-primary text-sm px-5 py-2.5 whitespace-nowrap inline-flex items-center gap-2">Read Guide <ArrowRight className="w-4 h-4" /></a></Link>
+          </div>
         </div>
       </section>
       <section className="section-padding bg-dark-gray">
@@ -151,7 +159,7 @@ export default function BilingualSEO() {
             <p className="text-xl text-text-secondary mb-8 max-w-xl mx-auto">Book a free APEX Diagnostic. We will audit your Arabic SEO coverage and show exactly how much traffic you are missing across Dubai, Riyadh, Kuwait, and Bahrain.</p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Link href="/contact/"><a className="btn-primary text-lg px-10 py-5 inline-flex items-center gap-2">Book Free Call <ArrowRight className="w-5 h-5" /></a></Link>
-              <a href="/contact/" className="btn-secondary text-lg px-10 py-5">Contact Us</a>
+              <a href="https://wa.me/201039173978?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20free%20APEX%20Diagnostic%20call" target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg px-10 py-5">WhatsApp Sam</a>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-secondary">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent" /> upranked.io — Dubai, UAE</span>
