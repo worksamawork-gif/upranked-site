@@ -92,6 +92,20 @@ export default function RiyadhMarket() {
         <div className="container-premium max-w-3xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Riyadh SEO FAQs</h2>
           <div className="space-y-3">{faqs.map(faq => <FAQItem key={faq.q} q={faq.q} a={faq.a} />)}</div>
+
+          {/* Related Reading */}
+          <div className="mt-10 p-5 bg-dark-gray border border-accent/20 rounded-xl flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-1">Related Reading</p>
+              <p className="text-white font-semibold text-sm mb-1">Arabic SEO Agency in Dubai & UAE — What to Look For (And What to Avoid)</p>
+              <p className="text-text-secondary text-xs leading-relaxed">Arabic-first SEO is the dominant strategy in the Saudi market. This guide shows what a genuine Arabic SEO agency delivers and what questions reveal the real competence.</p>
+            </div>
+            <Link href="/blog/arabic-seo-agency-dubai-uae/">
+              <a className="btn-primary text-sm px-5 py-2.5 inline-flex items-center gap-2 whitespace-nowrap flex-shrink-0">
+                Read Guide <ArrowRight className="w-4 h-4" />
+              </a>
+            </Link>
+          </div>
         </div>
       </section>
       <section className="section-padding bg-dark-gray">

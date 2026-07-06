@@ -104,6 +104,20 @@ export default function LocalSEO() {
         <div className="container-premium max-w-3xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Local SEO FAQs — Dubai &amp; GCC</h2>
           <div className="space-y-3">{faqs.map(faq => <FAQItem key={faq.q} q={faq.q} a={faq.a} />)}</div>
+
+          {/* Related Reading */}
+          <div className="mt-10 p-5 bg-dark-gray border border-accent/20 rounded-xl flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-1">Related Reading</p>
+              <p className="text-white font-semibold text-sm mb-1">Healthcare SEO UAE 2026 — Medical Clinic & Hospital Rankings Guide</p>
+              <p className="text-text-secondary text-xs leading-relaxed">Local SEO for Dubai clinics and hospitals: E-E-A-T, DHA schema, Google Business Profile, and bilingual strategy.</p>
+            </div>
+            <Link href="/blog/healthcare-seo-uae-2026/">
+              <a className="btn-primary text-sm px-5 py-2.5 inline-flex items-center gap-2 whitespace-nowrap flex-shrink-0">
+                Read Guide <ArrowRight className="w-4 h-4" />
+              </a>
+            </Link>
+          </div>
         </div>
       </section>
       <section className="section-padding bg-dark-gray">

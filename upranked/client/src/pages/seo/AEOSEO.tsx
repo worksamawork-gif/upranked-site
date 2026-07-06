@@ -215,6 +215,20 @@ export default function AEOSEO() {
           <div className="space-y-3">
             {faqs.map(faq => <FAQItem key={faq.q} q={faq.q} a={faq.a} />)}
           </div>
+
+          {/* Related Reading */}
+          <div className="mt-10 p-5 bg-dark-gray border border-accent/20 rounded-xl flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-1">Related Reading</p>
+              <p className="text-white font-semibold text-sm mb-1">AEO & GEO in Bahrain & Dubai — How GCC Businesses Get Cited in AI Search</p>
+              <p className="text-text-secondary text-xs leading-relaxed">Step-by-step AEO optimization for Bahrain and Dubai — covering Arabic AI search, ChatGPT citations, and GEO presence for GCC businesses.</p>
+            </div>
+            <Link href="/blog/aeo-geo-bahrain-dubai-gcc-ai-search/">
+              <a className="btn-primary text-sm px-5 py-2.5 inline-flex items-center gap-2 whitespace-nowrap flex-shrink-0">
+                Read Guide <ArrowRight className="w-4 h-4" />
+              </a>
+            </Link>
+          </div>
         </div>
       </section>
 

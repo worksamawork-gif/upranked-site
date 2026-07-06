@@ -122,6 +122,24 @@ export default function GCCMarkets() {
           </div>
         </div>
       </section>
+      {/* Related Reading */}
+      <section className="section-padding bg-dark-gray">
+        <div className="container-premium max-w-3xl">
+          <div className="p-5 bg-navy border border-accent/20 rounded-xl flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <p className="text-xs text-accent font-semibold uppercase tracking-widest mb-1">Related Reading</p>
+              <p className="text-white font-semibold text-sm mb-1">Middle East SEO Strategy 2026 — Rank Across Dubai, Riyadh & the GCC</p>
+              <p className="text-text-secondary text-xs leading-relaxed">Market-by-market playbook covering bilingual strategy, GCC search behaviour differences, and what it takes to rank in each country.</p>
+            </div>
+            <Link href="/blog/middle-east-seo-strategy/">
+              <a className="btn-primary text-sm px-5 py-2.5 inline-flex items-center gap-2 whitespace-nowrap flex-shrink-0">
+                Read Guide <ArrowRight className="w-4 h-4" />
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section-padding bg-navy">
         <div className="container-premium text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
