@@ -19,3 +19,4 @@
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://www.clarity.ms https://cdn.jsdelivr.net 'sha256-w5G5e17wNZsW8CUQ12OgkgT+YH218+peLcwCeZxda/A='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://xusvmvvosdvmixtqkiop.supabase.co; connect-src 'self' https://xusvmvvosdvmixtqkiop.supabase.co https://e.clarity.ms https://e0.clarity.ms; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';"

@@ -471,8 +471,9 @@ export default function Contact() {
                     </p>
                   </motion.div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="card-premium space-y-6" name="contact" data-netlify="true">
+                  <form onSubmit={handleSubmit} className="card-premium space-y-6" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="form-name" value="contact" />
+                    <p className="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-2">Send a Message</h3>
                       <p className="text-text-secondary text-sm">Fill in the form and Sam will follow up within 24 hours.</p>

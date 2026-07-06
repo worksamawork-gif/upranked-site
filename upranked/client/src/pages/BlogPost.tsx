@@ -6,6 +6,7 @@ import { usePageMeta } from '@/hooks/usePageMeta';
 import NotFound from './NotFound';
 import { useState, useEffect } from 'react';
 import { supabase, adaptPost } from '@/lib/supabase';
+import DOMPurify from 'dompurify';
 
 const categoryColors: Record<string, string> = {
   'SEO Strategy': 'bg-blue-500/10 text-blue-400 border-blue-500/20',
@@ -244,7 +245,7 @@ export default function BlogPost() {
         <div className="container-premium max-w-3xl">
           <motion.article initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
             {p.contentHtml
-              ? <div className="prose-dark" dangerouslySetInnerHTML={{ __html: p.contentHtml }} />
+              ? <div className="prose-dark" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(p.contentHtml, { USE_PROFILES: { html: true } }) }} />
               : post.content.map((section, i) => renderSection(section, i))
             }
           </motion.article>
