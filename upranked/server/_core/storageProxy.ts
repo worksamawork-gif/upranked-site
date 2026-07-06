@@ -1,11 +1,35 @@
 import type { Express } from "express";
 import { ENV } from "./env";
+import { sdk } from "./sdk";
+
+const PATH_TRAVERSAL_RE = /(\.\.|\/\/|\\|%2e%2e|%2f|%5c)/i;
+
+function isSafeStorageKey(key: string): boolean {
+  if (!key || key.length > 512) return false;
+  if (PATH_TRAVERSAL_RE.test(key)) return false;
+  // Keys must be printable ASCII, no control characters
+  if (/[^\x20-\x7E]/.test(key)) return false;
+  return true;
+}
 
 export function registerStorageProxy(app: Express) {
   app.get("/manus-storage/*", async (req, res) => {
-    const key = req.params[0];
+    // Require authentication — storage files belong to authenticated sessions only
+    try {
+      await sdk.authenticateRequest(req);
+    } catch {
+      res.status(401).send("Unauthorized");
+      return;
+    }
+
+    const key = req.path.replace(/^\/manus-storage\//, "");
     if (!key) {
       res.status(400).send("Missing storage key");
+      return;
+    }
+
+    if (!isSafeStorageKey(key)) {
+      res.status(400).send("Invalid storage key");
       return;
     }
 
@@ -35,6 +59,19 @@ export function registerStorageProxy(app: Express) {
       const { url } = (await forgeResp.json()) as { url: string };
       if (!url) {
         res.status(502).send("Empty signed URL from backend");
+        return;
+      }
+
+      // Validate the returned URL before redirecting
+      let parsedUrl: URL;
+      try {
+        parsedUrl = new URL(url);
+      } catch {
+        res.status(502).send("Invalid signed URL from backend");
+        return;
+      }
+      if (!["https:", "http:"].includes(parsedUrl.protocol)) {
+        res.status(502).send("Invalid signed URL protocol");
         return;
       }
 

@@ -9,6 +9,32 @@ function getQueryParam(req: Request, key: string): string | undefined {
   return typeof value === "string" ? value : undefined;
 }
 
+const ALLOWED_REDIRECT_HOSTS = new Set([
+  "localhost",
+  "127.0.0.1",
+  "upranked.io",
+  "www.upranked.io",
+]);
+
+function validateRedirectUri(state: string): string | null {
+  let decoded: string;
+  try {
+    decoded = atob(state);
+  } catch {
+    return null;
+  }
+  let parsed: URL;
+  try {
+    parsed = new URL(decoded);
+  } catch {
+    // Relative redirect URI — treat as safe root
+    return "/";
+  }
+  if (!["http:", "https:"].includes(parsed.protocol)) return null;
+  if (!ALLOWED_REDIRECT_HOSTS.has(parsed.hostname)) return null;
+  return decoded;
+}
+
 export function registerOAuthRoutes(app: Express) {
   app.get("/api/oauth/callback", async (req: Request, res: Response) => {
     const code = getQueryParam(req, "code");
@@ -16,6 +42,12 @@ export function registerOAuthRoutes(app: Express) {
 
     if (!code || !state) {
       res.status(400).json({ error: "code and state are required" });
+      return;
+    }
+
+    // Validate state / redirect URI to prevent open redirect attacks
+    if (validateRedirectUri(state) === null) {
+      res.status(400).json({ error: "Invalid state parameter" });
       return;
     }
 
