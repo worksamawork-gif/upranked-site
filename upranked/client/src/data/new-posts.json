@@ -34,7 +34,7 @@
       },
       {
         "type": "p",
-        "text": "Right-to-left (RTL) content creates specific technical SEO challenges: HTML dir attributes, hreflang tags, bidirectional text in meta descriptions, mobile rendering, and Core Web Vitals on Arabic pages. A competent agency can explain exactly how they implement RTL support on Arabic landing pages and how they test it. If they look confused by the question, that tells you everything."
+        "text": "Right-to-left (RTL) content creates specific technical SEO challenges: HTML dir attributes, [hreflang tags](/seo/bilingual/), bidirectional text in meta descriptions, mobile rendering, and Core Web Vitals on Arabic pages. A competent agency can explain exactly how they implement RTL support on Arabic landing pages and how they test it. If they look confused by the question, that tells you everything."
       },
       {
         "type": "h2",
@@ -50,7 +50,7 @@
       },
       {
         "type": "p",
-        "text": "Bilingual websites — English and Arabic — need correct hreflang configuration to avoid cannibalisation between language versions. This is a technically complex implementation that most agencies get wrong. The correct hreflang setup signals to Google which page to serve for which language-country combination. Ask to see actual hreflang code from a live client site. If they cannot show you an example, they have not done it properly."
+        "text": "Bilingual websites — English and Arabic — need correct [hreflang configuration](/seo/bilingual/) to avoid cannibalisation between language versions. This is a technically complex implementation that most agencies get wrong. The correct hreflang setup signals to Google which page to serve for which language-country combination. Ask to see actual hreflang code from a live client site. If they cannot show you an example, they have not done it properly."
       },
       {
         "type": "h2",
@@ -97,7 +97,7 @@
       },
       {
         "type": "p",
-        "text": "Legitimate Arabic SEO strategy for a GCC market costs more than generic English SEO because it requires bilingual expertise, separate content production, and specialised technical work. Expect to pay a meaningful premium over standard English SEO pricing. Anyone offering Arabic SEO at bargain prices is cutting corners somewhere — usually on content quality, which is the foundation of rankings."
+        "text": "Legitimate Arabic SEO strategy for a GCC market costs more than generic English SEO because it requires bilingual expertise, separate content production, and specialised technical work. Expect to pay a meaningful premium over standard English SEO pricing. Anyone offering Arabic SEO at bargain prices is cutting corners somewhere. Run our [APEX Diagnostic](/contact/) before committing to a retainer — usually on content quality, which is the foundation of rankings."
       },
       {
         "type": "h2",
@@ -109,7 +109,7 @@
       },
       {
         "type": "p",
-        "text": "Arabic SEO timelines are similar to English SEO: 3–6 months for initial movement, 6–12 months for meaningful organic traffic. New bilingual sites targeting competitive GCC keywords may need 12+ months to reach the first page. Agencies promising faster results than this are not being honest about how search engines work."
+        "text": "Arabic SEO timelines are similar to English SEO: 3–6 months for initial movement, 6–12 months for meaningful organic traffic. New bilingual sites targeting competitive GCC keywords may need 12+ months to reach the first page. Agencies promising faster results than this are not being honest about how search engines work. See our [bilingual SEO guide](/blog/bilingual-seo-arabic-english/) for a full breakdown."
       },
       {
         "type": "h2",
@@ -125,7 +125,7 @@
       },
       {
         "type": "p",
-        "text": "No. Google Translate produces technically correct Arabic but misses colloquial vocabulary, Gulf-specific terminology, and search-intent signals. Machine-translated content also reads poorly to native speakers, which increases bounce rate and signals low quality to Google. Always use human writers with GCC market expertise."
+        "text": "No. Google Translate produces technically correct Arabic but misses colloquial vocabulary, Gulf-specific terminology, and search-intent signals. Machine-translated content also reads poorly to native speakers, which increases bounce rate and signals low quality to Google. Always use human writers with GCC market expertise. [Google's guidelines](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) confirm auto-translated content violates helpful-content standards."
       }
     ],
     "cta": {
@@ -179,7 +179,7 @@
       },
       {
         "type": "p",
-        "text": "Running an English and Arabic website requires technical configuration that most agencies miss. Key elements include: correct hreflang implementation (telling Google which page serves which language-country combination), HTML dir='rtl' attribute on Arabic pages, bidirectional text handling in meta descriptions, and mobile performance testing on Arabic page renders. Errors in any of these can cause Arabic pages to cannibalise English rankings or fail to index entirely."
+        "text": "Running an English and Arabic website requires [technical configuration](/seo/technical/) that most agencies miss — full requirements are in the [Google hreflang documentation](https://developers.google.com/search/docs/specialty/international/localized-versions). Key elements include: correct hreflang implementation (telling Google which page serves which language-country combination), HTML dir='rtl' attribute on Arabic pages, bidirectional text handling in meta descriptions, and mobile performance testing on Arabic page renders. Errors in any of these can cause Arabic pages to cannibalise English rankings or fail to index entirely."
       },
       {
         "type": "h2",
@@ -195,7 +195,7 @@
       },
       {
         "type": "p",
-        "text": "Each Arabic page needs optimised title tags (Arabic, within 60 characters), meta descriptions (Arabic, within 155 characters), H1/H2 structure using target Arabic keywords, internal links connecting Arabic pages to each other and to relevant English pages, and schema markup where applicable. This is not automatically handled by translating your English on-page optimisation — Arabic keyword density, placement, and structure need to be configured separately."
+        "text": "Each Arabic page needs [on-page optimisation](/seo/on-page/) — including optimised title tags (Arabic, within 60 characters), meta descriptions (Arabic, within 155 characters), H1/H2 structure using target Arabic keywords, internal links connecting Arabic pages to each other and to relevant English pages, and schema markup where applicable. This is not automatically handled by translating your English on-page optimisation — Arabic keyword density, placement, and structure need to be configured separately."
       },
       {
         "type": "h2",
@@ -203,7 +203,7 @@
       },
       {
         "type": "p",
-        "text": "Arabic-language backlinks from Arabic-language websites are a separate link building channel from English link building. Links from Arabic news sites, GCC business directories, Arabic blogs, and regional publications carry different authority signals than English links. A Dubai business competing for Arabic search traffic needs Arabic-domain backlinks to build topical authority for Arabic queries. This is often the most neglected part of Arabic SEO because it requires regional relationships and Arabic outreach capability."
+        "text": "[Arabic-language backlinks](/seo/off-page/) from Arabic-language websites are a separate link building channel from English link building. Links from Arabic news sites, GCC business directories, Arabic blogs, and regional publications carry different authority signals than English links. A Dubai business competing for Arabic search traffic needs Arabic-domain backlinks to build topical authority for Arabic queries. This is often the most neglected part of Arabic SEO because it requires regional relationships and Arabic outreach capability."
       },
       {
         "type": "h2",
@@ -211,7 +211,7 @@
       },
       {
         "type": "p",
-        "text": "Arabic keyword rankings must be tracked separately for each GCC country — UAE, Saudi Arabia, Kuwait, Bahrain, Qatar — because rankings differ significantly by location. Monthly reporting should show keyword rankings by country, organic traffic segmented by language, and conversion attribution from Arabic landing pages. Without country-level tracking, it is impossible to know whether your Arabic SEO investment is generating ROI."
+        "text": "Arabic keyword rankings must be [tracked separately](/seo/analytics/) for each GCC country — UAE, Saudi Arabia, Kuwait, Bahrain, Qatar — because rankings differ significantly by location. Monthly reporting should show keyword rankings by country, organic traffic segmented by language, and conversion attribution from Arabic landing pages. Without country-level tracking, it is impossible to know whether your Arabic SEO investment is generating ROI."
       },
       {
         "type": "h2",
@@ -245,7 +245,7 @@
       },
       {
         "type": "p",
-        "text": "Arabic SEO works for both. B2B buyers in GCC countries frequently research in Arabic before reaching out in English, particularly in sectors like healthcare, legal services, construction, logistics, and manufacturing. Capturing the Arabic research phase puts your brand in consideration before competitors who only target English-language search."
+        "text": "Arabic SEO works for both — see how we approach [business SEO in the GCC](/industries/business-seo/). B2B buyers in GCC countries frequently research in Arabic before reaching out in English, particularly in sectors like healthcare, legal services, construction, logistics, and manufacturing. Capturing the Arabic research phase puts your brand in consideration before competitors who only target English-language search."
       },
       {
         "type": "h2",
@@ -261,7 +261,7 @@
       },
       {
         "type": "p",
-        "text": "If your customers include Arabic speakers — or if you want to expand into Saudi Arabia, Kuwait, or other GCC markets — Arabic SEO almost certainly has a positive ROI. The Arabic search market in the GCC is large, competition for Arabic keywords is significantly lower than English in most industries, and ranking Arabic pages is genuinely achievable within 12 months with proper investment."
+        "text": "If your customers include Arabic speakers — or if you want to expand into [Saudi Arabia](/markets/gcc/ksa/riyadh/), Kuwait, or other GCC markets — Arabic SEO almost certainly has a positive ROI. The Arabic search market in the GCC is large, competition for Arabic keywords is significantly lower than English in most industries, and ranking Arabic pages is genuinely achievable within 12 months with proper investment."
       }
     ],
     "cta": {
@@ -303,7 +303,7 @@
       },
       {
         "type": "p",
-        "text": "Google's quality rater guidelines classify medical content as 'Your Money or Your Life' (YMYL) — content where low quality can harm real people. For YMYL pages, Google significantly weights E-E-A-T: Experience, Expertise, Authoritativeness, and Trustworthiness. A generic website with no practitioner credentials, no published content demonstrating clinical expertise, and no external citations of authority will rank poorly no matter how much technical SEO work is done on it."
+        "text": "[Google's quality rater guidelines](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) classify medical content as 'Your Money or Your Life' (YMYL) — content where low quality can harm real people. For YMYL pages, Google significantly weights E-E-A-T: Experience, Expertise, Authoritativeness, and Trustworthiness. A generic website with no practitioner credentials, no published content demonstrating clinical expertise, and no external citations of authority will rank poorly no matter how much technical SEO work is done on it."
       },
       {
         "type": "h2",
@@ -311,7 +311,7 @@
       },
       {
         "type": "p",
-        "text": "Schema markup is structured data that tells Google exactly what your page is about. For medical clinics, the critical schema types are MedicalOrganization (for the clinic itself), Physician (for each doctor), MedicalSpecialty, and LocalBusiness. Most Dubai clinic websites have no schema markup at all. Google cannot verify credentials it cannot read programmatically, which suppresses rankings. Adding correct schema typically produces ranking improvements within 4–6 weeks."
+        "text": "[Schema markup](/seo/schema/) is structured data that tells Google exactly what your page is about. For medical clinics, the critical [schema types](https://schema.org/MedicalOrganization) are MedicalOrganization (for the clinic itself), Physician (for each doctor), MedicalSpecialty, and LocalBusiness. Most Dubai clinic websites have no schema markup at all. Google cannot verify credentials it cannot read programmatically, which suppresses rankings. Adding correct schema typically produces ranking improvements within 4–6 weeks."
       },
       {
         "type": "h2",
@@ -319,7 +319,7 @@
       },
       {
         "type": "p",
-        "text": "A substantial proportion of patients searching for medical services in Dubai use Arabic search queries — particularly for specialties like gynaecology, dental care, physiotherapy, and general practice. A clinic with English-only content misses this entire audience. More critically, bilingual clinics that publish Arabic content signal to Google that they serve the local population authentically, which improves trust signals for English rankings as well. This is a compounding benefit that most clinics leave uncaptured."
+        "text": "A substantial proportion of patients searching for medical services in Dubai use Arabic search queries — a [bilingual SEO](/seo/bilingual/) strategy captures both segments — particularly for specialties like gynaecology, dental care, physiotherapy, and general practice. A clinic with English-only content misses this entire audience. More critically, bilingual clinics that publish Arabic content signal to Google that they serve the local population authentically, which improves trust signals for English rankings as well. This is a compounding benefit that most clinics leave uncaptured."
       },
       {
         "type": "h2",
@@ -351,7 +351,7 @@
       },
       {
         "type": "p",
-        "text": "A properly executed medical SEO strategy for a Dubai clinic covers: full technical audit and fix (schema, page speed, mobile), Google Business Profile optimisation, bilingual content production for top 5 treatment keywords in both English and Arabic, practitioner authority content (bio pages, published case content), citation building across UAE health directories, and monthly rank tracking by keyword and language. This is a 6–12 month programme, not a one-time fix."
+        "text": "A properly executed [medical SEO strategy](/industries/medical-seo/) for a Dubai clinic covers: full technical audit and fix (schema, page speed, mobile), Google Business Profile optimisation, bilingual content production for top 5 treatment keywords in both English and Arabic, practitioner authority content (bio pages, published case content), citation building across UAE health directories, and monthly rank tracking by keyword and language. This is a 6–12 month programme, not a one-time fix."
       },
       {
         "type": "h2",
@@ -387,7 +387,7 @@
       },
       {
         "type": "p",
-        "text": "Ask your current agency to show you your MedicalOrganization schema implementation, your hreflang configuration if you have Arabic content, and your Google Business Profile audit results. If they cannot answer these questions specifically, they may not have expertise in healthcare SEO specifically — which requires a different approach from general commercial SEO."
+        "text": "Ask your current agency to show you your [MedicalOrganization schema](/seo/schema/) implementation, your hreflang configuration if you have Arabic content, and your Google Business Profile audit results. If they cannot answer these questions specifically, they may not have expertise in healthcare SEO specifically — which requires a different approach from general commercial SEO."
       }
     ],
     "cta": {
@@ -433,7 +433,7 @@
       },
       {
         "type": "p",
-        "text": "Riyadh and Dubai share Arabic as a search language but differ significantly in search behaviour. Saudi users search with Saudi Arabic dialect vocabulary, which diverges from Gulf Emirati vocabulary on many commercial terms. Search volume in Riyadh is concentrated more heavily in Arabic than in Dubai, where English-language search volume is higher. Riyadh users also show stronger preference for local providers — 'near me' search intent is very high — so local SEO optimisation is critical for businesses with Riyadh physical locations."
+        "text": "Riyadh and [Dubai](/markets/gcc/uae/dubai/) share Arabic as a search language but differ significantly in search behaviour. Saudi users search with Saudi Arabic dialect vocabulary, which diverges from Gulf Emirati vocabulary on many commercial terms. Search volume in Riyadh is concentrated more heavily in Arabic than in Dubai, where English-language search volume is higher. Riyadh users also show stronger preference for local providers — 'near me' search intent is very high — so local SEO optimisation is critical for businesses with Riyadh physical locations."
       },
       {
         "type": "h2",
@@ -445,7 +445,7 @@
       },
       {
         "type": "p",
-        "text": "Most Riyadh SEO starts with English keywords and adds Arabic as an afterthought. The correct approach for the Saudi market is Arabic-first: identify the highest-volume Arabic keywords in your sector, build Arabic landing pages as primary targets, and support them with English pages for bilingual audiences. Saudi Arabic keyword research requires native understanding of how Saudi users phrase searches — which is different from how UAE users phrase the same intent."
+        "text": "Most Riyadh SEO starts with English keywords and adds Arabic as an afterthought. The correct approach for the Saudi market — detailed in our [bilingual SEO guide](/seo/bilingual/) — is Arabic-first: identify the highest-volume Arabic keywords in your sector, build Arabic landing pages as primary targets, and support them with English pages for bilingual audiences. Saudi Arabic keyword research requires native understanding of how Saudi users phrase searches — which is different from how UAE users phrase the same intent."
       },
       {
         "type": "h2",
@@ -453,7 +453,7 @@
       },
       {
         "type": "p",
-        "text": "Google Maps and the local pack are extremely visible in Riyadh search results. A correctly optimised Google Business Profile — accurate Arabic and English business name, correct primary and secondary categories, Saudi phone number format, consistent address matching your website schema, minimum 4.5-star rating with regular reviews — is the foundation of local search visibility in Riyadh. This is often the fastest win available: properly optimised profiles can move from map pack absence to top-3 within 60–90 days."
+        "text": "Google Maps and the local pack are extremely visible in Riyadh search results. A correctly optimised [Google Business Profile](https://business.google.com) — accurate Arabic and English business name, correct primary and secondary categories, Saudi phone number format, consistent address matching your website schema, minimum 4.5-star rating with regular reviews — is the foundation of local search visibility in Riyadh. This is often the fastest win available: properly optimised profiles can move from map pack absence to top-3 within 60–90 days."
       },
       {
         "type": "h2",
@@ -461,7 +461,7 @@
       },
       {
         "type": "p",
-        "text": "Google's trust signals matter as much in Saudi Arabia as anywhere else. Saudi B2B buyers research extensively before engaging — and they look for evidence of expertise, local presence, and credibility. Publishing in-depth Arabic content that demonstrates specific sector knowledge — technical guides, case studies with Saudi-market context, explainers on Vision 2030-related regulations — builds the E-E-A-T signals that drive rankings for competitive Saudi search terms."
+        "text": "Google's trust signals matter as much in Saudi Arabia as anywhere else — our [APEX Framework](/methodology/) is built around establishing E-E-A-T for GCC markets. Saudi B2B buyers research extensively before engaging — and they look for evidence of expertise, local presence, and credibility. Publishing in-depth Arabic content that demonstrates specific sector knowledge — technical guides, case studies with Saudi-market context, explainers on Vision 2030-related regulations — builds the E-E-A-T signals that drive rankings for competitive Saudi search terms."
       },
       {
         "type": "h2",
@@ -469,7 +469,7 @@
       },
       {
         "type": "p",
-        "text": "Links from Saudi-domain websites (.sa domains) carry significant authority for Saudi search rankings. Key sources include Saudi Chamber of Commerce listings, sector-specific Saudi business directories, Saudi news publications (Sabq, Arab News KSA edition), and mentions in Saudi industry associations. Building a Saudi-domain link profile takes 6–12 months but produces compounding ranking improvements that paid search cannot replicate."
+        "text": "[Links from Saudi-domain websites](/seo/off-page/) (.sa domains) carry significant authority for Saudi search rankings. Key sources include Saudi Chamber of Commerce listings, sector-specific Saudi business directories, Saudi news publications (Sabq, Arab News KSA edition), and mentions in Saudi industry associations. Building a Saudi-domain link profile takes 6–12 months but produces compounding ranking improvements that paid search cannot replicate."
       },
       {
         "type": "h2",
@@ -500,7 +500,7 @@
       },
       {
         "type": "p",
-        "text": "Riyadh SEO currently offers better ROI than Dubai SEO for most industries because competition for Arabic search terms is lower. A properly executed Riyadh SEO programme can achieve page-1 rankings for mid-competition Saudi keywords within 6–9 months — faster than equivalent Dubai English targets. The caveat is that proper execution requires genuine Saudi Arabic expertise, not UAE-adapted content applied to Saudi search queries."
+        "text": "Riyadh SEO currently offers better ROI than [Dubai SEO](/markets/gcc/uae/dubai/) for most industries because competition for Arabic search terms is lower. A properly executed Riyadh SEO programme can achieve page-1 rankings for mid-competition Saudi keywords within 6–9 months — faster than equivalent Dubai English targets. The caveat is that proper execution requires genuine Saudi Arabic expertise, not UAE-adapted content applied to Saudi search queries."
       },
       {
         "type": "h2",
