@@ -1,5 +1,5 @@
 # upranked.io Development TODO
-*Last updated: 2026-07-06*
+*Last updated: 2026-07-08*
 
 ---
 
@@ -66,7 +66,13 @@
 - [x] DOMPurify sanitisation on all blog HTML output (XSS protection)
 - [x] React 18 hydration fix: lazy useState for new-posts.json posts
 - [x] Em-dash encoding fixed across all posts (U+FFFD corruption resolved)
-- [x] 60 prerender routes — all posts + service/market pages statically pre-rendered
+- [x] 60 prerender routes — all 60 clean (Jul 8, was 58/60 before)
+- [x] BlogPosting schema: ISO 8601 dates with +04:00 timezone, author @id, publisher logo (Jul 8)
+- [x] BreadcrumbList schema added to all blog posts: Home → Blog → Article (Jul 8)
+- [x] FAQPage schema fixed Jul 8: parser now handles h2-type questions (was only h3)
+- [x] Internal + external links added to 4 posts that had zero links (Jul 8)
+- [ ] Add FAQ sections to 4 hardcoded posts in blogPosts.ts (currently no FAQPage schema)
+- [ ] Submit 4 new blog URLs (choose-arabic-seo-agency-dubai, arabic-seo-services-dubai-guide, dubai-clinic-seo-page-9, riyadh-seo-vision-2030) to GSC for indexing
 
 **Blog posts live (Jul 6 GSC-driven additions):**
 - arabic-seo-agency-dubai-uae (cluster hub — 529 impr at pos 46.4)
@@ -105,17 +111,20 @@
 - [x] Sitemap generation (scripts/generate-sitemap.mjs)
 - [x] Content Security Policy header (netlify.toml)
 - [x] X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy
-- [ ] Organization schema (JSON-LD)
-- [ ] LocalBusiness schema for GCC locations
-- [ ] Service schema for all five services
-- [ ] FAQPage schema (already has FAQ content; needs JSON-LD wrapper)
-- [ ] Person schema for Sam Hamouda
+- [x] Organization schema (JSON-LD) — in index.html @graph, 2 valid items in Rich Results Test
+- [x] LocalBusiness schema — Dubai, with geo coords, openingHours, telephone, sameAs (Jul 6)
+- [x] BlogPosting schema on all blog posts (Jul 6–Jul 8)
+- [x] BreadcrumbList schema on all blog posts (Jul 8)
+- [x] FAQPage schema on new-posts.json posts with FAQ H2 sections (Jul 8)
+- [ ] Service schema for all five service pages
+- [ ] Person schema for Sam Hamouda on /about/ page
+- [ ] Organization/LocalBusiness schema on individual service/market pages (not just index.html)
 
 ## Analytics & Tracking
 - [x] Microsoft Clarity tracking (clarity.microsoft.com — check for session recordings)
 - [x] CSP hash for Clarity inline script (sha256 in netlify.toml)
 - [x] Google Search Console verified and connected
-- [ ] GSC: submit 4 new blog URLs added Jul 6 for indexing
+- [ ] GSC: submit 8 new blog URLs for indexing (4 from Jul 6 + 4 from Jul 8 link-fix rebuild)
 - [ ] Set up Core Web Vitals monitoring dashboard
 
 ## Security (Enterprise Hardening — Jul 6)
