@@ -103,7 +103,7 @@ export default function BlogPost() {
   const p = post as any;
   const hasCustomSchema = p?.schemaCustom;
 
-  // Build FAQPage schema from H3/p pairs that appear after a "FAQ" H2
+  // Build FAQPage schema from H2/H3 + p pairs that appear after a "FAQ" H2
   const faqSchema = (() => {
     if (!post?.content) return null;
     const items: { q: string; a: string }[] = [];
@@ -111,9 +111,9 @@ export default function BlogPost() {
     let pendingQ: string | null = null;
     for (const block of post.content) {
       if (block.type === 'h2' && (block.text?.toLowerCase().includes('faq') || block.text?.toLowerCase().includes('frequently asked'))) { inFaq = true; continue; }
-      if (block.type === 'h2' && inFaq) break;
       if (!inFaq) continue;
-      if (block.type === 'h3') { pendingQ = block.text ?? null; }
+      // Inside FAQ: h2 or h3 = question heading
+      if (block.type === 'h2' || block.type === 'h3') { pendingQ = block.text ?? null; continue; }
       if (block.type === 'p' && pendingQ) {
         items.push({ q: pendingQ, a: block.text ?? '' });
         pendingQ = null;
@@ -131,6 +131,8 @@ export default function BlogPost() {
     };
   })();
 
+  const isoDate = (d: string) => d.includes('T') ? d : `${d}T00:00:00+04:00`;
+
   usePageMeta(post ? {
     title: post.metaTitle.replace(/ \| upranked\.io$/i, ''),
     description: post.metaDescription,
@@ -146,8 +148,8 @@ export default function BlogPost() {
             image: p?.featuredImage
               ? { '@type': 'ImageObject', url: `https://upranked.io${p.featuredImage}`, width: 1200, height: 630, description: p.featuredImageAlt || post.title }
               : { '@type': 'ImageObject', url: 'https://upranked.io/android-chrome-512x512.png', width: 512, height: 512, description: post.title },
-            datePublished: post.publishedAt,
-            dateModified: post.publishedAt,
+            datePublished: isoDate(post.publishedAt),
+            dateModified: isoDate(p?.updatedAt || post.publishedAt),
             author: { '@type': 'Person', '@id': 'https://upranked.io/about/#author', name: p?.author || 'Sam Hamouda', url: 'https://upranked.io/about', sameAs: ['https://www.linkedin.com/company/upranked-io/'] },
             publisher: {
               '@type': 'Organization',
@@ -161,6 +163,15 @@ export default function BlogPost() {
             mainEntityOfPage: { '@type': 'WebPage', '@id': `https://upranked.io/blog/${post.slug}/` },
             articleSection: post.category,
             ...(p?.focusKeyphrase ? { keywords: p.focusKeyphrase } : {}),
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://upranked.io/' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://upranked.io/blog/' },
+              { '@type': 'ListItem', position: 3, name: post.title, item: `https://upranked.io/blog/${post.slug}/` },
+            ],
           },
           ...(faqSchema ? [faqSchema] : []),
         ],
