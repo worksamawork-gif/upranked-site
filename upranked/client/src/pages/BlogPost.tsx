@@ -148,7 +148,7 @@ export default function BlogPost() {
               : { '@type': 'ImageObject', url: 'https://upranked.io/android-chrome-512x512.png', width: 512, height: 512, description: post.title },
             datePublished: post.publishedAt,
             dateModified: post.publishedAt,
-            author: { '@type': 'Person', '@id': 'https://upranked.io/about/#author', name: p?.author || 'Sam Hamouda', url: 'https://upranked.io/about' },
+            author: { '@type': 'Person', '@id': 'https://upranked.io/about/#author', name: p?.author || 'Sam Hamouda', url: 'https://upranked.io/about', sameAs: ['https://www.linkedin.com/company/upranked-io/'] },
             publisher: {
               '@type': 'Organization',
               '@id': 'https://upranked.io/#organization',
