@@ -144,17 +144,19 @@ export default function BlogPost() {
             headline: post.title,
             description: post.metaDescription,
             image: p?.featuredImage
-              ? { '@type': 'ImageObject', url: `https://upranked.io${p.featuredImage}`, description: p.featuredImageAlt || post.title }
-              : { '@type': 'ImageObject', url: 'https://upranked.io/favicon.svg', description: post.title },
+              ? { '@type': 'ImageObject', url: `https://upranked.io${p.featuredImage}`, width: 1200, height: 630, description: p.featuredImageAlt || post.title }
+              : { '@type': 'ImageObject', url: 'https://upranked.io/android-chrome-512x512.png', width: 512, height: 512, description: post.title },
             datePublished: post.publishedAt,
             dateModified: post.publishedAt,
-            author: { '@type': 'Person', name: p?.author || 'Sam', url: 'https://upranked.io/about' },
+            author: { '@type': 'Person', '@id': 'https://upranked.io/about/#author', name: p?.author || 'Sam Hamouda', url: 'https://upranked.io/about' },
             publisher: {
               '@type': 'Organization',
+              '@id': 'https://upranked.io/#organization',
               name: 'upranked.io',
               url: 'https://upranked.io',
-              logo: { '@type': 'ImageObject', url: 'https://upranked.io/favicon.svg' },
+              logo: { '@type': 'ImageObject', url: 'https://upranked.io/android-chrome-512x512.png', width: 512, height: 512 },
             },
+            inLanguage: 'en',
             url: `https://upranked.io/blog/${post.slug}/`,
             mainEntityOfPage: { '@type': 'WebPage', '@id': `https://upranked.io/blog/${post.slug}/` },
             articleSection: post.category,
