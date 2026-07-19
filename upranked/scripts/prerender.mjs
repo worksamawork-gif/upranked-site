@@ -102,6 +102,8 @@ const ROUTES = [
   '/blog/riyadh-seo-guide-2026',
   '/blog/aeo-geo-bahrain-dubai-gcc-ai-search',
   '/blog/healthcare-seo-uae-2026',
+  '/blog/hospital-seo-uae-2026',
+  '/blog/increase-web-rankings-dubai',
   '/blog/dubai-seo-guide-2026',
   '/blog/kuwait-seo-guide-2026',
   '/blog/geo-targeting-seo-dubai',

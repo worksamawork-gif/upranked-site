@@ -5,6 +5,19 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Canonical redirects — prevent authority split on non-trailing-slash URLs
+[[redirects]]
+  from   = "/markets/gcc/uae/dubai"
+  to     = "/markets/gcc/uae/dubai/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/blog/bilingual-seo-arabic-english"
+  to     = "/blog/bilingual-seo-arabic-english/"
+  status = 301
+  force  = true
+
 [[redirects]]
   from   = "/*"
   to     = "/index.html"

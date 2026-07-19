@@ -247,9 +247,9 @@ export default function FAQ() {
   const sectionRefs = useRef<Record<string, IntersectionObserverEntry>>({});
 
   usePageMeta({
-    title: 'SEO Agency Dubai FAQ — Pricing, Process & Results | upranked.io',
+    title: 'SEO Dubai FAQ: Pricing, How Long It Takes & What to Expect | upranked.io',
     description:
-      'Honest answers on SEO pricing, timelines, and results for businesses in Dubai, Riyadh, Kuwait & London. See how upranked.io works, what the APEX Framework™ delivers, and how to get started.',
+      'How much does SEO cost in Dubai? How long does it take? Honest answers on pricing, timelines, and results for businesses in Dubai, Riyadh, Kuwait & the GCC. No fluff — just clarity.',
     schema,
     schemaId: 'faq-schema',
   });

@@ -100,8 +100,8 @@ const steps = [
 
 export default function TailoredTools() {
   usePageMeta({
-    title: 'Custom Growth Tools Dubai & GCC | upranked.io',
-    description: 'Proprietary SEO dashboards, competitor trackers & growth intelligence platforms built for GCC businesses. Purpose-built by upranked.io. Book a free discovery call.',
+    title: 'SEO Dashboards & Custom Growth Tools Dubai GCC | upranked.io',
+    description: 'Proprietary SEO dashboards, competitor trackers & bilingual growth intelligence platforms purpose-built for Dubai and GCC businesses. No off-the-shelf compromise. Book a free discovery call.',
     schemaId: 'tools-schema',
     schema,
   });

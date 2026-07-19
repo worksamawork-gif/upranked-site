@@ -102,6 +102,14 @@ const faqs = [
     q: 'What upranked.io\'s medical SEO differ from other agencies in the UAE?',
     a: 'Three factors: sector exclusivity (we only work with high-value GCC businesses, not generic SMBs), the APEX Framework™ (a proprietary 4-phase methodology built for trust-sensitive industries), and founder-led delivery (Sam leads every medical SEO engagement personally — not a junior account manager). We also provide bilingual EN/AR strategy as standard, not as an add-on.',
   },
+  {
+    q: 'What does a healthcare SEO agency in Dubai actually do differently from a general agency?',
+    a: 'A dedicated healthcare SEO agency in Dubai UAE understands the specific constraints that medical content operates under. Google classifies health content as YMYL — Your Money or Your Life — and applies its most rigorous quality evaluation. A general agency writing keyword-rich copy will not rank a healthcare site in the UAE. A specialist healthcare SEO agency builds content that demonstrates verifiable clinical credentials, structures pages around E-E-A-T signals that quality raters check for, acquires links from medically recognised sources (DHA, MOH, UAE health publications), and implements healthcare-specific schema (MedicalOrganization, Physician, MedicalProcedure). upranked.io delivers all of these as standard — not as add-ons.',
+  },
+  {
+    q: 'Is hospital SEO in the UAE different from clinic SEO?',
+    a: 'Yes. Hospital SEO UAE requires a significantly broader content architecture than single-specialty clinic SEO. A hospital serves dozens of specialities, each with their own patient search queries, intent profiles, and YMYL content requirements. Effective hospital SEO in the UAE involves department-level page architecture (cardiology, oncology, orthopaedics, etc. each with dedicated optimised pages), physician profile pages for every consultant, procedure-level content targeting specific patient queries, Arabic-language content across all departments, and multi-location GBP optimisation if the hospital operates across UAE cities. upranked.io\'s GCC Scale package is built for multi-speciality hospital and healthcare group SEO in the UAE and across the GCC.',
+  },
 ];
 
 const serviceAreas = [
@@ -147,8 +155,8 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function MedicalSEO() {
   usePageMeta({
-    title: 'Medical SEO Agency Dubai UAE — Clinics, Hospitals & Healthcare | upranked.io',
-    description: 'Medical SEO agency for Dubai UAE clinics & hospitals. E-E-A-T content that ranks on Google, bilingual EN/AR, MedicalOrganization schema. Book a free diagnostic.',
+    title: 'Healthcare SEO Agency Dubai UAE | Medical SEO for Clinics, Hospitals & Practices | upranked.io',
+    description: 'Healthcare SEO agency in Dubai UAE — medical clinics, hospitals & specialist practices. E-E-A-T content, bilingual EN/AR, hospital SEO UAE, MedicalOrganization schema. Free APEX diagnostic.',
     schemaId: 'medical-seo-schema',
     schema: {
       '@context': 'https://schema.org',
@@ -409,6 +417,51 @@ export default function MedicalSEO() {
                   ))}
                 </tbody>
               </table>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── HOSPITAL SEO UAE + HEALTHCARE SEO AGENCY ─────────────────────── */}
+      <section id="hospital-healthcare-seo" className="section-padding bg-navy">
+        <div className="container-premium max-w-4xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Hospital SEO UAE & <span className="text-accent">Healthcare SEO Agency</span> Services
+            </h2>
+            <p className="text-text-secondary leading-relaxed mb-5">
+              upranked.io serves the full spectrum of UAE healthcare — from single-specialty private clinics to multi-department hospitals and medical groups operating across the GCC. As a specialist healthcare SEO agency in Dubai, we understand that hospital SEO UAE and clinic SEO require fundamentally different strategies.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {[
+                {
+                  title: 'Hospital SEO UAE',
+                  desc: 'Multi-department architecture with dedicated pages per speciality, physician profiles for every consultant, procedure-level content, Arabic-language patient journeys, and multi-location GBP management across UAE cities. Built for healthcare groups and teaching hospitals.',
+                  tags: ['Multi-speciality page architecture', 'Physician profile pages (EN + AR)', 'Procedure-level keyword targeting', 'Multi-location GBP management'],
+                },
+                {
+                  title: 'Healthcare SEO Agency for Clinics',
+                  desc: 'Focused single-speciality authority building for private practices, dental clinics, physiotherapy centres, and specialist practices. Faster time-to-rank than hospital campaigns — most UAE private clinics see page 1 movement within 4–6 months.',
+                  tags: ['Single-speciality authority focus', 'DHA/MOH credential display', 'Google Business Profile domination', 'Review generation strategy'],
+                },
+              ].map(card => (
+                <div key={card.title} className="p-6 rounded-xl bg-dark-gray border border-border hover:border-accent/50 transition-colors">
+                  <h3 className="text-lg font-bold text-accent mb-3">{card.title}</h3>
+                  <p className="text-text-secondary text-sm leading-relaxed mb-4">{card.desc}</p>
+                  <ul className="space-y-2">
+                    {card.tags.map(t => (
+                      <li key={t} className="flex items-center gap-2 text-xs text-text-secondary">
+                        <CheckCircle className="w-3.5 h-3.5 text-accent flex-shrink-0" /> {t}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <div className="p-5 rounded-xl bg-dark-gray border-l-4 border-accent">
+              <p className="text-text-secondary text-sm leading-relaxed">
+                <strong className="text-white">Healthcare SEO Agency UAE — why specialisation matters:</strong> A generalist agency applying standard SEO to a UAE hospital or clinic creates compliance risk and ranks nothing. Google's quality raters score YMYL healthcare pages against verified expertise and trust. upranked.io is a dedicated healthcare SEO agency — every process, every content template, and every link-building contact is built specifically for medical practices in the UAE and GCC. <a href="/contact/" className="text-accent hover:underline">Book a free healthcare SEO diagnostic →</a>
+              </p>
             </div>
           </motion.div>
         </div>

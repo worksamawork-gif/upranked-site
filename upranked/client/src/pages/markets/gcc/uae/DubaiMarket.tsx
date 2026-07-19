@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function DubaiMarket() {
-  usePageMeta({ title: 'SEO Agency Dubai UAE — Bilingual Arabic-English Search Optimization', description: 'SEO agency in Dubai UAE. Bilingual Arabic-English SEO, Google Business Profile, local and technical SEO for Dubai businesses — APEX Framework by Sam at upranked.io.', schema, schemaId: 'dubai-market-schema' });
+  usePageMeta({ title: 'SEO Agency Dubai UAE — Bilingual Arabic-English Search Optimization', description: 'SEO agency in Dubai UAE. Bilingual Arabic-English SEO, Google Business Profile, local and technical SEO for Dubai businesses — APEX Framework by Sam at upranked.io.', canonical: 'https://upranked.io/markets/gcc/uae/dubai/', schema, schemaId: 'dubai-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">
