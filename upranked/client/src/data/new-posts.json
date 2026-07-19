@@ -486,7 +486,7 @@
         "text": "Frequently Asked Questions"
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "How long does Arabic SEO take to show results?"
       },
       {
@@ -494,7 +494,7 @@
         "text": "Arabic SEO timelines are similar to English SEO: 3–6 months for initial movement, 6–12 months for meaningful organic traffic. New bilingual sites targeting competitive GCC keywords may need 12+ months to reach the first page. Agencies promising faster results than this are not being honest about how search engines work. See our [bilingual SEO guide](/blog/bilingual-seo-arabic-english/) for a full breakdown."
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "Should I do Arabic SEO if my business serves both Arabic and English speakers?"
       },
       {
@@ -502,7 +502,7 @@
         "text": "Yes — and the bilingual SEO opportunity is often larger than businesses expect. Many GCC professionals search in Arabic even when their business operates in English. Capturing Arabic search traffic alongside English traffic effectively doubles your addressable audience for zero additional ad spend."
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "Can I use Google Translate for Arabic SEO content?"
       },
       {
@@ -511,10 +511,10 @@
       }
     ],
     "cta": {
-      "headline": "Get an Arabic SEO Audit Built Around Your Keywords",
       "body": "We research Arabic keywords natively, write bilingual content in-house, and track GCC rankings by country. The APEX Diagnostic shows exactly where your Arabic SEO gaps are — and what fixing them is worth.",
-      "buttonText": "Book Free APEX Diagnostic",
-      "buttonHref": "/contact/"
+      "heading": "Get an Arabic SEO Audit Built Around Your Keywords",
+      "label": "Book Free APEX Diagnostic",
+      "href": "/contact/"
     },
     "relatedSlugs": [
       "arabic-seo-agency-dubai-uae",
@@ -622,7 +622,7 @@
         "text": "Frequently Asked Questions"
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "Does Arabic SEO work for B2B companies or only B2C?"
       },
       {
@@ -630,7 +630,7 @@
         "text": "Arabic SEO works for both — see how we approach [business SEO in the GCC](/industries/business-seo/). B2B buyers in GCC countries frequently research in Arabic before reaching out in English, particularly in sectors like healthcare, legal services, construction, logistics, and manufacturing. Capturing the Arabic research phase puts your brand in consideration before competitors who only target English-language search."
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "Do I need a separate Arabic domain or subdomain?"
       },
       {
@@ -638,7 +638,7 @@
         "text": "Not necessarily. The best structure depends on your current domain authority and technical setup. Many Dubai businesses use subdirectories (yourdomain.com/ar/) which consolidates authority onto one domain. Subdomains and separate domains can also work but typically require more link building to build independent authority. The right choice depends on a technical audit of your specific site."
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "How do I know if Arabic SEO is worth it for my business?"
       },
       {
@@ -647,10 +647,10 @@
       }
     ],
     "cta": {
-      "headline": "See Your Arabic SEO Opportunity in 45 Minutes",
       "body": "The APEX Diagnostic maps your Arabic keyword gaps, benchmarks your technical bilingual setup, and estimates the traffic opportunity. It's free — and it shows you exactly what Arabic SEO would deliver for your specific business.",
-      "buttonText": "Claim Free APEX Diagnostic",
-      "buttonHref": "/contact/"
+      "heading": "See Your Arabic SEO Opportunity in 45 Minutes",
+      "label": "Claim Free APEX Diagnostic",
+      "href": "/contact/"
     },
     "relatedSlugs": [
       "choose-arabic-seo-agency-dubai",
@@ -748,7 +748,7 @@
         "text": "Frequently Asked Questions"
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "Does medical SEO work differently for Dubai Health Authority registered clinics?"
       },
       {
@@ -756,7 +756,7 @@
         "text": "Yes. DHA registration is itself an authority signal that should be prominently marked up in schema and visible on your website. Including your DHA facility license number in your LocalBusiness schema and on your contact page verifies your legitimacy to both Google and patients. Clinics that list their DHA registration consistently rank better for local medical searches than those that do not."
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "Should each doctor have their own page on our clinic website?"
       },
       {
@@ -764,7 +764,7 @@
         "text": "Yes — individual practitioner pages are one of the highest-value pages a medical website can have. Each page should include: practitioner name and photo, qualifications and certifications, languages spoken, specialties and procedures, published content attributed to them, and Physician schema markup. These pages rank for doctor-name searches, build E-E-A-T authority, and improve conversion because patients research practitioners before booking."
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "What if we already use an SEO agency?"
       },
       {
@@ -773,10 +773,10 @@
       }
     ],
     "cta": {
-      "headline": "Find Out Exactly Why Your Clinic Is on Page 9",
       "body": "The APEX Diagnostic identifies your specific E-E-A-T gaps, schema errors, and local citation issues — and shows you what fixing them is worth in new patient enquiries. Free for Dubai healthcare businesses.",
-      "buttonText": "Book Free Clinic SEO Audit",
-      "buttonHref": "/contact/"
+      "heading": "Find Out Exactly Why Your Clinic Is on Page 9",
+      "label": "Book Free Clinic SEO Audit",
+      "href": "/contact/"
     },
     "relatedSlugs": [
       "healthcare-seo-uae-2026",
@@ -889,7 +889,7 @@
         "text": "Frequently Asked Questions"
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "Do Riyadh businesses need a .sa domain for Saudi SEO?"
       },
       {
@@ -897,7 +897,7 @@
         "text": "A .sa domain helps with local trust signals and can boost Saudi-specific rankings, but it is not mandatory. Many businesses successfully rank in Riyadh with .com domains using correct hreflang tags, Saudi NAP citations, and Saudi-targeted content. The domain decision depends on your overall digital strategy — a .com with correct localisation signals can outperform a .sa domain with weak SEO fundamentals."
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "How does Vision 2030 affect SEO specifically?"
       },
       {
@@ -905,7 +905,7 @@
         "text": "Vision 2030 is creating new search categories that did not exist in Saudi Arabia three years ago: entertainment venues, tourist attractions, female-led businesses, private sector professional services that were previously government-dominated. Businesses in newly liberalised sectors can capture organic traffic for entirely new keywords with limited competition. Early movers in these sectors have a 12–24 month window to establish authority before competition increases."
       },
       {
-        "type": "h2",
+        "type": "h3",
         "text": "Can a Dubai-based SEO agency handle Riyadh SEO?"
       },
       {
@@ -914,10 +914,10 @@
       }
     ],
     "cta": {
-      "headline": "Ready to Capture Riyadh's Digital Growth?",
       "body": "The APEX Diagnostic maps your Saudi keyword opportunity, benchmarks your visibility against Riyadh competitors, and shows you what page-1 rankings in KSA would mean for your business. Free, no commitment.",
-      "buttonText": "Book Free APEX Diagnostic",
-      "buttonHref": "/contact/"
+      "heading": "Ready to Capture Riyadh's Digital Growth?",
+      "label": "Book Free APEX Diagnostic",
+      "href": "/contact/"
     },
     "relatedSlugs": [
       "riyadh-seo-guide-2026",
@@ -1863,7 +1863,7 @@
     "metaDescription": "How UAE clinics and hospitals rank on Google in 2026 — E-E-A-T signals, DHA compliance, bilingual Arabic-English content, and the medical SEO strategy getting clinics from page 9 to page 1.",
     "publishedAt": "2026-06-08",
     "readTime": 10,
-    "category": "Medical SEO",
+    "category": "Healthcare SEO",
     "featuredImage": "/heroes/17-medical-seo.svg",
     "featuredImageAlt": "Healthcare SEO UAE 2026 — medical clinics and hospitals ranking on Google in Dubai — upranked.io",
     "excerpt": "Most UAE healthcare providers rank on page 9 or worse for their most valuable terms — 'specialist dermatologist Dubai', 'IVF clinic Abu Dhabi', 'best cardiologist UAE'. Google applies its highest scrutiny to healthcare content. Here is the exact framework that gets medical practices, clinics, and hospitals to page 1 in the UAE.",
@@ -3230,7 +3230,7 @@
       "heading": "Want to rank higher in Dubai?",
       "body": "Book a free APEX Diagnostic and get a clear action plan for your on-page SEO.",
       "label": "Book Free Diagnostic",
-      "href": "/contact"
+      "href": "/contact/"
     },
     "relatedSlugs": [
       "seo-uae-2026-what-works",
@@ -3448,7 +3448,7 @@
       "heading": "Want rich results for your GCC business?",
       "body": "Book a free APEX Diagnostic — we audit your schema markup and show exactly what to fix.",
       "label": "Book Free Diagnostic",
-      "href": "/contact"
+      "href": "/contact/"
     },
     "relatedSlugs": [
       "seo-uae-2026-what-works",
@@ -3705,7 +3705,7 @@
       "heading": "Ready to rank across the Middle East?",
       "body": "Book a free APEX Diagnostic — we map your visibility across every GCC market and build a regional SEO plan.",
       "label": "Book Free Diagnostic",
-      "href": "/contact"
+      "href": "/contact/"
     },
     "relatedSlugs": [
       "dubai-seo-guide-2026",
@@ -3932,7 +3932,7 @@
       "heading": "Ready to rank in Bahrain?",
       "body": "Book a free APEX Diagnostic — we map your Bahrain search visibility and build a growth plan.",
       "label": "Book Free Diagnostic",
-      "href": "/contact"
+      "href": "/contact/"
     },
     "relatedSlugs": [
       "aeo-geo-bahrain-dubai-gcc-ai-search",
@@ -4122,7 +4122,7 @@
       "heading": "Want to build real authority for your Dubai business?",
       "body": "Book a free APEX Diagnostic — we audit your backlink profile and identify the highest-impact link opportunities.",
       "label": "Book Free Diagnostic",
-      "href": "/contact"
+      "href": "/contact/"
     },
     "relatedSlugs": [
       "seo-uae-2026-what-works",
