@@ -7,7 +7,7 @@
     "publishedAt": "2026-07-19",
     "author": "Sam",
     "category": "SEO Strategy",
-    "readTime": "8 min read",
+    "readTime": 8,
     "relatedSlugs": [
       "on-page-seo-dubai-rankings",
       "off-page-seo-link-building-dubai",
@@ -165,7 +165,11 @@
       "body": "We identify exactly which of these 9 tactics will move the needle fastest for your Dubai website — on-page fixes, GBP optimisation, Arabic content gaps, or backlink strategy. The APEX Diagnostic shows your ranking opportunities in 45 minutes.",
       "href": "/contact/",
       "label": "Book Free APEX Diagnostic"
-    }
+    },
+    "featuredImage": "/heroes/03-serp-positions.svg",
+    "featuredImageAlt": "How to increase website rankings in Dubai — SEO tactics for UAE businesses | upranked.io",
+    "excerpt": "Most Dubai businesses are making the same 4-5 fixable mistakes that keep them off page 1. Here are the 9 tactics that produce measurable ranking increases for Dubai websites in 2026 — calibrated for the UAE search environment.",
+    "keyIntelligence": "Increasing web rankings in Dubai requires UAE-specific tactics that go beyond generic SEO advice: bilingual Arabic content captures 40-50% of search volume most competitors ignore, Google Business Profile optimisation dominates local pack results for near-me queries, and UAE-sourced backlinks from GCC publications carry significantly more local ranking weight than international domain authority links. Pages already ranking at positions 11-30 for commercial Dubai keywords are the fastest wins — fixing on-page fundamentals on near-page-1 pages consistently outperforms building new content from scratch."
   },
   {
     "slug": "hospital-seo-uae-2026",
@@ -175,7 +179,7 @@
     "publishedAt": "2026-07-19",
     "author": "Sam",
     "category": "Healthcare SEO",
-    "readTime": "9 min read",
+    "readTime": 9,
     "relatedSlugs": [
       "healthcare-seo-uae-2026",
       "medical-seo-dubai-clinics",
@@ -371,7 +375,11 @@
       "body": "Hospital and healthcare group SEO requires a fundamentally different architecture from clinic SEO. The APEX Diagnostic maps your department-level keyword gaps, physician page opportunities, and bilingual Arabic content needs — specific to your hospital's specialties and UAE patient base.",
       "href": "/contact/",
       "label": "Book Free Hospital SEO Audit"
-    }
+    },
+    "featuredImage": "/heroes/17-medical-seo.svg",
+    "featuredImageAlt": "Hospital SEO UAE 2026 — ranking strategy for healthcare groups and medical centres | upranked.io",
+    "excerpt": "A 22-department hospital can have a weaker Google presence than a single-room physiotherapy clinic. Hospital SEO UAE requires a fundamentally different architecture from clinic SEO — department-level pages, physician profiles, bilingual Arabic content, and hospital schema markup.",
+    "keyIntelligence": "Hospital SEO UAE requires six distinct content layers that clinic SEO does not: department-level landing pages for each speciality, physician profile pages targeting doctor-name + condition searches, condition/treatment pages targeting patient symptom queries, location pages for each hospital site, bilingual Arabic equivalents of all key pages, and hospital-grade structured data (Schema.org/Hospital) with DHA accreditation signals. Most UAE hospital websites have only a homepage and department list — leaving hundreds of high-intent search queries completely uncovered."
   },
   {
     "slug": "choose-arabic-seo-agency-dubai",
