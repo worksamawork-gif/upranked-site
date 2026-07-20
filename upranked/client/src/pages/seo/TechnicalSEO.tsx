@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function TechnicalSEO() {
-  usePageMeta({ title: 'Technical SEO Dubai & GCC | upranked.io', description: 'Technical SEO audits for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Core Web Vitals, bilingual RTL architecture, crawl fixes — APEX Framework by Sam.', schema, schemaId: 'technical-seo-schema' });
+  usePageMeta({ title: 'Technical SEO Dubai & GCC', description: 'Technical SEO audits for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Core Web Vitals, bilingual RTL architecture, crawl fixes — APEX Framework by Sam.', schema, schemaId: 'technical-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

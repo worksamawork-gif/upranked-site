@@ -102,7 +102,7 @@ const steps = [
 
 export default function BusinessConsultation() {
   usePageMeta({
-    title: 'Business Consultation Dubai | Sam | upranked.io',
+    title: 'Business Consultation Dubai | Sam',
     description: '1-on-1 business consultation with Sam in Dubai & GCC. APEX Framework™ applied to your growth bottlenecks. 90-day roadmap. Book a free intro call.',
     schemaId: 'consultation-schema',
     schema,

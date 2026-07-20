@@ -263,7 +263,7 @@ export default function Industries() {
   const sectionRefs = useRef<Record<string, IntersectionObserverEntry>>({});
 
   usePageMeta({
-    title: 'Industry SEO Dubai & GCC | upranked.io',
+    title: 'Industry SEO Dubai & GCC',
     description:
       'Industry-specific SEO for medical, industrial, and business sectors in Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London UK, and New York USA. APEX Framework™ by Sam.',
     schema,

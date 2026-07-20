@@ -238,7 +238,7 @@ export default function BusinessSEO() {
   const [activeSection, setActiveSection] = useState('');
 
   usePageMeta({
-    title: 'Business SEO Dubai & UAE | SEO Agency | upranked.io',
+    title: 'Business SEO Dubai & UAE | SEO Agency',
     description: 'Revenue-focused business SEO for companies in Dubai & UAE. Commercial intent strategy, bilingual EN/AR, APEX Framework™. Book your free strategy call.',
     schemaId: 'business-seo-schema',
     schema,

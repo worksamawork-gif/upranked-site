@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function LocalSEO() {
-  usePageMeta({ title: 'Local SEO Dubai & GCC | upranked.io', description: 'Local SEO for Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London & New York. Google Business Profile, near-me optimization, local citations — APEX Framework by Sam.', schema, schemaId: 'local-seo-schema' });
+  usePageMeta({ title: 'Local SEO Dubai & GCC', description: 'Local SEO for Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain, London & New York. Google Business Profile, near-me optimization, local citations — APEX Framework by Sam.', schema, schemaId: 'local-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

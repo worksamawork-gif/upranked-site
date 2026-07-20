@@ -278,7 +278,7 @@ export default function GrowthIntelligence() {
   const sectionRefs = useRef<Record<string, IntersectionObserverEntry>>({});
 
   usePageMeta({
-    title: 'Growth Intelligence Dubai GCC | upranked.io',
+    title: 'Growth Intelligence Dubai GCC',
     description:
       "upranked.io's Growth Intelligence services: Business Consultation, Custom Tools, Tailored Website & Business Strategy for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London UK & New York USA. Led by Sam.",
     schema,

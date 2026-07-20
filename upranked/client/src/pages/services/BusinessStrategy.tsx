@@ -101,7 +101,7 @@ const steps = [
 
 export default function BusinessStrategy() {
   usePageMeta({
-    title: 'Business Strategy Dubai & GCC | upranked.io',
+    title: 'Business Strategy Dubai & GCC',
     description: 'Market positioning & growth strategy for companies in Dubai & the GCC. APEX Framework™ applied. Market entry, competitor displacement, 90-day roadmaps. Book a call.',
     schemaId: 'strategy-schema',
     schema,

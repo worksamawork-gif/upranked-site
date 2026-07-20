@@ -101,7 +101,7 @@ const steps = [
 
 export default function TailoredWebsite() {
   usePageMeta({
-    title: 'Custom Website Dubai & GCC | SEO-Ready | upranked.io',
+    title: 'Custom Website Dubai & GCC | SEO-Ready',
     description: 'Premium custom websites for Dubai & GCC businesses. SEO-ready from day one, bilingual EN/AR, Core Web Vitals optimised. Built by upranked.io. Book a free call.',
     schemaId: 'website-schema',
     schema,
