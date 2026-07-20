@@ -73,7 +73,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function OffPageSEO() {
   usePageMeta({
-    title: 'Off-Page SEO Dubai — Link Building & Domain Authority for GCC',
+    title: 'Off-Page SEO Dubai GCC | Link Building',
     description: 'Build domain authority that ranks — GCC-relevant backlinks, Gulf business digital PR, and citation building for Dubai, Riyadh, Kuwait & Bahrain. APEX Framework by Sam.',
     schema,
     schemaId: 'off-page-seo-schema',

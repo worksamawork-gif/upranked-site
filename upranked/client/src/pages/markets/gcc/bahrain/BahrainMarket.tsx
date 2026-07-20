@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function BahrainMarket() {
-  usePageMeta({ title: 'SEO Agency Manama Bahrain — Arabic & English SEO for Bahrain Businesses', description: 'SEO agency for Manama and Bahrain. Financial services SEO, Arabic-English bilingual content, Google Business Profile — APEX Framework by Sam at upranked.io.', schema, schemaId: 'bahrain-market-schema' });
+  usePageMeta({ title: 'SEO Agency Manama Bahrain | Arabic & English SEO', description: 'SEO agency for Manama and Bahrain. Financial services SEO, Arabic-English bilingual content, Google Business Profile — APEX Framework by Sam at upranked.io.', schema, schemaId: 'bahrain-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

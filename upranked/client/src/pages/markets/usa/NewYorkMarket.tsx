@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function NewYorkMarket() {
-  usePageMeta({ title: 'SEO Agency New York USA — Technical SEO & Content Strategy', description: 'SEO agency for New York City and the USA. Technical SEO, content architecture, link building and GCC-to-US expansion SEO — APEX Framework by Sam at upranked.io.', schema, schemaId: 'new-york-market-schema' });
+  usePageMeta({ title: 'SEO Agency New York | Technical SEO & Content', description: 'SEO agency for New York City and the USA. Technical SEO, content architecture, link building and GCC-to-US expansion SEO — APEX Framework by Sam at upranked.io.', schema, schemaId: 'new-york-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

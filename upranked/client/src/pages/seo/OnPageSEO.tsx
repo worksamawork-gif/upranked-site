@@ -73,7 +73,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function OnPageSEO() {
   usePageMeta({
-    title: 'On-Page SEO Dubai & GCC — Content, Keywords & Page Optimization',
+    title: 'On-Page SEO Dubai & GCC | upranked.io',
     description: 'On-page SEO services for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Bilingual EN/AR optimization, title tags, schema markup — APEX Framework by Sam.',
     schema,
     schemaId: 'on-page-seo-schema',

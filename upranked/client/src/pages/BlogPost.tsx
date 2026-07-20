@@ -34,7 +34,7 @@ function renderSection(section: BlogSection, index: number) {
           const isExternal = href.startsWith('http');
           nodes.push(
             isExternal
-              ? <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="text-accent underline underline-offset-2 hover:text-accent/80">{label}</a>
+              ? <a key={i} href={href} target="_blank" rel="nofollow noopener noreferrer" className="text-accent underline underline-offset-2 hover:text-accent/80">{label}</a>
               : <Link key={i} href={href} className="text-accent underline underline-offset-2 hover:text-accent/80">{label}</Link>
           );
         } else if (parts[i]) {

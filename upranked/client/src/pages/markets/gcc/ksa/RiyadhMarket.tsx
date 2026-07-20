@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function RiyadhMarket() {
-  usePageMeta({ title: 'Riyadh SEO Agency KSA — Arabic-First SEO for Saudi Businesses | upranked.io', description: 'SEO agency for Riyadh and Saudi Arabia. Arabic-first keyword research, Vision 2030 sector content, Google Business Profile — APEX Framework by Sam at upranked.io.', schema, schemaId: 'riyadh-market-schema' });
+  usePageMeta({ title: 'Riyadh SEO Agency KSA | Arabic-First SEO Saudi', description: 'SEO agency for Riyadh and Saudi Arabia. Arabic-first keyword research, Vision 2030 sector content, Google Business Profile — APEX Framework by Sam at upranked.io.', schema, schemaId: 'riyadh-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

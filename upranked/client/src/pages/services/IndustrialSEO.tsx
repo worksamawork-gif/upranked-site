@@ -132,7 +132,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function IndustrialSEO() {
   usePageMeta({
-    title: 'Industrial SEO UAE | B2B SEO Agency Dubai & GCC | upranked.io',
+    title: 'Industrial SEO UAE | B2B SEO Dubai & GCC',
     description: 'Specialist industrial & B2B SEO agency for manufacturers, construction & oil & gas companies in UAE & GCC. Win procurement searches. Book a free strategy call.',
     schemaId: 'industrial-seo-schema',
     schema: {

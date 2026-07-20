@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function BilingualSEO() {
-  usePageMeta({ title: 'Bilingual SEO Dubai — Arabic & English Search Optimization GCC', description: 'Bilingual EN/AR SEO for Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain. Native Arabic keyword research, RTL architecture, hreflang — APEX Framework by Sam.', schema, schemaId: 'bilingual-seo-schema' });
+  usePageMeta({ title: 'Bilingual SEO Dubai | Arabic & English GCC', description: 'Bilingual EN/AR SEO for Dubai UAE, Riyadh KSA, Kuwait City, Manama Bahrain. Native Arabic keyword research, RTL architecture, hreflang — APEX Framework by Sam.', schema, schemaId: 'bilingual-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

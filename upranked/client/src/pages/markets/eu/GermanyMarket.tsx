@@ -50,7 +50,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function GermanyMarket() {
-  usePageMeta({ title: 'SEO Agency Germany — Frankfurt, Berlin & DACH Search Optimization', description: 'SEO agency for Germany and the DACH region. Technical SEO, content architecture, and GCC-to-Germany expansion SEO — APEX Framework by Sam at upranked.io.', schema, schemaId: 'germany-market-schema' });
+  usePageMeta({ title: 'SEO Agency Germany | Frankfurt, Berlin & DACH', description: 'SEO agency for Germany and the DACH region. Technical SEO, content architecture, and GCC-to-Germany expansion SEO — APEX Framework by Sam at upranked.io.', schema, schemaId: 'germany-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

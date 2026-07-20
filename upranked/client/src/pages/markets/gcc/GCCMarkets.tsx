@@ -20,7 +20,7 @@ const markets = [
 ];
 
 export default function GCCMarkets() {
-  usePageMeta({ title: 'GCC SEO Agency — Dubai, Riyadh, Kuwait & Bahrain | upranked.io', description: 'Expert SEO across the Gulf Cooperation Council — bilingual Arabic-English strategies for Dubai UAE, Riyadh KSA, Kuwait City, and Manama Bahrain. APEX Framework by Sam at upranked.io.', schema, schemaId: 'gcc-markets-schema' });
+  usePageMeta({ title: 'GCC SEO Agency | Dubai, Riyadh, Kuwait & Bahrain', description: 'Expert SEO across the Gulf Cooperation Council — bilingual Arabic-English strategies for Dubai UAE, Riyadh KSA, Kuwait City, and Manama Bahrain. APEX Framework by Sam at upranked.io.', schema, schemaId: 'gcc-markets-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

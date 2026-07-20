@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function SchemaSEO() {
-  usePageMeta({ title: 'Schema Markup & Structured Data Dubai & GCC — Rich Results SEO', description: 'Schema markup and @graph JSON-LD implementation for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. FAQPage, LocalBusiness, MedicalOrg rich results by Sam.', schema, schemaId: 'schema-seo-schema' });
+  usePageMeta({ title: 'Schema Markup Dubai GCC | Rich Results SEO', description: 'Schema markup and @graph JSON-LD implementation for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. FAQPage, LocalBusiness, MedicalOrg rich results by Sam.', schema, schemaId: 'schema-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

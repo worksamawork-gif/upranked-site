@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'industrial-b2b-seo-gcc-procurement',
     title: 'Industrial B2B SEO: How to Win GCC Procurement Searches',
-    metaTitle: 'Industrial B2B SEO in the GCC: Win Procurement Searches | upranked.io',
+    metaTitle: 'Industrial B2B SEO GCC: Win Procurement Searches',
     metaDescription: 'How manufacturing, construction, oil & gas, and industrial companies can dominate the specific B2B search queries that procurement managers and engineers use in the UAE and GCC.',
     publishedAt: '2026-04-17',
     readTime: 7,
@@ -188,7 +188,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'apex-framework-explained',
     title: 'The APEX Framework™ Explained: How upranked.io Approaches GCC Growth',
-    metaTitle: 'The APEX Framework™ Explained | upranked.io GCC Growth Methodology',
+    metaTitle: 'The APEX Framework™ Explained | upranked.io',
     metaDescription: 'A deep dive into the APEX Framework™ — the proprietary 4-phase growth methodology developed by Sam for high-value businesses in the GCC. Audit, Position, Execute, Expand.',
     featuredImage: '/heroes/02-apex-framework.svg',
     featuredImageAlt: 'APEX Framework — Audit, Position, Execute, Expand — upranked.io GCC SEO methodology',

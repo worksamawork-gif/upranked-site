@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function LondonMarket() {
-  usePageMeta({ title: 'SEO Agency London UK — Technical SEO & Content Strategy', description: 'SEO agency for London and the UK. Technical SEO, content architecture, link building and GCC-to-London expansion SEO — APEX Framework by Sam at upranked.io.', schema, schemaId: 'london-market-schema' });
+  usePageMeta({ title: 'SEO Agency London UK | Technical SEO & Content', description: 'SEO agency for London and the UK. Technical SEO, content architecture, link building and GCC-to-London expansion SEO — APEX Framework by Sam at upranked.io.', schema, schemaId: 'london-market-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

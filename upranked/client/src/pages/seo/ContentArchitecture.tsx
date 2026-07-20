@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function ContentArchitecture() {
-  usePageMeta({ title: 'SEO Content Architecture Dubai & GCC — Topic Clusters & Content Strategy', description: 'SEO content architecture for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Topic clusters, bilingual content silos, pillar pages — APEX Framework by Sam.', schema, schemaId: 'content-architecture-schema' });
+  usePageMeta({ title: 'SEO Content Architecture Dubai & GCC', description: 'SEO content architecture for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. Topic clusters, bilingual content silos, pillar pages — APEX Framework by Sam.', schema, schemaId: 'content-architecture-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

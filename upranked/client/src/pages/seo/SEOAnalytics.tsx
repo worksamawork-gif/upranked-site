@@ -51,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function SEOAnalytics() {
-  usePageMeta({ title: 'SEO Analytics & Reporting Dubai & GCC — Rank Tracking & Revenue Attribution', description: 'SEO analytics and reporting for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. GCC rank tracking, GSC integration, revenue attribution — APEX Framework by Sam.', schema, schemaId: 'seo-analytics-schema' });
+  usePageMeta({ title: 'SEO Analytics & Reporting Dubai GCC', description: 'SEO analytics and reporting for Dubai UAE, Riyadh KSA, Kuwait, Bahrain, London & New York. GCC rank tracking, GSC integration, revenue attribution — APEX Framework by Sam.', schema, schemaId: 'seo-analytics-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

@@ -62,7 +62,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function GeoSEO() {
-  usePageMeta({ title: 'GEO & Generative Engine Optimization Dubai | upranked.io', description: 'GEO (Generative Engine Optimization) and geo-targeted SEO for Dubai & GCC — rank in Google AI Overviews, ChatGPT, Perplexity, and across six global markets.', schema, schemaId: 'geo-seo-schema' });
+  usePageMeta({ title: 'GEO & Generative Engine Optimization Dubai', description: 'GEO (Generative Engine Optimization) and geo-targeted SEO for Dubai & GCC — rank in Google AI Overviews, ChatGPT, Perplexity, and across six global markets.', schema, schemaId: 'geo-seo-schema' });
   return (
     <div className="min-h-screen bg-navy text-white">
       <section className="relative pt-32 pb-20 px-4 md:px-6 lg:px-8 texture-overlay">

@@ -247,7 +247,7 @@ export default function FAQ() {
   const sectionRefs = useRef<Record<string, IntersectionObserverEntry>>({});
 
   usePageMeta({
-    title: 'SEO Dubai FAQ: Pricing, How Long It Takes & What to Expect | upranked.io',
+    title: 'Dubai SEO FAQ: Pricing, Timeline & What to Expect',
     description:
       'How much does SEO cost in Dubai? How long does it take? Honest answers on pricing, timelines, and results for businesses in Dubai, Riyadh, Kuwait & the GCC. No fluff — just clarity.',
     schema,

@@ -46,7 +46,7 @@ export default function Blog() {
   }, []);
 
   usePageMeta({
-    title: 'SEO Blog Dubai & GCC — Strategy, Insights & Rankings 2026',
+    title: 'SEO Blog Dubai & GCC | upranked.io',
     description: 'SEO insights, keyword strategy, and GCC market intelligence from Sam at upranked.io. Practical guides for businesses targeting UAE, Saudi Arabia, Kuwait & Bahrain.',
     schemaId: 'blog-schema',
     schema: {

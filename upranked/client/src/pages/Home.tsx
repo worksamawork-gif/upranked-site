@@ -353,7 +353,7 @@ export default function Home() {
   const [language, setLanguage] = useState<'en' | 'ar'>('en');
 
   usePageMeta({
-    title: 'SEO Agency Dubai & GCC | upranked.io — APEX Framework™',
+    title: 'SEO Agency Dubai & GCC | upranked.io',
     description: 'upranked.io is a premium SEO agency in Dubai & the GCC. Medical, Industrial & Business SEO built on the APEX Framework™ by Sam. Book a free strategy call.',
     schemaId: 'home-schema',
     schema,

@@ -74,7 +74,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function AEOSEO() {
   usePageMeta({
-    title: 'AEO Dubai — Answer Engine Optimization UAE | upranked.io',
+    title: 'AEO & Answer Engine Optimization Dubai UAE',
     description: 'Get cited by ChatGPT, Google AI Overviews & Perplexity. AEO services for Dubai & GCC — schema markup, E-E-A-T authority, Arabic AEO.',
     schema,
     schemaId: 'aeo-seo-schema',

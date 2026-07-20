@@ -155,7 +155,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function MedicalSEO() {
   usePageMeta({
-    title: 'Healthcare SEO Agency Dubai UAE | Medical SEO for Clinics, Hospitals & Practices | upranked.io',
+    title: 'Healthcare SEO Agency Dubai UAE | upranked.io',
     description: 'Healthcare SEO agency in Dubai UAE — medical clinics, hospitals & specialist practices. E-E-A-T content, bilingual EN/AR, hospital SEO UAE, MedicalOrganization schema. Free APEX diagnostic.',
     schemaId: 'medical-seo-schema',
     schema: {

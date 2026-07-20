@@ -199,7 +199,7 @@ export default function About() {
   const [activeSection, setActiveSection] = useState('');
 
   usePageMeta({
-    title: 'Sam — Founder-Led SEO Agency Dubai & GCC | upranked.io',
+    title: 'Sam Hamouda | SEO Agency Dubai & GCC',
     description: 'Meet Sam, founder of upranked.io. Specialist in Medical, Industrial & Business SEO for the GCC. Founder-led on every engagement — APEX Framework™. Dubai-based, GCC-wide.',
     schemaId: 'about-schema',
     schema,
